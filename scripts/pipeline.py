@@ -1,4 +1,4 @@
-"""Evaluate immutable Lang generations and assemble the Part 1 handover."""
+"""Evaluate immutable Lang generations and write the Part 1 result tables."""
 import argparse
 from collections import Counter
 import csv
@@ -207,7 +207,7 @@ def reconcile_runtime_counts():
 
 
 def report():
-    rows=manifest(); gen=json.loads((RESULTS/'generation-summary.json').read_text()); ref=reference()
+    rows=manifest(); ref=reference()
     lines=['# Lang Part 1 matrix','','Model: openai/gpt-oss-120b. One generation per record and technique; no generated-test edits or normalization.','','| technique | generated | MSR | CSR | syntax ok | compiles | files that run | test methods run / passed | CUT line cov (mean over compiled files) |','|---|---:|---:|---:|---:|---:|---:|---|---:|']
     matrix=[]
     for tech in TECHS+['pooled']:
@@ -232,31 +232,6 @@ def report():
             row=by[(bug,tech)]; values.append(row['status']+(f' {row["passed"]}/{row["tests_run"]}' if row['status']=='ran' else ''))
         cells.append(f'| {bug} / {record["class"]} | '+' | '.join(values)+' |')
     (RESULTS/'lang-part1-per-record.md').write_text('\n'.join(cells)+'\n')
-    categories=Counter(r['category'] for r in read_csv(RESULTS/'compile-errors.csv'))
-    timing=json.loads((RESULTS/'stage-times.json').read_text())
-    probe=json.loads(Path('runs/probe/usage.json').read_text()); total_cost=gen['cost_reported']+(probe.get('cost') or 0)
-    report_lines=['# Part 1 handover B','','Steps 7–12 completed after Gary approved the Step 6 probe. Stop at this handover. No push performed.','',*lines[2:],'',*cells[2:],'','## Generation and cost','',f'70 generation calls completed using openai/gpt-oss-120b, temperature 0.7, max_tokens 4096 and one user message only. Concurrency was 2. Length finishes: {gen["length_finishes"]}; empty completions: {gen["empty_content"]}. Parameters and all raw responses are saved under runs/lang/.',f'Reported generation cost: ${gen["cost_reported"]:.8f}; probe cost: ${probe.get("cost",0):.8f}; total Part 1 reported API cost: ${total_cost:.8f}. Missing generation cost fields: {gen["cost_missing_count"]}.','',Path('results/generation.md').read_text(),'','## Compile-error categories','','| Category | Error lines |','|---|---:|']
-    report_lines += [f'| {name} | {categories[name]} |' for name,_ in CATEGORIES]+[f'| other | {categories["other"]} |','',f'Total javac diagnostic error lines: {sum(categories.values())}. Full diagnostics are in generated/.../javac.err and results/compile.csv; one row per error is in results/compile-errors.csv.','','## Stage wall times','','| Stage | Seconds |','|---|---:|',f'| Step 7 generation | {gen["wall_seconds"]} |']
-    report_lines += [f'| Step {step} | {data["wall_seconds"]} |' for step,data in sorted(timing.items(),key=lambda kv:int(kv[0])) if step!='12']
-    report_lines += ['','Step 12 report assembly time is finalized after this report is generated and saved separately in results/stage-times.json. Steps 1–6 were completed in earlier sessions; available Step 4 compile timings and Step 6 probe latency are in handover A, not reconstructed as full stage wall times.','','## Authors’ historical Lang reference','','| Technique | Syntax_and_import_OK True | Matching rows |','|---|---:|---:|']
-    for tech in TECHS[:-1]: report_lines.append(f'| {tech} | {ref["valid_counts"].get(tech,0)} | {ref["total_counts"].get(tech,0)} |')
-    report_lines += ['',f'Total Lang rows: {ref["lang_rows"]}. Regex covers every Lang row: {ref["regex_covers_every_lang_row"]}. Unmatched rows: {ref["unmatched_count"]}. Counts match the Cowork pre-check: {ref["matches_expected"]}. This is a historical GPT-3.5-turbo reference rate only, not a comparison target. Source SHA-256: {ref["sha256"]}.','','## Deviations and interpretation','','- Gary authorized openai/gpt-oss-120b on 2026-10-03 because the paper’s models are unavailable through APIs. The original Mistral templates and all generation parameters were retained. This is an end-to-end pipeline study with a replacement model, not a numerical replication.','- Container credentials are supplied via ignored docker/.env; the key is still read only from OPENROUTER_API_KEY. No key was recorded in artifacts.','- The reference extraction CSV was absent from the repository copy, so it was copied unchanged from the original author bundle into bundle/extraction_outputs/. Its source/hash are recorded.','- The authors’ extraction reimplementation was used unchanged. Its CSR check is a structural proxy, not compilation; generated files are exactly its combine output. The original script is not claimed to be the recovered historical extractor.','- Step 8 class discovery uses the document’s specified regex. No package repair, import injection, method removal, formatting, or normalization was applied.','- The supplied compile/runtime classpath ordering was retained exactly. cp.test includes older project JUnit jars ahead of the pinned 4.13.2 jar; this can affect compilation/runtime and is part of the specified pipeline.','- Compiled class files are ignored; generated source, diagnostics, per-method results, JaCoCo execution data and reports are retained.','- Probe usage and completion usage include model reasoning tokens; length finishes and empty content are reported without retry or parameter changes.','','## Open questions','', '- The reference rows are validation/filter outcomes rather than a direct modern model comparison; use them only as the document’s requested reference rates.','- Failing generated tests were run on buggy revisions. They may expose known defects or contain incorrect assertions; no correctness repair or manual oracle adjudication was performed.','- Any survival study across later versions belongs to Part 2 and needs a separate instruction.','']
-    issues=[{'bug_id':r['bug_id'],'technique':r['technique'],'run_error':r.get('run_error'),'coverage_error':r.get('coverage',{}).get('coverage_error')} for r in rows if r.get('run_error') or r.get('coverage',{}).get('coverage_error')]
-    if issues: report_lines+=['## Run/coverage issues','','```json',json.dumps(issues,indent=2),'```','']
-    if any(r.get('counts_partial') for r in rows):
-        report_lines+=['Timeouts prevented a final JUnit summary for some files. Their reported tests_run/failed/ignored counts come from observed completed per-method events and are lower bounds; a method still running at termination is not counted. These files remain run-error, and all observed events and stderr are retained. JaCoCo coverage from the terminated JVM is retained when available. No generated test was edited or rerun.', '']
-    providers=Counter(r['provider'] for r in gen['runs'])
-    attempts=list(Path('runs/lang').rglob('run.json'))
-    report_lines+=['## API routing and attempts','',
-        f'HTTP attempt records: {len(attempts)}; generation responses: 70. OpenRouter default routing was retained, with no provider overrides. Provider counts: {dict(providers)}. Each response records its provider and latency; raw HTTP responses and any retry directories are retained.', '']
-    report_lines+=['A conversation interruption occurred during Step 7. The generation process continued in the background and was resumed by observing the same process; completed calls were not repeated. Generation wall time covers the uninterrupted running process.', '']
-    if not ref['matches_expected']:
-        report_lines+=['## Reference-count discrepancy','',
-            'Literal counting of every Lang row gives ZSL/FSL/CoT/ToT = 369/612/606/706, rather than the Cowork pre-check 369/306/303/353. The latter three are exactly twice the pre-check values. All 2,293 Lang rows carry Syntax_and_import_OK=True and match the requested regex. The CSV contains 980 exact distinct Lang rows, but neither exact nor logical deduplication was applied: duplicate-looking identifiers can also come from multiple buggy revisions of the same class, and this CSV has no bug-id column. The raw requested counts are retained. Continuing through Step 12 follows Gary’s explicit instruction to run without stopping; the discrepancy is a review question.', '']
-    report_lines += ['## Verification', '',
-        'Saved artifact verification passed for all 70 fixed-parameter requests, verbatim assistant responses and raw.java copies, and all 25 materialized files matching unchanged combine text. Source SHA-256s remained unchanged after compilation and execution. Cross-stage counts and javac diagnostics reconcile; original model-list bytes and extractor SHA-256 are preserved. The credential scan found no API key in the checked artifacts. Evidence: results/pipeline-validation.json.', '',
-        'The 19/70 compile result applies to this specified extraction-to-compilation pipeline. Forty-five responses had detected code but failed the unchanged structural CSR filter, and six materialized files failed parsing; their Java compilability was not independently assessed. This filter is the main loss before compilation, and should be considered when interpreting the result.', '']
-    Path('docs/handover-part1-b.md').write_text('\n'.join(report_lines))
     print('\n'.join(lines),flush=True); print('Historical reference:',ref['valid_counts'],'regex covers all:',ref['regex_covers_every_lang_row'],flush=True)
 
 
@@ -267,10 +242,5 @@ def main():
     if args.step=='11': reconcile_runtime_counts()
     path=RESULTS/'stage-times.json'; times=json.loads(path.read_text()) if path.exists() else {}
     times[args.step]={'started_utc':stamp,'wall_seconds':round(time.monotonic()-start,3)}; save(path,times)
-    if args.step=='12':
-        handover=Path('docs/handover-part1-b.md')
-        text=handover.read_text()
-        text=text.replace('Step 12 report assembly time is finalized after this report is generated and saved separately in results/stage-times.json.',f'Step 12 report assembly wall time: {times[args.step]["wall_seconds"]} seconds (also saved in results/stage-times.json).')
-        handover.write_text(text)
 
 if __name__=='__main__': main()

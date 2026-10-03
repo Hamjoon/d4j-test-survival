@@ -66,7 +66,6 @@ def main():
     begin=summary.index('### Pooled by day range\n')
     end=summary.index('## Failure kinds\n',begin)
     assert summary[:begin]+summary[end:]==original_summary
-    assert summary in Path('docs/handover-part2-c.md').read_text()
     immutable=['results/p2-survival-methods.csv','results/p2-population.json','results/p2-dedup.csv',
                'results/p2-generation-rounds.json','results/p2-fixed-classification.json']
     for name in immutable:

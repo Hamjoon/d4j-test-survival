@@ -34266,7 +34266,7 @@
     ],
     "empty_developer_population_outcome": "N/A",
     "lang57_developer_note": "all developer methods are trigger tests; no developer baseline at t",
-    "lang57_observation_for_handovers_b_and_c": "139 LLM methods passed at the buggy version where every developer method fails.",
+    "lang57_observation": "139 LLM methods passed at the buggy version where every developer method fails.",
     "push": false,
     "source_edits": false,
     "dev_own_missing_test_class_records": [

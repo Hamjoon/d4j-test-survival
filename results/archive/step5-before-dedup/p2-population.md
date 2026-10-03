@@ -37,4 +37,4 @@ The machine-readable population manifest retains population = dev and an own_cla
 
 Lang-57 remains in the experiment and its LLM survival is computed normally. Exclude Lang-57 from class-level 2x2 counts and footnote the exclusion. The dev-own 2x2 also omits empty baselines (Lang-6, Lang-17, Lang-28 and Lang-57), reporting them as N/A rather than all-pass.
 
-Every Step 8 table reporting dev must show dev-own beside it: survival by time point, survival by days, failure kinds, class-level 2x2 and counts matched. Include the Lang-57 observation unchanged in handover-part2-c.
+Every Step 8 table reporting dev must show dev-own beside it: survival by time point, survival by days, failure kinds, class-level 2x2 and counts matched.

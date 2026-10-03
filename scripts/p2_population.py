@@ -96,90 +96,13 @@ def main():
         f'- Lang-57: D_r = D_r_own = 0; developer survival is N/A at every time point, with note "{note}".', '',
         'The machine-readable population manifest retains population = dev and an own_class boolean. '
         'Step 6 must carry own_class into p2-survival-methods.csv. dev-own is a filtered view, not duplicated CSV rows.', '',
-        '## Lang-57 observation and later aggregation', '', policy['lang57_observation_for_handovers_b_and_c'], '',
+        '## Lang-57 observation and later aggregation', '', policy['lang57_observation'], '',
         'Lang-57 remains in the experiment and its LLM survival is computed normally. '
         'Exclude Lang-57 from class-level 2x2 counts and footnote the exclusion. '
         'The dev-own 2x2 also omits empty baselines (Lang-6, Lang-17, Lang-28 and Lang-57), reporting them as N/A rather than all-pass.', '',
         'Every Step 8 table reporting dev must show dev-own beside it: survival by time point, survival by days, failure kinds, '
-        'class-level 2x2 and counts matched. Include the Lang-57 observation unchanged in handover-part2-c.', '']
+        'class-level 2x2 and counts matched.', '']
     (OUT / 'p2-population.md').write_text('\n'.join(population_text))
-    extra_files = [f for f in state['files'] if f['round'] > 1]
-    new_rounds = [r for r in state['rounds'] if r['round'] > 1]
-    anomalies = []
-    for file in extra_files:
-        identity = f'Lang-{file["bug_id"]} r{file["round"]} {file["technique"]}'
-        metadata = load(Path(file['directory']) / 'run.json')
-        if metadata['finish_reason'] != 'stop' or metadata['content_empty']:
-            anomalies.append(f'- {identity}: finish_reason={metadata["finish_reason"]}, empty={metadata["content_empty"]}.')
-        if not file['csr_v2']:
-            anomalies.append(f'- {identity}: unstructured extraction; no source repairs or additional call.')
-        elif not file['compile']['compile_ok']:
-            anomalies.append(f'- {identity}: compile failure {file["compile"]["categories"]}; `{file["compile"]["stderr_file"]}`.')
-        for method in file.get('methods', []):
-            if method['status'] in {'timeout', 'not-run'}:
-                anomalies.append(f'- {identity} `{method["method"]}`: {method["status"]}, launch {method["launch"]}.')
-        cost_attempts = len(list(Path(file['directory']).glob('attempt-*/run.json')))
-        if cost_attempts > 1:
-            anomalies.append(f'- {identity}: {cost_attempts} HTTP attempts retained.')
-    costs = ['| Record | Rounds | New completions | New HTTP attempts | New reported USD | Including reused r1 USD |',
-             '|---|---:|---:|---:|---:|---:|']
-    for r in summaries:
-        if r['new_calls']:
-            attempts = sum(x['http_attempts'] for x in new_rounds if x['bug_id'] == r['bug_id'])
-            costs.append(f'| Lang-{r["bug_id"]} | {r["rounds_used"]} | {r["new_calls"]} | {attempts} | '
-                         f'{r["cumulative_new_cost_usd"]:.9f} | {r["cumulative_cost_usd"]:.9f} |')
-    providers = Counter(load(Path(f['directory']) / 'run.json')['provider'] for f in extra_files)
-    missing_costs = sum(r['cost_missing_successes'] for r in state['rounds'])
-    handover = ['# Part 2 handover B — Step 5 stop', '',
-        'Steps 4–5 are complete under the approved Step 3 review decisions. Stop here. No survival runs (Step 6 onward) or push were performed.', '',
-        '## Final populations', '', *table, '',
-        f'Full developer population: {len(dev_methods)} methods; dev-own: {sum(m["own_class"] for m in dev_methods)}; '
-        f'LLM: {len(llm_methods)}. {sum(r["target_reached"] for r in summaries)}/14 records meet the full developer target.', '',
-        'Records already meeting D_r after round 1 received no additional calls. The five techniques were all generated and evaluated '
-        'before each round’s stopping decision. No source normalization, test repair, package repair or method removal was applied.', '',
-        '## Calls and cost', '', *costs, '',
-        f'New completions: {sum(r["new_calls"] for r in new_rounds)}; new HTTP attempts: {sum(r["http_attempts"] for r in new_rounds)}. '
-        f'Reused round-1 completions: 70. Total completions represented: {len(state["files"])}.', '',
-        f'New reported usage cost: ${state["new_reported_cost_usd"]:.9f}. '
-        f'Reported cost including reused round 1: ${state["reported_cost_usd"]:.9f}. '
-        f'Successful attempts missing cost: {missing_costs}. '
-        'These amounts exclude the Part 1 probe; reused calls are historical cost, not new spending.', '',
-        'results/p2-rounds.csv records per-record cumulative passing counts and cost after every round. '
-        'cumulative_cost_usd includes that record’s reused round 1; cumulative_new_cost_usd includes only its new rounds. '
-        'Global cumulative fields follow CSV ledger order: reused round-1 records in bug-id order, then completed new rounds in execution order. '
-        'They describe accounting order rather than the original round-1 call timestamps. Cost uses usage.cost once per HTTP attempt, '
-        'with canonical successful-response copies excluded from double-counting.', '',
-        f'Provider counts for new completions: {dict(providers)}. Default OpenRouter routing was retained.', '',
-        '## Timing', '', f'Step 4 recorded process wall time: {state["wall_seconds"]} seconds. '
-        'Each round has generation_seconds and evaluation_seconds in p2-rounds.csv. '
-        'Concurrency was at most four API calls; source evaluation within each round was sequential.', '',
-        'Step 5 report construction time is recorded in results/p2-population-timing.json. '
-        'Editing and offline verification time are not represented as generation wall time.', '',
-        '## Anomalies', '', *(anomalies or ['No new length finishes, unstructured responses, compilation failures, timeouts, not-run results or HTTP retries.']), '',
-        'Ordinary assertion failures and exceptions remain in the per-file results and are excluded from the passing population. '
-        'Round-1 anomalies remain documented in handover-part2-a.md.', '',
-        '## Approved reporting changes for Steps 6–8', '',
-        'The full D_r remains the round target. dev-own is the exact matching test class filter and needs no extra runs. '
-        'D_r_own is shown above. Lang-6 and Lang-17 have no matching class. Lang-28 has a matching class but zero passing methods, '
-        'so its dev-own survival is also N/A. No baseline is manufactured for these empty subsets.', '',
-        'Keep population = dev in p2-survival-methods.csv and add own_class as a boolean; use it to derive dev-own. '
-        'All Step 8 tables that report dev must also report dev-own (time points, days, failure kinds, class-level 2x2, counts matched). '
-        'The Step 5 manifest supplies all passing developer rows with this flag.', '',
-        f'Lang-57 stays in the experiment. Developer survival is N/A at every time point with note "{note}". '
-        'LLM survival is computed normally. Exclude Lang-57 from class-level 2x2 counts and put that exclusion in a footnote; '
-        'also footnote empty dev-own baselines for that subset’s 2x2.', '',
-        policy['lang57_observation_for_handovers_b_and_c'], '',
-        'Repeat the preceding observation in handover-part2-c without interpretation. '
-        'The decisions are preserved in docs/part2-review-decisions.md and results/p2-approved-policy.json.', '',
-        '## Reproducibility and verification', '',
-        'All completed calls retain canonical request.json, raw-response.json, response.md, raw.java, usage.json and run.json, '
-        'plus every attempt under attempt-N. Raw responses and test sources are immutable. '
-        'The retry/resume checks used offline fixtures before any new API call. '
-        'Successful call artifacts and completed evaluation artifacts are reused on restart; uncertain transport attempts stop without blind retry.', '',
-        'See results/p2-validation-b.json for request-parameter/prompt checks, response and source hashes, population filtering, '
-        'stopping-policy checks, cost reconciliation and the credential scan. The API key was supplied only by compose env_file.', '',
-        '## Stop', '', 'Step 5 is the required review stop. Steps 6–9 have not begun.', '']
-    Path('docs/handover-part2-b.md').write_text('\n'.join(handover))
     save(OUT / 'p2-population-timing.json', dict(wall_seconds=round(time.monotonic() - started, 3)))
     print('\n'.join(table))
 

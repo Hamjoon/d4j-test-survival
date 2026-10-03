@@ -1,4 +1,4 @@
-"""Freeze the unique Step 5b population; retain the original Step 5 handover."""
+"""Freeze the unique Step 5b population."""
 from collections import Counter
 from decimal import Decimal
 from pathlib import Path
@@ -13,7 +13,6 @@ def main():
     state = load('results/p2-generation-rounds.json')
     assert state['dedup_complete']
     rows, dedup_records = write_dedup(state)
-    old = load('results/archive/step5-before-dedup/p2-population.json')
     before = load('results/archive/step5-before-dedup/p2-dedup.json')
     old_state = load('results/archive/step5-before-dedup/p2-generation-rounds.json')
     policy = load('results/p2-approved-policy.json')
@@ -74,17 +73,6 @@ def main():
     Path('results/p2-population.md').write_text('\n'.join(text)+'\n')
     delta_rounds=state['rounds'][len(old_state['rounds']):]
     extra_cost=Decimal(str(state['reported_cost_usd']))-Decimal(str(old_state['reported_cost_usd']))
-    comparison=['| Record | Before raw | Initial duplicates | Initial unique | Extra rounds | Final raw | Final duplicates | Final unique |',
-                '|---|---:|---:|---:|---:|---:|---:|---:|']
-    for r in summaries:
-        prev=next(p for p in before['records'] if p['bug_id']==r['bug_id'])
-        n=sum(d['bug_id']==r['bug_id'] for d in delta_rounds)
-        comparison.append(f'| Lang-{r["bug_id"]} | {prev["L_r"]} | {prev["duplicates_removed"]} | {prev["L_r_unique"]} | {n} | '
-            f'{r["L_r"]} | {r["duplicates_removed"]} | {r["L_r_unique"]} |')
-    additions=['| Record | Round | Calls | Passing raw added | Cumulative unique | Reported cost USD |',
-               '|---|---:|---:|---:|---:|---:|']
-    for r in delta_rounds:
-        additions.append(f'| Lang-{r["bug_id"]} | {r["round"]} | {r["calls"]} | {r["methods_passing_at_t"]} | {r["cumulative_L_r_unique"]} | {r["reported_cost_usd"]:.9f} |')
     elapsed=round(time.monotonic()-started,3)
     report=dict(complete=True, before_raw=sum(r['L_r'] for r in before['records']),
         before_duplicates=sum(r['duplicates_removed'] for r in before['records']),
@@ -92,26 +80,6 @@ def main():
         additional_calls=sum(r['calls'] for r in delta_rounds),additional_cost_usd=float(extra_cost),
         generation_wall_seconds=state['dedup_wall_seconds'],population_wall_seconds=elapsed)
     save('results/p2-step5b.json',report)
-    handover=['# Part 2 B addendum — exact duplicate removal', '',
-        'Step 5b is complete. All records meet full D_r on unique passing methods. Step 6 uses this frozen unique population. '
-        'The original handover-part2-b.md remains the historical raw-count handover.', '',
-        '## Deduplication rule and audit', '', text[2], '',
-        f'Hashed {totals["methods_hashed"]} test methods across every structured file, including nonpassing methods and compile failures. '
-        'results/p2-dedup.csv records every body hash, source position, baseline status, duplicate flag and retained identity. '
-        'Nonpassing methods never displace passing ones. The original population and round ledger are archived under results/archive/step5-before-dedup/.', '',
-        *comparison,'',
-        f'Before: {report["before_raw"]} raw = {report["before_duplicates"]} duplicates + {report["before_unique"]} unique. '
-        f'After: {totals["L_r"]} raw = {totals["duplicates_removed"]} duplicates + {totals["L_r_unique"]} unique.', '',
-        '## Additional generation', '',*additions,'',
-        f'Extra calls: {report["additional_calls"]}; extra reported cost ${extra_cost:.9f}. '
-        f'All rounds including reused round 1: {sum(r["calls"] for r in state["rounds"])} calls, ${state["reported_cost_usd"]:.9f}. '
-        f'Step 5b generation/evaluation/dedup wall time: {state["dedup_wall_seconds"]:.3f} s; population report: {elapsed:.3f} s. '
-        'Every additional request retained the rendered prompt and fixed parameters; all attempt artifacts and cumulative cost are saved.', '',
-        '## Frozen population', '',*table,'',*notes,'',
-        '## Continuation', '',
-        'The Step 5 review authorizes Steps 6–9 after this commit. Duplicates are excluded by method selection without source edits. '
-        'All Step 8 LLM population counts will include raw and removed-duplicate counts. No push.']
-    Path('docs/handover-part2-b-addendum.md').write_text('\n'.join(handover)+'\n')
     print(report)
 
 
