@@ -1,0 +1,15 @@
+{"method": "testSerializeUnserializableObjectThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 28, "launch": 1}
+{"method": "testCloneNestedObjectDeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 4, "launch": 1}
+{"method": "testSerializeClosesOutputStreamEvenOnException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCloneSimpleObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeFromInputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserializeFromByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeToByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeObjectToOutputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeNullToByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCloneWithUnserializableFieldThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCloneNullReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStreamFallbackToThreadContext", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeCorruptedDataThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeNullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeWithNullOutputStreamThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

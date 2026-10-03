@@ -1,0 +1,14 @@
+{
+  "dataset_records": 477,
+  "bundle_path": "/Users/donggi/_projects/experiment-projects/_replication/LLM4TS-generation-replication",
+  "copies_identical": [
+    "bundle/Defects4J-dataset.json",
+    "bundle/prompts",
+    "bundle/historical_scripts",
+    "bundle/authors-extraction",
+    "bundle/README-authors.md",
+    "bundle/PROVENANCE.md",
+    "bundle/VALIDATION.md"
+  ],
+  "branch": "experiment/2026-10-week1-d4j-replication"
+}

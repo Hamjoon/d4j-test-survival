@@ -1,0 +1,74 @@
+[
+  {
+    "technique": "ZSL",
+    "generated": 14,
+    "MSR": 14,
+    "CSR": 5,
+    "syntax_ok": 4,
+    "compiles": 4,
+    "files_that_run": 3,
+    "tests_run": 37,
+    "passed": 31,
+    "mean_cut_line_coverage": 0.8612012987012987
+  },
+  {
+    "technique": "FSL",
+    "generated": 14,
+    "MSR": 14,
+    "CSR": 5,
+    "syntax_ok": 5,
+    "compiles": 5,
+    "files_that_run": 5,
+    "tests_run": 78,
+    "passed": 69,
+    "mean_cut_line_coverage": 0.9742434336704822
+  },
+  {
+    "technique": "CoT",
+    "generated": 14,
+    "MSR": 14,
+    "CSR": 5,
+    "syntax_ok": 1,
+    "compiles": 1,
+    "files_that_run": 1,
+    "tests_run": 12,
+    "passed": 11,
+    "mean_cut_line_coverage": 1.0
+  },
+  {
+    "technique": "ToT",
+    "generated": 14,
+    "MSR": 14,
+    "CSR": 4,
+    "syntax_ok": 4,
+    "compiles": 4,
+    "files_that_run": 4,
+    "tests_run": 53,
+    "passed": 51,
+    "mean_cut_line_coverage": 0.9598214285714286
+  },
+  {
+    "technique": "GToT",
+    "generated": 14,
+    "MSR": 14,
+    "CSR": 6,
+    "syntax_ok": 5,
+    "compiles": 5,
+    "files_that_run": 4,
+    "tests_run": 69,
+    "passed": 59,
+    "mean_cut_line_coverage": 0.9117293233082707
+  },
+  {
+    "technique": "pooled",
+    "generated": 70,
+    "MSR": 70,
+    "CSR": 25,
+    "syntax_ok": 19,
+    "compiles": 19,
+    "files_that_run": 17,
+    "tests_run": 249,
+    "passed": 221,
+    "mean_cut_line_coverage": 0.9323134049465619
+  }
+]

@@ -1,0 +1,204 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-4b/llm/r3/CoT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testDeserializeCorruptedDataThrowsSerializationException",
+    "testSerializeObjectThatThrowsIOExceptionResultsInSerializationException",
+    "testCloneCreatesDeepCopy",
+    "testDeserializeFromByteArray",
+    "testSerializeToByteArray",
+    "testSerializeNullObjectProducesValidByteArray",
+    "testConstructorIsPublic",
+    "testSerializeNullOutputStreamThrowsIllegalArgumentException",
+    "testSerializeAndDeserializeComplexObjectGraph",
+    "testCloneHandlesIOExceptionDuringCloseGracefully",
+    "testDeserializeFromInputStreamAndClose",
+    "testClonePreservesClassLoaderAwareObjectInputStreamBehaviour",
+    "testSerializeToOutputStreamAndClose"
+  ],
+  "all_listed_methods": [
+    "testDeserializeCorruptedDataThrowsSerializationException",
+    "testSerializeObjectThatThrowsIOExceptionResultsInSerializationException",
+    "testCloneCreatesDeepCopy",
+    "testDeserializeFromByteArray",
+    "testDeserializeNullByteArrayThrowsIllegalArgumentException",
+    "testSerializeToByteArray",
+    "testSerializeNullObjectProducesValidByteArray",
+    "testConstructorIsPublic",
+    "testSerializeNullOutputStreamThrowsIllegalArgumentException",
+    "testCloneWithNullReturnsNull",
+    "testSerializeAndDeserializeComplexObjectGraph",
+    "testCloneHandlesIOExceptionDuringCloseGracefully",
+    "testDeserializeFromInputStreamAndClose",
+    "testDeserializeNullInputStreamThrowsIllegalArgumentException",
+    "testClonePreservesClassLoaderAwareObjectInputStreamBehaviour",
+    "testSerializeToOutputStreamAndClose"
+  ],
+  "selected_methods": [
+    "testCloneCreatesDeepCopy",
+    "testCloneHandlesIOExceptionDuringCloseGracefully",
+    "testClonePreservesClassLoaderAwareObjectInputStreamBehaviour",
+    "testConstructorIsPublic",
+    "testDeserializeCorruptedDataThrowsSerializationException",
+    "testDeserializeFromByteArray",
+    "testDeserializeFromInputStreamAndClose",
+    "testSerializeAndDeserializeComplexObjectGraph",
+    "testSerializeNullObjectProducesValidByteArray",
+    "testSerializeNullOutputStreamThrowsIllegalArgumentException",
+    "testSerializeObjectThatThrowsIOExceptionResultsInSerializationException",
+    "testSerializeToByteArray",
+    "testSerializeToOutputStreamAndClose"
+  ],
+  "excluded_methods": [
+    "testDeserializeNullByteArrayThrowsIllegalArgumentException",
+    "testCloneWithNullReturnsNull",
+    "testDeserializeNullInputStreamThrowsIllegalArgumentException"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-4b/llm/r3/CoT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testDeserializeCorruptedDataThrowsSerializationException\"}\n{\"method\":\"testSerializeObjectThatThrowsIOExceptionResultsInSerializationException\"}\n{\"method\":\"testCloneCreatesDeepCopy\"}\n{\"method\":\"testDeserializeFromByteArray\"}\n{\"method\":\"testDeserializeNullByteArrayThrowsIllegalArgumentException\"}\n{\"method\":\"testSerializeToByteArray\"}\n{\"method\":\"testSerializeNullObjectProducesValidByteArray\"}\n{\"method\":\"testConstructorIsPublic\"}\n{\"method\":\"testSerializeNullOutputStreamThrowsIllegalArgumentException\"}\n{\"method\":\"testCloneWithNullReturnsNull\"}\n{\"method\":\"testSerializeAndDeserializeComplexObjectGraph\"}\n{\"method\":\"testCloneHandlesIOExceptionDuringCloseGracefully\"}\n{\"method\":\"testDeserializeFromInputStreamAndClose\"}\n{\"method\":\"testDeserializeNullInputStreamThrowsIllegalArgumentException\"}\n{\"method\":\"testClonePreservesClassLoaderAwareObjectInputStreamBehaviour\"}\n{\"method\":\"testSerializeToOutputStreamAndClose\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.084
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-4b/llm/r3/CoT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testDeserializeNullByteArrayThrowsIllegalArgumentException,testCloneWithNullReturnsNull,testDeserializeNullInputStreamThrowsIllegalArgumentException"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testDeserializeCorruptedDataThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"testSerializeObjectThatThrowsIOExceptionResultsInSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":8}\n{\"method\":\"testCloneCreatesDeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserializeFromByteArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeToByteArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeNullObjectProducesValidByteArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorIsPublic\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeNullOutputStreamThrowsIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeAndDeserializeComplexObjectGraph\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCloneHandlesIOExceptionDuringCloseGracefully\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeFromInputStreamAndClose\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClonePreservesClassLoaderAwareObjectInputStreamBehaviour\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeToOutputStreamAndClose\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.129,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testDeserializeCorruptedDataThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeObjectThatThrowsIOExceptionResultsInSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "testCloneCreatesDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullObjectProducesValidByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullOutputStreamThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeAndDeserializeComplexObjectGraph",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneHandlesIOExceptionDuringCloseGracefully",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromInputStreamAndClose",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClonePreservesClassLoaderAwareObjectInputStreamBehaviour",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToOutputStreamAndClose",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13
+  },
+  "wall_seconds": 0.214
+}

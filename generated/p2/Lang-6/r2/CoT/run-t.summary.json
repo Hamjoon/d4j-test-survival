@@ -1,0 +1,183 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "classpath": "/work/generated/p2/Lang-6/r2/CoT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testTranslate_Writer_MultiCharReplacement",
+    "testTranslate_String_SimpleReplacement",
+    "testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar",
+    "testHex_UpperCaseAndLocaleIndependent",
+    "testHex_ZeroAndNegativeValues",
+    "testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException",
+    "testTranslate_Writer_NullInput_NoExceptionAndNoOutput",
+    "testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed",
+    "testTranslate_String_NullInput_ReturnsNull",
+    "testTranslate_MultiCharConsumerIncrementsPositionCorrectly",
+    "testWith_MergesTranslatorsInOrder",
+    "testTranslate_String_EmptyInput_ReturnsEmptyString",
+    "testWith_EmptyArray_ReturnsAggregateContainingOnlyThis",
+    "testTranslate_Writer_IOExceptionPropagates",
+    "testTranslate_Writer_SimpleReplacement"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-6/r2/CoT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testTranslate_Writer_MultiCharReplacement\"}\n{\"method\":\"testTranslate_String_SimpleReplacement\"}\n{\"method\":\"testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar\"}\n{\"method\":\"testHex_UpperCaseAndLocaleIndependent\"}\n{\"method\":\"testHex_ZeroAndNegativeValues\"}\n{\"method\":\"testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException\"}\n{\"method\":\"testTranslate_Writer_NullInput_NoExceptionAndNoOutput\"}\n{\"method\":\"testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed\"}\n{\"method\":\"testTranslate_String_NullInput_ReturnsNull\"}\n{\"method\":\"testTranslate_MultiCharConsumerIncrementsPositionCorrectly\"}\n{\"method\":\"testWith_MergesTranslatorsInOrder\"}\n{\"method\":\"testTranslate_String_EmptyInput_ReturnsEmptyString\"}\n{\"method\":\"testWith_EmptyArray_ReturnsAggregateContainingOnlyThis\"}\n{\"method\":\"testTranslate_Writer_IOExceptionPropagates\"}\n{\"method\":\"testTranslate_Writer_SimpleReplacement\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.1
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-6/r2/CoT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testTranslate_Writer_MultiCharReplacement\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"testTranslate_String_SimpleReplacement\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testHex_UpperCaseAndLocaleIndependent\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_ZeroAndNegativeValues\",\"status\":\"fail\",\"message\":\"expected:<[-1]> but was:<[FFFFFFFF]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":2}\n{\"method\":\"testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_Writer_NullInput_NoExceptionAndNoOutput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_String_NullInput_ReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_MultiCharConsumerIncrementsPositionCorrectly\",\"status\":\"fail\",\"message\":\"expected:<a[b]xy> but was:<a[]xy>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":0}\n{\"method\":\"testWith_MergesTranslatorsInOrder\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testTranslate_String_EmptyInput_ReturnsEmptyString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testWith_EmptyArray_ReturnsAggregateContainingOnlyThis\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_Writer_IOExceptionPropagates\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_Writer_SimpleReplacement\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.146,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testTranslate_Writer_MultiCharReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependent",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_ZeroAndNegativeValues",
+      "status": "fail",
+      "message": "expected:<[-1]> but was:<[FFFFFFFF]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_NullInput_NoExceptionAndNoOutput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_MultiCharConsumerIncrementsPositionCorrectly",
+      "status": "fail",
+      "message": "expected:<a[b]xy> but was:<a[]xy>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_MergesTranslatorsInOrder",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_EmptyInput_ReturnsEmptyString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_EmptyArray_ReturnsAggregateContainingOnlyThis",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_IOExceptionPropagates",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13,
+    "fail": 2
+  },
+  "wall_seconds": 0.248
+}

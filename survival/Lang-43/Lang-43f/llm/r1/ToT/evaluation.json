@@ -1,0 +1,208 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-43/r1/ToT/ExtendedMessageFormatTest.java",
+    "source_sha256": "0313801f96745f3ca77f6f062432f5cd4d48b15bfba1377ae31c3314916ed560",
+    "selected_methods": [
+      "testApplyPatternReplacesCustomFormats",
+      "testApplyPatternThrowsOnUnreadableElement",
+      "testApplyPatternWithoutRegistryFallsBackToSuper",
+      "testConstructorWithLocaleAndRegistry",
+      "testContainsElementsVariousScenarios",
+      "testDefaultConstructorUsesSuperPattern",
+      "testInsertFormatsNoCustomPatterns",
+      "testMultipleCustomFormatsInOnePattern",
+      "testNextAdvancesByOne",
+      "testParseFormatDescriptionSimple",
+      "testParseFormatDescriptionWithNestedBraces",
+      "testQuotedLiteralsAndEscapedQuotesInPattern",
+      "testReadArgumentIndexSimple",
+      "testReadArgumentIndexWithWhitespaceAndComma",
+      "testSeekNonWsSkipsSpacesAndTabs",
+      "testSetFormatByArgumentIndexIsUnsupported",
+      "testSetFormatIsUnsupported",
+      "testSetFormatsByArgumentIndexIsUnsupported",
+      "testSetFormatsIsUnsupported"
+    ],
+    "target": "Lang-43f",
+    "fqcn": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-43/Lang-43f/llm/r1/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-43f/target/classes:/work/d4j/Lang-43f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-43/r1/ToT/ExtendedMessageFormatTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.339,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-43/Lang-43f/llm/r1/ToT/javac.err"
+  },
+  "folder": "survival/Lang-43/Lang-43f/llm/r1/ToT",
+  "classes": "survival/Lang-43/Lang-43f/llm/r1/ToT/classes",
+  "run_file": "survival/Lang-43/Lang-43f/llm/r1/ToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testDefaultConstructorUsesSuperPattern",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleCustomFormatsInOnePattern",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testReadArgumentIndexSimple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithLocaleAndRegistry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNextAdvancesByOne",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testParseFormatDescriptionSimple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatByArgumentIndexIsUnsupported",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatsIsUnsupported",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatIsUnsupported",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternThrowsOnUnreadableElement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testQuotedLiteralsAndEscapedQuotesInPattern",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatsByArgumentIndexIsUnsupported",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testReadArgumentIndexWithWhitespaceAndComma",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContainsElementsVariousScenarios",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSeekNonWsSkipsSpacesAndTabs",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternWithoutRegistryFallsBackToSuper",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 14,
+      "launch": 1
+    },
+    {
+      "method": "testInsertFormatsNoCustomPatterns",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testParseFormatDescriptionWithNestedBraces",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternReplacesCustomFormats",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 19
+  },
+  "run_seconds": 0.252,
+  "list_error": ""
+}

@@ -1,0 +1,4 @@
+{"method":"testLowSurrogatePrependedWithHigh","status":"pass"}
+{"method":"testRandomLettersNumbersFlagsWithCharArray","status":"pass"}
+{"method":"testHighSurrogateFollowedByLow","status":"pass"}
+{"method":"testRandomWithEmptyStringSource","status":"pass"}

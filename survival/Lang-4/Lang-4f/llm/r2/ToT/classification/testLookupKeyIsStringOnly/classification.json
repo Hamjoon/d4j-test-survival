@@ -1,0 +1,57 @@
+{
+  "input": {
+    "bug_id": 4,
+    "population": "llm",
+    "own_class": false,
+    "round": "2",
+    "technique": "ToT",
+    "class": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+    "method": "testLookupKeyIsStringOnly",
+    "status_at_f": "fail",
+    "exception": "java.lang.AssertionError",
+    "source_sha256": "f9a0faf4c13747a924a3d662e4dcac79c2c286c6b986613ca59c5b322d782b08",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    61,
+    62,
+    63,
+    70,
+    71,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "executed_line_count": 23,
+  "patched_lines": [
+    31,
+    46,
+    51,
+    77
+  ],
+  "intersecting_lines": [
+    46,
+    51,
+    77
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "java.lang.AssertionError",
+  "xml_file": "survival/Lang-4/Lang-4f/llm/r2/ToT/classification/testLookupKeyIsStringOnly/jacoco.xml",
+  "exec_file": "survival/Lang-4/Lang-4f/llm/r2/ToT/classification/testLookupKeyIsStringOnly/jacoco.exec"
+}

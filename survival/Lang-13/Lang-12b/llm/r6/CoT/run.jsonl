@@ -1,0 +1,11 @@
+{"method": "testSerialize_ToByteArrayOutputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testClone_DeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 4, "launch": 1}
+{"method": "testSerializeToByteArray_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeToByteArray_NullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_InputStreamThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeByteArray_CorruptedData", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_WithNullOutputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_OutputStreamThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeByteArray_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testPublicConstructor", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_ValidStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

@@ -1,0 +1,1 @@
+{"method": "testConstructorWithNonStringKeyDoesNotBreak", "status": "fail", "message": "expected:<[key]> but was:<[VALUE]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 20, "launch": 1}

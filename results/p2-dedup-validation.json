@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "hashed_methods": 2020,
+  "passing_raw": 1509,
+  "duplicates_removed": 156,
+  "unique": 1353,
+  "structured_files": 127,
+  "independent_AST_files": 124,
+  "AST_unparseable_files": [
+    "generated/p2/Lang-6/r1/ZSL/CharSequenceTranslatorTest.java",
+    "generated/p2/Lang-64/r1/ZSL/ValuedEnumTest.java",
+    "generated/p2/Lang-4/r3/FSL/LookupTranslatorTest.java"
+  ],
+  "checks": [
+    "source-body SHA-256",
+    "all structured sources covered",
+    "all baseline passes located",
+    "first passing occurrence in required order",
+    "nonpasses never duplicates",
+    "population identity equality",
+    "cumulative unique counts for every round",
+    "independent AST declaration counts where parseable"
+  ]
+}

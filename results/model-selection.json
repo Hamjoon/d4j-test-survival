@@ -1,0 +1,12 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "reason": "User-authorized replacement on 2026-10-03: none of the paper's four models is callable through an API as of today, per user availability finding. OpenRouter and Mistral API no longer serve Mistral 7B or Mixtral 8x7B.",
+  "matching_ids": [],
+  "probe_directory": "runs/probe",
+  "temperature": 0.7,
+  "max_tokens": 4096,
+  "message_roles": [
+    "user"
+  ],
+  "scope": "Step 6 and all later steps"
+}

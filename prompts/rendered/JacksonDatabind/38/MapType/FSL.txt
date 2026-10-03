@@ -1,0 +1,217 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named MapType. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package com.fasterxml.jackson.databind.type;
+
+
+import com.fasterxml.jackson.databind.JavaType;
+
+/**
+ * Type that represents "true" Java Map types.
+ */
+public final class MapType extends MapLikeType
+{
+    private static final long serialVersionUID = 1L;
+
+    /*
+    /**********************************************************
+    /* Life-cycle
+    /**********************************************************
+     */
+
+    private MapType(Class<?> mapType, TypeBindings bindings,
+            JavaType superClass, JavaType[] superInts, JavaType keyT, JavaType valueT,
+            Object valueHandler, Object typeHandler, boolean asStatic) {
+        super(mapType, bindings, superClass, superInts,
+                keyT, valueT, valueHandler, typeHandler, asStatic);
+    }
+
+    /**
+     * @since 2.7
+     */
+    protected MapType(TypeBase base, JavaType keyT, JavaType valueT) {
+        super(base, keyT, valueT);
+    }
+
+    /**
+     * @since 2.7
+     */
+    public static MapType construct(Class<?> rawType, TypeBindings bindings,
+            JavaType superClass, JavaType[] superInts,
+            JavaType keyT, JavaType valueT) {
+        return new MapType(rawType, bindings, superClass, superInts, keyT, valueT, null, null, false);
+    }
+    
+    @Deprecated // since 2.7
+    public static MapType construct(Class<?> rawType, JavaType keyT, JavaType valueT)
+    {
+        // First: may need to fabricate TypeBindings (needed for refining into
+        // concrete collection types, as per [databind#1102])
+        // !!! TODO: Wrong, does have supertypes
+        return new MapType(rawType, null, _bogusSuperClass(rawType), null,
+                keyT, valueT, null, null, false);
+    }
+
+    @Deprecated // since 2.7
+    @Override
+    protected JavaType _narrow(Class<?> subclass) {
+        return new MapType(subclass, _bindings,
+                _superClass, _superInterfaces, _keyType, _valueType,
+                _valueHandler, _typeHandler, _asStatic);
+    }
+
+    @Override
+    public MapType withTypeHandler(Object h) {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType, _valueType, _valueHandler, h, _asStatic);
+    }
+
+    @Override
+    public MapType withContentTypeHandler(Object h)
+    {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType, _valueType.withTypeHandler(h),
+                _valueHandler, _typeHandler, _asStatic);
+    }
+    
+    @Override
+    public MapType withValueHandler(Object h) {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType, _valueType, h, _typeHandler, _asStatic);
+    }
+
+    @Override
+    public MapType withContentValueHandler(Object h) {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType, _valueType.withValueHandler(h),
+                _valueHandler, _typeHandler, _asStatic);
+    }
+
+    @Override
+    public MapType withStaticTyping() {
+        if (_asStatic) {
+            return this;
+        }
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType.withStaticTyping(), _valueType.withStaticTyping(),
+                _valueHandler, _typeHandler, true);
+    }
+
+    @Override
+    public JavaType withContentType(JavaType contentType) {
+        if (_valueType == contentType) {
+            return this;
+        }
+        return new MapType(_class, _bindings, _superClass, _superInterfaces,
+                _keyType, contentType, _valueHandler, _typeHandler, _asStatic);
+    }
+    
+    @Override
+    public MapType withKeyType(JavaType keyType) {
+        if (keyType == _keyType) {
+            return this;
+        }
+        return new MapType(_class, _bindings, _superClass, _superInterfaces,
+                keyType, _valueType, _valueHandler, _typeHandler, _asStatic);
+    }
+    
+    @Override
+    public JavaType refine(Class<?> rawType, TypeBindings bindings,
+            JavaType superClass, JavaType[] superInterfaces) {
+        return new MapType(rawType, bindings,
+                superClass, superInterfaces, _keyType, _valueType,
+                _valueHandler, _typeHandler, _asStatic);
+    }
+
+    /*
+    /**********************************************************
+    /* Extended API
+    /**********************************************************
+     */
+    
+    @Override
+    public MapType withKeyTypeHandler(Object h)
+    {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType.withTypeHandler(h), _valueType,
+                _valueHandler, _typeHandler, _asStatic);
+    }
+
+    @Override
+    public MapType withKeyValueHandler(Object h) {
+        return new MapType(_class, _bindings,
+                _superClass, _superInterfaces, _keyType.withValueHandler(h), _valueType,
+                _valueHandler, _typeHandler, _asStatic);
+    }
+
+    /*
+    /**********************************************************
+    /* Standard methods
+    /**********************************************************
+     */
+
+    @Override
+    public String toString()
+    {
+        return "[map type; class "+_class.getName()+", "+_keyType+" -> "+_valueType+"]";
+    }
+}
+.

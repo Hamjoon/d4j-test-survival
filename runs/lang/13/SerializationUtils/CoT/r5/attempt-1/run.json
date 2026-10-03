@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T08:04:40.936274+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "CoT",
+  "round": 5,
+  "latency_seconds": 4.684,
+  "finish_reason": "stop",
+  "provider": "Amazon Bedrock",
+  "response_id": "gen-1791014681-OzDDdnNwPpgA8c9pl1rj",
+  "content_empty": false
+}

@@ -1,0 +1,310 @@
+{
+  "fqcn": "org.apache.commons.lang.LocaleUtilsTest",
+  "classpath": "/work/survival/Lang-54/Lang-43b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-43b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testLanguagesByCountryKnown",
+    "testToLocaleBadVariantSeparator",
+    "testAvailableLocaleListIsUnmodifiable",
+    "testCountriesByLanguageCaching",
+    "testAvailableLocaleSetSingletonBehavior",
+    "testToLocaleUpperCaseLanguage",
+    "testIsAvailableLocaleUnknown",
+    "testCountriesByLanguageKnown",
+    "testLocaleLookupListNullLocale",
+    "testAvailableLocaleSetIsUnmodifiable",
+    "testAvailableLocaleListContainsAllSetElements",
+    "testToLocaleMissingUnderscore",
+    "testCountriesByLanguageNull",
+    "testLanguagesByCountryNull",
+    "testToLocaleVariantPreservesCase",
+    "testLanguagesByCountryCaching",
+    "testLocaleLookupListWithDefault",
+    "testLocaleLookupListIsUnmodifiable",
+    "testIsAvailableLocaleKnown",
+    "testLocaleLookupListSimple",
+    "testLocaleLookupListDefaultAlreadyPresent",
+    "testToLocaleWithVariant"
+  ],
+  "all_listed_methods": [
+    "testLanguagesByCountryKnown",
+    "testToLocaleBadVariantSeparator",
+    "testAvailableLocaleListIsUnmodifiable",
+    "testCountriesByLanguageCaching",
+    "testAvailableLocaleSetSingletonBehavior",
+    "testToLocaleUpperCaseLanguage",
+    "testToLocaleLanguageAndCountry",
+    "testIsAvailableLocaleUnknown",
+    "testCountriesByLanguageKnown",
+    "testLocaleLookupListNullLocale",
+    "testAvailableLocaleSetIsUnmodifiable",
+    "testAvailableLocaleListContainsAllSetElements",
+    "testToLocaleMissingUnderscore",
+    "testCountriesByLanguageNull",
+    "testToLocaleInvalidLength",
+    "testLanguagesByCountryNull",
+    "testToLocaleVariantPreservesCase",
+    "testLanguagesByCountryCaching",
+    "testToLocaleTooShort",
+    "testToLocaleLowerCaseCountry",
+    "testLocaleLookupListWithDefault",
+    "testLocaleLookupListIsUnmodifiable",
+    "testIsAvailableLocaleKnown",
+    "testToLocaleSimpleLanguage",
+    "testLocaleLookupListSimple",
+    "testLocaleLookupListDefaultAlreadyPresent",
+    "testToLocaleWithVariant",
+    "testToLocaleNullInput"
+  ],
+  "selected_methods": [
+    "testAvailableLocaleListContainsAllSetElements",
+    "testAvailableLocaleListIsUnmodifiable",
+    "testAvailableLocaleSetIsUnmodifiable",
+    "testAvailableLocaleSetSingletonBehavior",
+    "testCountriesByLanguageCaching",
+    "testCountriesByLanguageKnown",
+    "testCountriesByLanguageNull",
+    "testIsAvailableLocaleKnown",
+    "testIsAvailableLocaleUnknown",
+    "testLanguagesByCountryCaching",
+    "testLanguagesByCountryKnown",
+    "testLanguagesByCountryNull",
+    "testLocaleLookupListDefaultAlreadyPresent",
+    "testLocaleLookupListIsUnmodifiable",
+    "testLocaleLookupListNullLocale",
+    "testLocaleLookupListSimple",
+    "testLocaleLookupListWithDefault",
+    "testToLocaleBadVariantSeparator",
+    "testToLocaleMissingUnderscore",
+    "testToLocaleUpperCaseLanguage",
+    "testToLocaleVariantPreservesCase",
+    "testToLocaleWithVariant"
+  ],
+  "excluded_methods": [
+    "testToLocaleLanguageAndCountry",
+    "testToLocaleInvalidLength",
+    "testToLocaleTooShort",
+    "testToLocaleLowerCaseCountry",
+    "testToLocaleSimpleLanguage",
+    "testToLocaleNullInput"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-54/Lang-43b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.LocaleUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testLanguagesByCountryKnown\"}\n{\"method\":\"testToLocaleBadVariantSeparator\"}\n{\"method\":\"testAvailableLocaleListIsUnmodifiable\"}\n{\"method\":\"testCountriesByLanguageCaching\"}\n{\"method\":\"testAvailableLocaleSetSingletonBehavior\"}\n{\"method\":\"testToLocaleUpperCaseLanguage\"}\n{\"method\":\"testToLocaleLanguageAndCountry\"}\n{\"method\":\"testIsAvailableLocaleUnknown\"}\n{\"method\":\"testCountriesByLanguageKnown\"}\n{\"method\":\"testLocaleLookupListNullLocale\"}\n{\"method\":\"testAvailableLocaleSetIsUnmodifiable\"}\n{\"method\":\"testAvailableLocaleListContainsAllSetElements\"}\n{\"method\":\"testToLocaleMissingUnderscore\"}\n{\"method\":\"testCountriesByLanguageNull\"}\n{\"method\":\"testToLocaleInvalidLength\"}\n{\"method\":\"testLanguagesByCountryNull\"}\n{\"method\":\"testToLocaleVariantPreservesCase\"}\n{\"method\":\"testLanguagesByCountryCaching\"}\n{\"method\":\"testToLocaleTooShort\"}\n{\"method\":\"testToLocaleLowerCaseCountry\"}\n{\"method\":\"testLocaleLookupListWithDefault\"}\n{\"method\":\"testLocaleLookupListIsUnmodifiable\"}\n{\"method\":\"testIsAvailableLocaleKnown\"}\n{\"method\":\"testToLocaleSimpleLanguage\"}\n{\"method\":\"testLocaleLookupListSimple\"}\n{\"method\":\"testLocaleLookupListDefaultAlreadyPresent\"}\n{\"method\":\"testToLocaleWithVariant\"}\n{\"method\":\"testToLocaleNullInput\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.085
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-54/Lang-43b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.LocaleUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testToLocaleLanguageAndCountry,testToLocaleInvalidLength,testToLocaleTooShort,testToLocaleLowerCaseCountry,testToLocaleSimpleLanguage,testToLocaleNullInput"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testLanguagesByCountryKnown\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":38}\n{\"method\":\"testToLocaleBadVariantSeparator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testAvailableLocaleListIsUnmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCountriesByLanguageCaching\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testAvailableLocaleSetSingletonBehavior\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testToLocaleUpperCaseLanguage\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsAvailableLocaleUnknown\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testCountriesByLanguageKnown\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLocaleLookupListNullLocale\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAvailableLocaleSetIsUnmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAvailableLocaleListContainsAllSetElements\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testToLocaleMissingUnderscore\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCountriesByLanguageNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLanguagesByCountryNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocaleVariantPreservesCase\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLanguagesByCountryCaching\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLocaleLookupListWithDefault\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupListIsUnmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsAvailableLocaleKnown\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupListSimple\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupListDefaultAlreadyPresent\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocaleWithVariant\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.151,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testLanguagesByCountryKnown",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 38,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleBadVariantSeparator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleListIsUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSetSingletonBehavior",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleUpperCaseLanguage",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocaleUnknown",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageKnown",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListNullLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSetIsUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleListContainsAllSetElements",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleMissingUnderscore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountryNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleVariantPreservesCase",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountryCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListWithDefault",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListIsUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocaleKnown",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListSimple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListDefaultAlreadyPresent",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleWithVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 22
+  },
+  "wall_seconds": 0.237
+}

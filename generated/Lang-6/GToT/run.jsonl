@@ -1,0 +1,17 @@
+{"method":"testWith_mergesTranslatorsInCorrectOrder","status":"fail","message":"expected:<[ccccc]> but was:<[bcbcb]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateToWriter_zeroConsumptionCopiesOriginalChar","status":"pass"}
+{"method":"testTranslateToWriter_nullInputDoesNothing","status":"pass"}
+{"method":"testTranslateStringHelper_emojiReplacement","status":"fail","message":"index 2,length 2","exception":"java.lang.StringIndexOutOfBoundsException"}
+{"method":"testAtoBTranslator_basicTranslation","status":"pass"}
+{"method":"testAtoBTranslator_noTranslationReturnsZero","status":"pass"}
+{"method":"testWith_withNoAdditionalTranslatorsReturnsSameInstanceWrapped","status":"pass"}
+{"method":"testTranslateStringHelper_simpleReplacement","status":"pass"}
+{"method":"testTranslateStringHelper_nullInput","status":"pass"}
+{"method":"testTranslateToWriter_nullWriterThrows","status":"pass"}
+{"method":"testHex_negativeValue","status":"pass"}
+{"method":"testHex_basicValues","status":"pass"}
+{"method":"testTranslateToWriter_propagatesIOException","status":"pass"}
+{"method":"testTranslateToWriter_fullAlgorithm_simple","status":"pass"}
+{"method":"testTranslateToWriter_surrogatePairHandling","status":"fail","message":"expected:<:)[a]> but was:<:)[]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testHex_localeIndependence","status":"pass"}
+{"summary":{"run":16,"failures":3,"ignored":0,"ms":24}}

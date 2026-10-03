@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:35:48.743735+00:00",
+  "latency_seconds": 88.977,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "17",
+  "class": "CharSequenceTranslator",
+  "technique": "ToT",
+  "finish_reason": "stop",
+  "provider": "DekaLLM",
+  "response_id": "gen-1791005748-U20wKbVtV5QD4MJHHtUm",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

@@ -1,0 +1,17 @@
+name: llm4ts-replication
+services:
+  d4j:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: llm4ts-d4j-replication:latest
+    working_dir: /work
+    volumes:
+      - ..:/work
+    environment:
+      - _JAVA_OPTIONS=-Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+    env_file:
+      - .env
+    tty: true
+    stdin_open: true
+    mem_limit: 12g

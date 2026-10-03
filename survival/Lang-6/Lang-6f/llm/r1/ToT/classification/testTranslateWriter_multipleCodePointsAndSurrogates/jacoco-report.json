@@ -1,0 +1,16 @@
+{
+  "command": [
+    "java",
+    "-jar",
+    "tools/jacococli.jar",
+    "report",
+    "/work/survival/Lang-6/Lang-6f/llm/r1/ToT/classification/testTranslateWriter_multipleCodePointsAndSurrogates/jacoco.exec",
+    "--classfiles",
+    "d4j/Lang-6f/target/classes/org/apache/commons/lang3/text/translate/CharSequenceTranslator.class",
+    "--sourcefiles",
+    "d4j/Lang-6f/src/main/java",
+    "--xml",
+    "survival/Lang-6/Lang-6f/llm/r1/ToT/classification/testTranslateWriter_multipleCodePointsAndSurrogates/jacoco.xml"
+  ],
+  "exit_status": 0
+}

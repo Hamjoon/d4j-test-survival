@@ -1,0 +1,11 @@
+{"method":"testTranslateFromMiddleOfInput","status":"pass"}
+{"method":"testBasicSingleCharTranslation","status":"pass"}
+{"method":"testConstructorWithEmptyLookup","status":"pass"}
+{"method":"testNoMatchWhenInputTooShort","status":"pass"}
+{"method":"testGreedyLongestMatch","status":"pass"}
+{"method":"testConstructorWithNullLookup","status":"pass"}
+{"method":"testTranslateNullInput","status":"pass"}
+{"method":"testDuplicateKeyOverrides","status":"pass"}
+{"method":"testIndexBeyondInputLength","status":"pass"}
+{"method":"testIOExceptionPropagation","status":"pass"}
+{"summary":{"run":10,"failures":0,"ignored":0,"ms":15}}

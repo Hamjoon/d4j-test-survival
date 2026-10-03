@@ -1,0 +1,181 @@
+{
+  "input": {
+    "file": "devtests/Lang-13/org/apache/commons/lang3/CharRangeTest.java",
+    "source_sha256": "355800391893eb01978d26ac6e1c7c5e5ae8335af42e921c3c3b42f94bb54cad",
+    "selected_methods": [
+      "testClass",
+      "testConstructorAccessors_is",
+      "testConstructorAccessors_isIn_Normal",
+      "testConstructorAccessors_isIn_Reversed",
+      "testConstructorAccessors_isIn_Same",
+      "testConstructorAccessors_isNot",
+      "testConstructorAccessors_isNotIn_Normal",
+      "testConstructorAccessors_isNotIn_Reversed",
+      "testConstructorAccessors_isNotIn_Same",
+      "testContainsNullArg",
+      "testContains_Char",
+      "testContains_Charrange",
+      "testEquals_Object",
+      "testHashCode",
+      "testIterator",
+      "testSerialization"
+    ],
+    "target": "Lang-11b",
+    "fqcn": "org.apache.commons.lang3.CharRangeTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-11b/dev/classes/org.apache.commons.lang3.CharRangeTest",
+      "-cp",
+      "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-13/org/apache/commons/lang3/CharRangeTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.358,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.CharRangeTest/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.CharRangeTest",
+  "classes": "survival/Lang-13/Lang-11b/dev/classes/org.apache.commons.lang3.CharRangeTest",
+  "run_file": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.CharRangeTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testContainsNullArg",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Reversed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNot",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 6,
+      "launch": 1
+    },
+    {
+      "method": "testClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Same",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_is",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals_Object",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains_Char",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Normal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains_Charrange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Same",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Normal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Reversed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 16
+  },
+  "run_seconds": 0.203,
+  "list_error": ""
+}

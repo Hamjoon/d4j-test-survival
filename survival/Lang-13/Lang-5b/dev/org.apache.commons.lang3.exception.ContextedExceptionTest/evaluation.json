@@ -1,0 +1,45 @@
+{
+  "input": {
+    "file": "devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java",
+    "source_sha256": "f5f44699e813c9023f5e9bf8505f3180b02ef2247f7e62272bc4797bbf77d2a3",
+    "selected_methods": [
+      "testAddContextValue",
+      "testContextedException",
+      "testContextedExceptionString",
+      "testContextedExceptionStringThrowable",
+      "testContextedExceptionStringThrowableContext",
+      "testContextedExceptionThrowable",
+      "testGetContextEntries",
+      "testGetContextLabels",
+      "testGetContextValues",
+      "testGetFirstContextValue",
+      "testJavaSerialization",
+      "testNullExceptionPassing",
+      "testRawMessage",
+      "testSetContextValue"
+    ],
+    "target": "Lang-5b",
+    "fqcn": "org.apache.commons.lang3.exception.ContextedExceptionTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.exception.ContextedExceptionTest",
+      "-cp",
+      "/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java"
+    ],
+    "compile_ok": false,
+    "exit_status": 1,
+    "seconds": 0.287,
+    "error_count": 19,
+    "categories": {
+      "CFS": 19
+    },
+    "stderr_file": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.ContextedExceptionTest/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.ContextedExceptionTest",
+  "classes": "survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.exception.ContextedExceptionTest"
+}

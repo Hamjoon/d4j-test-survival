@@ -1,0 +1,1 @@
+{"method": "testDecimalEntityWithoutSemicolonThrows", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 19, "launch": 1}

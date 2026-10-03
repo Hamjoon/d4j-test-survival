@@ -1,0 +1,29 @@
+{"method": "testDefaultConstructorUsesSuperPattern", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testAppendQuotedStringSimple", "status": "fail", "message": "expected:<[abc]> but was:<[']>", "exception": "org.junit.ComparisonFailure", "milliseconds": 3, "launch": 1}
+{"method": "testReadArgumentIndexUnterminated", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>", "exception": "java.lang.Exception", "milliseconds": 2, "launch": 1}
+{"method": "testMultipleCustomFormatsInOnePattern", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testReadArgumentIndexSimple", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorWithLocaleAndRegistry", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testReadArgumentIndexInvalidNumber", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>", "exception": "java.lang.Exception", "milliseconds": 0, "launch": 1}
+{"method": "testPatternWithNestedChoiceAndCustomFormat", "status": "error", "message": "unknown format type: upper", "exception": "java.lang.IllegalArgumentException", "milliseconds": 13, "launch": 1}
+{"method": "testNextAdvancesByOne", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testParseFormatDescriptionSimple", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSetFormatByArgumentIndexIsUnsupported", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetQuotedStringConsumesWithoutAppending", "status": "fail", "message": "expected:<5> but was:<0>", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testInsertFormatsWithCustomPatterns", "status": "error", "message": "unknown format type: upper", "exception": "java.lang.IllegalArgumentException", "milliseconds": 0, "launch": 1}
+{"method": "testSetFormatsIsUnsupported", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSetFormatIsUnsupported", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testApplyPatternThrowsOnUnreadableElement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testQuotedLiteralsAndEscapedQuotesInPattern", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCustomFormatWithArguments", "status": "fail", "message": "expected:<Value: >>[ ]test> but was:<Value: >>[]test>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testAppendQuotedStringEscapedQuote", "status": "fail", "message": "expected:<2> but was:<0>", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testSetFormatsByArgumentIndexIsUnsupported", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testParseFormatDescriptionUnterminated", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>", "exception": "java.lang.Exception", "milliseconds": 0, "launch": 1}
+{"method": "testReadArgumentIndexWithWhitespaceAndComma", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testContainsElementsVariousScenarios", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSeekNonWsSkipsSpacesAndTabs", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testAppendQuotedStringUnterminatedThrows", "status": "fail", "message": "Expected exception: java.lang.IllegalArgumentException", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testApplyPatternWithoutRegistryFallsBackToSuper", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testInsertFormatsNoCustomPatterns", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testParseFormatDescriptionWithNestedBraces", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testApplyPatternReplacesCustomFormats", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

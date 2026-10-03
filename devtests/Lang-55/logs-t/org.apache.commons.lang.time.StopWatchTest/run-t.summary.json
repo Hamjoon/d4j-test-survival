@@ -1,0 +1,102 @@
+{
+  "fqcn": "org.apache.commons.lang.time.StopWatchTest",
+  "classpath": "/work/devtests/Lang-55/classes-t:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-55b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testBadStates",
+    "testLang315",
+    "testStopWatchSimpleGet",
+    "testStopWatchSimple",
+    "testStopWatchSplit",
+    "testStopWatchSuspend"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-55/classes-t:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.time.StopWatchTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testBadStates\"}\n{\"method\":\"testLang315\"}\n{\"method\":\"testStopWatchSimpleGet\"}\n{\"method\":\"testStopWatchSimple\"}\n{\"method\":\"testStopWatchSplit\"}\n{\"method\":\"testStopWatchSuspend\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.088
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-55/classes-t:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.time.StopWatchTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testBadStates\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testLang315\",\"status\":\"fail\",\"message\":\"null\",\"exception\":\"junit.framework.AssertionFailedError\",\"milliseconds\":414}\n{\"method\":\"testStopWatchSimpleGet\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":512}\n{\"method\":\"testStopWatchSimple\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":558}\n{\"method\":\"testStopWatchSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1669}\n{\"method\":\"testStopWatchSuspend\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1667}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 4.933,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testBadStates",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testLang315",
+      "status": "fail",
+      "message": "null",
+      "exception": "junit.framework.AssertionFailedError",
+      "milliseconds": 414,
+      "launch": 1
+    },
+    {
+      "method": "testStopWatchSimpleGet",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 512,
+      "launch": 1
+    },
+    {
+      "method": "testStopWatchSimple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 558,
+      "launch": 1
+    },
+    {
+      "method": "testStopWatchSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1669,
+      "launch": 1
+    },
+    {
+      "method": "testStopWatchSuspend",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1667,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 5,
+    "fail": 1
+  },
+  "wall_seconds": 5.024
+}

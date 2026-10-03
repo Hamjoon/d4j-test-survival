@@ -1,0 +1,35 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class.To comprehensively test all methods in the following class named GenericMaster they must following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (GenericMasterTest.java) for the given Java class.All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.mockito.internal.util.reflection;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+@SuppressWarnings("unchecked")
+public class GenericMaster {
+
+    /**
+     * Finds the generic type (parametrized type) of the field. If the field is not generic it returns Object.class. 
+     * 
+     * @param field
+     * @return
+     */
+    public Class getGenericType(Field field) {        
+        Type generic = field.getGenericType();
+        if (generic != null && generic instanceof ParameterizedType) {
+            Type actual = ((ParameterizedType) generic).getActualTypeArguments()[0];
+                return (Class) actual;
+                //in case of nested generics we don't go deep
+        }
+        
+        return Object.class;
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (GenericMasterTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

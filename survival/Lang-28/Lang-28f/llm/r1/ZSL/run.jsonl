@@ -1,0 +1,11 @@
+{"method": "testDecimalEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 16, "launch": 1}
+{"method": "testHexEntityUppercaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityLowercaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithLeadingZeros", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testZeroEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMaximumBmpEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidNumberFormatReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNonEntityReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityAtNonZeroOffset", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMissingSemicolonThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testPartialMatchDoesNotConsume", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

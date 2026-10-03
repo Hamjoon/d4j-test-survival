@@ -1,0 +1,12 @@
+{"method":"testMultipleEntitiesInOneString","status":"pass"}
+{"method":"testNonEntityReturnsZero","status":"pass"}
+{"method":"testDecimalEntity","status":"pass"}
+{"method":"testHexEntityUpperCaseX","status":"pass"}
+{"method":"testHexEntityLowerCaseX","status":"pass"}
+{"method":"testEntityWithOnlyHashAndSemicolonReturnsZero","status":"pass"}
+{"method":"testMissingSemicolonCausesIndexOutOfBounds","status":"pass"}
+{"method":"testMalformedNumberReturnsZero","status":"pass"}
+{"method":"testWriterIOExceptionIsPropagated","status":"pass"}
+{"method":"testEntityAtStringEndWithoutSemicolon","status":"pass"}
+{"method":"testEntityWithEmptyDigitsReturnsZero","status":"pass"}
+{"summary":{"run":11,"failures":0,"ignored":0,"ms":13}}

@@ -1,0 +1,13 @@
+{"method":"testZeroCodePoint","status":"pass"}
+{"method":"testNegativeCodePointIsRejected","status":"fail","message":"expected:<[]> but was:<[￿]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testDecimalEntityWithSemicolon","status":"pass"}
+{"method":"testHexEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds","status":"pass"}
+{"method":"testDecimalEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds","status":"pass"}
+{"method":"testHexEntityWithSemicolon","status":"pass"}
+{"method":"testInvalidNumberFormat","status":"pass"}
+{"method":"testHexEntityUpperCaseX","status":"pass"}
+{"method":"testEntityEmbeddedInLongerString","status":"pass"}
+{"method":"testNonNumericEntityIsIgnored","status":"pass"}
+{"method":"testMaximumBmpCodePoint","status":"pass"}
+{"method":"testSupplementaryUnicodeEntity","status":"pass"}
+{"summary":{"run":12,"failures":1,"ignored":0,"ms":24}}

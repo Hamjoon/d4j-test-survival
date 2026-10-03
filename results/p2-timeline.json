@@ -1,0 +1,1697 @@
+{
+  "started_at": "2026-10-03T06:54:50.119760+00:00",
+  "wall_seconds": 198.073,
+  "date_semantics": "Exact elapsed 24-hour days from buggy revision; fixed version kept as step 1 even when gap is nonzero.",
+  "buggy_order": [
+    "Lang-64b",
+    "Lang-57b",
+    "Lang-55b",
+    "Lang-54b",
+    "Lang-43b",
+    "Lang-28b",
+    "Lang-19b",
+    "Lang-17b",
+    "Lang-13b",
+    "Lang-12b",
+    "Lang-11b",
+    "Lang-6b",
+    "Lang-5b",
+    "Lang-4b"
+  ],
+  "versions": {
+    "Lang-4b": {
+      "id": "Lang-4b",
+      "bug_id": 4,
+      "kind": "buggy",
+      "revision": "cd91a4f2cd0ced1178e8fd1f49229196eb88094c",
+      "date": "2013-04-22 04:18:24 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.589,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.LookupTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.StringUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882"
+      }
+    },
+    "Lang-4f": {
+      "id": "Lang-4f",
+      "bug_id": 4,
+      "kind": "fixed",
+      "revision": "0cdc976684efcf478397b68c1d54cefc87bb92c9",
+      "date": "2013-04-23 06:00:41 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 1.904,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.LookupTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.StringUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882"
+      }
+    },
+    "Lang-5b": {
+      "id": "Lang-5b",
+      "bug_id": 5,
+      "kind": "buggy",
+      "revision": "bc255ccf5c239666ab54e5a31720d3f482ae78eb",
+      "date": "2012-12-17 12:29:12 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.504,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang3.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.LocaleUtilsTest::testLang865"
+      }
+    },
+    "Lang-5f": {
+      "id": "Lang-5f",
+      "bug_id": 5,
+      "kind": "fixed",
+      "revision": "4d46f014fb8ee44386feb5fec52509f35d0e36ea",
+      "date": "2013-01-03 06:19:52 +0000",
+      "checkout_seconds": 4.178,
+      "checkout_reused": false,
+      "compile_seconds": 3.001,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-5f/target/classes:/work/d4j/Lang-5f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang3.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.LocaleUtilsTest::testLang865"
+      }
+    },
+    "Lang-6b": {
+      "id": "Lang-6b",
+      "bug_id": 6,
+      "kind": "buggy",
+      "revision": "f5a83bb90cf7b318ac72823e6b99d01d060abe41",
+      "date": "2012-11-13 13:21:37 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.546,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.StringUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest\norg.apache.commons.lang3.text.translate.NumericEntityEscaperTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest\norg.apache.commons.lang3.text.translate.OctalUnescaperTest\norg.apache.commons.lang3.text.translate.UnicodeEscaperTest\norg.apache.commons.lang3.text.translate.UnicodeUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs"
+      }
+    },
+    "Lang-6f": {
+      "id": "Lang-6f",
+      "bug_id": 6,
+      "kind": "fixed",
+      "revision": "52bcd9b8e82d4d1d287b0d75df1e161aff8c65ab",
+      "date": "2012-11-20 20:45:50 +0000",
+      "checkout_seconds": 4.324,
+      "checkout_reused": false,
+      "compile_seconds": 2.929,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-6f/target/classes:/work/d4j/Lang-6f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.StringUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest\norg.apache.commons.lang3.text.translate.NumericEntityEscaperTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest\norg.apache.commons.lang3.text.translate.OctalUnescaperTest\norg.apache.commons.lang3.text.translate.UnicodeEscaperTest\norg.apache.commons.lang3.text.translate.UnicodeUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs"
+      }
+    },
+    "Lang-11b": {
+      "id": "Lang-11b",
+      "bug_id": 11,
+      "kind": "buggy",
+      "revision": "27bcbcc728434ffb2c45e81c0e75e6a3d6da3441",
+      "date": "2012-06-09 14:58:34 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.567,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.RandomStringUtils",
+        "tests.relevant": "org.apache.commons.lang3.RandomStringUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testLANG807"
+      }
+    },
+    "Lang-11f": {
+      "id": "Lang-11f",
+      "bug_id": 11,
+      "kind": "fixed",
+      "revision": "4a65cb8da23d6667ac6f91775309b4da9b315d95",
+      "date": "2012-06-10 12:40:48 +0000",
+      "checkout_seconds": 4.474,
+      "checkout_reused": false,
+      "compile_seconds": 3.875,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-11f/target/classes:/work/d4j/Lang-11f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.RandomStringUtils",
+        "tests.relevant": "org.apache.commons.lang3.RandomStringUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testLANG807"
+      }
+    },
+    "Lang-12b": {
+      "id": "Lang-12b",
+      "bug_id": 12,
+      "kind": "buggy",
+      "revision": "1971d3ed8ba303eccc83935e352758ceca9f34d7",
+      "date": "2012-06-09 14:40:59 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.583,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.RandomStringUtils",
+        "tests.relevant": "org.apache.commons.lang3.RandomStringUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testExceptions\norg.apache.commons.lang3.RandomStringUtilsTest::testLANG805"
+      }
+    },
+    "Lang-12f": {
+      "id": "Lang-12f",
+      "bug_id": 12,
+      "kind": "fixed",
+      "revision": "27bcbcc728434ffb2c45e81c0e75e6a3d6da3441",
+      "date": "2012-06-09 14:58:34 +0000",
+      "checkout_seconds": 4.588,
+      "checkout_reused": false,
+      "compile_seconds": 3.321,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-12f/target/classes:/work/d4j/Lang-12f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.RandomStringUtils",
+        "tests.relevant": "org.apache.commons.lang3.RandomStringUtilsTest",
+        "tests.trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testExceptions\norg.apache.commons.lang3.RandomStringUtilsTest::testLANG805"
+      }
+    },
+    "Lang-13b": {
+      "id": "Lang-13b",
+      "bug_id": 13,
+      "kind": "buggy",
+      "revision": "81797ed4402a982f90bd903c7437aeea4e3933f5",
+      "date": "2012-02-29 14:24:56 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.774,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.SerializationUtils",
+        "tests.relevant": "org.apache.commons.lang3.CharRangeTest\norg.apache.commons.lang3.CharSetTest\norg.apache.commons.lang3.ObjectUtilsTest\norg.apache.commons.lang3.RangeTest\norg.apache.commons.lang3.SerializationUtilsTest\norg.apache.commons.lang3.exception.ContextedExceptionTest\norg.apache.commons.lang3.exception.ContextedRuntimeExceptionTest\norg.apache.commons.lang3.exception.DefaultExceptionContextTest\norg.apache.commons.lang3.time.FastDateFormat_ParserTest\norg.apache.commons.lang3.time.FastDateFormat_PrinterTest\norg.apache.commons.lang3.time.FastDateParserTest\norg.apache.commons.lang3.time.FastDatePrinterTest",
+        "tests.trigger": "org.apache.commons.lang3.SerializationUtilsTest::testPrimitiveTypeClassSerialization"
+      }
+    },
+    "Lang-13f": {
+      "id": "Lang-13f",
+      "bug_id": 13,
+      "kind": "fixed",
+      "revision": "e9429c05e1a4797383fb405928088d2f8563ff97",
+      "date": "2012-02-29 14:39:01 +0000",
+      "checkout_seconds": 4.262,
+      "checkout_reused": false,
+      "compile_seconds": 2.963,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.SerializationUtils",
+        "tests.relevant": "org.apache.commons.lang3.CharRangeTest\norg.apache.commons.lang3.CharSetTest\norg.apache.commons.lang3.ObjectUtilsTest\norg.apache.commons.lang3.RangeTest\norg.apache.commons.lang3.SerializationUtilsTest\norg.apache.commons.lang3.exception.ContextedExceptionTest\norg.apache.commons.lang3.exception.ContextedRuntimeExceptionTest\norg.apache.commons.lang3.exception.DefaultExceptionContextTest\norg.apache.commons.lang3.time.FastDateFormat_ParserTest\norg.apache.commons.lang3.time.FastDateFormat_PrinterTest\norg.apache.commons.lang3.time.FastDateParserTest\norg.apache.commons.lang3.time.FastDatePrinterTest",
+        "tests.trigger": "org.apache.commons.lang3.SerializationUtilsTest::testPrimitiveTypeClassSerialization"
+      }
+    },
+    "Lang-17b": {
+      "id": "Lang-17b",
+      "bug_id": 17,
+      "kind": "buggy",
+      "revision": "8a3e8603455c6dbfc595ab7a7e4a32f171a8b245",
+      "date": "2011-07-14 04:43:15 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.561,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-17b/target/classes:/work/d4j/Lang-17b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest\norg.apache.commons.lang3.text.translate.NumericEntityEscaperTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest\norg.apache.commons.lang3.text.translate.OctalUnescaperTest\norg.apache.commons.lang3.text.translate.UnicodeEscaperTest\norg.apache.commons.lang3.text.translate.UnicodeUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.StringEscapeUtilsTest::testLang720"
+      }
+    },
+    "Lang-17f": {
+      "id": "Lang-17f",
+      "bug_id": 17,
+      "kind": "fixed",
+      "revision": "2c1b5be146585dc8b27aedebca959f92da19094e",
+      "date": "2011-07-14 18:49:51 +0000",
+      "checkout_seconds": 4.377,
+      "checkout_reused": false,
+      "compile_seconds": 3.085,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-17f/target/classes:/work/d4j/Lang-17f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.LookupTranslatorTest\norg.apache.commons.lang3.text.translate.NumericEntityEscaperTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest\norg.apache.commons.lang3.text.translate.OctalUnescaperTest\norg.apache.commons.lang3.text.translate.UnicodeEscaperTest\norg.apache.commons.lang3.text.translate.UnicodeUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.StringEscapeUtilsTest::testLang720"
+      }
+    },
+    "Lang-19b": {
+      "id": "Lang-19b",
+      "bug_id": 19,
+      "kind": "buggy",
+      "revision": "23a71e792bf4ff7263d196047c2f378e888ce04f",
+      "date": "2011-07-03 07:07:32 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.573,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds"
+      }
+    },
+    "Lang-19f": {
+      "id": "Lang-19f",
+      "bug_id": 19,
+      "kind": "fixed",
+      "revision": "8914d7f617f78aae8c85405856283c98d4e43990",
+      "date": "2011-07-03 07:55:33 +0000",
+      "checkout_seconds": 4.535,
+      "checkout_reused": false,
+      "compile_seconds": 3.161,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-19f/target/classes:/work/d4j/Lang-19f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.reflect.TypeUtilsTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds"
+      }
+    },
+    "Lang-28b": {
+      "id": "Lang-28b",
+      "bug_id": 28,
+      "kind": "buggy",
+      "revision": "c0041cafc2fda3fb437009d5417ba5ebeb32ad35",
+      "date": "2010-06-22 06:19:29 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.524,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/defects4j/framework/projects/Lang/lib/junit/junit/4.7/junit-4.7.jar:/defects4j/framework/projects/Lang/lib/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:/work/d4j/Lang-28b/target/classes:/work/d4j/Lang-28b/target/test-classes:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/test-classes",
+        "classes.modified": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testSupplementaryUnescaping"
+      }
+    },
+    "Lang-28f": {
+      "id": "Lang-28f",
+      "bug_id": 28,
+      "kind": "fixed",
+      "revision": "bef3eb6ed060d5ae14da6ce5a1909675b8cf5650",
+      "date": "2010-06-22 06:34:18 +0000",
+      "checkout_seconds": 4.197,
+      "checkout_reused": false,
+      "compile_seconds": 2.879,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/defects4j/framework/projects/Lang/lib/junit/junit/4.7/junit-4.7.jar:/defects4j/framework/projects/Lang/lib/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:/work/d4j/Lang-28f/target/classes:/work/d4j/Lang-28f/target/test-classes:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+        "dir.src.classes": "src/main/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.tests": "target/test-classes",
+        "classes.modified": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+        "tests.relevant": "org.apache.commons.lang3.StringEscapeUtilsTest\norg.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "tests.trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testSupplementaryUnescaping"
+      }
+    },
+    "Lang-43b": {
+      "id": "Lang-43b",
+      "bug_id": 43,
+      "kind": "buggy",
+      "revision": "eb8b39b145d863e8fca833c13479e466ad405c61",
+      "date": "2008-12-05 16:34:26 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.534,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.text.ExtendedMessageFormat",
+        "tests.relevant": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+        "tests.trigger": "org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477"
+      }
+    },
+    "Lang-43f": {
+      "id": "Lang-43f",
+      "bug_id": 43,
+      "kind": "fixed",
+      "revision": "a38e2e942d622c1a84ed35bedb9aba045db7ab79",
+      "date": "2009-01-09 22:05:14 +0000",
+      "checkout_seconds": 4.732,
+      "checkout_reused": false,
+      "compile_seconds": 3.302,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-43f/target/classes:/work/d4j/Lang-43f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.text.ExtendedMessageFormat",
+        "tests.relevant": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+        "tests.trigger": "org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477"
+      }
+    },
+    "Lang-54b": {
+      "id": "Lang-54b",
+      "bug_id": 54,
+      "kind": "buggy",
+      "revision": "77a3c20bc0f30ca44f30aadad7f8ef0bc2528d0b",
+      "date": "2007-04-20 05:11:46 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.58,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-54b/target/classes:/work/d4j/Lang-54b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang.LocaleUtilsTest::testLang328"
+      }
+    },
+    "Lang-54f": {
+      "id": "Lang-54f",
+      "bug_id": 54,
+      "kind": "fixed",
+      "revision": "75d931a3264b73caa9cdd7d3373375cc33008ddf",
+      "date": "2007-05-01 23:50:01 +0000",
+      "checkout_seconds": 4.401,
+      "checkout_reused": false,
+      "compile_seconds": 4.06,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-54f/target/classes:/work/d4j/Lang-54f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang.LocaleUtilsTest::testLang328"
+      }
+    },
+    "Lang-55b": {
+      "id": "Lang-55b",
+      "bug_id": 55,
+      "kind": "buggy",
+      "revision": "de4952beaffe469b05f545b90344675e1889cb48",
+      "date": "2007-02-06 22:44:33 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.556,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.time.StopWatch",
+        "tests.relevant": "org.apache.commons.lang.time.StopWatchTest",
+        "tests.trigger": "org.apache.commons.lang.time.StopWatchTest::testLang315"
+      }
+    },
+    "Lang-55f": {
+      "id": "Lang-55f",
+      "bug_id": 55,
+      "kind": "fixed",
+      "revision": "b16235ad108c4fcdb7117493394d26d2f0faeace",
+      "date": "2007-02-06 22:49:50 +0000",
+      "checkout_seconds": 4.714,
+      "checkout_reused": false,
+      "compile_seconds": 3.178,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-55f/target/classes:/work/d4j/Lang-55f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.time.StopWatch",
+        "tests.relevant": "org.apache.commons.lang.time.StopWatchTest",
+        "tests.trigger": "org.apache.commons.lang.time.StopWatchTest::testLang315"
+      }
+    },
+    "Lang-57b": {
+      "id": "Lang-57b",
+      "bug_id": 57,
+      "kind": "buggy",
+      "revision": "848a8144bc42fddbbc466a38a897f5c09f0d49e2",
+      "date": "2006-12-22 19:51:19 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.543,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-57b/target/classes:/work/d4j/Lang-57b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet\norg.apache.commons.lang.LocaleUtilsTest::testIsAvailableLocale\norg.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleList\norg.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_LocaleLocale\norg.apache.commons.lang.LocaleUtilsTest::testLanguagesByCountry\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_1Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_2Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_3Part\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_Locale\norg.apache.commons.lang.LocaleUtilsTest::testConstructor"
+      }
+    },
+    "Lang-57f": {
+      "id": "Lang-57f",
+      "bug_id": 57,
+      "kind": "fixed",
+      "revision": "cf20d13c64da51becd1351befe02a06144fd6fc1",
+      "date": "2006-12-22 20:34:37 +0000",
+      "checkout_seconds": 4.694,
+      "checkout_reused": false,
+      "compile_seconds": 2.856,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-57f/target/classes:/work/d4j/Lang-57f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.LocaleUtils",
+        "tests.relevant": "org.apache.commons.lang.LocaleUtilsTest",
+        "tests.trigger": "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet\norg.apache.commons.lang.LocaleUtilsTest::testIsAvailableLocale\norg.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleList\norg.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_LocaleLocale\norg.apache.commons.lang.LocaleUtilsTest::testLanguagesByCountry\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_1Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_2Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_3Part\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_Locale\norg.apache.commons.lang.LocaleUtilsTest::testConstructor"
+      }
+    },
+    "Lang-64b": {
+      "id": "Lang-64b",
+      "bug_id": 64,
+      "kind": "buggy",
+      "revision": "d9c6932a6e2b27d56ebb665c152f9f7dca759a8a",
+      "date": "2006-08-18 19:51:26 +0000",
+      "checkout_reused": true,
+      "compile_seconds": 0.5,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.enums.ValuedEnum",
+        "tests.relevant": "org.apache.commons.lang.enums.EnumEqualsTest\norg.apache.commons.lang.enums.EnumTest\norg.apache.commons.lang.enums.EnumUtilsTest\norg.apache.commons.lang.enums.ValuedEnumTest",
+        "tests.trigger": "org.apache.commons.lang.enums.ValuedEnumTest::testCompareTo_otherEnumType"
+      }
+    },
+    "Lang-64f": {
+      "id": "Lang-64f",
+      "bug_id": 64,
+      "kind": "fixed",
+      "revision": "07b7795b336b301def8a7dc6059c8e616ce5582e",
+      "date": "2006-08-18 22:21:47 +0000",
+      "checkout_seconds": 4.636,
+      "checkout_reused": false,
+      "compile_seconds": 2.647,
+      "compile_ok": true,
+      "exports": {
+        "cp.test": "/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar",
+        "dir.src.classes": "src/java",
+        "dir.bin.classes": "target/classes",
+        "dir.src.tests": "src/test",
+        "dir.bin.tests": "target/tests",
+        "classes.modified": "org.apache.commons.lang.enums.ValuedEnum",
+        "tests.relevant": "org.apache.commons.lang.enums.EnumEqualsTest\norg.apache.commons.lang.enums.EnumTest\norg.apache.commons.lang.enums.EnumUtilsTest\norg.apache.commons.lang.enums.ValuedEnumTest",
+        "tests.trigger": "org.apache.commons.lang.enums.ValuedEnumTest::testCompareTo_otherEnumType"
+      }
+    }
+  },
+  "records": [
+    {
+      "bug_id": 4,
+      "class": "LookupTranslator",
+      "package": "org.apache.commons.lang3.text.translate",
+      "t": "Lang-4b",
+      "date_t": "2013-04-22 04:18:24 +0000",
+      "no_later_dataset_bug": true,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-4f",
+          "date": "2013-04-23 06:00:41 +0000",
+          "days_after_t": 1.071030093,
+          "calendar_days_after_t": 1,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 5,
+      "class": "LocaleUtils",
+      "package": "org.apache.commons.lang3",
+      "t": "Lang-5b",
+      "date_t": "2012-12-17 12:29:12 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-5f",
+          "date": "2013-01-03 06:19:52 +0000",
+          "days_after_t": 16.743518519,
+          "calendar_days_after_t": 17,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/LocaleUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 125.659166667,
+          "calendar_days_after_t": 126,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/LocaleUtils.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 6,
+      "class": "CharSequenceTranslator",
+      "package": "org.apache.commons.lang3.text.translate",
+      "t": "Lang-6b",
+      "date_t": "2012-11-13 13:21:37 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-6f",
+          "date": "2012-11-20 20:45:50 +0000",
+          "days_after_t": 7.308483796,
+          "calendar_days_after_t": 7,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 33.963599537,
+          "calendar_days_after_t": 34,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 159.622766204,
+          "calendar_days_after_t": 160,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 11,
+      "class": "RandomStringUtils",
+      "package": "org.apache.commons.lang3",
+      "t": "Lang-11b",
+      "date_t": "2012-06-09 14:58:34 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-11f",
+          "date": "2012-06-10 12:40:48 +0000",
+          "days_after_t": 0.904328704,
+          "calendar_days_after_t": 1,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 156.932673611,
+          "calendar_days_after_t": 157,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 190.896273148,
+          "calendar_days_after_t": 191,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 316.555439815,
+          "calendar_days_after_t": 317,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 12,
+      "class": "RandomStringUtils",
+      "package": "org.apache.commons.lang3",
+      "t": "Lang-12b",
+      "date_t": "2012-06-09 14:40:59 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-12f",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 0.012210648,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 0.012210648,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 156.944884259,
+          "calendar_days_after_t": 157,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 190.908483796,
+          "calendar_days_after_t": 191,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 316.567650463,
+          "calendar_days_after_t": 317,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 13,
+      "class": "SerializationUtils",
+      "package": "org.apache.commons.lang3",
+      "t": "Lang-13b",
+      "date_t": "2012-02-29 14:24:56 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-13f",
+          "date": "2012-02-29 14:39:01 +0000",
+          "days_after_t": 0.009780093,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 101.011145833,
+          "calendar_days_after_t": 101,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 101.023356481,
+          "calendar_days_after_t": 101,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 257.956030093,
+          "calendar_days_after_t": 258,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 291.91962963,
+          "calendar_days_after_t": 292,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 417.578796296,
+          "calendar_days_after_t": 418,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 17,
+      "class": "CharSequenceTranslator",
+      "package": "org.apache.commons.lang3.text.translate",
+      "t": "Lang-17b",
+      "date_t": "2011-07-14 04:43:15 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-17f",
+          "date": "2011-07-14 18:49:51 +0000",
+          "days_after_t": 0.587916667,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 230.403946759,
+          "calendar_days_after_t": 230,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 331.415092593,
+          "calendar_days_after_t": 331,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 331.427303241,
+          "calendar_days_after_t": 331,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 488.359976852,
+          "calendar_days_after_t": 488,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 522.323576389,
+          "calendar_days_after_t": 522,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 647.982743056,
+          "calendar_days_after_t": 648,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 19,
+      "class": "NumericEntityUnescaper",
+      "package": "org.apache.commons.lang3.text.translate",
+      "t": "Lang-19b",
+      "date_t": "2011-07-03 07:07:32 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-19f",
+          "date": "2011-07-03 07:55:33 +0000",
+          "days_after_t": 0.033344907,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 10.899803241,
+          "calendar_days_after_t": 11,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 241.30375,
+          "calendar_days_after_t": 241,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 342.314895833,
+          "calendar_days_after_t": 342,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 342.327106481,
+          "calendar_days_after_t": 342,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 499.259780093,
+          "calendar_days_after_t": 499,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 533.22337963,
+          "calendar_days_after_t": 533,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 658.882546296,
+          "calendar_days_after_t": 659,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 28,
+      "class": "NumericEntityUnescaper",
+      "package": "org.apache.commons.lang3.text.translate",
+      "t": "Lang-28b",
+      "date_t": "2010-06-22 06:19:29 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-28f",
+          "date": "2010-06-22 06:34:18 +0000",
+          "days_after_t": 0.010289352,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 376.033368056,
+          "calendar_days_after_t": 376,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 386.933171296,
+          "calendar_days_after_t": 387,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 617.337118056,
+          "calendar_days_after_t": 617,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 718.348263889,
+          "calendar_days_after_t": 718,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 718.360474537,
+          "calendar_days_after_t": 718,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 875.293148148,
+          "calendar_days_after_t": 875,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 909.256747685,
+          "calendar_days_after_t": 909,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 1034.915914352,
+          "calendar_days_after_t": 1035,
+          "status": "present",
+          "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }
+      ],
+      "first_absent": null
+    },
+    {
+      "bug_id": 43,
+      "class": "ExtendedMessageFormat",
+      "package": "org.apache.commons.lang.text",
+      "t": "Lang-43b",
+      "date_t": "2008-12-05 16:34:26 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-43f",
+          "date": "2009-01-09 22:05:14 +0000",
+          "days_after_t": 35.229722222,
+          "calendar_days_after_t": 35,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-28b",
+          "date": "2010-06-22 06:19:29 +0000",
+          "days_after_t": 563.572951389,
+          "calendar_days_after_t": 564,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 939.606319444,
+          "calendar_days_after_t": 940,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 950.506122685,
+          "calendar_days_after_t": 951,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 1180.910069444,
+          "calendar_days_after_t": 1181,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 1281.921215278,
+          "calendar_days_after_t": 1282,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 1281.933425926,
+          "calendar_days_after_t": 1282,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 1438.866099537,
+          "calendar_days_after_t": 1439,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 1472.829699074,
+          "calendar_days_after_t": 1473,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        },
+        {
+          "step": 10,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 1598.488865741,
+          "calendar_days_after_t": 1599,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }
+      ],
+      "first_absent": "Lang-28b"
+    },
+    {
+      "bug_id": 54,
+      "class": "LocaleUtils",
+      "package": "org.apache.commons.lang",
+      "t": "Lang-54b",
+      "date_t": "2007-04-20 05:11:46 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-54f",
+          "date": "2007-05-01 23:50:01 +0000",
+          "days_after_t": 11.7765625,
+          "calendar_days_after_t": 11,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-43b",
+          "date": "2008-12-05 16:34:26 +0000",
+          "days_after_t": 595.474074074,
+          "calendar_days_after_t": 595,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-28b",
+          "date": "2010-06-22 06:19:29 +0000",
+          "days_after_t": 1159.047025463,
+          "calendar_days_after_t": 1159,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 1535.080393519,
+          "calendar_days_after_t": 1535,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 1545.980196759,
+          "calendar_days_after_t": 1546,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 1776.384143519,
+          "calendar_days_after_t": 1776,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 1877.395289352,
+          "calendar_days_after_t": 1877,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 1877.4075,
+          "calendar_days_after_t": 1877,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 2034.340173611,
+          "calendar_days_after_t": 2034,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 10,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 2068.303773148,
+          "calendar_days_after_t": 2068,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 11,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 2193.962939815,
+          "calendar_days_after_t": 2194,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        }
+      ],
+      "first_absent": "Lang-28b"
+    },
+    {
+      "bug_id": 55,
+      "class": "StopWatch",
+      "package": "org.apache.commons.lang.time",
+      "t": "Lang-55b",
+      "date_t": "2007-02-06 22:44:33 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-55f",
+          "date": "2007-02-06 22:49:50 +0000",
+          "days_after_t": 0.003668981,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-54b",
+          "date": "2007-04-20 05:11:46 +0000",
+          "days_after_t": 72.268900463,
+          "calendar_days_after_t": 73,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-43b",
+          "date": "2008-12-05 16:34:26 +0000",
+          "days_after_t": 667.742974537,
+          "calendar_days_after_t": 668,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-28b",
+          "date": "2010-06-22 06:19:29 +0000",
+          "days_after_t": 1231.315925926,
+          "calendar_days_after_t": 1232,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 1607.349293981,
+          "calendar_days_after_t": 1608,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 1618.249097222,
+          "calendar_days_after_t": 1619,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 1848.653043981,
+          "calendar_days_after_t": 1849,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 1949.664189815,
+          "calendar_days_after_t": 1950,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 1949.676400463,
+          "calendar_days_after_t": 1950,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 10,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 2106.609074074,
+          "calendar_days_after_t": 2107,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 11,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 2140.572673611,
+          "calendar_days_after_t": 2141,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        },
+        {
+          "step": 12,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 2266.231840278,
+          "calendar_days_after_t": 2267,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/time/StopWatch.java"
+        }
+      ],
+      "first_absent": "Lang-28b"
+    },
+    {
+      "bug_id": 57,
+      "class": "LocaleUtils",
+      "package": "org.apache.commons.lang",
+      "t": "Lang-57b",
+      "date_t": "2006-12-22 19:51:19 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-57f",
+          "date": "2006-12-22 20:34:37 +0000",
+          "days_after_t": 0.030069444,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-55b",
+          "date": "2007-02-06 22:44:33 +0000",
+          "days_after_t": 46.120300926,
+          "calendar_days_after_t": 46,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-54b",
+          "date": "2007-04-20 05:11:46 +0000",
+          "days_after_t": 118.389201389,
+          "calendar_days_after_t": 119,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-43b",
+          "date": "2008-12-05 16:34:26 +0000",
+          "days_after_t": 713.863275463,
+          "calendar_days_after_t": 714,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-28b",
+          "date": "2010-06-22 06:19:29 +0000",
+          "days_after_t": 1277.436226852,
+          "calendar_days_after_t": 1278,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 1653.469594907,
+          "calendar_days_after_t": 1654,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 1664.369398148,
+          "calendar_days_after_t": 1665,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 1894.773344907,
+          "calendar_days_after_t": 1895,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 1995.784490741,
+          "calendar_days_after_t": 1996,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 10,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 1995.796701389,
+          "calendar_days_after_t": 1996,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 11,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 2152.729375,
+          "calendar_days_after_t": 2153,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 12,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 2186.692974537,
+          "calendar_days_after_t": 2187,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        },
+        {
+          "step": 13,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 2312.352141204,
+          "calendar_days_after_t": 2313,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/LocaleUtils.java"
+        }
+      ],
+      "first_absent": "Lang-28b"
+    },
+    {
+      "bug_id": 64,
+      "class": "ValuedEnum",
+      "package": "org.apache.commons.lang.enums",
+      "t": "Lang-64b",
+      "date_t": "2006-08-18 19:51:26 +0000",
+      "no_later_dataset_bug": false,
+      "timepoints": [
+        {
+          "step": 1,
+          "id": "Lang-64f",
+          "date": "2006-08-18 22:21:47 +0000",
+          "days_after_t": 0.104409722,
+          "calendar_days_after_t": 0,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 2,
+          "id": "Lang-57b",
+          "date": "2006-12-22 19:51:19 +0000",
+          "days_after_t": 125.999918981,
+          "calendar_days_after_t": 126,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 3,
+          "id": "Lang-55b",
+          "date": "2007-02-06 22:44:33 +0000",
+          "days_after_t": 172.120219907,
+          "calendar_days_after_t": 172,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 4,
+          "id": "Lang-54b",
+          "date": "2007-04-20 05:11:46 +0000",
+          "days_after_t": 244.38912037,
+          "calendar_days_after_t": 245,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 5,
+          "id": "Lang-43b",
+          "date": "2008-12-05 16:34:26 +0000",
+          "days_after_t": 839.863194444,
+          "calendar_days_after_t": 840,
+          "status": "present",
+          "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 6,
+          "id": "Lang-28b",
+          "date": "2010-06-22 06:19:29 +0000",
+          "days_after_t": 1403.436145833,
+          "calendar_days_after_t": 1404,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 7,
+          "id": "Lang-19b",
+          "date": "2011-07-03 07:07:32 +0000",
+          "days_after_t": 1779.469513889,
+          "calendar_days_after_t": 1780,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 8,
+          "id": "Lang-17b",
+          "date": "2011-07-14 04:43:15 +0000",
+          "days_after_t": 1790.36931713,
+          "calendar_days_after_t": 1791,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 9,
+          "id": "Lang-13b",
+          "date": "2012-02-29 14:24:56 +0000",
+          "days_after_t": 2020.773263889,
+          "calendar_days_after_t": 2021,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 10,
+          "id": "Lang-12b",
+          "date": "2012-06-09 14:40:59 +0000",
+          "days_after_t": 2121.784409722,
+          "calendar_days_after_t": 2122,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 11,
+          "id": "Lang-11b",
+          "date": "2012-06-09 14:58:34 +0000",
+          "days_after_t": 2121.79662037,
+          "calendar_days_after_t": 2122,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 12,
+          "id": "Lang-6b",
+          "date": "2012-11-13 13:21:37 +0000",
+          "days_after_t": 2278.729293981,
+          "calendar_days_after_t": 2279,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 13,
+          "id": "Lang-5b",
+          "date": "2012-12-17 12:29:12 +0000",
+          "days_after_t": 2312.692893519,
+          "calendar_days_after_t": 2313,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        },
+        {
+          "step": 14,
+          "id": "Lang-4b",
+          "date": "2013-04-22 04:18:24 +0000",
+          "days_after_t": 2438.352060185,
+          "calendar_days_after_t": 2439,
+          "status": "absent",
+          "source_path": "src/main/java/org/apache/commons/lang/enums/ValuedEnum.java"
+        }
+      ],
+      "first_absent": "Lang-28b"
+    }
+  ]
+}

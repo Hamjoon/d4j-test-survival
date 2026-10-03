@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-03T05:15:56.341511+00:00",
+  "step": 6,
+  "status": "blocked",
+  "container_key_present": true,
+  "api_requests_made": 1,
+  "generation_requests_made": 0,
+  "model_list_status": 200,
+  "listed_models": 466,
+  "matching_mistral_7b_ids": [],
+  "reason": "OpenRouter model list contains no Mistral 7B Instruct model; no model chosen and no generation attempted."
+}

@@ -1,0 +1,298 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-12/r1/ToT/RandomStringUtilsTest.java",
+    "source_sha256": "0154c9bee2b60b542e5a8036dbce5ec40ca0cde42c1431c169fbc31b46d111b8",
+    "selected_methods": [
+      "testRandomAlphabetic_OnlyLetters",
+      "testRandomAlphabetic_SurrogatePairsAreHandled",
+      "testRandomAlphanumeric_LettersOrDigits",
+      "testRandomAlphanumeric_NegativeLength",
+      "testRandomAlphanumeric_ZeroLength",
+      "testRandomAscii_ValidRange",
+      "testRandomAscii_ZeroLength",
+      "testRandomNumeric_NegativeLength",
+      "testRandomNumeric_OnlyDigits",
+      "testRandomNumeric_ZeroLength",
+      "testRandom_CountZeroWithSurrogatePool",
+      "testRandom_CustomRange_InvalidBounds",
+      "testRandom_CustomRange_LettersOnly",
+      "testRandom_CustomRange_NumbersOnly",
+      "testRandom_LengthAndFullRange",
+      "testRandom_LettersAndNumbers_TrueTrue",
+      "testRandom_LettersOnly_TrueFalse",
+      "testRandom_MultipleCallsProduceDifferentValues",
+      "testRandom_NoRestriction_FalseFalse",
+      "testRandom_NumbersOnly_FalseTrue",
+      "testRandom_StringLengthNeverExceedsRequested",
+      "testRandom_WithCharArray_AllCharsAllowed",
+      "testRandom_WithCharArray_NullArray",
+      "testRandom_WithCharVarargs_Null",
+      "testRandom_WithCharVarargs_Valid",
+      "testRandom_WithString_Null",
+      "testRandom_WithString_Valid",
+      "testRandom_ZeroLength",
+      "testSurrogateHighLowPairsNeverSplit"
+    ],
+    "target": "Lang-11b",
+    "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-12/Lang-11b/llm/r1/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-12/r1/ToT/RandomStringUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.334,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-12/Lang-11b/llm/r1/ToT/javac.err"
+  },
+  "folder": "survival/Lang-12/Lang-11b/llm/r1/ToT",
+  "classes": "survival/Lang-12/Lang-11b/llm/r1/ToT/classes",
+  "run_file": "survival/Lang-12/Lang-11b/llm/r1/ToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testRandomAlphanumeric_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithString_Valid",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumeric_LettersOrDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_StringLengthNeverExceedsRequested",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic_SurrogatePairsAreHandled",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharArray_AllCharsAllowed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumeric_NegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NumbersOnly_FalseTrue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii_ValidRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersAndNumbers_TrueTrue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharVarargs_Valid",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LengthAndFullRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_LettersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogateHighLowPairsNeverSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_NumbersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_NegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NoRestriction_FalseFalse",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_MultipleCallsProduceDifferentValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_InvalidBounds",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithString_Null",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CountZeroWithSurrogatePool",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic_OnlyLetters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_OnlyDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersOnly_TrueFalse",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharVarargs_Null",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharArray_NullArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 29
+  },
+  "run_seconds": 0.236,
+  "list_error": ""
+}

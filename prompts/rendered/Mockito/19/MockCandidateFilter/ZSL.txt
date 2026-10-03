@@ -1,0 +1,19 @@
+As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (MockCandidateFilterTest.java) to comprehensively test all methods in the following class named MockCandidateFilter. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.configuration.injection.filter;
+
+import java.lang.reflect.Field;
+import java.util.Collection;
+
+public interface MockCandidateFilter {
+
+    OngoingInjecter filterCandidate(
+            Collection<Object> mocks,
+            Field fieldToBeInjected,
+            Object fieldInstance
+    );
+
+}

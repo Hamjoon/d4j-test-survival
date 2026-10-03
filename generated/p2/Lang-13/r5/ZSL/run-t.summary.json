@@ -1,0 +1,155 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/generated/p2/Lang-13/r5/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testDeserializeCorruptedDataThrowsSerializationException",
+    "testSerializeNullOutputStreamThrows",
+    "testSerializeAndCloseOutputStream",
+    "testDeserializeNullByteArrayThrows",
+    "testSerializeNullObjectProducesValidStream",
+    "testCloneDeepCopy",
+    "testSerializeObjectWithNonSerializableFieldThrowsException",
+    "testCloneObjectWithNonSerializableFieldThrowsException",
+    "testSerializeConvenienceMethodRoundTrip",
+    "testClassLoaderAwareObjectInputStreamFallback",
+    "testCloneNullReturnsNull",
+    "testDeserializeNullInputStreamThrows"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-13/r5/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testDeserializeCorruptedDataThrowsSerializationException\"}\n{\"method\":\"testSerializeNullOutputStreamThrows\"}\n{\"method\":\"testSerializeAndCloseOutputStream\"}\n{\"method\":\"testDeserializeNullByteArrayThrows\"}\n{\"method\":\"testSerializeNullObjectProducesValidStream\"}\n{\"method\":\"testCloneDeepCopy\"}\n{\"method\":\"testSerializeObjectWithNonSerializableFieldThrowsException\"}\n{\"method\":\"testCloneObjectWithNonSerializableFieldThrowsException\"}\n{\"method\":\"testSerializeConvenienceMethodRoundTrip\"}\n{\"method\":\"testClassLoaderAwareObjectInputStreamFallback\"}\n{\"method\":\"testCloneNullReturnsNull\"}\n{\"method\":\"testDeserializeNullInputStreamThrows\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.089
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-13/r5/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testDeserializeCorruptedDataThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":24}\n{\"method\":\"testSerializeNullOutputStreamThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeAndCloseOutputStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testDeserializeNullByteArrayThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeNullObjectProducesValidStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCloneDeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testSerializeObjectWithNonSerializableFieldThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":8}\n{\"method\":\"testCloneObjectWithNonSerializableFieldThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeConvenienceMethodRoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClassLoaderAwareObjectInputStreamFallback\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCloneNullReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeNullInputStreamThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.138,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testDeserializeCorruptedDataThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 24,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullOutputStreamThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeAndCloseOutputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeNullByteArrayThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullObjectProducesValidStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeObjectWithNonSerializableFieldThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "testCloneObjectWithNonSerializableFieldThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeConvenienceMethodRoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClassLoaderAwareObjectInputStreamFallback",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneNullReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeNullInputStreamThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12
+  },
+  "wall_seconds": 0.228
+}

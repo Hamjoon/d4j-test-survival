@@ -1,0 +1,147 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "classpath": "/work/survival/Lang-6/Lang-4b/llm/r4/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testTranslate_WithWriter_NullWriter_Throws",
+    "testTranslate_WithWriter_ZeroConsumeWritesOriginalChar",
+    "testHex_UpperCaseAndCorrectConversion",
+    "testTranslate_ComplexMixedScenario",
+    "testTranslate_NullInput_ReturnsNull",
+    "testTranslate_SimpleReplacement",
+    "testTranslate_WithWriter_NullInput_WritesNothing",
+    "testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough"
+  ],
+  "all_listed_methods": [
+    "testWith_MergesTwoTranslators_SequentialApplication",
+    "testTranslate_WithWriter_SurrogatePairConsumedCorrectly",
+    "testTranslate_WithWriter_NullWriter_Throws",
+    "testTranslate_WithWriter_ZeroConsumeWritesOriginalChar",
+    "testHex_UpperCaseAndCorrectConversion",
+    "testTranslate_ComplexMixedScenario",
+    "testTranslate_NullInput_ReturnsNull",
+    "testTranslate_SimpleReplacement",
+    "testTranslate_WithWriter_NullInput_WritesNothing",
+    "testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough"
+  ],
+  "selected_methods": [
+    "testHex_UpperCaseAndCorrectConversion",
+    "testTranslate_ComplexMixedScenario",
+    "testTranslate_NullInput_ReturnsNull",
+    "testTranslate_SimpleReplacement",
+    "testTranslate_WithWriter_NullInput_WritesNothing",
+    "testTranslate_WithWriter_NullWriter_Throws",
+    "testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough",
+    "testTranslate_WithWriter_ZeroConsumeWritesOriginalChar"
+  ],
+  "excluded_methods": [
+    "testWith_MergesTwoTranslators_SequentialApplication",
+    "testTranslate_WithWriter_SurrogatePairConsumedCorrectly"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-6/Lang-4b/llm/r4/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testWith_MergesTwoTranslators_SequentialApplication\"}\n{\"method\":\"testTranslate_WithWriter_SurrogatePairConsumedCorrectly\"}\n{\"method\":\"testTranslate_WithWriter_NullWriter_Throws\"}\n{\"method\":\"testTranslate_WithWriter_ZeroConsumeWritesOriginalChar\"}\n{\"method\":\"testHex_UpperCaseAndCorrectConversion\"}\n{\"method\":\"testTranslate_ComplexMixedScenario\"}\n{\"method\":\"testTranslate_NullInput_ReturnsNull\"}\n{\"method\":\"testTranslate_SimpleReplacement\"}\n{\"method\":\"testTranslate_WithWriter_NullInput_WritesNothing\"}\n{\"method\":\"testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.095
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-6/Lang-4b/llm/r4/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testWith_MergesTwoTranslators_SequentialApplication,testTranslate_WithWriter_SurrogatePairConsumedCorrectly"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testTranslate_WithWriter_NullWriter_Throws\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testTranslate_WithWriter_ZeroConsumeWritesOriginalChar\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testHex_UpperCaseAndCorrectConversion\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_ComplexMixedScenario\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testTranslate_NullInput_ReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_SimpleReplacement\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_WithWriter_NullInput_WritesNothing\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.125,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testTranslate_WithWriter_NullWriter_Throws",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_WithWriter_ZeroConsumeWritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndCorrectConversion",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_ComplexMixedScenario",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_WithWriter_NullInput_WritesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8
+  },
+  "wall_seconds": 0.221
+}

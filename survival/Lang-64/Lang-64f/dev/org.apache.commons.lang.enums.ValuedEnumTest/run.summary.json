@@ -1,0 +1,256 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "classpath": "/work/survival/Lang-64/Lang-64f/dev/classes/org.apache.commons.lang.enums.ValuedEnumTest:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-64f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testCompareTo_null",
+    "testGetValue",
+    "testSerialization",
+    "testGet",
+    "testMap",
+    "testValue",
+    "testList",
+    "testName",
+    "testToString",
+    "testCompareTo",
+    "testCompareTo_nonEnumType",
+    "testEquals_classloader_different",
+    "testEquals_classloader_equal",
+    "testEquals",
+    "testCompareTo_classloader_equal",
+    "testCompareTo_classloader_different",
+    "testCompareTo_otherType",
+    "testIterator"
+  ],
+  "all_listed_methods": [
+    "testCompareTo_null",
+    "testGetValue",
+    "testSerialization",
+    "testGet",
+    "testMap",
+    "testValue",
+    "testList",
+    "testName",
+    "testToString",
+    "testCompareTo",
+    "testCompareTo_nonEnumType",
+    "testEquals_classloader_different",
+    "testEquals_classloader_equal",
+    "testCompareTo_otherEnumType",
+    "testEquals",
+    "testCompareTo_classloader_equal",
+    "testCompareTo_classloader_different",
+    "testCompareTo_otherType",
+    "testIterator"
+  ],
+  "selected_methods": [
+    "testCompareTo",
+    "testCompareTo_classloader_different",
+    "testCompareTo_classloader_equal",
+    "testCompareTo_nonEnumType",
+    "testCompareTo_null",
+    "testCompareTo_otherType",
+    "testEquals",
+    "testEquals_classloader_different",
+    "testEquals_classloader_equal",
+    "testGet",
+    "testGetValue",
+    "testIterator",
+    "testList",
+    "testMap",
+    "testName",
+    "testSerialization",
+    "testToString",
+    "testValue"
+  ],
+  "excluded_methods": [
+    "testCompareTo_otherEnumType"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-64/Lang-64f/dev/classes/org.apache.commons.lang.enums.ValuedEnumTest:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.ValuedEnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testCompareTo_null\"}\n{\"method\":\"testGetValue\"}\n{\"method\":\"testSerialization\"}\n{\"method\":\"testGet\"}\n{\"method\":\"testMap\"}\n{\"method\":\"testValue\"}\n{\"method\":\"testList\"}\n{\"method\":\"testName\"}\n{\"method\":\"testToString\"}\n{\"method\":\"testCompareTo\"}\n{\"method\":\"testCompareTo_nonEnumType\"}\n{\"method\":\"testEquals_classloader_different\"}\n{\"method\":\"testEquals_classloader_equal\"}\n{\"method\":\"testCompareTo_otherEnumType\"}\n{\"method\":\"testEquals\"}\n{\"method\":\"testCompareTo_classloader_equal\"}\n{\"method\":\"testCompareTo_classloader_different\"}\n{\"method\":\"testCompareTo_otherType\"}\n{\"method\":\"testIterator\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.078
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-64/Lang-64f/dev/classes/org.apache.commons.lang.enums.ValuedEnumTest:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.ValuedEnumTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testCompareTo_otherEnumType"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testCompareTo_null\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":21}\n{\"method\":\"testGetValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":10}\n{\"method\":\"testGet\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testMap\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testList\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testName\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCompareTo\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_nonEnumType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEquals_classloader_different\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEquals_classloader_equal\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEquals\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_classloader_equal\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_classloader_different\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_otherType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIterator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.13,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testCompareTo_null",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 10,
+      "launch": 1
+    },
+    {
+      "method": "testGet",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMap",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testName",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_nonEnumType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals_classloader_different",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals_classloader_equal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_classloader_equal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_classloader_different",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_otherType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 18
+  },
+  "wall_seconds": 0.209
+}

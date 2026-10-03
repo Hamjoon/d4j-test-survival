@@ -1,0 +1,20 @@
+{"method":"testUnsplitRestoresRunningState","status":"pass"}
+{"method":"testStopBeforeStart","status":"pass"}
+{"method":"testToSplitStringWithoutSplit","status":"pass"}
+{"method":"testStartAfterStopWithoutReset","status":"pass"}
+{"method":"testGetSplitTimeWhenNotSplit","status":"pass"}
+{"method":"testResumeWhenNotSuspended","status":"pass"}
+{"method":"testResetClearsState","status":"pass"}
+{"method":"testSplitAndSplitTime","status":"pass"}
+{"method":"testStartStopAndTime","status":"pass"}
+{"method":"testSuspendWhenNotRunning","status":"pass"}
+{"method":"testIllegalStateTransitionsAfterSplit","status":"pass"}
+{"method":"testStartWhenAlreadyRunning","status":"pass"}
+{"method":"testInitialState","status":"fail","message":"expected:<0[0]:00:00.000> but was:<0[]:00:00.000>","exception":"org.junit.ComparisonFailure"}
+{"method":"testMultipleStartStopCyclesWithReset","status":"pass"}
+{"method":"testUnsplitWithoutSplit","status":"pass"}
+{"method":"testSuspendResume","status":"pass"}
+{"method":"testToStringFormat","status":"fail","message":"toString should match HH:MM:SS.mmm pattern","exception":"java.lang.AssertionError"}
+{"method":"testToSplitStringFormat","status":"fail","message":"toSplitString should match HH:MM:SS.mmm pattern","exception":"java.lang.AssertionError"}
+{"method":"testSplitWhenNotRunning","status":"pass"}
+{"summary":{"run":19,"failures":3,"ignored":0,"ms":185}}

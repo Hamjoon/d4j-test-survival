@@ -1,0 +1,99 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named CallsRealMethods. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.stubbing.answers;
+
+import java.io.Serializable;
+
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+
+/**
+ * Optional Answer that adds partial mocking support
+ * <p>
+ * {@link Answer} can be used to define the return values of unstubbed invocations.
+ * <p>
+ * This implementation can be helpful when working with legacy code.
+ * When this implementation is used, unstubbed methods will delegate to the real implementation.
+ * This is a way to create a partial mock object that calls real methods by default.
+ * <p>
+ * As usual you are going to read <b>the partial mock warning</b>:
+ * Object oriented programming is more less tackling complexity by dividing the complexity into separate, specific, SRPy objects.
+ * How does partial mock fit into this paradigm? Well, it just doesn't... 
+ * Partial mock usually means that the complexity has been moved to a different method on the same object.
+ * In most cases, this is not the way you want to design your application.
+ * <p>
+ * However, there are rare cases when partial mocks come handy: 
+ * dealing with code you cannot change easily (3rd party interfaces, interim refactoring of legacy code etc.)
+ * However, I wouldn't use partial mocks for new, test-driven & well-designed code.
+ * <p>
+ */
+public class CallsRealMethods implements Answer<Object>, Serializable {
+    private static final long serialVersionUID = 9057165148930624087L;
+
+    public Object answer(InvocationOnMock invocation) throws Throwable {
+        return invocation.callRealMethod();
+    }
+}.

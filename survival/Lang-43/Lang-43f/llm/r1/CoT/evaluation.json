@@ -1,0 +1,100 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-43/r1/CoT/ExtendedMessageFormatTest.java",
+    "source_sha256": "cfb6d4406a622b898da5e01bd0b1761e71ea5562bb514796a62068e53d0f7e2d",
+    "selected_methods": [
+      "testApplyPatternWithCustomRegistry",
+      "testApplyPatternWithoutRegistryFallsBackToMessageFormat",
+      "testSetFormatByArgumentIndexThrowsException",
+      "testSetFormatThrowsException",
+      "testSetFormatsByArgumentIndexThrowsException",
+      "testSetFormatsThrowsException",
+      "testToPatternWithoutCustomFormats"
+    ],
+    "target": "Lang-43f",
+    "fqcn": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-43/Lang-43f/llm/r1/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-43f/target/classes:/work/d4j/Lang-43f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-43/r1/CoT/ExtendedMessageFormatTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.305,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-43/Lang-43f/llm/r1/CoT/javac.err"
+  },
+  "folder": "survival/Lang-43/Lang-43f/llm/r1/CoT",
+  "classes": "survival/Lang-43/Lang-43f/llm/r1/CoT/classes",
+  "run_file": "survival/Lang-43/Lang-43f/llm/r1/CoT/run.jsonl",
+  "methods": [
+    {
+      "method": "testSetFormatsByArgumentIndexThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternWithCustomRegistry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatsThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatByArgumentIndexThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToPatternWithoutCustomFormats",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternWithoutRegistryFallsBackToMessageFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 51,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 7
+  },
+  "run_seconds": 0.268,
+  "list_error": ""
+}

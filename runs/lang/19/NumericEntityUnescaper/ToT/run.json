@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:37:51.502838+00:00",
+  "latency_seconds": 31.359,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "19",
+  "class": "NumericEntityUnescaper",
+  "technique": "ToT",
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "response_id": "gen-1791005871-1cbYwGoFR1NfdtiSysjy",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

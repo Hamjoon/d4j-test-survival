@@ -1,0 +1,14 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "28f",
+    "-w",
+    "/work/d4j/Lang-28f"
+  ],
+  "exit_status": 0,
+  "seconds": 4.197
+}

@@ -1,0 +1,1 @@
+{"method": "testTranslateWithSurrogatePair", "status": "fail", "message": "expected:<Hello [SMILE][] World> but was:<Hello [SMILE][?] World>", "exception": "org.junit.ComparisonFailure", "milliseconds": 20, "launch": 1}

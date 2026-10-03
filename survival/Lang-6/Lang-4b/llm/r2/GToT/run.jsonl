@@ -1,0 +1,12 @@
+{"method": "testHexTypicalValues", "status": "pass", "message": null, "exception": null, "milliseconds": 26, "launch": 1}
+{"method": "testTranslateWriterNullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateStringEmptyInput", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testAbstractTranslateReturnsConsumedCount", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriterSurrogatePairHandling", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriterZeroConsumedPath", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriterNullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateStringSimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateStringSurrogatePairUnchanged", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriterWithExceptionPropagation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWithNoAdditionalTranslators", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateStringNullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

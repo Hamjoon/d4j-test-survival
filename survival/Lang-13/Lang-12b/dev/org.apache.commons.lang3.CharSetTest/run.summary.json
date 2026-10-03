@@ -1,0 +1,206 @@
+{
+  "fqcn": "org.apache.commons.lang3.CharSetTest",
+  "classpath": "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.CharSetTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-12b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testConstructor_String_oddDash",
+    "testSerialization",
+    "testClass",
+    "testConstructor_String_simple",
+    "testEquals_Object",
+    "testContains_Char",
+    "testConstructor_String_combo",
+    "testConstructor_String_oddCombinations",
+    "testConstructor_String_comboNegated",
+    "testHashCode",
+    "testGetInstance_Stringarray",
+    "testConstructor_String_oddNegate",
+    "testGetInstance",
+    "testStatics"
+  ],
+  "all_listed_methods": [
+    "testConstructor_String_oddDash",
+    "testSerialization",
+    "testClass",
+    "testConstructor_String_simple",
+    "testEquals_Object",
+    "testContains_Char",
+    "testConstructor_String_combo",
+    "testConstructor_String_oddCombinations",
+    "testConstructor_String_comboNegated",
+    "testHashCode",
+    "testGetInstance_Stringarray",
+    "testConstructor_String_oddNegate",
+    "testGetInstance",
+    "testStatics"
+  ],
+  "selected_methods": [
+    "testClass",
+    "testConstructor_String_combo",
+    "testConstructor_String_comboNegated",
+    "testConstructor_String_oddCombinations",
+    "testConstructor_String_oddDash",
+    "testConstructor_String_oddNegate",
+    "testConstructor_String_simple",
+    "testContains_Char",
+    "testEquals_Object",
+    "testGetInstance",
+    "testGetInstance_Stringarray",
+    "testHashCode",
+    "testSerialization",
+    "testStatics"
+  ],
+  "excluded_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.CharSetTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.CharSetTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testConstructor_String_oddDash\"}\n{\"method\":\"testSerialization\"}\n{\"method\":\"testClass\"}\n{\"method\":\"testConstructor_String_simple\"}\n{\"method\":\"testEquals_Object\"}\n{\"method\":\"testContains_Char\"}\n{\"method\":\"testConstructor_String_combo\"}\n{\"method\":\"testConstructor_String_oddCombinations\"}\n{\"method\":\"testConstructor_String_comboNegated\"}\n{\"method\":\"testHashCode\"}\n{\"method\":\"testGetInstance_Stringarray\"}\n{\"method\":\"testConstructor_String_oddNegate\"}\n{\"method\":\"testGetInstance\"}\n{\"method\":\"testStatics\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.089
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.CharSetTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.CharSetTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testConstructor_String_oddDash\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":25}\n{\"method\":\"testSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":8}\n{\"method\":\"testClass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testConstructor_String_simple\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testEquals_Object\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testContains_Char\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructor_String_combo\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructor_String_oddCombinations\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructor_String_comboNegated\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHashCode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetInstance_Stringarray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testConstructor_String_oddNegate\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetInstance\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testStatics\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.155,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testConstructor_String_oddDash",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 25,
+      "launch": 1
+    },
+    {
+      "method": "testSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "testClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor_String_simple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testEquals_Object",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains_Char",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor_String_combo",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor_String_oddCombinations",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor_String_comboNegated",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetInstance_Stringarray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor_String_oddNegate",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetInstance",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStatics",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 14
+  },
+  "wall_seconds": 0.246
+}

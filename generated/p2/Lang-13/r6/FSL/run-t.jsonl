@@ -1,0 +1,13 @@
+{"method": "testClone_DeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 31, "launch": 1}
+{"method": "testSerializeToByteArray_NullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserializeByteArray_NullArgument", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStream_FallbackToThreadContext", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserialize_WithValidStream", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testClone_NullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerialize_WithNullOutputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_OutputStreamThrowsOnWrite", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStream_BothLoadersFail", "status": "error", "message": "Unexpected exception, expected<org.apache.commons.lang3.SerializationException> but was<java.lang.AssertionError>", "exception": "java.lang.Exception", "milliseconds": 2, "launch": 1}
+{"method": "testDeserialize_WithNullInputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_WithSerializableSubclass", "status": "error", "message": "java.io.NotSerializableException: org.apache.commons.lang3.SerializationUtilsTest", "exception": "org.apache.commons.lang3.SerializationException", "milliseconds": 8, "launch": 1}
+{"method": "testSerialize_AndDeserialize_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeByteArray_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

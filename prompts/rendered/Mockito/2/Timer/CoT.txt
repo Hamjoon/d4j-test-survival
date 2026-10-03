@@ -1,0 +1,35 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named Timer by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (TimerTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the Timer class:
+package org.mockito.internal.util;
+
+
+public class Timer {
+
+    private final long durationMillis;
+    private long startTime = -1;
+
+    public Timer(long durationMillis) {
+        this.durationMillis = durationMillis;
+    }
+
+    /**
+     * Informs whether the timer is still counting down.
+     */
+    public boolean isCounting() {
+        assert startTime != -1;
+        return System.currentTimeMillis() - startTime <= durationMillis;
+    }
+
+    /**
+     * Starts the timer count down.
+     */
+    public void start() {
+        startTime = System.currentTimeMillis();
+    }
+
+}

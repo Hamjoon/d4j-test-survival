@@ -1,0 +1,15 @@
+{"method": "testLowSurrogatePrependedWithHigh", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testRandomLettersNumbersFlagsWithCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHighSurrogateFollowedByLow", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithEmptyStringSource", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testPrivateHighSurrogateIsSkipped", "status": "timeout", "message": "Exceeded 30000 ms", "exception": null, "milliseconds": 30008, "launch": 1}
+{"method": "testRandomAlphanumericContainsBoth", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 2}
+{"method": "testRandomWithStringSource", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomNegativeLength", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomWithCustomCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomNumericOnlyDigits", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 2}
+{"method": "testRandomWithEmptyCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomZeroLength", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomAlphabeticOnlyLetters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomAsciiRange", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomWithStartEndAndCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}

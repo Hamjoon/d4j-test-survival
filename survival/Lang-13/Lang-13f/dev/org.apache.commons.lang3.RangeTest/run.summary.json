@@ -1,0 +1,316 @@
+{
+  "fqcn": "org.apache.commons.lang3.RangeTest",
+  "classpath": "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.RangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testIsWithCompare",
+    "testSerializing",
+    "testIsOverlappedBy",
+    "testIsStartedBy",
+    "testIsEndedBy",
+    "testRangeOfChars",
+    "testToString",
+    "testIsBeforeRange",
+    "testIntersectionWith",
+    "testEqualsObject",
+    "testBetweenWithCompare",
+    "testContainsRange",
+    "testIsBefore",
+    "testContains",
+    "testIntersectionWithNull",
+    "testIsAfterRange",
+    "testElementCompareTo",
+    "testHashCode",
+    "testGetMaximum",
+    "testComparableConstructors",
+    "testGetMinimum",
+    "testIntersectionWithNonOverlapping",
+    "testIsAfter",
+    "testToStringFormat"
+  ],
+  "all_listed_methods": [
+    "testIsWithCompare",
+    "testSerializing",
+    "testIsOverlappedBy",
+    "testIsStartedBy",
+    "testIsEndedBy",
+    "testRangeOfChars",
+    "testToString",
+    "testIsBeforeRange",
+    "testIntersectionWith",
+    "testEqualsObject",
+    "testBetweenWithCompare",
+    "testContainsRange",
+    "testIsBefore",
+    "testContains",
+    "testIntersectionWithNull",
+    "testIsAfterRange",
+    "testElementCompareTo",
+    "testHashCode",
+    "testGetMaximum",
+    "testComparableConstructors",
+    "testGetMinimum",
+    "testIntersectionWithNonOverlapping",
+    "testIsAfter",
+    "testToStringFormat"
+  ],
+  "selected_methods": [
+    "testBetweenWithCompare",
+    "testComparableConstructors",
+    "testContains",
+    "testContainsRange",
+    "testElementCompareTo",
+    "testEqualsObject",
+    "testGetMaximum",
+    "testGetMinimum",
+    "testHashCode",
+    "testIntersectionWith",
+    "testIntersectionWithNonOverlapping",
+    "testIntersectionWithNull",
+    "testIsAfter",
+    "testIsAfterRange",
+    "testIsBefore",
+    "testIsBeforeRange",
+    "testIsEndedBy",
+    "testIsOverlappedBy",
+    "testIsStartedBy",
+    "testIsWithCompare",
+    "testRangeOfChars",
+    "testSerializing",
+    "testToString",
+    "testToStringFormat"
+  ],
+  "excluded_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.RangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.RangeTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testIsWithCompare\"}\n{\"method\":\"testSerializing\"}\n{\"method\":\"testIsOverlappedBy\"}\n{\"method\":\"testIsStartedBy\"}\n{\"method\":\"testIsEndedBy\"}\n{\"method\":\"testRangeOfChars\"}\n{\"method\":\"testToString\"}\n{\"method\":\"testIsBeforeRange\"}\n{\"method\":\"testIntersectionWith\"}\n{\"method\":\"testEqualsObject\"}\n{\"method\":\"testBetweenWithCompare\"}\n{\"method\":\"testContainsRange\"}\n{\"method\":\"testIsBefore\"}\n{\"method\":\"testContains\"}\n{\"method\":\"testIntersectionWithNull\"}\n{\"method\":\"testIsAfterRange\"}\n{\"method\":\"testElementCompareTo\"}\n{\"method\":\"testHashCode\"}\n{\"method\":\"testGetMaximum\"}\n{\"method\":\"testComparableConstructors\"}\n{\"method\":\"testGetMinimum\"}\n{\"method\":\"testIntersectionWithNonOverlapping\"}\n{\"method\":\"testIsAfter\"}\n{\"method\":\"testToStringFormat\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.1
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.RangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.RangeTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testIsWithCompare\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testSerializing\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":6}\n{\"method\":\"testIsOverlappedBy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testIsStartedBy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsEndedBy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRangeOfChars\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testIsBeforeRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIntersectionWith\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEqualsObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testBetweenWithCompare\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testContainsRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsBefore\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testContains\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIntersectionWithNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsAfterRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testElementCompareTo\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHashCode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testGetMaximum\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testComparableConstructors\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetMinimum\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIntersectionWithNonOverlapping\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsAfter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToStringFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.152,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testIsWithCompare",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testSerializing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 6,
+      "launch": 1
+    },
+    {
+      "method": "testIsOverlappedBy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIsStartedBy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsEndedBy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRangeOfChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIsBeforeRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIntersectionWith",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEqualsObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testBetweenWithCompare",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testContainsRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsBefore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIntersectionWithNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAfterRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testElementCompareTo",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetMaximum",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparableConstructors",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetMinimum",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIntersectionWithNonOverlapping",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAfter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 24
+  },
+  "wall_seconds": 0.253
+}

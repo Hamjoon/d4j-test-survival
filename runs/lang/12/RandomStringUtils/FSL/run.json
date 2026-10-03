@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:45:57.985307+00:00",
+  "latency_seconds": 64.642,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "12",
+  "class": "RandomStringUtils",
+  "technique": "FSL",
+  "finish_reason": "stop",
+  "provider": "DigitalOcean",
+  "response_id": "gen-1791006358-Wo2qd7VAhlxsunH7gt37",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

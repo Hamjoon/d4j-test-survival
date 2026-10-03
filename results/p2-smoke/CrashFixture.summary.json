@@ -1,0 +1,74 @@
+{
+  "fqcn": "CrashFixture",
+  "classpath": "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+  "timeout_ms": 300,
+  "listed_methods": [
+    "a_pass",
+    "b_crash",
+    "c_unreached"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "CrashFixture",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"a_pass\"}\n{\"method\":\"b_crash\"}\n{\"method\":\"c_unreached\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.083
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "CrashFixture",
+        "--timeout-ms",
+        "300"
+      ],
+      "exit_status": 7,
+      "stdout": "{\"method\":\"a_pass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\ncrash evidence\n",
+      "wall_seconds": 0.117,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "a_pass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "b_crash",
+      "status": "not-run",
+      "exception": null,
+      "message": "JVM exited 7; stderr tail: Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\ncrash evidence\n",
+      "milliseconds": null,
+      "launch": 1
+    },
+    {
+      "method": "c_unreached",
+      "status": "not-run",
+      "exception": null,
+      "message": "JVM exited 7; stderr tail: Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\ncrash evidence\n",
+      "milliseconds": null,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 1,
+    "not-run": 2
+  },
+  "wall_seconds": 0.201
+}

@@ -1,0 +1,154 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-6/r1/GToT/CharSequenceTranslatorTest.java",
+    "source_sha256": "3a015d8592964448e86890ecb5ca2954bb61bc833433b01aca3f9b3d512edfde",
+    "selected_methods": [
+      "testAtoBTranslator_basicTranslation",
+      "testAtoBTranslator_noTranslationReturnsZero",
+      "testHex_basicValues",
+      "testHex_localeIndependence",
+      "testHex_negativeValue",
+      "testTranslateStringHelper_nullInput",
+      "testTranslateStringHelper_simpleReplacement",
+      "testTranslateToWriter_fullAlgorithm_simple",
+      "testTranslateToWriter_nullInputDoesNothing",
+      "testTranslateToWriter_nullWriterThrows",
+      "testTranslateToWriter_propagatesIOException",
+      "testTranslateToWriter_zeroConsumptionCopiesOriginalChar",
+      "testWith_withNoAdditionalTranslatorsReturnsSameInstanceWrapped"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-6/Lang-4b/llm/r1/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r1/GToT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.33,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-6/Lang-4b/llm/r1/GToT/javac.err"
+  },
+  "folder": "survival/Lang-6/Lang-4b/llm/r1/GToT",
+  "classes": "survival/Lang-6/Lang-4b/llm/r1/GToT/classes",
+  "run_file": "survival/Lang-6/Lang-4b/llm/r1/GToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testTranslateToWriter_zeroConsumptionCopiesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 28,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_nullInputDoesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAtoBTranslator_basicTranslation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAtoBTranslator_noTranslationReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_withNoAdditionalTranslatorsReturnsSameInstanceWrapped",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateStringHelper_simpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateStringHelper_nullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_nullWriterThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_negativeValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_basicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_propagatesIOException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_fullAlgorithm_simple",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_localeIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13
+  },
+  "run_seconds": 0.269,
+  "list_error": ""
+}

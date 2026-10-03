@@ -1,0 +1,20 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "ZSL",
+  "round": 2,
+  "directory": "runs/lang/6/CharSequenceTranslator/ZSL/r2",
+  "response": "runs/lang/6/CharSequenceTranslator/ZSL/r2/response.md",
+  "response_sha256": "c1d31d40cdf82e89b5fcb403523813244ea48b15fcbd41cd20b6597bcc80bcc4",
+  "msr_detected": true,
+  "csr_v2": false,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": false,
+  "html_detected": false,
+  "file": null
+}

@@ -1,0 +1,14 @@
+{"method": "testWithMethod_CombinedTranslation", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testTranslateToWriter_SurrogatePairHandling", "status": "error", "message": "index 2,length 2", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 2, "launch": 1}
+{"method": "testTranslateToString_NullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_LocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_PositiveValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_NullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToString_BasicCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateToWriter_NullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testPublicMethodSignatures", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_ZeroConsumeFallback", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_NegativeValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWithMethod_ReturnsAggregateTranslator", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_BasicCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToString_EmptyInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

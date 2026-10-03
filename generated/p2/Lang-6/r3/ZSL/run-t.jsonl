@@ -1,0 +1,15 @@
+{"method": "testHex_surrogatePairCodepoint", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testTranslateString_surrogatePairReplacement", "status": "fail", "message": "expected:<testSMILE[e]nd> but was:<testSMILE[]nd>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testWith_mergesTranslatorsInOrder", "status": "fail", "message": "expected:<[c]> but was:<[b]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testHex_upperCaseAlways", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_ioExceptionWrapped", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_multipleTranslatorsChain", "status": "fail", "message": "expected:<[d]> but was:<[b]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testHex_negativeValue", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_basicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_nullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_consumesCorrectNumberOfCodePoints", "status": "fail", "message": "expected:<bSMILE[x]> but was:<bSMILE[]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_simpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_nullInputDoesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_nullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_noTranslationWritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_emptyInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

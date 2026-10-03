@@ -1,0 +1,14 @@
+d4j/
+tools/*.jar
+tools/*.zip
+.DS_Store
+__pycache__/
+tools/runner/*.class
+docker/.env
+generated/**/classes/
+devtests/**/classes-t/
+survival/**/classes/
+results/.p2-rounds.lock
+
+results/.p2-survival.lock
+bundle/

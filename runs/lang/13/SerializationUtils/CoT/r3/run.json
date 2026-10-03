@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-03T08:01:34.354785+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "CoT",
+  "round": 3,
+  "latency_seconds": 80.54,
+  "finish_reason": "stop",
+  "provider": "DekaLLM",
+  "response_id": "gen-1791014494-jNJMrHngRzInz69R4mhk",
+  "content_empty": false,
+  "successful_attempt_directory": "runs/lang/13/SerializationUtils/CoT/r3/attempt-1"
+}

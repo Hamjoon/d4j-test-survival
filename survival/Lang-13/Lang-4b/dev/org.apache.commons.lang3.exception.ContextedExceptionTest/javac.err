@@ -1,0 +1,97 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:38: error: cannot find symbol
+        assertTrue(trace.indexOf("ContextedException")>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:39: error: cannot find symbol
+        assertTrue(StringUtils.isEmpty(message));
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:44: error: cannot find symbol
+        assertEquals(TEST_MESSAGE, exceptionContext.getMessage());
+        ^
+  symbol:   method assertEquals(String,String)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:47: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:54: error: cannot find symbol
+        assertTrue(trace.indexOf("ContextedException")>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:55: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:56: error: cannot find symbol
+        assertTrue(message.indexOf(TEST_MESSAGE)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:63: error: cannot find symbol
+        assertTrue(trace.indexOf("ContextedException")>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:64: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:65: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE_2)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:66: error: cannot find symbol
+        assertTrue(message.indexOf(TEST_MESSAGE_2)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:73: error: cannot find symbol
+        assertTrue(trace.indexOf("ContextedException")>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:74: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:75: error: cannot find symbol
+        assertTrue(trace.indexOf(TEST_MESSAGE_2)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:76: error: cannot find symbol
+        assertTrue(message.indexOf(TEST_MESSAGE_2)>=0);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:88: error: cannot find symbol
+        assertTrue(message != null);
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:92: error: cannot find symbol
+        assertEquals(Exception.class.getName() + ": " + TEST_MESSAGE, exceptionContext.getRawMessage());
+        ^
+  symbol:   method assertEquals(String,String)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:94: error: cannot find symbol
+        assertEquals(TEST_MESSAGE_2, exceptionContext.getRawMessage());
+        ^
+  symbol:   method assertEquals(String,String)
+  location: class ContextedExceptionTest
+devtests/Lang-13/org/apache/commons/lang3/exception/ContextedExceptionTest.java:96: error: cannot find symbol
+        assertNull(exceptionContext.getRawMessage());
+        ^
+  symbol:   method assertNull(String)
+  location: class ContextedExceptionTest
+19 errors

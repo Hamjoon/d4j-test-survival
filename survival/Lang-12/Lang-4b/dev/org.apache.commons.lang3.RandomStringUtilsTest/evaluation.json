@@ -1,0 +1,109 @@
+{
+  "input": {
+    "file": "devtests/Lang-12/org/apache/commons/lang3/RandomStringUtilsTest.java",
+    "source_sha256": "2a31ce45d709814a425ae6f5c4f9771150f84cc55291c9d9c5a86daaa7e8fe04",
+    "selected_methods": [
+      "testConstructor",
+      "testLang100",
+      "testRandomAlphaNumeric",
+      "testRandomAlphabetic",
+      "testRandomAscii",
+      "testRandomNumeric",
+      "testRandomStringUtils",
+      "testRandomStringUtilsHomog"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-12/Lang-4b/dev/classes/org.apache.commons.lang3.RandomStringUtilsTest",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-12/org/apache/commons/lang3/RandomStringUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.347,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-12/Lang-4b/dev/org.apache.commons.lang3.RandomStringUtilsTest/javac.err"
+  },
+  "folder": "survival/Lang-12/Lang-4b/dev/org.apache.commons.lang3.RandomStringUtilsTest",
+  "classes": "survival/Lang-12/Lang-4b/dev/classes/org.apache.commons.lang3.RandomStringUtilsTest",
+  "run_file": "survival/Lang-12/Lang-4b/dev/org.apache.commons.lang3.RandomStringUtilsTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testRandomStringUtilsHomog",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLang100",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 12,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphaNumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomStringUtils",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8
+  },
+  "run_seconds": 0.214,
+  "list_error": ""
+}

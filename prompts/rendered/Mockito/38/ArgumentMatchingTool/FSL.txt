@@ -1,0 +1,112 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named ArgumentMatchingTool. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.verification.argumentmatching;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.hamcrest.Matcher;
+import org.hamcrest.StringDescription;
+import org.mockito.internal.matchers.ContainsExtraTypeInformation;
+
+@SuppressWarnings("unchecked")
+public class ArgumentMatchingTool {
+
+    /**
+     * Suspiciously not matching arguments are those that don't much, the toString() representation is the same but types are different.
+     */
+    public Integer[] getSuspiciouslyNotMatchingArgsIndexes(List<Matcher> matchers, Object[] arguments) {
+        if (matchers.size() != arguments.length) {
+            return new Integer[0];
+        }
+        
+        List<Integer> suspicious = new LinkedList<Integer>();
+        int i = 0;
+        for (Matcher m : matchers) {
+            if (m instanceof ContainsExtraTypeInformation 
+                    && !safelyMatches(m, arguments[i]) 
+                    && toStringEquals(m, arguments[i])
+                    && !((ContainsExtraTypeInformation) m).typeMatches(arguments[i])) {
+                suspicious.add(i);
+            }
+            i++;
+        }
+        return suspicious.toArray(new Integer[0]);
+    }
+
+    private boolean safelyMatches(Matcher m, Object arg) {
+        try {
+            return m.matches(arg);
+        } catch (Throwable t) {
+            return false;
+        }
+    }
+
+    private boolean toStringEquals(Matcher m, Object arg) {
+        return StringDescription.toString(m).equals(arg.toString());
+    }
+}
+.

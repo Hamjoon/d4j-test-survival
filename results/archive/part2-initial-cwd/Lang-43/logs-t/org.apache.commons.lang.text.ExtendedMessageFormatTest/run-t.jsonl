@@ -1,0 +1,7 @@
+{"method": "testBuiltInDateTimeFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 2704, "launch": 1}
+{"method": "testOverriddenBuiltinFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 81, "launch": 1}
+{"method": "testBuiltInChoiceFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 87, "launch": 1}
+{"method": "testEscapedQuote_LANG_477", "status": "error", "message": "Java heap space", "exception": "java.lang.OutOfMemoryError", "milliseconds": 5703, "launch": 1}
+{"method": "testExtendedFormats", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testExtendedAndBuiltInFormats", "status": "pass", "message": null, "exception": null, "milliseconds": 2670, "launch": 1}
+{"method": "testBuiltInNumberFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 286, "launch": 1}

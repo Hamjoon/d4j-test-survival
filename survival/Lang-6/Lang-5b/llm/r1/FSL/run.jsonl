@@ -1,0 +1,16 @@
+{"method": "testTranslateUsesWriterAlgorithmWhenConsumeZero", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testTranslateWriterPropagatesIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriterNullInputDoesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexIsUpperCaseAndLocaleIndependent", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexPositiveValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateSimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateDoesNotEnterInfiniteLoopWhenTranslatorReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWriterMultipleTranslators", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testHexZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWithMergesTranslatorsInOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWithAddsCurrentTranslatorAtPositionZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateEmptyStringReturnsEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWithSurrogatePair", "status": "fail", "message": "expected:<Hello [SMILE][] World> but was:<Hello [SMILE][?] World>", "exception": "org.junit.ComparisonFailure", "milliseconds": 3, "launch": 1}
+{"method": "testTranslateNullInputReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateConsumesCorrectNumberOfCharsForSurrogatePair", "status": "fail", "message": "expected:<ALAUGH[]B> but was:<ALAUGH[?]B>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriterNullWriterThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

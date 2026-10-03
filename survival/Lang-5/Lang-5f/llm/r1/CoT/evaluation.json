@@ -1,0 +1,217 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-5/r1/CoT/LocaleUtilsTest.java",
+    "source_sha256": "e9c859690bbb068460fb29bf6b1b122ab2cc1b7e4eba562692ba8817cb8d7e9e",
+    "selected_methods": [
+      "testAvailableLocaleListIsUnmodifiable",
+      "testAvailableLocaleSetIsUnmodifiable",
+      "testConstructorIsPublic",
+      "testCountriesByLanguageCaching",
+      "testCountriesByLanguageKnownLanguage",
+      "testCountriesByLanguageNull",
+      "testIsAvailableLocale",
+      "testLanguagesByCountryCaching",
+      "testLanguagesByCountryKnownCountry",
+      "testLanguagesByCountryNull",
+      "testLocaleLookupListWithDefault",
+      "testToLocaleCountryTooShort",
+      "testToLocaleFullWithVariant",
+      "testToLocaleInvalidVariantFormat",
+      "testToLocaleLanguageAndCountry",
+      "testToLocaleLanguageTooLong",
+      "testToLocaleMissingVariantUnderscore",
+      "testToLocaleOnlyUnderscore",
+      "testToLocaleSimpleLanguage",
+      "testToLocaleTooShort"
+    ],
+    "target": "Lang-5f",
+    "fqcn": "org.apache.commons.lang3.LocaleUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-5/Lang-5f/llm/r1/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-5f/target/classes:/work/d4j/Lang-5f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-5/r1/CoT/LocaleUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.3,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-5/Lang-5f/llm/r1/CoT/javac.err"
+  },
+  "folder": "survival/Lang-5/Lang-5f/llm/r1/CoT",
+  "classes": "survival/Lang-5/Lang-5f/llm/r1/CoT/classes",
+  "run_file": "survival/Lang-5/Lang-5f/llm/r1/CoT/run.jsonl",
+  "methods": [
+    {
+      "method": "testToLocaleMissingVariantUnderscore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 18,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleListIsUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleInvalidVariantFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleLanguageAndCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSetIsUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleCountryTooShort",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountryNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountryCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleTooShort",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupListWithDefault",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguageKnownLanguage",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleSimpleLanguage",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountryKnownCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleLanguageTooLong",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleOnlyUnderscore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocaleFullWithVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 20
+  },
+  "run_seconds": 0.248,
+  "list_error": ""
+}

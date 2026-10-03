@@ -1,0 +1,193 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-12b/llm/r5/GToT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-12b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testSerialize_SimpleBean_RoundTrip",
+    "testSerializeToByteArray_SimpleBean_RoundTrip",
+    "testSerializeToByteArray_NullObject_ReturnsNonNullArray",
+    "testDeserialize_CorruptStream_ThrowsSerializationException",
+    "testClone_NullInput_ReturnsNull",
+    "testSerializeAndDeserialize_MultipleObjects_Independence",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testClone_ImmutableObject_ReturnsSameLogicalValue",
+    "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+    "testClone_SimpleBean_ReturnsDeepCopy",
+    "testSerialize_NullObject_SerializesAndDeserializesToNull",
+    "testDeserializeByteArray_SimpleBean_RoundTrip"
+  ],
+  "all_listed_methods": [
+    "testSerialize_SimpleBean_RoundTrip",
+    "testDeserialize_NullInputStream_ThrowsIllegalArgumentException",
+    "testSerializeToByteArray_SimpleBean_RoundTrip",
+    "testDeserializeByteArray_NullArray_ThrowsIllegalArgumentException",
+    "testSerializeToByteArray_NullObject_ReturnsNonNullArray",
+    "testDeserialize_CorruptStream_ThrowsSerializationException",
+    "testClone_NullInput_ReturnsNull",
+    "testSerializeAndDeserialize_MultipleObjects_Independence",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testClone_ImmutableObject_ReturnsSameLogicalValue",
+    "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+    "testClone_SimpleBean_ReturnsDeepCopy",
+    "testClone_BadBean_ThrowsSerializationException",
+    "testSerialize_NullObject_SerializesAndDeserializesToNull",
+    "testDeserializeByteArray_SimpleBean_RoundTrip"
+  ],
+  "selected_methods": [
+    "testClone_ImmutableObject_ReturnsSameLogicalValue",
+    "testClone_NullInput_ReturnsNull",
+    "testClone_SimpleBean_ReturnsDeepCopy",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testDeserializeByteArray_SimpleBean_RoundTrip",
+    "testDeserialize_CorruptStream_ThrowsSerializationException",
+    "testSerializeAndDeserialize_MultipleObjects_Independence",
+    "testSerializeToByteArray_NullObject_ReturnsNonNullArray",
+    "testSerializeToByteArray_SimpleBean_RoundTrip",
+    "testSerialize_NullObject_SerializesAndDeserializesToNull",
+    "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+    "testSerialize_SimpleBean_RoundTrip"
+  ],
+  "excluded_methods": [
+    "testDeserialize_NullInputStream_ThrowsIllegalArgumentException",
+    "testDeserializeByteArray_NullArray_ThrowsIllegalArgumentException",
+    "testClone_BadBean_ThrowsSerializationException"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-12b/llm/r5/GToT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSerialize_SimpleBean_RoundTrip\"}\n{\"method\":\"testDeserialize_NullInputStream_ThrowsIllegalArgumentException\"}\n{\"method\":\"testSerializeToByteArray_SimpleBean_RoundTrip\"}\n{\"method\":\"testDeserializeByteArray_NullArray_ThrowsIllegalArgumentException\"}\n{\"method\":\"testSerializeToByteArray_NullObject_ReturnsNonNullArray\"}\n{\"method\":\"testDeserialize_CorruptStream_ThrowsSerializationException\"}\n{\"method\":\"testClone_NullInput_ReturnsNull\"}\n{\"method\":\"testSerializeAndDeserialize_MultipleObjects_Independence\"}\n{\"method\":\"testDeserializeByteArray_CorruptData_ThrowsSerializationException\"}\n{\"method\":\"testClone_ImmutableObject_ReturnsSameLogicalValue\"}\n{\"method\":\"testSerialize_NullOutputStream_ThrowsIllegalArgumentException\"}\n{\"method\":\"testClone_SimpleBean_ReturnsDeepCopy\"}\n{\"method\":\"testClone_BadBean_ThrowsSerializationException\"}\n{\"method\":\"testSerialize_NullObject_SerializesAndDeserializesToNull\"}\n{\"method\":\"testDeserializeByteArray_SimpleBean_RoundTrip\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.087
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-12b/llm/r5/GToT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testDeserialize_NullInputStream_ThrowsIllegalArgumentException,testDeserializeByteArray_NullArray_ThrowsIllegalArgumentException,testClone_BadBean_ThrowsSerializationException"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testSerialize_SimpleBean_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"testSerializeToByteArray_SimpleBean_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeToByteArray_NullObject_ReturnsNonNullArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_CorruptStream_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":5}\n{\"method\":\"testClone_NullInput_ReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeAndDeserialize_MultipleObjects_Independence\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserializeByteArray_CorruptData_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_ImmutableObject_ReturnsSameLogicalValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerialize_NullOutputStream_ThrowsIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testClone_SimpleBean_ReturnsDeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_NullObject_SerializesAndDeserializesToNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeByteArray_SimpleBean_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.131,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testSerialize_SimpleBean_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_SimpleBean_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_NullObject_ReturnsNonNullArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_CorruptStream_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeAndDeserialize_MultipleObjects_Independence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_ImmutableObject_ReturnsSameLogicalValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClone_SimpleBean_ReturnsDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NullObject_SerializesAndDeserializesToNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_SimpleBean_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12
+  },
+  "wall_seconds": 0.219
+}

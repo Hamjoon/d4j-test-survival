@@ -1,0 +1,130 @@
+{
+  "timestamp_utc": "2026-10-02T08:57:08.389852+00:00",
+  "checkouts": [
+    {
+      "checkout": "Lang-4b",
+      "exports": {
+        "classes.modified": "org.apache.commons.lang3.text.translate.LookupTranslator",
+        "dir.src.classes": "src/main/java",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/tests",
+        "cp.compile": "/work/d4j/Lang-4b/target/classes",
+        "cp.test": "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 4.402,
+      "json_classes": [
+        "LookupTranslator"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Lang-4f",
+      "exports": {
+        "classes.modified": "org.apache.commons.lang3.text.translate.LookupTranslator",
+        "dir.src.classes": "src/main/java",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/tests",
+        "cp.compile": "/work/d4j/Lang-4f/target/classes",
+        "cp.test": "/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 4.356,
+      "json_classes": [
+        "LookupTranslator"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Csv-1b",
+      "exports": {
+        "classes.modified": "org.apache.commons.csv.ExtendedBufferedReader",
+        "dir.src.classes": "src/main/java",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/test-classes",
+        "cp.compile": "/work/d4j/Csv-1b/target/classes",
+        "cp.test": "/defects4j/framework/projects/Csv/lib/junit/junit/4.10/junit-4.10.jar:/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/work/d4j/Csv-1b/target/classes:/work/d4j/Csv-1b/target/test-classes:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Csv/lib/com/csvreader/1.0/javacsv.jar:/defects4j/framework/projects/Csv/lib/com/generationjava/io/1.0/gj-csv-1.0.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar:/defects4j/framework/projects/Csv/lib/com/opencsv/4.0/opencsv-4.0.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.2/commons-io-2.2.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.4/commons-io-2.4.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.5/commons-io-2.5.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.6/commons-io-2.6.jar:/defects4j/framework/projects/Csv/lib/junit/junit/3.8.1/junit-3.8.1.jar:/defects4j/framework/projects/Csv/lib/junit/junit/4.11/junit-4.11.jar:/defects4j/framework/projects/Csv/lib/junit/junit/4.12/junit-4.12.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar:/defects4j/framework/projects/Csv/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar:/defects4j/framework/projects/Csv/lib/org/skife/csv/1.0/csv-1.0.jar:/defects4j/framework/projects/Csv/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 1.965,
+      "json_classes": [
+        "ExtendedBufferedReader"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Csv-1f",
+      "exports": {
+        "classes.modified": "org.apache.commons.csv.ExtendedBufferedReader",
+        "dir.src.classes": "src/main/java",
+        "dir.src.tests": "src/test/java",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/test-classes",
+        "cp.compile": "/work/d4j/Csv-1f/target/classes",
+        "cp.test": "/defects4j/framework/projects/Csv/lib/junit/junit/4.10/junit-4.10.jar:/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/work/d4j/Csv-1f/target/classes:/work/d4j/Csv-1f/target/test-classes:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Csv/lib/com/csvreader/1.0/javacsv.jar:/defects4j/framework/projects/Csv/lib/com/generationjava/io/1.0/gj-csv-1.0.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.3.168/h2-1.3.168.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.180/h2-1.4.180.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.181/h2-1.4.181.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.182/h2-1.4.182.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.196/h2-1.4.196.jar:/defects4j/framework/projects/Csv/lib/com/h2database/h2/1.4.198/h2-1.4.198.jar:/defects4j/framework/projects/Csv/lib/com/opencsv/4.0/opencsv-4.0.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.2/commons-io-2.2.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.4/commons-io-2.4.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.5/commons-io-2.5.jar:/defects4j/framework/projects/Csv/lib/commons-io/commons-io/2.6/commons-io-2.6.jar:/defects4j/framework/projects/Csv/lib/junit/junit/3.8.1/junit-3.8.1.jar:/defects4j/framework/projects/Csv/lib/junit/junit/4.11/junit-4.11.jar:/defects4j/framework/projects/Csv/lib/junit/junit/4.12/junit-4.12.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/defects4j/framework/projects/Csv/lib/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/defects4j/framework/projects/Csv/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/defects4j/framework/projects/Csv/lib/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar:/defects4j/framework/projects/Csv/lib/org/openjdk/jmh/1.21/jmh-core-1.21.jar:/defects4j/framework/projects/Csv/lib/org/skife/csv/1.0/csv-1.0.jar:/defects4j/framework/projects/Csv/lib/org/supercsv/2.4.0/super-csv-2.4.0.jar"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 2.004,
+      "json_classes": [
+        "ExtendedBufferedReader"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Cli-5b",
+      "exports": {
+        "classes.modified": "org.apache.commons.cli.Util",
+        "dir.src.classes": "src/java",
+        "dir.src.tests": "src/test",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/test-classes",
+        "cp.compile": "/work/d4j/Cli-5b/target/classes:/work/d4j/Cli-5b/target/lib/junit-3.8.1.jar",
+        "cp.test": "/work/d4j/Cli-5b/target/lib/junit-3.8.1.jar:/work/d4j/Cli-5b/target/classes:/work/d4j/Cli-5b/target/test-classes"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 2.517,
+      "json_classes": [
+        "Util"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Cli-5f",
+      "exports": {
+        "classes.modified": "org.apache.commons.cli.Util",
+        "dir.src.classes": "src/java",
+        "dir.src.tests": "src/test",
+        "dir.bin.classes": "target/classes",
+        "dir.bin.tests": "target/test-classes",
+        "cp.compile": "/work/d4j/Cli-5f/target/classes:/work/d4j/Cli-5f/target/lib/junit-3.8.1.jar",
+        "cp.test": "/work/d4j/Cli-5f/target/lib/junit-3.8.1.jar:/work/d4j/Cli-5f/target/classes:/work/d4j/Cli-5f/target/test-classes"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 2.521,
+      "json_classes": [
+        "Util"
+      ],
+      "classes_match": true
+    },
+    {
+      "checkout": "Closure-1b",
+      "exports": {
+        "classes.modified": "com.google.javascript.jscomp.RemoveUnusedVars"
+      },
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 5.835,
+      "json_classes": [],
+      "classes_match": false
+    },
+    {
+      "checkout": "Mockito-1b",
+      "exports": {},
+      "checkout_returncode": 0,
+      "checkout_wall_seconds": 5.707
+    }
+  ],
+  "stop_reason": "Modified class mismatch for Closure-1b: export=['RemoveUnusedVars'], JSON=[]."
+}

@@ -1,0 +1,16 @@
+{"method": "testTranslateWriter_NullWriter_ThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 1}
+{"method": "testTranslateWriter_NullInput_WritesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateString_ConsumedZeroFallsBackToCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testWith_ArrayOrderPreserved", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_Zero", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_UpperCaseEnforced", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_MultiDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_WriterThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_TranslatorThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_SingleDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_ConsumedZeroCopiesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_MergesTwoTranslatorsInOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_EmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

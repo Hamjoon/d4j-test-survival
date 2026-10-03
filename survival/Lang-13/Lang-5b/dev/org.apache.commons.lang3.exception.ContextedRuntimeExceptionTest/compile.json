@@ -1,0 +1,19 @@
+{
+  "command": [
+    "javac",
+    "-d",
+    "survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest",
+    "-cp",
+    "/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+    "devtests/Lang-13/org/apache/commons/lang3/exception/ContextedRuntimeExceptionTest.java"
+  ],
+  "compile_ok": false,
+  "exit_status": 1,
+  "seconds": 0.29,
+  "error_count": 20,
+  "categories": {
+    "other": 1,
+    "CFS": 19
+  },
+  "stderr_file": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.ContextedRuntimeExceptionTest/javac.err"
+}

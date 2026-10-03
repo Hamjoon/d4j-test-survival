@@ -1,0 +1,416 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.EnumTest",
+  "classpath": "/work/devtests/Lang-64/classes-t:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-64b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNestedReferenced",
+    "testSerialization",
+    "testGet",
+    "testMap",
+    "testExtendedToString",
+    "testList",
+    "testName",
+    "testToString",
+    "testOperationSerialization",
+    "testColorEnumEqualsWithDifferentClassLoaders",
+    "testCompareTo",
+    "testExtended1List",
+    "testExtended2List",
+    "testExtended3List",
+    "testBroken1",
+    "testBroken2",
+    "testBroken3",
+    "testOperationGet",
+    "testOperationMap",
+    "testExtendedSerialization",
+    "testBroken5Operation",
+    "testHashCode",
+    "testBroken4Operation",
+    "testExtended1Get",
+    "testExtended1Map",
+    "testExtended2Get",
+    "testExtended2Map",
+    "testExtended3Get",
+    "testExtended3Map",
+    "testOperationCalculation",
+    "testBroken3Operation",
+    "testEquals",
+    "testEqualsToWrongInstance",
+    "testNestedBroken",
+    "testOperationToString",
+    "testBroken2Operation",
+    "testNested",
+    "testBroken1Operation",
+    "testNestedLinked",
+    "testIterator",
+    "testOperationList"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-64/classes-t:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.EnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testNestedReferenced\"}\n{\"method\":\"testSerialization\"}\n{\"method\":\"testGet\"}\n{\"method\":\"testMap\"}\n{\"method\":\"testExtendedToString\"}\n{\"method\":\"testList\"}\n{\"method\":\"testName\"}\n{\"method\":\"testToString\"}\n{\"method\":\"testOperationSerialization\"}\n{\"method\":\"testColorEnumEqualsWithDifferentClassLoaders\"}\n{\"method\":\"testCompareTo\"}\n{\"method\":\"testExtended1List\"}\n{\"method\":\"testExtended2List\"}\n{\"method\":\"testExtended3List\"}\n{\"method\":\"testBroken1\"}\n{\"method\":\"testBroken2\"}\n{\"method\":\"testBroken3\"}\n{\"method\":\"testOperationGet\"}\n{\"method\":\"testOperationMap\"}\n{\"method\":\"testExtendedSerialization\"}\n{\"method\":\"testBroken5Operation\"}\n{\"method\":\"testHashCode\"}\n{\"method\":\"testBroken4Operation\"}\n{\"method\":\"testExtended1Get\"}\n{\"method\":\"testExtended1Map\"}\n{\"method\":\"testExtended2Get\"}\n{\"method\":\"testExtended2Map\"}\n{\"method\":\"testExtended3Get\"}\n{\"method\":\"testExtended3Map\"}\n{\"method\":\"testOperationCalculation\"}\n{\"method\":\"testBroken3Operation\"}\n{\"method\":\"testEquals\"}\n{\"method\":\"testEqualsToWrongInstance\"}\n{\"method\":\"testNestedBroken\"}\n{\"method\":\"testOperationToString\"}\n{\"method\":\"testBroken2Operation\"}\n{\"method\":\"testNested\"}\n{\"method\":\"testBroken1Operation\"}\n{\"method\":\"testNestedLinked\"}\n{\"method\":\"testIterator\"}\n{\"method\":\"testOperationList\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.073
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-64/classes-t:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.EnumTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNestedReferenced\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":11}\n{\"method\":\"testGet\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testMap\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testExtendedToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testList\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testName\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testOperationSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":4}\n{\"method\":\"testColorEnumEqualsWithDifferentClassLoaders\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended1List\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended2List\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended3List\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBroken1\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testBroken2\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testBroken3\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testOperationGet\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testOperationMap\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtendedSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testBroken5Operation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testHashCode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBroken4Operation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testExtended1Get\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended1Map\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended2Get\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended2Map\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended3Get\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testExtended3Map\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testOperationCalculation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBroken3Operation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testEquals\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEqualsToWrongInstance\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNestedBroken\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testOperationToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBroken2Operation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testNested\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBroken1Operation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testNestedLinked\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testIterator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testOperationList\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.17,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNestedReferenced",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 11,
+      "launch": 1
+    },
+    {
+      "method": "testGet",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMap",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testExtendedToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testName",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testOperationSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testColorEnumEqualsWithDifferentClassLoaders",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended1List",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended2List",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended3List",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBroken1",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testBroken2",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testBroken3",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testOperationGet",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testOperationMap",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtendedSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testBroken5Operation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBroken4Operation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testExtended1Get",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended1Map",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended2Get",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended2Map",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended3Get",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testExtended3Map",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testOperationCalculation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBroken3Operation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEqualsToWrongInstance",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNestedBroken",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testOperationToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBroken2Operation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNested",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBroken1Operation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testNestedLinked",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testOperationList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 41
+  },
+  "wall_seconds": 0.244
+}

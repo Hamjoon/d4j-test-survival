@@ -1,0 +1,66 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/devtests/Lang-4/classes-t:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testBasicLookup",
+    "testLang882"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-4/classes-t:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testBasicLookup\"}\n{\"method\":\"testLang882\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.093
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-4/classes-t:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testBasicLookup\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":18}\n{\"method\":\"testLang882\",\"status\":\"fail\",\"message\":\"Incorrect codepoint consumption expected:<3> but was:<0>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.114,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testBasicLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 18,
+      "launch": 1
+    },
+    {
+      "method": "testLang882",
+      "status": "fail",
+      "message": "Incorrect codepoint consumption expected:<3> but was:<0>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "wall_seconds": 0.207
+}

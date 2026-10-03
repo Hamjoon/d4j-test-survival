@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-03T08:01:34.355611+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ToT",
+  "round": 3,
+  "latency_seconds": 80.707,
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "response_id": "gen-1791014494-rxZe7RzwavOVxNA3rfGK",
+  "content_empty": false,
+  "successful_attempt_directory": "runs/lang/13/SerializationUtils/ToT/r3/attempt-1"
+}

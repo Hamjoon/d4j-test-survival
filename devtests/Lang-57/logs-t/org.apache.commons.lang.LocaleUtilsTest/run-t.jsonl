@@ -1,0 +1,11 @@
+{"method": "testAvailableLocaleSet", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 44, "launch": 1}
+{"method": "testIsAvailableLocale", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 1, "launch": 1}
+{"method": "testAvailableLocaleList", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 1, "launch": 1}
+{"method": "testCountriesByLanguage", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 1, "launch": 1}
+{"method": "testLocaleLookupList_LocaleLocale", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}
+{"method": "testLanguagesByCountry", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}
+{"method": "testToLocale_1Part", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}
+{"method": "testToLocale_2Part", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 1, "launch": 1}
+{"method": "testToLocale_3Part", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}
+{"method": "testLocaleLookupList_Locale", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}
+{"method": "testConstructor", "status": "error", "message": "null", "exception": "java.lang.NullPointerException", "milliseconds": 0, "launch": 1}

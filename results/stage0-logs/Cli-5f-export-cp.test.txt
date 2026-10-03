@@ -1,0 +1,11 @@
+$ defects4j export -p cp.test -w /work/d4j/Cli-5f
+
+[stdout]
+/work/d4j/Cli-5f/target/lib/junit-3.8.1.jar:/work/d4j/Cli-5f/target/classes:/work/d4j/Cli-5f/target/test-classes
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.cp.test)............................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.380

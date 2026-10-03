@@ -1,0 +1,145 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-55/r1/GToT/StopWatchTest.java",
+    "source_sha256": "d92a2999398dd48fd9588365d2835aceeefac3df41082c65ec0bfda77a0c82e7",
+    "selected_methods": [
+      "testGetTimeDuringRunning",
+      "testMultipleCycles",
+      "testResumeWhenNotSuspendedThrows",
+      "testSplitWhenNotRunningThrows",
+      "testStartAfterStopWithoutResetThrows",
+      "testStartStopBasic",
+      "testStartWhenAlreadyStartedThrows",
+      "testStopWhenNotRunningThrows",
+      "testSuspendResumeExcludesSuspendedPeriod",
+      "testSuspendWhenNotRunningThrows",
+      "testUnsplitResetsSplitState",
+      "testUnsplitWithoutSplitThrows"
+    ],
+    "target": "Lang-55f",
+    "fqcn": "org.apache.commons.lang.time.StopWatchTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-55/Lang-55f/llm/r1/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-55f/target/classes:/work/d4j/Lang-55f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-55/r1/GToT/StopWatchTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.295,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-55/Lang-55f/llm/r1/GToT/javac.err"
+  },
+  "folder": "survival/Lang-55/Lang-55f/llm/r1/GToT",
+  "classes": "survival/Lang-55/Lang-55f/llm/r1/GToT/classes",
+  "run_file": "survival/Lang-55/Lang-55f/llm/r1/GToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testUnsplitResetsSplitState",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 33,
+      "launch": 1
+    },
+    {
+      "method": "testStartAfterStopWithoutResetThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 6,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleCycles",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 15,
+      "launch": 1
+    },
+    {
+      "method": "testResumeWhenNotSuspendedThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testStartStopBasic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 13,
+      "launch": 1
+    },
+    {
+      "method": "testGetTimeDuringRunning",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 9,
+      "launch": 1
+    },
+    {
+      "method": "testUnsplitWithoutSplitThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSuspendWhenNotRunningThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSplitWhenNotRunningThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStopWhenNotRunningThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStartWhenAlreadyStartedThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSuspendResumeExcludesSuspendedPeriod",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 27,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12
+  },
+  "run_seconds": 0.313,
+  "list_error": ""
+}

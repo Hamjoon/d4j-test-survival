@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:45:41.547461+00:00",
+  "latency_seconds": 6.96,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "4",
+  "class": "LookupTranslator",
+  "technique": "GToT",
+  "finish_reason": "stop",
+  "provider": "BaseTen",
+  "response_id": "gen-1791006341-xAvS9gpWlf24it1lFWGt",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

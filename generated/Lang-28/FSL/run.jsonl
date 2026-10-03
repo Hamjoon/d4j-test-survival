@@ -1,0 +1,12 @@
+{"method":"testHexEntityUnescapedUppercaseX","status":"pass"}
+{"method":"testEntityAtNonZeroIndex","status":"pass"}
+{"method":"testDecimalEntityUnescaped","status":"pass"}
+{"method":"testHexEntityUnescapedLowercaseX","status":"pass"}
+{"method":"testNonEntityReturnsZero","status":"pass"}
+{"method":"testEntityMissingHashReturnsZero","status":"pass"}
+{"method":"testInvalidHexNumberReturnsZero","status":"pass"}
+{"method":"testEntityWithHighCodePoint","status":"fail","message":"expected:<[😀]> but was:<[]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testMissingSemicolonThrowsException","status":"pass"}
+{"method":"testMultipleEntitiesOnlyFirstProcessedPerCall","status":"pass"}
+{"method":"testInvalidDecimalNumberReturnsZero","status":"pass"}
+{"summary":{"run":11,"failures":1,"ignored":0,"ms":25}}

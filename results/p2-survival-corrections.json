@@ -1,0 +1,13 @@
+{
+  "reason": "Missing inherited methods previously caused class-wide not-run; corrected to per-method not-run while executing present selected methods",
+  "affected_directories": [
+    "survival/Lang-13/Lang-6b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+    "survival/Lang-13/Lang-6b/dev/org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+    "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+    "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+    "survival/Lang-13/Lang-4b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+    "survival/Lang-13/Lang-4b/dev/org.apache.commons.lang3.time.FastDateFormat_ParserTest"
+  ],
+  "original_artifacts": "results/archive/step6-inherited-listing",
+  "source_edits": false
+}

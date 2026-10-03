@@ -1,0 +1,1 @@
+{"method": "testKeyWithNonStringCharSequenceNotMatched", "status": "fail", "message": "expected:<[foo]> but was:<[bar]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 21, "launch": 1}

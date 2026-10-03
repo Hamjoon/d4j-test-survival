@@ -1,0 +1,118 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-4/r3/GToT/LookupTranslatorTest.java",
+    "source_sha256": "2ae732813821fee41efe15facc4b2a5b852671d4b6648f78206d9533699588c2",
+    "selected_methods": [
+      "testConstructorWithEmptyLookup",
+      "testConstructorWithNullLookup",
+      "testDuplicateKeysOverride",
+      "testGreedyMatching",
+      "testNoMatchReturnsZero",
+      "testShortestAndLongestBoundaries",
+      "testTranslateWithIndexAtEnd",
+      "testTranslateWithNegativeIndex",
+      "testWriterIOExceptionPropagates"
+    ],
+    "target": "Lang-4f",
+    "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-4/Lang-4f/llm/r3/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-4/r3/GToT/LookupTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.334,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-4/Lang-4f/llm/r3/GToT/javac.err"
+  },
+  "folder": "survival/Lang-4/Lang-4f/llm/r3/GToT",
+  "classes": "survival/Lang-4/Lang-4f/llm/r3/GToT/classes",
+  "run_file": "survival/Lang-4/Lang-4f/llm/r3/GToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testTranslateWithIndexAtEnd",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithEmptyLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNoMatchReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDuplicateKeysOverride",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testShortestAndLongestBoundaries",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithNullLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWriterIOExceptionPropagates",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyMatching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithNegativeIndex",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9
+  },
+  "run_seconds": 0.214,
+  "list_error": ""
+}

@@ -1,0 +1,18 @@
+{"method": "testShortDateStyleWithLocales", "status": "pass", "message": null, "exception": null, "milliseconds": 44, "launch": 1}
+{"method": "testMilleniumBug", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testLocaleMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 81, "launch": 1}
+{"method": "testDayOf", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testParseZone", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testAmPm", "status": "pass", "message": null, "exception": null, "milliseconds": 5, "launch": 1}
+{"method": "testLowYearPadding", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testParseNumerics", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang303", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testLang538", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToStringContainsName", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "test_Equality_Hash", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testParseLongShort", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testEquals", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testQuotes", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTimeZoneMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testPatternMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLocales", "status": "not-run", "exception": "JUnitMethodMissing", "message": "Baseline method absent from JUnit listing at target version (possibly inherited)", "milliseconds": null, "launch": 0}

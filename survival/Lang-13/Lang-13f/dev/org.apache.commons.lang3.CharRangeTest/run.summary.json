@@ -1,0 +1,228 @@
+{
+  "fqcn": "org.apache.commons.lang3.CharRangeTest",
+  "classpath": "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.CharRangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testContainsNullArg",
+    "testConstructorAccessors_isIn_Reversed",
+    "testConstructorAccessors_isNot",
+    "testSerialization",
+    "testClass",
+    "testConstructorAccessors_isNotIn_Same",
+    "testConstructorAccessors_is",
+    "testEquals_Object",
+    "testContains_Char",
+    "testConstructorAccessors_isIn_Normal",
+    "testHashCode",
+    "testContains_Charrange",
+    "testConstructorAccessors_isIn_Same",
+    "testIterator",
+    "testConstructorAccessors_isNotIn_Normal",
+    "testConstructorAccessors_isNotIn_Reversed"
+  ],
+  "all_listed_methods": [
+    "testContainsNullArg",
+    "testConstructorAccessors_isIn_Reversed",
+    "testConstructorAccessors_isNot",
+    "testSerialization",
+    "testClass",
+    "testConstructorAccessors_isNotIn_Same",
+    "testConstructorAccessors_is",
+    "testEquals_Object",
+    "testContains_Char",
+    "testConstructorAccessors_isIn_Normal",
+    "testHashCode",
+    "testContains_Charrange",
+    "testConstructorAccessors_isIn_Same",
+    "testIterator",
+    "testConstructorAccessors_isNotIn_Normal",
+    "testConstructorAccessors_isNotIn_Reversed"
+  ],
+  "selected_methods": [
+    "testClass",
+    "testConstructorAccessors_is",
+    "testConstructorAccessors_isIn_Normal",
+    "testConstructorAccessors_isIn_Reversed",
+    "testConstructorAccessors_isIn_Same",
+    "testConstructorAccessors_isNot",
+    "testConstructorAccessors_isNotIn_Normal",
+    "testConstructorAccessors_isNotIn_Reversed",
+    "testConstructorAccessors_isNotIn_Same",
+    "testContainsNullArg",
+    "testContains_Char",
+    "testContains_Charrange",
+    "testEquals_Object",
+    "testHashCode",
+    "testIterator",
+    "testSerialization"
+  ],
+  "excluded_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.CharRangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.CharRangeTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testContainsNullArg\"}\n{\"method\":\"testConstructorAccessors_isIn_Reversed\"}\n{\"method\":\"testConstructorAccessors_isNot\"}\n{\"method\":\"testSerialization\"}\n{\"method\":\"testClass\"}\n{\"method\":\"testConstructorAccessors_isNotIn_Same\"}\n{\"method\":\"testConstructorAccessors_is\"}\n{\"method\":\"testEquals_Object\"}\n{\"method\":\"testContains_Char\"}\n{\"method\":\"testConstructorAccessors_isIn_Normal\"}\n{\"method\":\"testHashCode\"}\n{\"method\":\"testContains_Charrange\"}\n{\"method\":\"testConstructorAccessors_isIn_Same\"}\n{\"method\":\"testIterator\"}\n{\"method\":\"testConstructorAccessors_isNotIn_Normal\"}\n{\"method\":\"testConstructorAccessors_isNotIn_Reversed\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.081
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-13f/dev/classes/org.apache.commons.lang3.CharRangeTest:/work/tools/runner:/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.CharRangeTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testContainsNullArg\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":21}\n{\"method\":\"testConstructorAccessors_isIn_Reversed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testConstructorAccessors_isNot\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerialization\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":5}\n{\"method\":\"testClass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorAccessors_isNotIn_Same\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorAccessors_is\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEquals_Object\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testContains_Char\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorAccessors_isIn_Normal\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHashCode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testContains_Charrange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorAccessors_isIn_Same\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIterator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":4}\n{\"method\":\"testConstructorAccessors_isNotIn_Normal\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorAccessors_isNotIn_Reversed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.128,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testContainsNullArg",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Reversed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNot",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialization",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Same",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_is",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals_Object",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains_Char",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Normal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testContains_Charrange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isIn_Same",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Normal",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorAccessors_isNotIn_Reversed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 16
+  },
+  "wall_seconds": 0.211
+}

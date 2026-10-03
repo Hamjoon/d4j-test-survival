@@ -1,0 +1,11 @@
+{"method": "testZeroCodePoint", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testDecimalEntityWithSemicolon", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds", "status": "fail", "message": "Expected StringIndexOutOfBoundsException because the terminating ';' is missing", "exception": "java.lang.AssertionError", "milliseconds": 2, "launch": 1}
+{"method": "testDecimalEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds", "status": "fail", "message": "Expected StringIndexOutOfBoundsException because the terminating ';' is missing", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithSemicolon", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidNumberFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityUpperCaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityEmbeddedInLongerString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNonNumericEntityIsIgnored", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMaximumBmpCodePoint", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSupplementaryUnicodeEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

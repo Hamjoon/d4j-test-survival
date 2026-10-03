@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "baseline_commit": "81051f5",
+  "bin_order": [
+    "0",
+    "1-30",
+    "31-180",
+    "181-365",
+    "366-730",
+    "731+"
+  ],
+  "populations": [
+    "dev",
+    "dev-own",
+    "llm"
+  ],
+  "aggregate_rows_checked": 18,
+  "original_method_timepoint_rows": 12803,
+  "exact_decimal_assignment_checked": true,
+  "boundary_cases_checked": 10,
+  "all_status_counts_conserved": true,
+  "existing_summary_and_matrix_views_unchanged": true,
+  "immutable_input_files": [
+    "results/p2-survival-methods.csv",
+    "results/p2-population.json",
+    "results/p2-dedup.csv",
+    "results/p2-generation-rounds.json",
+    "results/p2-fixed-classification.json"
+  ],
+  "experiment_runs": 0,
+  "api_calls": 0
+}

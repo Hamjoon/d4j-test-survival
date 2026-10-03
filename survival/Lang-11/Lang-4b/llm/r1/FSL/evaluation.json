@@ -1,0 +1,244 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-11/r1/FSL/RandomStringUtilsTest.java",
+    "source_sha256": "34112853e7af7f89702c7d0e7a83ef9bf61f6d58e53d556222f184ac27a77d1b",
+    "selected_methods": [
+      "testDeterministicWithSameSeed",
+      "testDifferentSeedsProduceDifferentStrings",
+      "testPrivateHighSurrogateIsSkipped",
+      "testRandomAlphabeticCharacters",
+      "testRandomAlphabeticNegativeLength",
+      "testRandomAlphanumericCharacters",
+      "testRandomAsciiCharacters",
+      "testRandomFromCharArray",
+      "testRandomFromString",
+      "testRandomFromStringNullUsesAllChars",
+      "testRandomLength",
+      "testRandomLettersAndNumbers",
+      "testRandomLettersOnly",
+      "testRandomNegativeLength",
+      "testRandomNeitherLettersNorNumbers",
+      "testRandomNumbersOnly",
+      "testRandomNumericCharacters",
+      "testRandomWhenBothLettersAndNumbersFalseAndCustomRange",
+      "testRandomWithCustomRangeLettersAndNumbers",
+      "testRandomWithCustomRangeLettersOnly",
+      "testRandomWithCustomRangeNumbersOnly",
+      "testRandomWithStartEqualsEndFallsBackToDefaults",
+      "testSurrogatePairGeneration"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-11/Lang-4b/llm/r1/FSL/classes",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-11/r1/FSL/RandomStringUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.309,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-11/Lang-4b/llm/r1/FSL/javac.err"
+  },
+  "folder": "survival/Lang-11/Lang-4b/llm/r1/FSL",
+  "classes": "survival/Lang-11/Lang-4b/llm/r1/FSL/classes",
+  "run_file": "survival/Lang-11/Lang-4b/llm/r1/FSL/run.jsonl",
+  "methods": [
+    {
+      "method": "testRandomNumericCharacters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testRandomFromCharArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWhenBothLettersAndNumbersFalseAndCustomRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDifferentSeedsProduceDifferentStrings",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeterministicWithSameSeed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumericCharacters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPrivateHighSurrogateIsSkipped",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNeitherLettersNorNumbers",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomLettersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumbersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithCustomRangeLettersAndNumbers",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogatePairGeneration",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomFromStringNullUsesAllChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAsciiCharacters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabeticNegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomFromString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabeticCharacters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithCustomRangeLettersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithStartEqualsEndFallsBackToDefaults",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithCustomRangeNumbersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomLettersAndNumbers",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 23
+  },
+  "run_seconds": 0.213,
+  "list_error": ""
+}

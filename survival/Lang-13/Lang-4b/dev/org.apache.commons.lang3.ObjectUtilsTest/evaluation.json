@@ -1,0 +1,325 @@
+{
+  "input": {
+    "file": "devtests/Lang-13/org/apache/commons/lang3/ObjectUtilsTest.java",
+    "source_sha256": "c3de368d7ca727f5222781052f64c1183b65cac182b5745c1209cf0b967d54ef",
+    "selected_methods": [
+      "testCloneOfCloneable",
+      "testCloneOfNotCloneable",
+      "testCloneOfPrimitiveArray",
+      "testCloneOfStringArray",
+      "testCloneOfUncloneable",
+      "testComparatorMedian",
+      "testComparatorMedian_emptyItems",
+      "testComparatorMedian_nullComparator",
+      "testComparatorMedian_nullItems",
+      "testCompare",
+      "testConstructor",
+      "testEquals",
+      "testFirstNonNull",
+      "testHashCode",
+      "testHashCodeMulti_multiple_emptyArray",
+      "testHashCodeMulti_multiple_likeList",
+      "testHashCodeMulti_multiple_nullArray",
+      "testIdentityToString",
+      "testIsNull",
+      "testMax",
+      "testMedian",
+      "testMedian_emptyItems",
+      "testMedian_nullItems",
+      "testMin",
+      "testMode",
+      "testNotEqual",
+      "testNull",
+      "testPossibleCloneOfCloneable",
+      "testPossibleCloneOfNotCloneable",
+      "testPossibleCloneOfUncloneable",
+      "testToString_Object",
+      "testToString_ObjectString"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.ObjectUtilsTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-4b/dev/classes/org.apache.commons.lang3.ObjectUtilsTest",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-13/org/apache/commons/lang3/ObjectUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.411,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-4b/dev/org.apache.commons.lang3.ObjectUtilsTest/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-4b/dev/org.apache.commons.lang3.ObjectUtilsTest",
+  "classes": "survival/Lang-13/Lang-4b/dev/classes/org.apache.commons.lang3.ObjectUtilsTest",
+  "run_file": "survival/Lang-13/Lang-4b/dev/org.apache.commons.lang3.ObjectUtilsTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testNotEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_nullArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToString_Object",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMax",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 11,
+      "launch": 1
+    },
+    {
+      "method": "testMin",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testFirstNonNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfStringArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_emptyItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIdentityToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfPrimitiveArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_nullComparator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_emptyArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfUncloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfNotCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_likeList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian_nullItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString_ObjectString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfUncloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfNotCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompare",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_nullItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian_emptyItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 32
+  },
+  "run_seconds": 0.255,
+  "list_error": ""
+}

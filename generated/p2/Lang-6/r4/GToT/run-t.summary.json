@@ -1,0 +1,201 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "classpath": "/work/generated/p2/Lang-6/r4/GToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testTranslateWriter_MixedConsumeAndZeroConsume",
+    "testTranslateString_Identity",
+    "testTranslateWriter_NullWriter",
+    "testHex_SurrogatePairCodepoint",
+    "testTranslateWriter_WithSurrogatePairsAndZeroConsume",
+    "testTranslateString_NullInput",
+    "testTranslateWriter_IOExceptionPropagation",
+    "testTranslateString_EmptyInput",
+    "testHex_UpperCaseAndLocaleIndependence",
+    "testTranslateWriter_NullInput",
+    "testTranslateString_SimpleReplacement",
+    "testTranslateWriter_MultiCodepointConsume",
+    "testTranslateWriter_Identity",
+    "testWithMethod_MergesTranslators",
+    "testTranslateString_WithSurrogatePairs",
+    "testHex_BasicValues",
+    "testTranslateWriter_ZeroConsumedWritesOriginalChar"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-6/r4/GToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testTranslateWriter_MixedConsumeAndZeroConsume\"}\n{\"method\":\"testTranslateString_Identity\"}\n{\"method\":\"testTranslateWriter_NullWriter\"}\n{\"method\":\"testHex_SurrogatePairCodepoint\"}\n{\"method\":\"testTranslateWriter_WithSurrogatePairsAndZeroConsume\"}\n{\"method\":\"testTranslateString_NullInput\"}\n{\"method\":\"testTranslateWriter_IOExceptionPropagation\"}\n{\"method\":\"testTranslateString_EmptyInput\"}\n{\"method\":\"testHex_UpperCaseAndLocaleIndependence\"}\n{\"method\":\"testTranslateWriter_NullInput\"}\n{\"method\":\"testTranslateString_SimpleReplacement\"}\n{\"method\":\"testTranslateWriter_MultiCodepointConsume\"}\n{\"method\":\"testTranslateWriter_Identity\"}\n{\"method\":\"testWithMethod_MergesTranslators\"}\n{\"method\":\"testTranslateString_WithSurrogatePairs\"}\n{\"method\":\"testHex_BasicValues\"}\n{\"method\":\"testTranslateWriter_ZeroConsumedWritesOriginalChar\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.107
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-6/r4/GToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testTranslateWriter_MixedConsumeAndZeroConsume\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"testTranslateString_Identity\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testTranslateWriter_NullWriter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_SurrogatePairCodepoint\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testTranslateWriter_WithSurrogatePairsAndZeroConsume\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateString_NullInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateWriter_IOExceptionPropagation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testTranslateString_EmptyInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_UpperCaseAndLocaleIndependence\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateWriter_NullInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateString_SimpleReplacement\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testTranslateWriter_MultiCodepointConsume\",\"status\":\"fail\",\"message\":\"ABToXTranslator should replace each \\\"ab\\\" with \\\"X\\\" expected:<X[]cX> but was:<X[X]cX>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":2}\n{\"method\":\"testTranslateWriter_Identity\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testWithMethod_MergesTranslators\",\"status\":\"fail\",\"message\":\"Merged translator should apply both translations in order expected:<[ccc]c> but was:<[bcb]c>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":2}\n{\"method\":\"testTranslateString_WithSurrogatePairs\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_BasicValues\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateWriter_ZeroConsumedWritesOriginalChar\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.146,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testTranslateWriter_MixedConsumeAndZeroConsume",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_Identity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_SurrogatePairCodepoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_WithSurrogatePairsAndZeroConsume",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_IOExceptionPropagation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_EmptyInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_MultiCodepointConsume",
+      "status": "fail",
+      "message": "ABToXTranslator should replace each \"ab\" with \"X\" expected:<X[]cX> but was:<X[X]cX>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_Identity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWithMethod_MergesTranslators",
+      "status": "fail",
+      "message": "Merged translator should apply both translations in order expected:<[ccc]c> but was:<[bcb]c>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_WithSurrogatePairs",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_BasicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_ZeroConsumedWritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 15,
+    "fail": 2
+  },
+  "wall_seconds": 0.255
+}

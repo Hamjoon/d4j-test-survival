@@ -1,0 +1,18 @@
+org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet
+org.apache.commons.lang.LocaleUtilsTest::testIsAvailableLocale
+org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleList
+org.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage
+org.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_LocaleLocale
+org.apache.commons.lang.LocaleUtilsTest::testLanguagesByCountry
+org.apache.commons.lang.LocaleUtilsTest::testToLocale_1Part
+org.apache.commons.lang.LocaleUtilsTest::testToLocale_2Part
+org.apache.commons.lang.LocaleUtilsTest::testToLocale_3Part
+org.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_Locale
+org.apache.commons.lang.LocaleUtilsTest::testConstructor
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.tests.trigger)......................................... OK
+
+
+[exit] 0
+[seconds] 0.524

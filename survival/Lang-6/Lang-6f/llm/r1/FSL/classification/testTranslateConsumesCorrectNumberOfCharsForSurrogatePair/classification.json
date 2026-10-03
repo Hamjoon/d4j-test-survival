@@ -1,0 +1,49 @@
+{
+  "input": {
+    "bug_id": 6,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "FSL",
+    "class": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+    "method": "testTranslateConsumesCorrectNumberOfCharsForSurrogatePair",
+    "status_at_f": "fail",
+    "exception": "org.junit.ComparisonFailure",
+    "source_sha256": "1f7cedcd853aa9822cac052cb51892d4184dc75496f576c1a359379bb48f458c",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    32,
+    54,
+    58,
+    59,
+    60,
+    76,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    94,
+    95,
+    97,
+    98
+  ],
+  "executed_line_count": 20,
+  "patched_lines": [
+    95
+  ],
+  "intersecting_lines": [
+    95
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "org.junit.ComparisonFailure",
+  "xml_file": "survival/Lang-6/Lang-6f/llm/r1/FSL/classification/testTranslateConsumesCorrectNumberOfCharsForSurrogatePair/jacoco.xml",
+  "exec_file": "survival/Lang-6/Lang-6f/llm/r1/FSL/classification/testTranslateConsumesCorrectNumberOfCharsForSurrogatePair/jacoco.exec"
+}

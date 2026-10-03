@@ -1,0 +1,1 @@
+{"method": "testTranslateWriter_multipleCodePointsAndSurrogates", "status": "fail", "message": "expected:<<SMILE>b[X]YZ> but was:<<SMILE>b[]YZ>", "exception": "org.junit.ComparisonFailure", "milliseconds": 25, "launch": 1}

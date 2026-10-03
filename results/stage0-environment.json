@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-02T08:56:33.801721+00:00",
+  "base": "ubuntu:22.04",
+  "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+  "architecture": "aarch64",
+  "java": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nopenjdk version \"11.0.32.1\" 2026-08-18\nOpenJDK Runtime Environment (build 11.0.32.1+1-post-1ubuntu1-22.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 11.0.32.1+1-post-1ubuntu1-22.04-Ubuntu, mixed mode)",
+  "javac": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\njavac 11.0.32.1",
+  "java_home": "/usr/lib/jvm/java-11",
+  "python": "3.10.12",
+  "defects4j_tag": "v3.0.1",
+  "defects4j_commit": "6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09",
+  "lang_info": "Summary of configuration for Project: Lang\n--------------------------------------------------------------------------------\n    Script dir: /defects4j/framework\n      Base dir: /defects4j\n    Major root: /defects4j/major\n      Repo dir: /defects4j/project_repos\n--------------------------------------------------------------------------------\n    Project ID: Lang\n       Program: commons-lang\n    Build file: /defects4j/framework/projects/Lang/Lang.build.xml\n--------------------------------------------------------------------------------\n           Vcs: Vcs::Git\n    Repository: /defects4j/project_repos/commons-lang.git\n     Commit db: /defects4j/framework/projects/Lang/active-bugs.csv\nNumber of bugs: 61\n--------------------------------------------------------------------------------",
+  "packages": {
+    "tiktoken": "0.14.0",
+    "javalang": "0.13.0",
+    "requests": "2.34.2",
+    "pyyaml": "6.0.3"
+  },
+  "memory_limit_bytes": "12884901888"
+}

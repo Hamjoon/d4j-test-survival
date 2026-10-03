@@ -1,0 +1,10 @@
+{"method": "testWith_NullArrayArgument", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testTranslateString_EmptyInput_ReturnsEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_ZeroConsumedWritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_IOExceptionPropagation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_UpperCaseAndLocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_NullInput_NoOutput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

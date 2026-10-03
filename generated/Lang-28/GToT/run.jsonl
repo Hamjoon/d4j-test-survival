@@ -1,0 +1,22 @@
+{"method":"testNullInput","status":"pass"}
+{"method":"testSurrogatePairEntity","status":"pass"}
+{"method":"testEntityEmbeddedInText","status":"fail","message":"expected:<[A]> but was:<[]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testNonEntityStartsWithAmpersand","status":"pass"}
+{"method":"testMissingSemicolon","status":"pass"}
+{"method":"testInvalidDecimalNumber","status":"pass"}
+{"method":"testInvalidHexNumber","status":"pass"}
+{"method":"testEmptyNumericPart","status":"pass"}
+{"method":"testOnlyAmpersandAndHash","status":"fail","message":"String index out of range: 2","exception":"java.lang.StringIndexOutOfBoundsException"}
+{"method":"testIndexAtLastCharacter","status":"fail","message":"Expected StringIndexOutOfBoundsException because index+1 is out of range","exception":"java.lang.AssertionError"}
+{"method":"testIndexBeyondStringLength","status":"pass"}
+{"method":"testReturnedLengthDecimal","status":"pass"}
+{"method":"testReturnedLengthHex","status":"pass"}
+{"method":"testReturnedLengthNoMatch","status":"pass"}
+{"method":"testDecimalEntity","status":"pass"}
+{"method":"testHexEntityUpperCaseX","status":"pass"}
+{"method":"testHighBmpEntity","status":"pass"}
+{"method":"testHexEntityLowerCase","status":"pass"}
+{"method":"testNullWriter","status":"pass"}
+{"method":"testEntityWithLeadingZeros","status":"pass"}
+{"method":"testHexEntityWithLeadingZeros","status":"pass"}
+{"summary":{"run":21,"failures":3,"ignored":0,"ms":25}}

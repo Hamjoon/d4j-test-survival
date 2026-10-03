@@ -1,0 +1,166 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "classpath": "/work/generated/p2/Lang-64/r3/GToT/classes:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-64b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testCompareToEqual",
+    "testGetValue",
+    "testCompareToDifferentEnumType",
+    "testToStringCaching",
+    "testCompareToLessThan",
+    "testEnumListContainsAllValues",
+    "testGetEnumNullClassThrowsException",
+    "testCompareToNull",
+    "testCompareToGreaterThan",
+    "testGetEnumInvalidValueReturnsNull",
+    "testGetEnumValidValue",
+    "testToStringFormat",
+    "testIterator"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-64/r3/GToT/classes:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.ValuedEnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testCompareToEqual\"}\n{\"method\":\"testGetValue\"}\n{\"method\":\"testCompareToDifferentEnumType\"}\n{\"method\":\"testToStringCaching\"}\n{\"method\":\"testCompareToLessThan\"}\n{\"method\":\"testEnumListContainsAllValues\"}\n{\"method\":\"testGetEnumNullClassThrowsException\"}\n{\"method\":\"testCompareToNull\"}\n{\"method\":\"testCompareToGreaterThan\"}\n{\"method\":\"testGetEnumInvalidValueReturnsNull\"}\n{\"method\":\"testGetEnumValidValue\"}\n{\"method\":\"testToStringFormat\"}\n{\"method\":\"testIterator\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.089
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-64/r3/GToT/classes:/work/tools/runner:/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.ValuedEnumTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testCompareToEqual\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testGetValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToDifferentEnumType\",\"status\":\"fail\",\"message\":\"Expected exception: java.lang.ClassCastException\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"testToStringCaching\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCompareToLessThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEnumListContainsAllValues\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumNullClassThrowsException\",\"status\":\"error\",\"message\":\"Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>\",\"exception\":\"java.lang.Exception\",\"milliseconds\":0}\n{\"method\":\"testCompareToNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToGreaterThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumInvalidValueReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumValidValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToStringFormat\",\"status\":\"fail\",\"message\":\"expected:<[]TestEnum[ONE=1]> but was:<[ValuedEnumTest.]TestEnum[ONE=1]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":1}\n{\"method\":\"testIterator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.127,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testCompareToEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToDifferentEnumType",
+      "status": "fail",
+      "message": "Expected exception: java.lang.ClassCastException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToStringCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToLessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContainsAllValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumNullClassThrowsException",
+      "status": "error",
+      "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>",
+      "exception": "java.lang.Exception",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToGreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumInvalidValueReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumValidValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringFormat",
+      "status": "fail",
+      "message": "expected:<[]TestEnum[ONE=1]> but was:<[ValuedEnumTest.]TestEnum[ONE=1]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 10,
+    "fail": 2,
+    "error": 1
+  },
+  "wall_seconds": 0.217
+}

@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "wall_seconds": 5.669,
+  "patch_records_verified": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    13,
+    17,
+    19,
+    28,
+    43,
+    54,
+    55,
+    57,
+    64
+  ],
+  "git_apply_checks": 28,
+  "deletion_only_position_check": true,
+  "classification_methods": 22,
+  "classification_counts": {
+    "patch-related": 22
+  },
+  "single_method_selection_verified": true,
+  "coverage_rerun_status_changes": [
+    [
+      55,
+      "llm",
+      "1",
+      "FSL",
+      "org.apache.commons.lang.time.StopWatchTest",
+      "testMultipleStartStopCyclesWithReset"
+    ]
+  ],
+  "aggregate_metric_rows_recomputed": 1063,
+  "class_pairs_recomputed": 93,
+  "excluded_class_pairs_recomputed": 117,
+  "markdown_tables_checked": 79,
+  "frozen_artifacts_unchanged": [
+    "results/p2-population.json",
+    "results/p2-survival-methods.csv",
+    "results/p2-generation-rounds.json",
+    "results/p2-dedup.csv"
+  ],
+  "all_test_source_hashes_unchanged": true,
+  "generation_calls": 130,
+  "reported_generation_cost_usd": "0.111138848",
+  "credential_scan_files": 10822,
+  "credential_absent": true
+}

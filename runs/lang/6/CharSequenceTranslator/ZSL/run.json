@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:31:03.536494+00:00",
+  "latency_seconds": 42.972,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "6",
+  "class": "CharSequenceTranslator",
+  "technique": "ZSL",
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "response_id": "gen-1791005463-06zIJj644vRNBuRzRbef",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

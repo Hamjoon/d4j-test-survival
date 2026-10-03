@@ -1,0 +1,173 @@
+{
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "CoT",
+  "round": 3,
+  "directory": "runs/lang/13/SerializationUtils/CoT/r3",
+  "response": "runs/lang/13/SerializationUtils/CoT/r3/response.md",
+  "response_sha256": "9517538f9c48e701d5cda6d719ba45c4dfa0f4aea22c4ab3d65102661026e411",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "SerializationUtilsTest",
+  "package": "org.apache.commons.lang3",
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-13/r3/CoT/SerializationUtilsTest.java",
+  "extracted_sha256": "7a18efb2810028ff77c68f81e68e481ae886ba9a358a41771742b48f87bb21f9",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-13/r3/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r3/CoT/SerializationUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.317,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-13/r3/CoT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-13/r3/CoT/run-t.jsonl",
+  "listed": 16,
+  "counts": {
+    "pass": 16
+  },
+  "methods": [
+    {
+      "method": "testDeserializeCorruptedDataThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 26,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeObjectThatThrowsIOExceptionResultsInSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 12,
+      "launch": 1
+    },
+    {
+      "method": "testCloneCreatesDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeNullByteArrayThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullObjectProducesValidByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullOutputStreamThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneWithNullReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeAndDeserializeComplexObjectGraph",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneHandlesIOExceptionDuringCloseGracefully",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromInputStreamAndClose",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeNullInputStreamThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClonePreservesClassLoaderAwareObjectInputStreamBehaviour",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToOutputStreamAndClose",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.262
+}

@@ -1,0 +1,18 @@
+{"method": "testDecimalEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testHighBmpEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHexEntityLowerCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSurrogatePairEntity", "status": "fail", "message": "expected:<[턞]> but was:<[𝄞]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testReturnedLengthDecimal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEmptyNumericPart", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testReturnedLengthNoMatch", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidDecimalNumber", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMissingSemicolon", "status": "fail", "message": "Expected StringIndexOutOfBoundsException due to missing ';'", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityUpperCaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidHexNumber", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithLeadingZeros", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testIndexBeyondStringLength", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityWithLeadingZeros", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testReturnedLengthHex", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNonEntityStartsWithAmpersand", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

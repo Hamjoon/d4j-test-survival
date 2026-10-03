@@ -1,0 +1,127 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-17/r1/GToT/CharSequenceTranslatorTest.java",
+    "source_sha256": "fd888a1bf5d20a9f7465b5fb144d78f8d9b6ae3e936dc8e8589fcfffdd609df7",
+    "selected_methods": [
+      "testHex_UpperCaseAndLocaleIndependence",
+      "testTranslateString_EmptyInput_ReturnsEmpty",
+      "testTranslateString_NullInput_ReturnsNull",
+      "testTranslateString_SimpleReplacement",
+      "testTranslateWriter_IOExceptionPropagation",
+      "testTranslateWriter_NullInput_NoOutput",
+      "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException",
+      "testTranslateWriter_SimpleReplacement",
+      "testTranslate_ZeroConsumedWritesOriginalChar",
+      "testWith_NullArrayArgument"
+    ],
+    "target": "Lang-11b",
+    "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-17/Lang-11b/llm/r1/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-17/r1/GToT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.412,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-17/Lang-11b/llm/r1/GToT/javac.err"
+  },
+  "folder": "survival/Lang-17/Lang-11b/llm/r1/GToT",
+  "classes": "survival/Lang-17/Lang-11b/llm/r1/GToT/classes",
+  "run_file": "survival/Lang-17/Lang-11b/llm/r1/GToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testWith_NullArrayArgument",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_EmptyInput_ReturnsEmpty",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_ZeroConsumedWritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_IOExceptionPropagation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullInput_NoOutput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 10
+  },
+  "run_seconds": 0.244,
+  "list_error": ""
+}

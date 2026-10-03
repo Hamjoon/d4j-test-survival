@@ -1,0 +1,131 @@
+{
+  "fqcn": "RunnerFixture",
+  "classpath": "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+  "timeout_ms": 300,
+  "listed_methods": [
+    "a_pass",
+    "b_fail",
+    "c_error",
+    "d_ignored",
+    "e_timeout",
+    "f_afterTimeout",
+    "g_assumption"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "RunnerFixture",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"a_pass\"}\n{\"method\":\"b_fail\"}\n{\"method\":\"c_error\"}\n{\"method\":\"d_ignored\"}\n{\"method\":\"e_timeout\"}\n{\"method\":\"f_afterTimeout\"}\n{\"method\":\"g_assumption\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.101
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "RunnerFixture",
+        "--timeout-ms",
+        "300"
+      ],
+      "exit_status": 3,
+      "stdout": "{\"method\":\"a_pass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"b_fail\",\"status\":\"fail\",\"message\":\"expected assertion\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"c_error\",\"status\":\"error\",\"message\":\"expected error\",\"exception\":\"java.lang.IllegalStateException\",\"milliseconds\":0}\n{\"method\":\"d_ignored\",\"status\":\"ignored\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"e_timeout\",\"status\":\"timeout\",\"message\":\"Exceeded 300 ms\",\"exception\":null,\"milliseconds\":306}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nnoise\n",
+      "wall_seconds": 0.421,
+      "launch": 1
+    },
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "RunnerFixture",
+        "--timeout-ms",
+        "300",
+        "--exclude",
+        "a_pass,b_fail,c_error,d_ignored,e_timeout"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"f_afterTimeout\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":18}\n{\"method\":\"g_assumption\",\"status\":\"ignored\",\"message\":\"got: <false>, expected: is <true>\",\"exception\":\"org.junit.AssumptionViolatedException\",\"milliseconds\":3}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.123,
+      "launch": 2
+    }
+  ],
+  "methods": [
+    {
+      "method": "a_pass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "b_fail",
+      "status": "fail",
+      "message": "expected assertion",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "c_error",
+      "status": "error",
+      "message": "expected error",
+      "exception": "java.lang.IllegalStateException",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "d_ignored",
+      "status": "ignored",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "e_timeout",
+      "status": "timeout",
+      "message": "Exceeded 300 ms",
+      "exception": null,
+      "milliseconds": 306,
+      "launch": 1
+    },
+    {
+      "method": "f_afterTimeout",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 18,
+      "launch": 2
+    },
+    {
+      "method": "g_assumption",
+      "status": "ignored",
+      "message": "got: <false>, expected: is <true>",
+      "exception": "org.junit.AssumptionViolatedException",
+      "milliseconds": 3,
+      "launch": 2
+    }
+  ],
+  "counts": {
+    "pass": 2,
+    "fail": 1,
+    "error": 1,
+    "ignored": 2,
+    "timeout": 1
+  },
+  "wall_seconds": 0.645
+}

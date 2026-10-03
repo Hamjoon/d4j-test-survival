@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-03T05:21:03.569918+00:00",
+  "latency_seconds": 32.516,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "28",
+  "class": "NumericEntityUnescaper",
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "response_id": "gen-1791004863-xjrhLjiHpidcNCCGg74o",
+  "start_marker": true,
+  "end_marker": true
+}

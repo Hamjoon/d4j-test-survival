@@ -1,0 +1,14 @@
+{"method":"testEntityBeyondBMP","status":"fail","message":"expected:<8> but was:<9>","exception":"java.lang.AssertionError"}
+{"method":"testEntityWithWhitespaceInsideIsRejected","status":"pass"}
+{"method":"testEntityWithNegativeNumberIsRejected","status":"fail","message":"expected:<0> but was:<6>","exception":"java.lang.AssertionError"}
+{"method":"testDecimalEntityWithSemicolon","status":"pass"}
+{"method":"testDecimalEntityWithoutSemicolon","status":"pass"}
+{"method":"testHexEntityLowerCase","status":"pass"}
+{"method":"testInvalidNumberReturnsZeroAndWritesNothing","status":"pass"}
+{"method":"testHexEntityUpperCase","status":"pass"}
+{"method":"testEntityWithZeroValue","status":"fail","message":"expected:<5> but was:<4>","exception":"java.lang.AssertionError"}
+{"method":"testHexEntityWithLeadingZeros","status":"pass"}
+{"method":"testNonEntityInputReturnsZero","status":"pass"}
+{"method":"testEntityWithLeadingZeros","status":"fail","message":"expected:<7> but was:<8>","exception":"java.lang.AssertionError"}
+{"method":"testEntityNotAtStart","status":"pass"}
+{"summary":{"run":13,"failures":4,"ignored":0,"ms":21}}

@@ -1,0 +1,9 @@
+{"method": "testDeserializeFromInputStreamCorrupted", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testDeserializeFromByteArrayCorrupted", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerializeToOutputStreamNullStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCloneNormal", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testSerializeToByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeFromByteArrayNormal", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerializeToOutputStreamNormal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeNullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeFromInputStreamNormal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

@@ -1,0 +1,64 @@
+{
+  "input": {
+    "file": "devtests/Lang-17/org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java",
+    "source_sha256": "58f0e21f816ef0d0a90e14653df1a02909e1e721c2334f1e0f981dd2b792ab7d",
+    "selected_methods": [
+      "testOutOfBounds",
+      "testSupplementaryUnescaping",
+      "testUnfinishedEntity"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-17/Lang-4b/dev/classes/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-17/org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.254,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-17/Lang-4b/dev/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest/javac.err"
+  },
+  "folder": "survival/Lang-17/Lang-4b/dev/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classes": "survival/Lang-17/Lang-4b/dev/classes/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "run_file": "survival/Lang-17/Lang-4b/dev/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testSupplementaryUnescaping",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testUnfinishedEntity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testOutOfBounds",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 3
+  },
+  "run_seconds": 0.194,
+  "list_error": ""
+}

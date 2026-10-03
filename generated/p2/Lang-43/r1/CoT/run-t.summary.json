@@ -1,0 +1,148 @@
+{
+  "fqcn": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+  "classpath": "/work/generated/p2/Lang-43/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-43b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testUnterminatedFormatElementThrowsException",
+    "testInvalidArgumentIndexThrowsException",
+    "testSetFormatsByArgumentIndexThrowsException",
+    "testSetFormatThrowsException",
+    "testApplyPatternWithCustomRegistry",
+    "testSetFormatsThrowsException",
+    "testSetFormatByArgumentIndexThrowsException",
+    "testToPatternWithoutCustomFormats",
+    "testWhitespaceAroundFormatName",
+    "testApplyPatternWithoutRegistryFallsBackToMessageFormat",
+    "testEscapedQuotesInPattern"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-43/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testUnterminatedFormatElementThrowsException\"}\n{\"method\":\"testInvalidArgumentIndexThrowsException\"}\n{\"method\":\"testSetFormatsByArgumentIndexThrowsException\"}\n{\"method\":\"testSetFormatThrowsException\"}\n{\"method\":\"testApplyPatternWithCustomRegistry\"}\n{\"method\":\"testSetFormatsThrowsException\"}\n{\"method\":\"testSetFormatByArgumentIndexThrowsException\"}\n{\"method\":\"testToPatternWithoutCustomFormats\"}\n{\"method\":\"testWhitespaceAroundFormatName\"}\n{\"method\":\"testApplyPatternWithoutRegistryFallsBackToMessageFormat\"}\n{\"method\":\"testEscapedQuotesInPattern\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.091
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-43/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testUnterminatedFormatElementThrowsException\",\"status\":\"fail\",\"message\":\"null\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":21}\n{\"method\":\"testInvalidArgumentIndexThrowsException\",\"status\":\"fail\",\"message\":\"null\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"testSetFormatsByArgumentIndexThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSetFormatThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testApplyPatternWithCustomRegistry\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testSetFormatsThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSetFormatByArgumentIndexThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToPatternWithoutCustomFormats\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testWhitespaceAroundFormatName\",\"status\":\"error\",\"message\":\"unknown format type: upper \",\"exception\":\"java.lang.IllegalArgumentException\",\"milliseconds\":0}\n{\"method\":\"testApplyPatternWithoutRegistryFallsBackToMessageFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":60}\n{\"method\":\"testEscapedQuotesInPattern\",\"status\":\"fail\",\"message\":\"expected:<'''{[0}']''> but was:<'''{['0}]''>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.207,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testUnterminatedFormatElementThrowsException",
+      "status": "fail",
+      "message": "null",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testInvalidArgumentIndexThrowsException",
+      "status": "fail",
+      "message": "null",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatsByArgumentIndexThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternWithCustomRegistry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatsThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSetFormatByArgumentIndexThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToPatternWithoutCustomFormats",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWhitespaceAroundFormatName",
+      "status": "error",
+      "message": "unknown format type: upper ",
+      "exception": "java.lang.IllegalArgumentException",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testApplyPatternWithoutRegistryFallsBackToMessageFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 60,
+      "launch": 1
+    },
+    {
+      "method": "testEscapedQuotesInPattern",
+      "status": "fail",
+      "message": "expected:<'''{[0}']''> but was:<'''{['0}]''>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 3,
+    "pass": 7,
+    "error": 1
+  },
+  "wall_seconds": 0.299
+}

@@ -1,0 +1,126 @@
+{
+  "bug_id": 4,
+  "class": "LookupTranslator",
+  "technique": "GToT",
+  "round": 3,
+  "directory": "runs/lang/4/LookupTranslator/GToT/r3",
+  "response": "runs/lang/4/LookupTranslator/GToT/r3/response.md",
+  "response_sha256": "f889bc87483f8862b99cb7f5e981e73b4597454e1c278c6126c3099f1ce039d9",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "LookupTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-4/r3/GToT/LookupTranslatorTest.java",
+  "extracted_sha256": "2ae732813821fee41efe15facc4b2a5b852671d4b6648f78206d9533699588c2",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-4/r3/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-4/r3/GToT/LookupTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.297,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-4/r3/GToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-4/r3/GToT/run-t.jsonl",
+  "listed": 10,
+  "counts": {
+    "pass": 9,
+    "fail": 1
+  },
+  "methods": [
+    {
+      "method": "testTranslateWithIndexAtEnd",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithEmptyLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNoMatchReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDuplicateKeysOverride",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithValidLookup",
+      "status": "fail",
+      "message": "expected:<2> but was:<1>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testShortestAndLongestBoundaries",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithNullLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWriterIOExceptionPropagates",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyMatching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithNegativeIndex",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.219
+}

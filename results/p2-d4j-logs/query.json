@@ -1,0 +1,12 @@
+{
+  "command": [
+    "defects4j",
+    "query",
+    "-p",
+    "Lang",
+    "-q",
+    "bug.id,revision.id.buggy,revision.date.buggy,revision.id.fixed,revision.date.fixed"
+  ],
+  "exit_status": 0,
+  "seconds": 0.246
+}

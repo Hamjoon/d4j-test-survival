@@ -1,0 +1,3 @@
+{"method": "a_pass", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "b_crash", "status": "not-run", "exception": null, "message": "JVM exited 7; stderr tail: Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\ncrash evidence\n", "milliseconds": null, "launch": 1}
+{"method": "c_unreached", "status": "not-run", "exception": null, "message": "JVM exited 7; stderr tail: Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\ncrash evidence\n", "milliseconds": null, "launch": 1}

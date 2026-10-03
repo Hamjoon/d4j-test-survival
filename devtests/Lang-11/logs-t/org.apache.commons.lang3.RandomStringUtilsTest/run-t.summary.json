@@ -1,0 +1,147 @@
+{
+  "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+  "classpath": "/work/devtests/Lang-11/classes-t:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-11b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testExceptions",
+    "testRandomStringUtilsHomog",
+    "testLANG805",
+    "testLANG807",
+    "testRandomAscii",
+    "testLang100",
+    "testRandomAlphaNumeric",
+    "testRandomAlphabetic",
+    "testRandomNumeric",
+    "testRandomStringUtils",
+    "testConstructor"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-11/classes-t:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.RandomStringUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testExceptions\"}\n{\"method\":\"testRandomStringUtilsHomog\"}\n{\"method\":\"testLANG805\"}\n{\"method\":\"testLANG807\"}\n{\"method\":\"testRandomAscii\"}\n{\"method\":\"testLang100\"}\n{\"method\":\"testRandomAlphaNumeric\"}\n{\"method\":\"testRandomAlphabetic\"}\n{\"method\":\"testRandomNumeric\"}\n{\"method\":\"testRandomStringUtils\"}\n{\"method\":\"testConstructor\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.095
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-11/classes-t:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.RandomStringUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testExceptions\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":24}\n{\"method\":\"testRandomStringUtilsHomog\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLANG805\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLANG807\",\"status\":\"fail\",\"message\":\"Message (bound must be positive) must contain 'start'\",\"exception\":\"junit.framework.AssertionFailedError\",\"milliseconds\":5}\n{\"method\":\"testRandomAscii\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLang100\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":14}\n{\"method\":\"testRandomAlphaNumeric\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandomAlphabetic\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomNumeric\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomStringUtils\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testConstructor\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.156,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testExceptions",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 24,
+      "launch": 1
+    },
+    {
+      "method": "testRandomStringUtilsHomog",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLANG805",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLANG807",
+      "status": "fail",
+      "message": "Message (bound must be positive) must contain 'start'",
+      "exception": "junit.framework.AssertionFailedError",
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLang100",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 14,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphaNumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomStringUtils",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 10,
+    "fail": 1
+  },
+  "wall_seconds": 0.252
+}

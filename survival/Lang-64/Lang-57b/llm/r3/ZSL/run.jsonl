@@ -1,0 +1,11 @@
+{"method": "testCompareToEqual", "status": "pass", "message": null, "exception": null, "milliseconds": 28, "launch": 1}
+{"method": "testStaticGetEnumFound", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCompareToIncompatibleType", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testGetValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testStaticGetEnumNullClass", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEnumListContainsAllInstances", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToStringCaching", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToLessThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToGreaterThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testStaticGetEnumNotFound", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

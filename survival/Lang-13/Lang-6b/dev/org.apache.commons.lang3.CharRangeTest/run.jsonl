@@ -1,0 +1,16 @@
+{"method": "testContainsNullArg", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testConstructorAccessors_isIn_Reversed", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testConstructorAccessors_isNot", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerialization", "status": "pass", "message": null, "exception": null, "milliseconds": 5, "launch": 1}
+{"method": "testClass", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testConstructorAccessors_isNotIn_Same", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorAccessors_is", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEquals_Object", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testContains_Char", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorAccessors_isIn_Normal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHashCode", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testContains_Charrange", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorAccessors_isIn_Same", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testIterator", "status": "pass", "message": null, "exception": null, "milliseconds": 4, "launch": 1}
+{"method": "testConstructorAccessors_isNotIn_Normal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorAccessors_isNotIn_Reversed", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

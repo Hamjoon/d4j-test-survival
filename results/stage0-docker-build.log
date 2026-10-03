@@ -1,0 +1,1372 @@
+ Image llm4ts-d4j-replication:latest Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 588B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.06kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:22.04
+#3 ...
+
+#4 [auth] library/ubuntu:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ubuntu:22.04
+#3 DONE 2.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 91B done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/ubuntu:22.04@sha256:b1066385161d28ddf6bc7e7b28a9170eec11484c821d1a5150d176cbde41d7f7
+#6 resolve docker.io/library/ubuntu:22.04@sha256:b1066385161d28ddf6bc7e7b28a9170eec11484c821d1a5150d176cbde41d7f7 done
+#6 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 0B / 27.68MB 0.2s
+#6 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 7.34MB / 27.68MB 0.3s
+#6 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 23.07MB / 27.68MB 0.5s
+#6 sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 27.68MB / 27.68MB 0.5s done
+#6 extracting sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136
+#6 extracting sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136 0.4s done
+#6 DONE 0.9s
+
+#7 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends         openjdk-11-jdk-headless git subversion perl cpanminus build-essential         curl ca-certificates unzip python3 python3-pip python3-venv     && rm -rf /var/lib/apt/lists/*
+#7 0.783 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+#7 1.927 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [128 kB]
+#7 2.204 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [127 kB]
+#7 2.479 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [129 kB]
+#7 2.756 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]
+#7 3.390 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+#7 4.380 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]
+#7 4.380 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]
+#7 4.387 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [1712 kB]
+#7 4.459 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [4558 kB]
+#7 4.681 Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [70.2 kB]
+#7 4.684 Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [8296 kB]
+#7 5.111 Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/main arm64 Packages [82.5 kB]
+#7 5.114 Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [33.7 kB]
+#7 5.116 Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [7930 kB]
+#7 5.501 Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [1416 kB]
+#7 5.568 Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-security/multiverse arm64 Packages [63.4 kB]
+#7 5.571 Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [4208 kB]
+#7 5.887 Fetched 48.2 MB in 6s (8332 kB/s)
+#7 5.887 Reading package lists...
+#7 6.453 Reading package lists...
+#7 7.021 Building dependency tree...
+#7 7.178 Reading state information...
+#7 7.329 The following additional packages will be installed:
+#7 7.329   binutils binutils-aarch64-linux-gnu binutils-common bzip2
+#7 7.329   ca-certificates-java cpp cpp-11 dpkg-dev fontconfig-config fonts-dejavu-core
+#7 7.329   g++ g++-11 gcc gcc-11 gcc-11-base git-man java-common libapr1 libaprutil1
+#7 7.329   libasan6 libasound2 libasound2-data libatomic1 libavahi-client3
+#7 7.329   libavahi-common-data libavahi-common3 libbinutils libbrotli1 libc-dev-bin
+#7 7.329   libc6-dev libcc1-0 libcpan-distnameinfo-perl libcpan-meta-check-perl
+#7 7.329   libcrypt-dev libctf-nobfd0 libctf0 libcups2 libcurl3-gnutls libcurl4
+#7 7.329   libdbus-1-3 libdpkg-perl liberror-perl libexpat1 libfile-pushd-perl
+#7 7.329   libfontconfig1 libfreetype6 libgcc-11-dev libgdbm-compat4 libgdbm6
+#7 7.329   libglib2.0-0 libgomp1 libgraphite2-3 libharfbuzz0b libhwasan0 libisl23
+#7 7.329   libitm1 libjpeg-turbo8 libjpeg8 liblcms2-2 libldap-2.5-0 liblocal-lib-perl
+#7 7.329   liblsan0 libmodule-build-perl libmodule-cpanfile-perl libmpc3 libmpdec3
+#7 7.329   libmpfr6 libnghttp2-14 libnsl-dev libnspr4 libnss3 libparse-pmfile-perl
+#7 7.329   libpcsclite1 libperl5.34 libpng16-16 libpsl5 libpython3-stdlib
+#7 7.329   libpython3.10-minimal libpython3.10-stdlib libreadline8 librtmp1 libsasl2-2
+#7 7.329   libsasl2-modules-db libserf-1-1 libsqlite3-0 libssh-4 libstdc++-11-dev
+#7 7.329   libstring-shellquote-perl libsvn1 libtirpc-dev libtsan0 libubsan1
+#7 7.329   libutf8proc2 linux-libc-dev lto-disabled-list make media-types
+#7 7.329   openjdk-11-jre-headless openssl patch perl-modules-5.34 python3-distutils
+#7 7.329   python3-lib2to3 python3-minimal python3-pip-whl python3-pkg-resources
+#7 7.329   python3-setuptools python3-setuptools-whl python3-wheel python3.10
+#7 7.329   python3.10-minimal python3.10-venv readline-common rpcsvc-proto ucf xz-utils
+#7 7.330 Suggested packages:
+#7 7.330   binutils-doc bzip2-doc cpp-doc gcc-11-locales debian-keyring gcc-11-doc
+#7 7.330   gcc-multilib manpages-dev autoconf automake libtool flex bison gdb gcc-doc
+#7 7.330   gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui
+#7 7.330   gitk gitweb git-cvs git-mediawiki git-svn default-jre libasound2-plugins
+#7 7.330   alsa-utils glibc-doc cups-common gnupg bzr gdbm-l10n liblcms2-utils pcscd
+#7 7.330   libstdc++-11-doc make-doc openjdk-11-demo openjdk-11-source libnss-mdns
+#7 7.330   fonts-dejavu-extra fonts-ipafont-gothic fonts-ipafont-mincho
+#7 7.330   fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic ed diffutils-doc perl-doc
+#7 7.330   libterm-readline-gnu-perl | libterm-readline-perl-perl
+#7 7.330   libtap-harness-archive-perl python3-doc python3-tk python-setuptools-doc
+#7 7.330   python3.10-doc binfmt-support readline-doc db5.3-util libapache2-mod-svn
+#7 7.330   subversion-tools zip
+#7 7.330 Recommended packages:
+#7 7.330   fakeroot gnupg libalgorithm-merge-perl less ssh-client alsa-ucm-conf
+#7 7.330   alsa-topology-conf manpages manpages-dev libc-devtools dbus
+#7 7.330   libfile-fcntllock-perl liblocale-gettext-perl libglib2.0-data
+#7 7.330   shared-mime-info xdg-user-dirs libldap-common libmodule-signature-perl
+#7 7.330   libpod-readme-perl libsoftware-license-perl publicsuffix libsasl2-modules
+#7 7.330   netbase python3-dev
+#7 7.485 The following NEW packages will be installed:
+#7 7.485   binutils binutils-aarch64-linux-gnu binutils-common build-essential bzip2
+#7 7.485   ca-certificates ca-certificates-java cpanminus cpp cpp-11 curl dpkg-dev
+#7 7.485   fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base git
+#7 7.485   git-man java-common libapr1 libaprutil1 libasan6 libasound2 libasound2-data
+#7 7.485   libatomic1 libavahi-client3 libavahi-common-data libavahi-common3
+#7 7.485   libbinutils libbrotli1 libc-dev-bin libc6-dev libcc1-0
+#7 7.485   libcpan-distnameinfo-perl libcpan-meta-check-perl libcrypt-dev libctf-nobfd0
+#7 7.485   libctf0 libcups2 libcurl3-gnutls libcurl4 libdbus-1-3 libdpkg-perl
+#7 7.485   liberror-perl libexpat1 libfile-pushd-perl libfontconfig1 libfreetype6
+#7 7.485   libgcc-11-dev libgdbm-compat4 libgdbm6 libglib2.0-0 libgomp1 libgraphite2-3
+#7 7.485   libharfbuzz0b libhwasan0 libisl23 libitm1 libjpeg-turbo8 libjpeg8 liblcms2-2
+#7 7.485   libldap-2.5-0 liblocal-lib-perl liblsan0 libmodule-build-perl
+#7 7.485   libmodule-cpanfile-perl libmpc3 libmpdec3 libmpfr6 libnghttp2-14 libnsl-dev
+#7 7.485   libnspr4 libnss3 libparse-pmfile-perl libpcsclite1 libperl5.34 libpng16-16
+#7 7.485   libpsl5 libpython3-stdlib libpython3.10-minimal libpython3.10-stdlib
+#7 7.485   libreadline8 librtmp1 libsasl2-2 libsasl2-modules-db libserf-1-1
+#7 7.485   libsqlite3-0 libssh-4 libstdc++-11-dev libstring-shellquote-perl libsvn1
+#7 7.485   libtirpc-dev libtsan0 libubsan1 libutf8proc2 linux-libc-dev
+#7 7.486   lto-disabled-list make media-types openjdk-11-jdk-headless
+#7 7.486   openjdk-11-jre-headless openssl patch perl perl-modules-5.34 python3
+#7 7.486   python3-distutils python3-lib2to3 python3-minimal python3-pip
+#7 7.486   python3-pip-whl python3-pkg-resources python3-setuptools
+#7 7.486   python3-setuptools-whl python3-venv python3-wheel python3.10
+#7 7.486   python3.10-minimal python3.10-venv readline-common rpcsvc-proto subversion
+#7 7.486   ucf unzip xz-utils
+#7 7.891 0 upgraded, 128 newly installed, 0 to remove and 1 not upgraded.
+#7 7.891 Need to get 213 MB of archives.
+#7 7.891 After this operation, 601 MB of additional disk space will be used.
+#7 7.891 Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-minimal arm64 3.10.12-1~22.04.18 [814 kB]
+#7 9.330 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libexpat1 arm64 2.4.7-1ubuntu0.9 [83.5 kB]
+#7 9.343 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10-minimal arm64 3.10.12-1~22.04.18 [2245 kB]
+#7 9.748 Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-minimal arm64 3.10.6-1~22.04.1 [24.3 kB]
+#7 9.749 Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 media-types all 7.0.0 [25.5 kB]
+#7 9.750 Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpdec3 arm64 2.5.1-2build2 [89.0 kB]
+#7 9.757 Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 readline-common all 8.1.2-1 [53.5 kB]
+#7 9.760 Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libreadline8 arm64 8.1.2-1 [153 kB]
+#7 9.773 Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsqlite3-0 arm64 3.37.2-2ubuntu0.8 [636 kB]
+#7 9.828 Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-stdlib arm64 3.10.12-1~22.04.18 [1848 kB]
+#7 9.954 Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10 arm64 3.10.12-1~22.04.18 [508 kB]
+#7 9.977 Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3-stdlib arm64 3.10.6-1~22.04.1 [6812 B]
+#7 9.978 Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3 arm64 3.10.6-1~22.04.1 [22.8 kB]
+#7 9.978 Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl-modules-5.34 all 5.34.0-3ubuntu1.9 [2977 kB]
+#7 10.14 Get:15 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgdbm6 arm64 1.23-1 [34.1 kB]
+#7 10.14 Get:16 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libgdbm-compat4 arm64 1.23-1 [6294 B]
+#7 10.14 Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libperl5.34 arm64 5.34.0-3ubuntu1.9 [4724 kB]
+#7 10.35 Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl arm64 5.34.0-3ubuntu1.9 [232 kB]
+#7 10.36 Get:19 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openssl arm64 3.0.2-0ubuntu1.30 [1160 kB]
+#7 10.40 Get:20 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ca-certificates all 20260601~22.04.1 [141 kB]
+#7 10.41 Get:21 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdbus-1-3 arm64 1.12.20-2ubuntu4.1 [187 kB]
+#7 10.43 Get:22 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libglib2.0-0 arm64 2.72.4-0ubuntu2.10 [1436 kB]
+#7 10.52 Get:23 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-pkg-resources all 59.6.0-1.2ubuntu0.22.04.3 [133 kB]
+#7 10.52 Get:24 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 ucf all 3.0043 [56.1 kB]
+#7 10.53 Get:25 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libnghttp2-14 arm64 1.43.0-1ubuntu0.4 [76.2 kB]
+#7 10.53 Get:26 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpng16-16 arm64 1.6.37-3ubuntu0.6 [190 kB]
+#7 10.55 Get:27 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpsl5 arm64 0.21.0-1.2build2 [58.3 kB]
+#7 10.55 Get:28 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 xz-utils arm64 5.2.5-2ubuntu1.1 [84.3 kB]
+#7 10.60 Get:29 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-common arm64 2.38-4ubuntu2.12 [223 kB]
+#7 10.61 Get:30 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libbinutils arm64 2.38-4ubuntu2.12 [825 kB]
+#7 10.62 Get:31 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf-nobfd0 arm64 2.38-4ubuntu2.12 [109 kB]
+#7 10.72 Get:32 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf0 arm64 2.38-4ubuntu2.12 [103 kB]
+#7 10.72 Get:33 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-aarch64-linux-gnu arm64 2.38-4ubuntu2.12 [3225 kB]
+#7 10.81 Get:34 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils arm64 2.38-4ubuntu2.12 [3162 B]
+#7 10.81 Get:35 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc-dev-bin arm64 2.35-0ubuntu3.15 [19.7 kB]
+#7 10.81 Get:36 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-libc-dev arm64 5.15.0-198.208 [1368 kB]
+#7 10.93 Get:37 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libcrypt-dev arm64 1:4.4.27-1 [119 kB]
+#7 10.93 Get:38 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 rpcsvc-proto arm64 1.4.2-0ubuntu6 [65.4 kB]
+#7 10.93 Get:39 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtirpc-dev arm64 1.3.2-2ubuntu0.1 [199 kB]
+#7 10.94 Get:40 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnsl-dev arm64 1.3.0-2build2 [72.1 kB]
+#7 10.94 Get:41 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc6-dev arm64 2.35-0ubuntu3.15 [1549 kB]
+#7 10.96 Get:42 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11-base arm64 11.4.0-1ubuntu1~22.04.3 [216 kB]
+#7 11.01 Get:43 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libisl23 arm64 0.24-2build1 [689 kB]
+#7 11.02 Get:44 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpfr6 arm64 4.1.0-3build3 [245 kB]
+#7 11.02 Get:45 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpc3 arm64 1.2.1-2build1 [48.1 kB]
+#7 11.13 Get:46 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 cpp-11 arm64 11.4.0-1ubuntu1~22.04.3 [9756 kB]
+#7 11.55 Get:47 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 cpp arm64 4:11.2.0-1ubuntu1 [27.7 kB]
+#7 11.55 Get:48 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcc1-0 arm64 12.3.0-1ubuntu1~22.04.3 [45.0 kB]
+#7 11.55 Get:49 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgomp1 arm64 12.3.0-1ubuntu1~22.04.3 [124 kB]
+#7 11.55 Get:50 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libitm1 arm64 12.3.0-1ubuntu1~22.04.3 [28.5 kB]
+#7 11.55 Get:51 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libatomic1 arm64 12.3.0-1ubuntu1~22.04.3 [10.7 kB]
+#7 11.55 Get:52 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libasan6 arm64 11.4.0-1ubuntu1~22.04.3 [2235 kB]
+#7 11.61 Get:53 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 liblsan0 arm64 12.3.0-1ubuntu1~22.04.3 [1038 kB]
+#7 12.05 Get:54 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtsan0 arm64 11.4.0-1ubuntu1~22.04.3 [2239 kB]
+#7 12.07 Get:55 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libubsan1 arm64 12.3.0-1ubuntu1~22.04.3 [967 kB]
+#7 12.08 Get:56 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libhwasan0 arm64 12.3.0-1ubuntu1~22.04.3 [1120 kB]
+#7 12.25 Get:57 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgcc-11-dev arm64 11.4.0-1ubuntu1~22.04.3 [1143 kB]
+#7 12.27 Get:58 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11 arm64 11.4.0-1ubuntu1~22.04.3 [19.5 MB]
+#7 13.25 Get:59 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 gcc arm64 4:11.2.0-1ubuntu1 [5128 B]
+#7 13.25 Get:60 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libstdc++-11-dev arm64 11.4.0-1ubuntu1~22.04.3 [2089 kB]
+#7 13.34 Get:61 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 g++-11 arm64 11.4.0-1ubuntu1~22.04.3 [11.2 MB]
+#7 13.87 Get:62 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 g++ arm64 4:11.2.0-1ubuntu1 [1394 B]
+#7 13.87 Get:63 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 make arm64 4.3-4.1build1 [177 kB]
+#7 13.87 Get:64 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdpkg-perl all 1.21.1ubuntu2.6 [237 kB]
+#7 13.88 Get:65 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 bzip2 arm64 1.0.8-5ubuntu0.1 [34.5 kB]
+#7 13.89 Get:66 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 patch arm64 2.7.6-7build2 [105 kB]
+#7 13.89 Get:67 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 lto-disabled-list all 24 [12.5 kB]
+#7 13.89 Get:68 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dpkg-dev all 1.21.1ubuntu2.6 [922 kB]
+#7 13.94 Get:69 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 build-essential arm64 12.9ubuntu3 [4740 B]
+#7 13.94 Get:70 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 java-common all 0.72build2 [6782 B]
+#7 14.07 Get:71 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-common-data arm64 0.8-5ubuntu5.5 [24.0 kB]
+#7 14.07 Get:72 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-common3 arm64 0.8-5ubuntu5.5 [23.4 kB]
+#7 14.07 Get:73 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libavahi-client3 arm64 0.8-5ubuntu5.5 [27.4 kB]
+#7 14.08 Get:74 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcups2 arm64 2.4.1op1-1ubuntu4.21 [265 kB]
+#7 14.09 Get:75 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libbrotli1 arm64 1.0.9-2build6 [314 kB]
+#7 14.10 Get:76 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libfreetype6 arm64 2.11.1+dfsg-1ubuntu0.3 [382 kB]
+#7 14.12 Get:77 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+#7 14.16 Get:78 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+#7 14.16 Get:79 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libfontconfig1 arm64 2.13.1-4.2ubuntu5 [135 kB]
+#7 14.16 Get:80 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 liblcms2-2 arm64 2.12~rc1-2ubuntu0.1 [158 kB]
+#7 14.27 Get:81 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libjpeg-turbo8 arm64 2.1.2-0ubuntu1 [129 kB]
+#7 14.27 Get:82 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libjpeg8 arm64 8c-2ubuntu10 [2264 B]
+#7 14.27 Get:83 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libnspr4 arm64 2:4.35-0ubuntu0.22.04.1 [116 kB]
+#7 14.29 Get:84 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libnss3 arm64 2:3.98-0ubuntu0.22.04.4 [1237 kB]
+#7 14.33 Get:85 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libasound2-data all 1.2.6.1-1ubuntu1.2 [19.3 kB]
+#7 14.33 Get:86 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libasound2 arm64 1.2.6.1-1ubuntu1.2 [380 kB]
+#7 14.35 Get:87 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgraphite2-3 arm64 1.3.14-1ubuntu0.1 [69.2 kB]
+#7 14.36 Get:88 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libharfbuzz0b arm64 2.7.4-1ubuntu3.2 [353 kB]
+#7 14.37 Get:89 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpcsclite1 arm64 1.9.5-3ubuntu1 [20.0 kB]
+#7 14.37 Get:90 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openjdk-11-jre-headless arm64 11.0.32.1+1-1ubuntu1~22.04 [42.0 MB]
+#7 16.36 Get:91 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ca-certificates-java all 20190909ubuntu1.3 [12.3 kB]
+#7 16.36 Get:92 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libcpan-distnameinfo-perl all 0.12-2.1 [8276 B]
+#7 16.36 Get:93 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libcpan-meta-check-perl all 0.014-1 [7594 B]
+#7 16.36 Get:94 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libfile-pushd-perl all 1.016-1 [12.0 kB]
+#7 16.36 Get:95 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-modules-db arm64 2.1.27+dfsg2-3ubuntu1.2 [21.1 kB]
+#7 16.36 Get:96 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-2 arm64 2.1.27+dfsg2-3ubuntu1.2 [55.6 kB]
+#7 16.36 Get:97 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-2.5-0 arm64 2.5.20+dfsg-0ubuntu0.22.04.1 [182 kB]
+#7 16.37 Get:98 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2build4 [59.2 kB]
+#7 16.37 Get:99 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libssh-4 arm64 0.9.6-2ubuntu0.22.04.8 [187 kB]
+#7 16.56 Get:100 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcurl4 arm64 7.81.0-1ubuntu1.29 [286 kB]
+#7 16.57 Get:101 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 curl arm64 7.81.0-1ubuntu1.29 [190 kB]
+#7 17.01 Get:102 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libmodule-build-perl all 0.423100-1 [200 kB]
+#7 18.14 Get:103 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 liblocal-lib-perl all 2.000028-1 [47.0 kB]
+#7 18.18 Get:104 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libmodule-cpanfile-perl all 1.1004-1 [24.2 kB]
+#7 18.20 Get:105 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libparse-pmfile-perl all 0.43-1 [14.7 kB]
+#7 18.21 Get:106 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libstring-shellquote-perl all 1.04-1 [12.0 kB]
+#7 18.22 Get:107 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 cpanminus all 1.7045-1 [50.8 kB]
+#7 18.26 Get:108 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcurl3-gnutls arm64 7.81.0-1ubuntu1.29 [281 kB]
+#7 18.52 Get:109 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 liberror-perl all 0.17029-1 [26.5 kB]
+#7 18.54 Get:110 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 git-man all 1:2.34.1-1ubuntu1.17 [954 kB]
+#7 18.85 Get:111 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 git arm64 1:2.34.1-1ubuntu1.17 [3222 kB]
+#7 19.26 Get:112 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libapr1 arm64 1.7.0-8ubuntu0.22.04.2 [106 kB]
+#7 19.26 Get:113 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libaprutil1 arm64 1.6.1-5ubuntu4.22.04.3 [94.5 kB]
+#7 19.27 Get:114 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libserf-1-1 arm64 1.3.9-10ubuntu2 [49.5 kB]
+#7 19.27 Get:115 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libutf8proc2 arm64 2.7.0-3 [73.6 kB]
+#7 19.28 Get:116 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 libsvn1 arm64 1.14.1-3ubuntu0.22.04.1 [1346 kB]
+#7 19.39 Get:117 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 openjdk-11-jdk-headless arm64 11.0.32.1+1-1ubuntu1~22.04 [72.9 MB]
+#7 23.19 Get:118 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-lib2to3 all 3.10.8-1~22.04 [77.6 kB]
+#7 23.19 Get:119 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-distutils all 3.10.8-1~22.04 [139 kB]
+#7 23.20 Get:120 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-setuptools all 59.6.0-1.2ubuntu0.22.04.3 [340 kB]
+#7 23.22 Get:121 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3-wheel all 0.37.1-2ubuntu0.22.04.1 [32.0 kB]
+#7 23.22 Get:122 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3-pip all 22.0.2+dfsg-1ubuntu0.7 [1306 kB]
+#7 23.29 Get:123 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.7 [1683 kB]
+#7 23.37 Get:124 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.3 [789 kB]
+#7 23.41 Get:125 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3.10-venv arm64 3.10.12-1~22.04.18 [5726 B]
+#7 23.41 Get:126 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python3-venv arm64 3.10.6-1~22.04.1 [1042 B]
+#7 23.41 Get:127 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 subversion arm64 1.14.1-3ubuntu0.22.04.1 [955 kB]
+#7 23.46 Get:128 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 unzip arm64 6.0-26ubuntu3.2 [171 kB]
+#7 23.60 debconf: delaying package configuration, since apt-utils is not installed
+#7 23.61 Fetched 213 MB in 16s (13.3 MB/s)
+#7 23.62 Selecting previously unselected package libpython3.10-minimal:arm64.
+#7 23.62 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4387 files and directories currently installed.)
+#7 23.62 Preparing to unpack .../libpython3.10-minimal_3.10.12-1~22.04.18_arm64.deb ...
+#7 23.63 Unpacking libpython3.10-minimal:arm64 (3.10.12-1~22.04.18) ...
+#7 23.66 Selecting previously unselected package libexpat1:arm64.
+#7 23.66 Preparing to unpack .../libexpat1_2.4.7-1ubuntu0.9_arm64.deb ...
+#7 23.66 Unpacking libexpat1:arm64 (2.4.7-1ubuntu0.9) ...
+#7 23.67 Selecting previously unselected package python3.10-minimal.
+#7 23.67 Preparing to unpack .../python3.10-minimal_3.10.12-1~22.04.18_arm64.deb ...
+#7 23.68 Unpacking python3.10-minimal (3.10.12-1~22.04.18) ...
+#7 23.70 Setting up libpython3.10-minimal:arm64 (3.10.12-1~22.04.18) ...
+#7 23.70 Setting up libexpat1:arm64 (2.4.7-1ubuntu0.9) ...
+#7 23.71 Setting up python3.10-minimal (3.10.12-1~22.04.18) ...
+#7 23.97 Selecting previously unselected package python3-minimal.
+#7 23.97 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4691 files and directories currently installed.)
+#7 23.97 Preparing to unpack .../0-python3-minimal_3.10.6-1~22.04.1_arm64.deb ...
+#7 23.97 Unpacking python3-minimal (3.10.6-1~22.04.1) ...
+#7 23.98 Selecting previously unselected package media-types.
+#7 23.98 Preparing to unpack .../1-media-types_7.0.0_all.deb ...
+#7 23.98 Unpacking media-types (7.0.0) ...
+#7 23.99 Selecting previously unselected package libmpdec3:arm64.
+#7 23.99 Preparing to unpack .../2-libmpdec3_2.5.1-2build2_arm64.deb ...
+#7 23.99 Unpacking libmpdec3:arm64 (2.5.1-2build2) ...
+#7 24.00 Selecting previously unselected package readline-common.
+#7 24.00 Preparing to unpack .../3-readline-common_8.1.2-1_all.deb ...
+#7 24.01 Unpacking readline-common (8.1.2-1) ...
+#7 24.02 Selecting previously unselected package libreadline8:arm64.
+#7 24.02 Preparing to unpack .../4-libreadline8_8.1.2-1_arm64.deb ...
+#7 24.02 Unpacking libreadline8:arm64 (8.1.2-1) ...
+#7 24.03 Selecting previously unselected package libsqlite3-0:arm64.
+#7 24.03 Preparing to unpack .../5-libsqlite3-0_3.37.2-2ubuntu0.8_arm64.deb ...
+#7 24.03 Unpacking libsqlite3-0:arm64 (3.37.2-2ubuntu0.8) ...
+#7 24.04 Selecting previously unselected package libpython3.10-stdlib:arm64.
+#7 24.04 Preparing to unpack .../6-libpython3.10-stdlib_3.10.12-1~22.04.18_arm64.deb ...
+#7 24.04 Unpacking libpython3.10-stdlib:arm64 (3.10.12-1~22.04.18) ...
+#7 24.09 Selecting previously unselected package python3.10.
+#7 24.09 Preparing to unpack .../7-python3.10_3.10.12-1~22.04.18_arm64.deb ...
+#7 24.09 Unpacking python3.10 (3.10.12-1~22.04.18) ...
+#7 24.10 Selecting previously unselected package libpython3-stdlib:arm64.
+#7 24.10 Preparing to unpack .../8-libpython3-stdlib_3.10.6-1~22.04.1_arm64.deb ...
+#7 24.10 Unpacking libpython3-stdlib:arm64 (3.10.6-1~22.04.1) ...
+#7 24.11 Setting up python3-minimal (3.10.6-1~22.04.1) ...
+#7 24.18 Selecting previously unselected package python3.
+#7 24.18 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5121 files and directories currently installed.)
+#7 24.18 Preparing to unpack .../000-python3_3.10.6-1~22.04.1_arm64.deb ...
+#7 24.19 Unpacking python3 (3.10.6-1~22.04.1) ...
+#7 24.19 Selecting previously unselected package perl-modules-5.34.
+#7 24.20 Preparing to unpack .../001-perl-modules-5.34_5.34.0-3ubuntu1.9_all.deb ...
+#7 24.20 Unpacking perl-modules-5.34 (5.34.0-3ubuntu1.9) ...
+#7 24.32 Selecting previously unselected package libgdbm6:arm64.
+#7 24.32 Preparing to unpack .../002-libgdbm6_1.23-1_arm64.deb ...
+#7 24.32 Unpacking libgdbm6:arm64 (1.23-1) ...
+#7 24.33 Selecting previously unselected package libgdbm-compat4:arm64.
+#7 24.33 Preparing to unpack .../003-libgdbm-compat4_1.23-1_arm64.deb ...
+#7 24.33 Unpacking libgdbm-compat4:arm64 (1.23-1) ...
+#7 24.34 Selecting previously unselected package libperl5.34:arm64.
+#7 24.34 Preparing to unpack .../004-libperl5.34_5.34.0-3ubuntu1.9_arm64.deb ...
+#7 24.34 Unpacking libperl5.34:arm64 (5.34.0-3ubuntu1.9) ...
+#7 24.44 Selecting previously unselected package perl.
+#7 24.44 Preparing to unpack .../005-perl_5.34.0-3ubuntu1.9_arm64.deb ...
+#7 24.45 Unpacking perl (5.34.0-3ubuntu1.9) ...
+#7 24.46 Selecting previously unselected package openssl.
+#7 24.46 Preparing to unpack .../006-openssl_3.0.2-0ubuntu1.30_arm64.deb ...
+#7 24.46 Unpacking openssl (3.0.2-0ubuntu1.30) ...
+#7 24.48 Selecting previously unselected package ca-certificates.
+#7 24.48 Preparing to unpack .../007-ca-certificates_20260601~22.04.1_all.deb ...
+#7 24.48 Unpacking ca-certificates (20260601~22.04.1) ...
+#7 24.50 Selecting previously unselected package libdbus-1-3:arm64.
+#7 24.50 Preparing to unpack .../008-libdbus-1-3_1.12.20-2ubuntu4.1_arm64.deb ...
+#7 24.50 Unpacking libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+#7 24.51 Selecting previously unselected package libglib2.0-0:arm64.
+#7 24.51 Preparing to unpack .../009-libglib2.0-0_2.72.4-0ubuntu2.10_arm64.deb ...
+#7 24.51 Unpacking libglib2.0-0:arm64 (2.72.4-0ubuntu2.10) ...
+#7 24.53 Selecting previously unselected package python3-pkg-resources.
+#7 24.53 Preparing to unpack .../010-python3-pkg-resources_59.6.0-1.2ubuntu0.22.04.3_all.deb ...
+#7 24.53 Unpacking python3-pkg-resources (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 24.55 Selecting previously unselected package ucf.
+#7 24.55 Preparing to unpack .../011-ucf_3.0043_all.deb ...
+#7 24.55 Moving old data out of the way
+#7 24.55 Unpacking ucf (3.0043) ...
+#7 24.56 Selecting previously unselected package libnghttp2-14:arm64.
+#7 24.56 Preparing to unpack .../012-libnghttp2-14_1.43.0-1ubuntu0.4_arm64.deb ...
+#7 24.57 Unpacking libnghttp2-14:arm64 (1.43.0-1ubuntu0.4) ...
+#7 24.58 Selecting previously unselected package libpng16-16:arm64.
+#7 24.58 Preparing to unpack .../013-libpng16-16_1.6.37-3ubuntu0.6_arm64.deb ...
+#7 24.58 Unpacking libpng16-16:arm64 (1.6.37-3ubuntu0.6) ...
+#7 24.59 Selecting previously unselected package libpsl5:arm64.
+#7 24.59 Preparing to unpack .../014-libpsl5_0.21.0-1.2build2_arm64.deb ...
+#7 24.59 Unpacking libpsl5:arm64 (0.21.0-1.2build2) ...
+#7 24.60 Selecting previously unselected package xz-utils.
+#7 24.60 Preparing to unpack .../015-xz-utils_5.2.5-2ubuntu1.1_arm64.deb ...
+#7 24.60 Unpacking xz-utils (5.2.5-2ubuntu1.1) ...
+#7 24.61 Selecting previously unselected package binutils-common:arm64.
+#7 24.61 Preparing to unpack .../016-binutils-common_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.61 Unpacking binutils-common:arm64 (2.38-4ubuntu2.12) ...
+#7 24.62 Selecting previously unselected package libbinutils:arm64.
+#7 24.62 Preparing to unpack .../017-libbinutils_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.62 Unpacking libbinutils:arm64 (2.38-4ubuntu2.12) ...
+#7 24.64 Selecting previously unselected package libctf-nobfd0:arm64.
+#7 24.64 Preparing to unpack .../018-libctf-nobfd0_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.64 Unpacking libctf-nobfd0:arm64 (2.38-4ubuntu2.12) ...
+#7 24.65 Selecting previously unselected package libctf0:arm64.
+#7 24.65 Preparing to unpack .../019-libctf0_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.65 Unpacking libctf0:arm64 (2.38-4ubuntu2.12) ...
+#7 24.66 Selecting previously unselected package binutils-aarch64-linux-gnu.
+#7 24.66 Preparing to unpack .../020-binutils-aarch64-linux-gnu_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.66 Unpacking binutils-aarch64-linux-gnu (2.38-4ubuntu2.12) ...
+#7 24.71 Selecting previously unselected package binutils.
+#7 24.71 Preparing to unpack .../021-binutils_2.38-4ubuntu2.12_arm64.deb ...
+#7 24.72 Unpacking binutils (2.38-4ubuntu2.12) ...
+#7 24.73 Selecting previously unselected package libc-dev-bin.
+#7 24.73 Preparing to unpack .../022-libc-dev-bin_2.35-0ubuntu3.15_arm64.deb ...
+#7 24.73 Unpacking libc-dev-bin (2.35-0ubuntu3.15) ...
+#7 24.74 Selecting previously unselected package linux-libc-dev:arm64.
+#7 24.74 Preparing to unpack .../023-linux-libc-dev_5.15.0-198.208_arm64.deb ...
+#7 24.74 Unpacking linux-libc-dev:arm64 (5.15.0-198.208) ...
+#7 24.80 Selecting previously unselected package libcrypt-dev:arm64.
+#7 24.80 Preparing to unpack .../024-libcrypt-dev_1%3a4.4.27-1_arm64.deb ...
+#7 24.80 Unpacking libcrypt-dev:arm64 (1:4.4.27-1) ...
+#7 24.81 Selecting previously unselected package rpcsvc-proto.
+#7 24.81 Preparing to unpack .../025-rpcsvc-proto_1.4.2-0ubuntu6_arm64.deb ...
+#7 24.82 Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+#7 24.82 Selecting previously unselected package libtirpc-dev:arm64.
+#7 24.83 Preparing to unpack .../026-libtirpc-dev_1.3.2-2ubuntu0.1_arm64.deb ...
+#7 24.83 Unpacking libtirpc-dev:arm64 (1.3.2-2ubuntu0.1) ...
+#7 24.84 Selecting previously unselected package libnsl-dev:arm64.
+#7 24.84 Preparing to unpack .../027-libnsl-dev_1.3.0-2build2_arm64.deb ...
+#7 24.84 Unpacking libnsl-dev:arm64 (1.3.0-2build2) ...
+#7 24.85 Selecting previously unselected package libc6-dev:arm64.
+#7 24.85 Preparing to unpack .../028-libc6-dev_2.35-0ubuntu3.15_arm64.deb ...
+#7 24.85 Unpacking libc6-dev:arm64 (2.35-0ubuntu3.15) ...
+#7 24.90 Selecting previously unselected package gcc-11-base:arm64.
+#7 24.90 Preparing to unpack .../029-gcc-11-base_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 24.90 Unpacking gcc-11-base:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 24.91 Selecting previously unselected package libisl23:arm64.
+#7 24.91 Preparing to unpack .../030-libisl23_0.24-2build1_arm64.deb ...
+#7 24.91 Unpacking libisl23:arm64 (0.24-2build1) ...
+#7 24.93 Selecting previously unselected package libmpfr6:arm64.
+#7 24.93 Preparing to unpack .../031-libmpfr6_4.1.0-3build3_arm64.deb ...
+#7 24.93 Unpacking libmpfr6:arm64 (4.1.0-3build3) ...
+#7 24.94 Selecting previously unselected package libmpc3:arm64.
+#7 24.94 Preparing to unpack .../032-libmpc3_1.2.1-2build1_arm64.deb ...
+#7 24.94 Unpacking libmpc3:arm64 (1.2.1-2build1) ...
+#7 24.95 Selecting previously unselected package cpp-11.
+#7 24.95 Preparing to unpack .../033-cpp-11_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 24.95 Unpacking cpp-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.03 Selecting previously unselected package cpp.
+#7 25.03 Preparing to unpack .../034-cpp_4%3a11.2.0-1ubuntu1_arm64.deb ...
+#7 25.03 Unpacking cpp (4:11.2.0-1ubuntu1) ...
+#7 25.04 Selecting previously unselected package libcc1-0:arm64.
+#7 25.04 Preparing to unpack .../035-libcc1-0_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.04 Unpacking libcc1-0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.05 Selecting previously unselected package libgomp1:arm64.
+#7 25.05 Preparing to unpack .../036-libgomp1_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.06 Unpacking libgomp1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.06 Selecting previously unselected package libitm1:arm64.
+#7 25.06 Preparing to unpack .../037-libitm1_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.07 Unpacking libitm1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.07 Selecting previously unselected package libatomic1:arm64.
+#7 25.07 Preparing to unpack .../038-libatomic1_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.08 Unpacking libatomic1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.09 Selecting previously unselected package libasan6:arm64.
+#7 25.09 Preparing to unpack .../039-libasan6_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.09 Unpacking libasan6:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.12 Selecting previously unselected package liblsan0:arm64.
+#7 25.12 Preparing to unpack .../040-liblsan0_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.12 Unpacking liblsan0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.14 Selecting previously unselected package libtsan0:arm64.
+#7 25.14 Preparing to unpack .../041-libtsan0_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.14 Unpacking libtsan0:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.17 Selecting previously unselected package libubsan1:arm64.
+#7 25.17 Preparing to unpack .../042-libubsan1_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.17 Unpacking libubsan1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.19 Selecting previously unselected package libhwasan0:arm64.
+#7 25.19 Preparing to unpack .../043-libhwasan0_12.3.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.19 Unpacking libhwasan0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 25.21 Selecting previously unselected package libgcc-11-dev:arm64.
+#7 25.21 Preparing to unpack .../044-libgcc-11-dev_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.21 Unpacking libgcc-11-dev:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.25 Selecting previously unselected package gcc-11.
+#7 25.25 Preparing to unpack .../045-gcc-11_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.25 Unpacking gcc-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.39 Selecting previously unselected package gcc.
+#7 25.39 Preparing to unpack .../046-gcc_4%3a11.2.0-1ubuntu1_arm64.deb ...
+#7 25.39 Unpacking gcc (4:11.2.0-1ubuntu1) ...
+#7 25.40 Selecting previously unselected package libstdc++-11-dev:arm64.
+#7 25.40 Preparing to unpack .../047-libstdc++-11-dev_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.40 Unpacking libstdc++-11-dev:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.49 Selecting previously unselected package g++-11.
+#7 25.49 Preparing to unpack .../048-g++-11_11.4.0-1ubuntu1~22.04.3_arm64.deb ...
+#7 25.49 Unpacking g++-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 25.57 Selecting previously unselected package g++.
+#7 25.57 Preparing to unpack .../049-g++_4%3a11.2.0-1ubuntu1_arm64.deb ...
+#7 25.58 Unpacking g++ (4:11.2.0-1ubuntu1) ...
+#7 25.58 Selecting previously unselected package make.
+#7 25.58 Preparing to unpack .../050-make_4.3-4.1build1_arm64.deb ...
+#7 25.58 Unpacking make (4.3-4.1build1) ...
+#7 25.59 Selecting previously unselected package libdpkg-perl.
+#7 25.59 Preparing to unpack .../051-libdpkg-perl_1.21.1ubuntu2.6_all.deb ...
+#7 25.59 Unpacking libdpkg-perl (1.21.1ubuntu2.6) ...
+#7 25.61 Selecting previously unselected package bzip2.
+#7 25.61 Preparing to unpack .../052-bzip2_1.0.8-5ubuntu0.1_arm64.deb ...
+#7 25.61 Unpacking bzip2 (1.0.8-5ubuntu0.1) ...
+#7 25.62 Selecting previously unselected package patch.
+#7 25.62 Preparing to unpack .../053-patch_2.7.6-7build2_arm64.deb ...
+#7 25.62 Unpacking patch (2.7.6-7build2) ...
+#7 25.63 Selecting previously unselected package lto-disabled-list.
+#7 25.63 Preparing to unpack .../054-lto-disabled-list_24_all.deb ...
+#7 25.63 Unpacking lto-disabled-list (24) ...
+#7 25.64 Selecting previously unselected package dpkg-dev.
+#7 25.64 Preparing to unpack .../055-dpkg-dev_1.21.1ubuntu2.6_all.deb ...
+#7 25.64 Unpacking dpkg-dev (1.21.1ubuntu2.6) ...
+#7 25.65 Selecting previously unselected package build-essential.
+#7 25.65 Preparing to unpack .../056-build-essential_12.9ubuntu3_arm64.deb ...
+#7 25.66 Unpacking build-essential (12.9ubuntu3) ...
+#7 25.66 Selecting previously unselected package java-common.
+#7 25.66 Preparing to unpack .../057-java-common_0.72build2_all.deb ...
+#7 25.66 Unpacking java-common (0.72build2) ...
+#7 25.67 Selecting previously unselected package libavahi-common-data:arm64.
+#7 25.67 Preparing to unpack .../058-libavahi-common-data_0.8-5ubuntu5.5_arm64.deb ...
+#7 25.67 Unpacking libavahi-common-data:arm64 (0.8-5ubuntu5.5) ...
+#7 25.68 Selecting previously unselected package libavahi-common3:arm64.
+#7 25.68 Preparing to unpack .../059-libavahi-common3_0.8-5ubuntu5.5_arm64.deb ...
+#7 25.68 Unpacking libavahi-common3:arm64 (0.8-5ubuntu5.5) ...
+#7 25.69 Selecting previously unselected package libavahi-client3:arm64.
+#7 25.70 Preparing to unpack .../060-libavahi-client3_0.8-5ubuntu5.5_arm64.deb ...
+#7 25.70 Unpacking libavahi-client3:arm64 (0.8-5ubuntu5.5) ...
+#7 25.70 Selecting previously unselected package libcups2:arm64.
+#7 25.71 Preparing to unpack .../061-libcups2_2.4.1op1-1ubuntu4.21_arm64.deb ...
+#7 25.71 Unpacking libcups2:arm64 (2.4.1op1-1ubuntu4.21) ...
+#7 25.72 Selecting previously unselected package libbrotli1:arm64.
+#7 25.72 Preparing to unpack .../062-libbrotli1_1.0.9-2build6_arm64.deb ...
+#7 25.72 Unpacking libbrotli1:arm64 (1.0.9-2build6) ...
+#7 25.73 Selecting previously unselected package libfreetype6:arm64.
+#7 25.73 Preparing to unpack .../063-libfreetype6_2.11.1+dfsg-1ubuntu0.3_arm64.deb ...
+#7 25.73 Unpacking libfreetype6:arm64 (2.11.1+dfsg-1ubuntu0.3) ...
+#7 25.74 Selecting previously unselected package fonts-dejavu-core.
+#7 25.74 Preparing to unpack .../064-fonts-dejavu-core_2.37-2build1_all.deb ...
+#7 25.74 Unpacking fonts-dejavu-core (2.37-2build1) ...
+#7 25.80 Selecting previously unselected package fontconfig-config.
+#7 25.80 Preparing to unpack .../065-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+#7 25.80 Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+#7 25.81 Selecting previously unselected package libfontconfig1:arm64.
+#7 25.81 Preparing to unpack .../066-libfontconfig1_2.13.1-4.2ubuntu5_arm64.deb ...
+#7 25.81 Unpacking libfontconfig1:arm64 (2.13.1-4.2ubuntu5) ...
+#7 25.82 Selecting previously unselected package liblcms2-2:arm64.
+#7 25.82 Preparing to unpack .../067-liblcms2-2_2.12~rc1-2ubuntu0.1_arm64.deb ...
+#7 25.83 Unpacking liblcms2-2:arm64 (2.12~rc1-2ubuntu0.1) ...
+#7 25.83 Selecting previously unselected package libjpeg-turbo8:arm64.
+#7 25.84 Preparing to unpack .../068-libjpeg-turbo8_2.1.2-0ubuntu1_arm64.deb ...
+#7 25.84 Unpacking libjpeg-turbo8:arm64 (2.1.2-0ubuntu1) ...
+#7 25.84 Selecting previously unselected package libjpeg8:arm64.
+#7 25.85 Preparing to unpack .../069-libjpeg8_8c-2ubuntu10_arm64.deb ...
+#7 25.85 Unpacking libjpeg8:arm64 (8c-2ubuntu10) ...
+#7 25.85 Selecting previously unselected package libnspr4:arm64.
+#7 25.85 Preparing to unpack .../070-libnspr4_2%3a4.35-0ubuntu0.22.04.1_arm64.deb ...
+#7 25.86 Unpacking libnspr4:arm64 (2:4.35-0ubuntu0.22.04.1) ...
+#7 25.86 Selecting previously unselected package libnss3:arm64.
+#7 25.87 Preparing to unpack .../071-libnss3_2%3a3.98-0ubuntu0.22.04.4_arm64.deb ...
+#7 25.87 Unpacking libnss3:arm64 (2:3.98-0ubuntu0.22.04.4) ...
+#7 25.92 Selecting previously unselected package libasound2-data.
+#7 25.92 Preparing to unpack .../072-libasound2-data_1.2.6.1-1ubuntu1.2_all.deb ...
+#7 25.92 Unpacking libasound2-data (1.2.6.1-1ubuntu1.2) ...
+#7 25.94 Selecting previously unselected package libasound2:arm64.
+#7 25.94 Preparing to unpack .../073-libasound2_1.2.6.1-1ubuntu1.2_arm64.deb ...
+#7 25.94 Unpacking libasound2:arm64 (1.2.6.1-1ubuntu1.2) ...
+#7 25.95 Selecting previously unselected package libgraphite2-3:arm64.
+#7 25.95 Preparing to unpack .../074-libgraphite2-3_1.3.14-1ubuntu0.1_arm64.deb ...
+#7 25.95 Unpacking libgraphite2-3:arm64 (1.3.14-1ubuntu0.1) ...
+#7 25.96 Selecting previously unselected package libharfbuzz0b:arm64.
+#7 25.96 Preparing to unpack .../075-libharfbuzz0b_2.7.4-1ubuntu3.2_arm64.deb ...
+#7 25.96 Unpacking libharfbuzz0b:arm64 (2.7.4-1ubuntu3.2) ...
+#7 25.97 Selecting previously unselected package libpcsclite1:arm64.
+#7 25.97 Preparing to unpack .../076-libpcsclite1_1.9.5-3ubuntu1_arm64.deb ...
+#7 25.97 Unpacking libpcsclite1:arm64 (1.9.5-3ubuntu1) ...
+#7 25.98 Selecting previously unselected package openjdk-11-jre-headless:arm64.
+#7 25.98 Preparing to unpack .../077-openjdk-11-jre-headless_11.0.32.1+1-1ubuntu1~22.04_arm64.deb ...
+#7 25.98 Unpacking openjdk-11-jre-headless:arm64 (11.0.32.1+1-1ubuntu1~22.04) ...
+#7 26.42 Selecting previously unselected package ca-certificates-java.
+#7 26.42 Preparing to unpack .../078-ca-certificates-java_20190909ubuntu1.3_all.deb ...
+#7 26.42 Unpacking ca-certificates-java (20190909ubuntu1.3) ...
+#7 26.43 Selecting previously unselected package libcpan-distnameinfo-perl.
+#7 26.43 Preparing to unpack .../079-libcpan-distnameinfo-perl_0.12-2.1_all.deb ...
+#7 26.43 Unpacking libcpan-distnameinfo-perl (0.12-2.1) ...
+#7 26.44 Selecting previously unselected package libcpan-meta-check-perl.
+#7 26.44 Preparing to unpack .../080-libcpan-meta-check-perl_0.014-1_all.deb ...
+#7 26.44 Unpacking libcpan-meta-check-perl (0.014-1) ...
+#7 26.45 Selecting previously unselected package libfile-pushd-perl.
+#7 26.45 Preparing to unpack .../081-libfile-pushd-perl_1.016-1_all.deb ...
+#7 26.45 Unpacking libfile-pushd-perl (1.016-1) ...
+#7 26.46 Selecting previously unselected package libsasl2-modules-db:arm64.
+#7 26.46 Preparing to unpack .../082-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_arm64.deb ...
+#7 26.46 Unpacking libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+#7 26.47 Selecting previously unselected package libsasl2-2:arm64.
+#7 26.47 Preparing to unpack .../083-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_arm64.deb ...
+#7 26.47 Unpacking libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+#7 26.49 Selecting previously unselected package libldap-2.5-0:arm64.
+#7 26.49 Preparing to unpack .../084-libldap-2.5-0_2.5.20+dfsg-0ubuntu0.22.04.1_arm64.deb ...
+#7 26.49 Unpacking libldap-2.5-0:arm64 (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+#7 26.50 Selecting previously unselected package librtmp1:arm64.
+#7 26.50 Preparing to unpack .../085-librtmp1_2.4+20151223.gitfa8646d.1-2build4_arm64.deb ...
+#7 26.50 Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build4) ...
+#7 26.51 Selecting previously unselected package libssh-4:arm64.
+#7 26.51 Preparing to unpack .../086-libssh-4_0.9.6-2ubuntu0.22.04.8_arm64.deb ...
+#7 26.51 Unpacking libssh-4:arm64 (0.9.6-2ubuntu0.22.04.8) ...
+#7 26.52 Selecting previously unselected package libcurl4:arm64.
+#7 26.52 Preparing to unpack .../087-libcurl4_7.81.0-1ubuntu1.29_arm64.deb ...
+#7 26.52 Unpacking libcurl4:arm64 (7.81.0-1ubuntu1.29) ...
+#7 26.53 Selecting previously unselected package curl.
+#7 26.54 Preparing to unpack .../088-curl_7.81.0-1ubuntu1.29_arm64.deb ...
+#7 26.54 Unpacking curl (7.81.0-1ubuntu1.29) ...
+#7 26.55 Selecting previously unselected package libmodule-build-perl.
+#7 26.55 Preparing to unpack .../089-libmodule-build-perl_0.423100-1_all.deb ...
+#7 26.55 Adding 'diversion of /usr/bin/config_data to /usr/bin/config_data.diverted by libmodule-build-perl'
+#7 26.55 Adding 'diversion of /usr/share/man/man1/config_data.1.gz to /usr/share/man/man1/config_data.diverted.1.gz by libmodule-build-perl'
+#7 26.55 Unpacking libmodule-build-perl (0.423100-1) ...
+#7 26.57 Selecting previously unselected package liblocal-lib-perl.
+#7 26.57 Preparing to unpack .../090-liblocal-lib-perl_2.000028-1_all.deb ...
+#7 26.57 Unpacking liblocal-lib-perl (2.000028-1) ...
+#7 26.58 Selecting previously unselected package libmodule-cpanfile-perl.
+#7 26.58 Preparing to unpack .../091-libmodule-cpanfile-perl_1.1004-1_all.deb ...
+#7 26.58 Unpacking libmodule-cpanfile-perl (1.1004-1) ...
+#7 26.59 Selecting previously unselected package libparse-pmfile-perl.
+#7 26.59 Preparing to unpack .../092-libparse-pmfile-perl_0.43-1_all.deb ...
+#7 26.59 Unpacking libparse-pmfile-perl (0.43-1) ...
+#7 26.60 Selecting previously unselected package libstring-shellquote-perl.
+#7 26.60 Preparing to unpack .../093-libstring-shellquote-perl_1.04-1_all.deb ...
+#7 26.60 Unpacking libstring-shellquote-perl (1.04-1) ...
+#7 26.61 Selecting previously unselected package cpanminus.
+#7 26.61 Preparing to unpack .../094-cpanminus_1.7045-1_all.deb ...
+#7 26.61 Unpacking cpanminus (1.7045-1) ...
+#7 26.62 Selecting previously unselected package libcurl3-gnutls:arm64.
+#7 26.62 Preparing to unpack .../095-libcurl3-gnutls_7.81.0-1ubuntu1.29_arm64.deb ...
+#7 26.62 Unpacking libcurl3-gnutls:arm64 (7.81.0-1ubuntu1.29) ...
+#7 26.63 Selecting previously unselected package liberror-perl.
+#7 26.64 Preparing to unpack .../096-liberror-perl_0.17029-1_all.deb ...
+#7 26.64 Unpacking liberror-perl (0.17029-1) ...
+#7 26.65 Selecting previously unselected package git-man.
+#7 26.65 Preparing to unpack .../097-git-man_1%3a2.34.1-1ubuntu1.17_all.deb ...
+#7 26.65 Unpacking git-man (1:2.34.1-1ubuntu1.17) ...
+#7 26.66 Selecting previously unselected package git.
+#7 26.66 Preparing to unpack .../098-git_1%3a2.34.1-1ubuntu1.17_arm64.deb ...
+#7 26.66 Unpacking git (1:2.34.1-1ubuntu1.17) ...
+#7 26.73 Selecting previously unselected package libapr1:arm64.
+#7 26.73 Preparing to unpack .../099-libapr1_1.7.0-8ubuntu0.22.04.2_arm64.deb ...
+#7 26.73 Unpacking libapr1:arm64 (1.7.0-8ubuntu0.22.04.2) ...
+#7 26.74 Selecting previously unselected package libaprutil1:arm64.
+#7 26.74 Preparing to unpack .../100-libaprutil1_1.6.1-5ubuntu4.22.04.3_arm64.deb ...
+#7 26.74 Unpacking libaprutil1:arm64 (1.6.1-5ubuntu4.22.04.3) ...
+#7 26.75 Selecting previously unselected package libserf-1-1:arm64.
+#7 26.75 Preparing to unpack .../101-libserf-1-1_1.3.9-10ubuntu2_arm64.deb ...
+#7 26.75 Unpacking libserf-1-1:arm64 (1.3.9-10ubuntu2) ...
+#7 26.76 Selecting previously unselected package libutf8proc2:arm64.
+#7 26.76 Preparing to unpack .../102-libutf8proc2_2.7.0-3_arm64.deb ...
+#7 26.76 Unpacking libutf8proc2:arm64 (2.7.0-3) ...
+#7 26.77 Selecting previously unselected package libsvn1:arm64.
+#7 26.77 Preparing to unpack .../103-libsvn1_1.14.1-3ubuntu0.22.04.1_arm64.deb ...
+#7 26.77 Unpacking libsvn1:arm64 (1.14.1-3ubuntu0.22.04.1) ...
+#7 26.79 Selecting previously unselected package openjdk-11-jdk-headless:arm64.
+#7 26.79 Preparing to unpack .../104-openjdk-11-jdk-headless_11.0.32.1+1-1ubuntu1~22.04_arm64.deb ...
+#7 26.80 Unpacking openjdk-11-jdk-headless:arm64 (11.0.32.1+1-1ubuntu1~22.04) ...
+#7 26.99 Selecting previously unselected package python3-lib2to3.
+#7 26.99 Preparing to unpack .../105-python3-lib2to3_3.10.8-1~22.04_all.deb ...
+#7 26.99 Unpacking python3-lib2to3 (3.10.8-1~22.04) ...
+#7 27.01 Selecting previously unselected package python3-distutils.
+#7 27.01 Preparing to unpack .../106-python3-distutils_3.10.8-1~22.04_all.deb ...
+#7 27.01 Unpacking python3-distutils (3.10.8-1~22.04) ...
+#7 27.03 Selecting previously unselected package python3-setuptools.
+#7 27.03 Preparing to unpack .../107-python3-setuptools_59.6.0-1.2ubuntu0.22.04.3_all.deb ...
+#7 27.03 Unpacking python3-setuptools (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 27.05 Selecting previously unselected package python3-wheel.
+#7 27.05 Preparing to unpack .../108-python3-wheel_0.37.1-2ubuntu0.22.04.1_all.deb ...
+#7 27.05 Unpacking python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+#7 27.06 Selecting previously unselected package python3-pip.
+#7 27.06 Preparing to unpack .../109-python3-pip_22.0.2+dfsg-1ubuntu0.7_all.deb ...
+#7 27.06 Unpacking python3-pip (22.0.2+dfsg-1ubuntu0.7) ...
+#7 27.12 Selecting previously unselected package python3-pip-whl.
+#7 27.12 Preparing to unpack .../110-python3-pip-whl_22.0.2+dfsg-1ubuntu0.7_all.deb ...
+#7 27.12 Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.7) ...
+#7 27.13 Selecting previously unselected package python3-setuptools-whl.
+#7 27.13 Preparing to unpack .../111-python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.3_all.deb ...
+#7 27.13 Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 27.14 Selecting previously unselected package python3.10-venv.
+#7 27.14 Preparing to unpack .../112-python3.10-venv_3.10.12-1~22.04.18_arm64.deb ...
+#7 27.14 Unpacking python3.10-venv (3.10.12-1~22.04.18) ...
+#7 27.24 Selecting previously unselected package python3-venv.
+#7 27.24 Preparing to unpack .../113-python3-venv_3.10.6-1~22.04.1_arm64.deb ...
+#7 27.24 Unpacking python3-venv (3.10.6-1~22.04.1) ...
+#7 27.25 Selecting previously unselected package subversion.
+#7 27.25 Preparing to unpack .../114-subversion_1.14.1-3ubuntu0.22.04.1_arm64.deb ...
+#7 27.26 Unpacking subversion (1.14.1-3ubuntu0.22.04.1) ...
+#7 27.27 Selecting previously unselected package unzip.
+#7 27.27 Preparing to unpack .../115-unzip_6.0-26ubuntu3.2_arm64.deb ...
+#7 27.27 Unpacking unzip (6.0-26ubuntu3.2) ...
+#7 27.29 Setting up media-types (7.0.0) ...
+#7 27.29 Setting up libgraphite2-3:arm64 (1.3.14-1ubuntu0.1) ...
+#7 27.29 Setting up liblcms2-2:arm64 (2.12~rc1-2ubuntu0.1) ...
+#7 27.29 Setting up gcc-11-base:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.29 Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 27.30 Setting up lto-disabled-list (24) ...
+#7 27.30 Setting up libpsl5:arm64 (0.21.0-1.2build2) ...
+#7 27.30 Setting up java-common (0.72build2) ...
+#7 27.31 Setting up libglib2.0-0:arm64 (2.72.4-0ubuntu2.10) ...
+#7 27.31 No schema files found: doing nothing.
+#7 27.31 Setting up unzip (6.0-26ubuntu3.2) ...
+#7 27.31 Setting up libutf8proc2:arm64 (2.7.0-3) ...
+#7 27.32 Setting up libbrotli1:arm64 (1.0.9-2build6) ...
+#7 27.32 Setting up libsqlite3-0:arm64 (3.37.2-2ubuntu0.8) ...
+#7 27.32 Setting up binutils-common:arm64 (2.38-4ubuntu2.12) ...
+#7 27.32 Setting up libnghttp2-14:arm64 (1.43.0-1ubuntu0.4) ...
+#7 27.32 Setting up libapr1:arm64 (1.7.0-8ubuntu0.22.04.2) ...
+#7 27.33 Setting up linux-libc-dev:arm64 (5.15.0-198.208) ...
+#7 27.33 Setting up libctf-nobfd0:arm64 (2.38-4ubuntu2.12) ...
+#7 27.33 Setting up libgomp1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.33 Setting up perl-modules-5.34 (5.34.0-3ubuntu1.9) ...
+#7 27.33 Setting up bzip2 (1.0.8-5ubuntu0.1) ...
+#7 27.34 Setting up libasan6:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.34 Setting up libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+#7 27.34 Setting up libasound2-data (1.2.6.1-1ubuntu1.2) ...
+#7 27.35 Setting up libtirpc-dev:arm64 (1.3.2-2ubuntu0.1) ...
+#7 27.35 Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+#7 27.35 Setting up make (4.3-4.1build1) ...
+#7 27.35 Setting up libmpfr6:arm64 (4.1.0-3build3) ...
+#7 27.35 Setting up libnspr4:arm64 (2:4.35-0ubuntu0.22.04.1) ...
+#7 27.36 Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build4) ...
+#7 27.36 Setting up libavahi-common-data:arm64 (0.8-5ubuntu5.5) ...
+#7 27.36 Setting up libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+#7 27.36 Setting up xz-utils (5.2.5-2ubuntu1.1) ...
+#7 27.37 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzma.1.gz because associated file /usr/share/man/man1/xz.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/unlzma.1.gz because associated file /usr/share/man/man1/unxz.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcat.1.gz because associated file /usr/share/man/man1/xzcat.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzmore.1.gz because associated file /usr/share/man/man1/xzmore.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzless.1.gz because associated file /usr/share/man/man1/xzless.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzdiff.1.gz because associated file /usr/share/man/man1/xzdiff.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcmp.1.gz because associated file /usr/share/man/man1/xzcmp.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzgrep.1.gz because associated file /usr/share/man/man1/xzgrep.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzegrep.1.gz because associated file /usr/share/man/man1/xzegrep.1.gz (of link group lzma) doesn't exist
+#7 27.37 update-alternatives: warning: skip creation of /usr/share/man/man1/lzfgrep.1.gz because associated file /usr/share/man/man1/xzfgrep.1.gz (of link group lzma) doesn't exist
+#7 27.37 Setting up libpng16-16:arm64 (1.6.37-3ubuntu0.6) ...
+#7 27.37 Setting up libmpc3:arm64 (1.2.1-2build1) ...
+#7 27.37 Setting up libatomic1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.38 Setting up patch (2.7.6-7build2) ...
+#7 27.38 Setting up fonts-dejavu-core (2.37-2build1) ...
+#7 27.39 Setting up libpcsclite1:arm64 (1.9.5-3ubuntu1) ...
+#7 27.39 Setting up ucf (3.0043) ...
+#7 27.42 Setting up libjpeg-turbo8:arm64 (2.1.2-0ubuntu1) ...
+#7 27.42 Setting up libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+#7 27.42 Setting up libssh-4:arm64 (0.9.6-2ubuntu0.22.04.8) ...
+#7 27.42 Setting up libubsan1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.42 Setting up libnsl-dev:arm64 (1.3.0-2build2) ...
+#7 27.43 Setting up libhwasan0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.43 Setting up libcrypt-dev:arm64 (1:4.4.27-1) ...
+#7 27.43 Setting up libasound2:arm64 (1.2.6.1-1ubuntu1.2) ...
+#7 27.43 Setting up libmpdec3:arm64 (2.5.1-2build2) ...
+#7 27.43 Setting up git-man (1:2.34.1-1ubuntu1.17) ...
+#7 27.44 Setting up libbinutils:arm64 (2.38-4ubuntu2.12) ...
+#7 27.44 Setting up libisl23:arm64 (0.24-2build1) ...
+#7 27.44 Setting up libc-dev-bin (2.35-0ubuntu3.15) ...
+#7 27.44 Setting up openssl (3.0.2-0ubuntu1.30) ...
+#7 27.45 Setting up readline-common (8.1.2-1) ...
+#7 27.45 Setting up libcc1-0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.45 Setting up liblsan0:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.45 Setting up libitm1:arm64 (12.3.0-1ubuntu1~22.04.3) ...
+#7 27.46 Setting up libgdbm6:arm64 (1.23-1) ...
+#7 27.46 Setting up libaprutil1:arm64 (1.6.1-5ubuntu4.22.04.3) ...
+#7 27.46 Setting up libtsan0:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.46 Setting up libctf0:arm64 (2.38-4ubuntu2.12) ...
+#7 27.46 Setting up libjpeg8:arm64 (8c-2ubuntu10) ...
+#7 27.47 Setting up cpp-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.47 Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+#7 27.50 Setting up libreadline8:arm64 (8.1.2-1) ...
+#7 27.51 Setting up libserf-1-1:arm64 (1.3.9-10ubuntu2) ...
+#7 27.51 Setting up libavahi-common3:arm64 (0.8-5ubuntu5.5) ...
+#7 27.51 Setting up binutils-aarch64-linux-gnu (2.38-4ubuntu2.12) ...
+#7 27.51 Setting up libnss3:arm64 (2:3.98-0ubuntu0.22.04.4) ...
+#7 27.52 Setting up binutils (2.38-4ubuntu2.12) ...
+#7 27.52 Setting up libldap-2.5-0:arm64 (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+#7 27.52 Setting up libpython3.10-stdlib:arm64 (3.10.12-1~22.04.18) ...
+#7 27.52 Setting up ca-certificates (20260601~22.04.1) ...
+#7 27.66 Updating certificates in /etc/ssl/certs...
+#7 27.86 121 added, 0 removed; done.
+#7 27.87 Setting up libfreetype6:arm64 (2.11.1+dfsg-1ubuntu0.3) ...
+#7 27.87 Setting up libgdbm-compat4:arm64 (1.23-1) ...
+#7 27.88 Setting up libgcc-11-dev:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.88 Setting up gcc-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 27.88 Setting up cpp (4:11.2.0-1ubuntu1) ...
+#7 27.88 Setting up libcurl4:arm64 (7.81.0-1ubuntu1.29) ...
+#7 27.89 Setting up libc6-dev:arm64 (2.35-0ubuntu3.15) ...
+#7 27.89 Setting up libharfbuzz0b:arm64 (2.7.4-1ubuntu3.2) ...
+#7 27.89 Setting up curl (7.81.0-1ubuntu1.29) ...
+#7 27.89 Setting up libfontconfig1:arm64 (2.13.1-4.2ubuntu5) ...
+#7 27.89 Setting up libsvn1:arm64 (1.14.1-3ubuntu0.22.04.1) ...
+#7 27.90 Setting up libavahi-client3:arm64 (0.8-5ubuntu5.5) ...
+#7 27.90 Setting up libpython3-stdlib:arm64 (3.10.6-1~22.04.1) ...
+#7 27.90 Setting up libperl5.34:arm64 (5.34.0-3ubuntu1.9) ...
+#7 27.90 Setting up python3.10 (3.10.12-1~22.04.18) ...
+#7 28.19 Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.7) ...
+#7 28.19 Setting up subversion (1.14.1-3ubuntu0.22.04.1) ...
+#7 28.19 Setting up libcurl3-gnutls:arm64 (7.81.0-1ubuntu1.29) ...
+#7 28.20 Setting up python3 (3.10.6-1~22.04.1) ...
+#7 28.24 Setting up gcc (4:11.2.0-1ubuntu1) ...
+#7 28.31 Setting up perl (5.34.0-3ubuntu1.9) ...
+#7 28.33 Setting up libdpkg-perl (1.21.1ubuntu2.6) ...
+#7 28.34 Setting up libcpan-distnameinfo-perl (0.12-2.1) ...
+#7 28.34 Setting up libstdc++-11-dev:arm64 (11.4.0-1ubuntu1~22.04.3) ...
+#7 28.34 Setting up libcups2:arm64 (2.4.1op1-1ubuntu4.21) ...
+#7 28.35 Setting up libcpan-meta-check-perl (0.014-1) ...
+#7 28.35 Setting up libparse-pmfile-perl (0.43-1) ...
+#7 28.35 Setting up python3-lib2to3 (3.10.8-1~22.04) ...
+#7 28.39 Setting up python3-pkg-resources (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 28.47 Setting up python3-distutils (3.10.8-1~22.04) ...
+#7 28.52 Setting up libmodule-cpanfile-perl (1.1004-1) ...
+#7 28.52 Setting up python3.10-venv (3.10.12-1~22.04.18) ...
+#7 28.54 Setting up python3-setuptools (59.6.0-1.2ubuntu0.22.04.3) ...
+#7 28.68 Setting up libfile-pushd-perl (1.016-1) ...
+#7 28.68 Setting up g++-11 (11.4.0-1ubuntu1~22.04.3) ...
+#7 28.68 Setting up libstring-shellquote-perl (1.04-1) ...
+#7 28.69 Setting up python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+#7 28.75 Setting up dpkg-dev (1.21.1ubuntu2.6) ...
+#7 28.75 Setting up libmodule-build-perl (0.423100-1) ...
+#7 28.75 Setting up liberror-perl (0.17029-1) ...
+#7 28.76 Setting up python3-venv (3.10.6-1~22.04.1) ...
+#7 28.76 Setting up git (1:2.34.1-1ubuntu1.17) ...
+#7 28.76 Setting up python3-pip (22.0.2+dfsg-1ubuntu0.7) ...
+#7 29.24 Setting up g++ (4:11.2.0-1ubuntu1) ...
+#7 29.25 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+#7 29.25 update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+#7 29.25 Setting up build-essential (12.9ubuntu3) ...
+#7 29.25 Setting up liblocal-lib-perl (2.000028-1) ...
+#7 29.25 Setting up cpanminus (1.7045-1) ...
+#7 29.26 Setting up openjdk-11-jre-headless:arm64 (11.0.32.1+1-1ubuntu1~22.04) ...
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/java to provide /usr/bin/java (java) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+#7 29.28 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+#7 29.29 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+#7 29.29 Setting up openjdk-11-jdk-headless:arm64 (11.0.32.1+1-1ubuntu1~22.04) ...
+#7 29.29 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+#7 29.29 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+#7 29.29 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+#7 29.29 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+#7 29.30 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+#7 29.31 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jaotc to provide /usr/bin/jaotc (jaotc) in auto mode
+#7 29.32 update-alternatives: using /usr/lib/jvm/java-11-openjdk-arm64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+#7 29.32 Setting up ca-certificates-java (20190909ubuntu1.3) ...
+#7 29.32 head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+#7 29.43 Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+#7 29.43 Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+#7 29.43 Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+#7 29.44 Adding debian:Security_Communication_RootCA2.pem
+#7 29.44 Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+#7 29.44 Adding debian:Amazon_Root_CA_3.pem
+#7 29.44 Adding debian:TunTrust_Root_CA.pem
+#7 29.44 Adding debian:emSign_Root_CA_-_C1.pem
+#7 29.44 Adding debian:USERTrust_RSA_Certification_Authority.pem
+#7 29.44 Adding debian:certSIGN_Root_CA_G2.pem
+#7 29.45 Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+#7 29.45 Adding debian:QuoVadis_Root_CA_2_G3.pem
+#7 29.45 Adding debian:vTrus_Root_CA.pem
+#7 29.45 Adding debian:DigiCert_Assured_ID_Root_G3.pem
+#7 29.45 Adding debian:e-Szigno_TLS_Root_CA_2023.pem
+#7 29.45 Adding debian:CA_Disig_Root_R2.pem
+#7 29.45 Adding debian:BJCA_Global_Root_CA2.pem
+#7 29.45 Adding debian:TWCA_Root_Certification_Authority.pem
+#7 29.45 Adding debian:emSign_ECC_Root_CA_-_C3.pem
+#7 29.45 Adding debian:UCA_Global_G2_Root.pem
+#7 29.45 Adding debian:ANF_Secure_Server_Root_CA.pem
+#7 29.46 Adding debian:DigiCert_Assured_ID_Root_G2.pem
+#7 29.46 Adding debian:Hongkong_Post_Root_CA_3.pem
+#7 29.46 Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+#7 29.46 Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+#7 29.46 Adding debian:Actalis_Authentication_Root_CA.pem
+#7 29.46 Adding debian:NAVER_Global_Root_Certification_Authority.pem
+#7 29.46 Adding debian:emSign_Root_CA_-_G1.pem
+#7 29.46 Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+#7 29.46 Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+#7 29.46 Adding debian:SecureSign_Root_CA15.pem
+#7 29.46 Adding debian:Certainly_Root_R1.pem
+#7 29.46 Adding debian:Atos_TrustedRoot_2011.pem
+#7 29.46 Adding debian:TWCA_Global_Root_CA.pem
+#7 29.47 Adding debian:ACCVRAIZ1.pem
+#7 29.47 Adding debian:Telia_Root_CA_v2.pem
+#7 29.47 Adding debian:GlobalSign_Root_CA_-_R6.pem
+#7 29.47 Adding debian:Certum_EC-384_CA.pem
+#7 29.47 Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
+#7 29.47 Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+#7 29.47 Adding debian:Certum_Trusted_Root_CA.pem
+#7 29.47 Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+#7 29.47 Adding debian:CFCA_EV_ROOT.pem
+#7 29.47 Adding debian:Amazon_Root_CA_1.pem
+#7 29.47 Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+#7 29.47 Adding debian:vTrus_ECC_Root_CA.pem
+#7 29.47 Adding debian:Amazon_Root_CA_4.pem
+#7 29.47 Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+#7 29.48 Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+#7 29.48 Adding debian:SwissSign_RSA_TLS_Root_CA_2022_-_1.pem
+#7 29.48 Adding debian:GlobalSign_Root_R46.pem
+#7 29.48 Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+#7 29.48 Adding debian:DigiCert_Trusted_Root_G4.pem
+#7 29.48 Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+#7 29.48 Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+#7 29.48 Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+#7 29.48 Adding debian:OISTE_Server_Root_ECC_G1.pem
+#7 29.48 Adding debian:Buypass_Class_2_Root_CA.pem
+#7 29.48 Adding debian:OISTE_Server_Root_RSA_G1.pem
+#7 29.48 Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+#7 29.48 Adding debian:TrustAsia_TLS_RSA_Root_CA.pem
+#7 29.48 Adding debian:QuoVadis_Root_CA_1_G3.pem
+#7 29.48 Adding debian:DigiCert_Global_Root_G3.pem
+#7 29.48 Adding debian:BJCA_Global_Root_CA1.pem
+#7 29.49 Adding debian:USERTrust_ECC_Certification_Authority.pem
+#7 29.49 Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+#7 29.49 Adding debian:GlobalSign_Root_CA_-_R3.pem
+#7 29.49 Adding debian:COMODO_ECC_Certification_Authority.pem
+#7 29.49 Adding debian:Security_Communication_ECC_RootCA1.pem
+#7 29.49 Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+#7 29.49 Adding debian:TWCA_CYBER_Root_CA.pem
+#7 29.49 Adding debian:AC_RAIZ_FNMT-RCM.pem
+#7 29.49 Adding debian:SecureSign_Root_CA14.pem
+#7 29.49 Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+#7 29.49 Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+#7 29.49 Adding debian:TrustAsia_Global_Root_CA_G3.pem
+#7 29.49 Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+#7 29.49 Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+#7 29.49 Adding debian:ISRG_Root_X1.pem
+#7 29.49 Adding debian:TrustAsia_TLS_ECC_Root_CA.pem
+#7 29.49 Adding debian:QuoVadis_Root_CA_3_G3.pem
+#7 29.49 Adding debian:DigiCert_Global_Root_G2.pem
+#7 29.49 Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
+#7 29.50 Adding debian:ISRG_Root_X2.pem
+#7 29.50 Adding debian:COMODO_RSA_Certification_Authority.pem
+#7 29.50 Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+#7 29.50 Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+#7 29.50 Adding debian:GTS_Root_R1.pem
+#7 29.50 Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+#7 29.50 Adding debian:GTS_Root_R4.pem
+#7 29.50 Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+#7 29.50 Adding debian:SZAFIR_ROOT_CA2.pem
+#7 29.50 Adding debian:emSign_ECC_Root_CA_-_G3.pem
+#7 29.50 Adding debian:Buypass_Class_3_Root_CA.pem
+#7 29.50 Adding debian:SecureSign_Root_CA12.pem
+#7 29.50 Adding debian:Certum_Trusted_Network_CA.pem
+#7 29.50 Adding debian:HiPKI_Root_CA_-_G1.pem
+#7 29.50 Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+#7 29.50 Adding debian:Amazon_Root_CA_2.pem
+#7 29.50 Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+#7 29.50 Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+#7 29.51 Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
+#7 29.51 Adding debian:TrustAsia_Global_Root_CA_G4.pem
+#7 29.51 Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+#7 29.51 Adding debian:UCA_Extended_Validation_Root.pem
+#7 29.51 Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+#7 29.51 Adding debian:Entrust_Root_Certification_Authority.pem
+#7 29.51 Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+#7 29.51 Adding debian:GTS_Root_R3.pem
+#7 29.51 Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+#7 29.51 Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+#7 29.51 Adding debian:Certum_Trusted_Network_CA_2.pem
+#7 29.51 Adding debian:e-Szigno_Root_CA_2017.pem
+#7 29.51 Adding debian:Izenpe.com.pem
+#7 29.51 Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+#7 29.51 Adding debian:Certigna_Root_CA.pem
+#7 29.51 Adding debian:GlobalSign_Root_E46.pem
+#7 29.51 Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+#7 29.51 Adding debian:ePKI_Root_Certification_Authority.pem
+#7 29.51 Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+#7 29.51 Adding debian:Certainly_Root_E1.pem
+#7 29.53 done.
+#7 29.54 Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+#7 29.54 Processing triggers for ca-certificates (20260601~22.04.1) ...
+#7 29.55 Updating certificates in /etc/ssl/certs...
+#7 29.67 0 added, 0 removed; done.
+#7 29.67 Running hooks in /etc/ca-certificates/update.d...
+#7 29.67 
+#7 29.76 done.
+#7 29.76 done.
+#7 DONE 30.3s
+
+#8 [3/6] RUN ln -s "$(dirname "$(dirname "$(readlink -f "$(which java)")")")" /usr/lib/jvm/java-11
+#8 DONE 0.1s
+
+#9 [4/6] RUN git clone https://github.com/rjust/defects4j /defects4j     && cd /defects4j && git checkout "v3.0.1"     && cpanm --notest --installdeps .     && ./init.sh
+#9 0.080 Cloning into '/defects4j'...
+#9 8.173 Updating files:  89% (9056/10125)Updating files:  90% (9113/10125)Updating files:  91% (9214/10125)Updating files:  92% (9315/10125)Updating files:  93% (9417/10125)Updating files:  94% (9518/10125)Updating files:  95% (9619/10125)Updating files:  96% (9720/10125)Updating files:  97% (9822/10125)Updating files:  98% (9923/10125)Updating files:  99% (10024/10125)Updating files: 100% (10125/10125)Updating files: 100% (10125/10125), done.
+#9 8.554 Note: switching to 'v3.0.1'.
+#9 8.554 
+#9 8.554 You are in 'detached HEAD' state. You can look around, make experimental
+#9 8.554 changes and commit them, and you can discard any commits you make in this
+#9 8.554 state without impacting any branches by switching back to a branch.
+#9 8.554 
+#9 8.554 If you want to create a new branch to retain commits you create, you may
+#9 8.554 do so (now or later) by using -c with the switch command. Example:
+#9 8.554 
+#9 8.554   git switch -c <new-branch-name>
+#9 8.554 
+#9 8.554 Or undo this operation with:
+#9 8.554 
+#9 8.554   git switch -
+#9 8.554 
+#9 8.554 Turn off this advice by setting config variable advice.detachedHead to false
+#9 8.554 
+#9 8.554 HEAD is now at 6d54320e Update version number.
+#9 8.679 --> Working on .
+#9 8.679 Configuring /defects4j ... OK
+#9 8.679 ==> Found dependencies: Perl::Critic, JSON, DBD::CSV, String::Interpolate, DBI, URI, JSON::Parse
+#9 8.886 --> Working on Perl::Critic
+#9 8.886 Fetching http://www.cpan.org/authors/id/P/PE/PETDANCE/Perl-Critic-1.156.tar.gz ... OK
+#9 8.989 ==> Found dependencies: B::Keywords, List::SomeUtils
+#9 9.042 --> Working on B::Keywords
+#9 9.042 Fetching http://www.cpan.org/authors/id/R/RU/RURBAN/B-Keywords-1.29.tar.gz ... OK
+#9 9.066 Configuring B-Keywords-1.29 ... OK
+#9 9.142 Building B-Keywords-1.29 ... OK
+#9 9.305 Successfully installed B-Keywords-1.29
+#9 9.726 --> Working on List::SomeUtils
+#9 9.726 Fetching http://www.cpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-0.59.tar.gz ... OK
+#9 9.777 Configuring List-SomeUtils-0.59 ... OK
+#9 9.992 ==> Found dependencies: Module::Implementation, List::SomeUtils::XS
+#9 10.85 --> Working on Module::Implementation
+#9 10.85 Fetching http://www.cpan.org/authors/id/D/DR/DROLSKY/Module-Implementation-0.09.tar.gz ... OK
+#9 10.89 Configuring Module-Implementation-0.09 ... OK
+#9 10.97 ==> Found dependencies: Module::Runtime, Try::Tiny
+#9 11.04 --> Working on Module::Runtime
+#9 11.04 Fetching http://www.cpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz ... OK
+#9 11.07 Configuring Module-Runtime-0.018 ... OK
+#9 11.13 Building Module-Runtime-0.018 ... OK
+#9 11.27 Successfully installed Module-Runtime-0.018
+#9 11.38 --> Working on Try::Tiny
+#9 11.38 Fetching http://www.cpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.32.tar.gz ... OK
+#9 11.42 Configuring Try-Tiny-0.32 ... OK
+#9 11.52 Building Try-Tiny-0.32 ... OK
+#9 11.65 Successfully installed Try-Tiny-0.32
+#9 11.67 Building Module-Implementation-0.09 ... OK
+#9 11.79 Successfully installed Module-Implementation-0.09
+#9 11.86 --> Working on List::SomeUtils::XS
+#9 11.86 Fetching http://www.cpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.59.tar.gz ... OK
+#9 11.95 Configuring List-SomeUtils-XS-0.59 ... OK
+#9 12.04 Building List-SomeUtils-XS-0.59 ... OK
+#9 13.21 Successfully installed List-SomeUtils-XS-0.59
+#9 13.22 Building List-SomeUtils-0.59 ... OK
+#9 13.37 Successfully installed List-SomeUtils-0.59
+#9 13.38 Configuring Perl-Critic-1.156 ... OK
+#9 13.48 ==> Found dependencies: Pod::PlainText, Readonly, PPI::Token::Whitespace, PPI::Document, Exception::Class, Module::Pluggable, File::Which, PPI::Token::Quote::Single, PPI::Document::File, PPI::Node, PPI, PPIx::Utils::Traversal, PPIx::Regexp::Util, PPIx::QuoteLike, Perl::Tidy, Pod::Select, Config::Tiny, PPIx::Regexp, Pod::Spell, String::Format
+#9 13.58 --> Working on Pod::PlainText
+#9 13.58 Fetching http://www.cpan.org/authors/id/M/MA/MAREKR/Pod-Parser-1.67.tar.gz ... OK
+#9 13.62 Configuring Pod-Parser-1.67 ... OK
+#9 13.69 Building Pod-Parser-1.67 ... OK
+#9 13.92 Successfully installed Pod-Parser-1.67
+#9 13.98 --> Working on Readonly
+#9 13.98 Fetching http://www.cpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz ... OK
+#9 14.01 ==> Found dependencies: Module::Build::Tiny
+#9 14.06 --> Working on Module::Build::Tiny
+#9 14.06 Fetching http://www.cpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-0.053.tar.gz ... OK
+#9 14.10 ==> Found dependencies: ExtUtils::Config, ExtUtils::Helpers, ExtUtils::InstallPaths
+#9 15.04 --> Working on ExtUtils::Config
+#9 15.04 Fetching http://www.cpan.org/authors/id/L/LE/LEONT/ExtUtils-Config-0.010.tar.gz ... OK
+#9 15.07 Configuring ExtUtils-Config-0.010 ... OK
+#9 15.14 Building ExtUtils-Config-0.010 ... OK
+#9 15.27 Successfully installed ExtUtils-Config-0.010
+#9 15.30 --> Working on ExtUtils::Helpers
+#9 15.30 Fetching http://www.cpan.org/authors/id/L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz ... OK
+#9 15.32 Configuring ExtUtils-Helpers-0.028 ... OK
+#9 15.39 Building ExtUtils-Helpers-0.028 ... OK
+#9 15.52 Successfully installed ExtUtils-Helpers-0.028
+#9 15.55 --> Working on ExtUtils::InstallPaths
+#9 15.55 Fetching http://www.cpan.org/authors/id/L/LE/LEONT/ExtUtils-InstallPaths-0.015.tar.gz ... OK
+#9 15.57 Configuring ExtUtils-InstallPaths-0.015 ... OK
+#9 15.63 Building ExtUtils-InstallPaths-0.015 ... OK
+#9 15.76 Successfully installed ExtUtils-InstallPaths-0.015
+#9 15.78 Configuring Module-Build-Tiny-0.053 ... OK
+#9 15.82 Building Module-Build-Tiny-0.053 ... OK
+#9 15.89 Successfully installed Module-Build-Tiny-0.053
+#9 15.90 Configuring Readonly-2.05 ... OK
+#9 15.93 Building Readonly-2.05 ... OK
+#9 16.00 Successfully installed Readonly-2.05
+#9 16.03 --> Working on PPI::Token::Whitespace
+#9 16.03 Fetching http://www.cpan.org/authors/id/M/MI/MITHALDU/PPI-1.291.tar.gz ... OK
+#9 16.08 Configuring PPI-1.291 ... OK
+#9 16.18 ==> Found dependencies: YAML::PP, Params::Util, Task::Weaken, Safe::Isa, Clone
+#9 16.23 --> Working on YAML::PP
+#9 16.23 Fetching http://www.cpan.org/authors/id/T/TI/TINITA/YAML-PP-v0.41.0.tar.gz ... OK
+#9 16.40 Configuring YAML-PP-v0.41.0 ... OK
+#9 16.49 Building YAML-PP-v0.41.0 ... OK
+#9 16.86 Successfully installed YAML-PP-v0.41.0
+#9 16.93 --> Working on Params::Util
+#9 16.93 Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/Params-Util-1.102.tar.gz ... OK
+#9 17.01 Configuring Params-Util-1.102 ... OK
+#9 17.19 Building Params-Util-1.102 ... OK
+#9 17.56 Successfully installed Params-Util-1.102
+#9 18.34 --> Working on Task::Weaken
+#9 18.34 Fetching http://www.cpan.org/authors/id/E/ET/ETHER/Task-Weaken-1.06.tar.gz ... OK
+#9 18.38 Configuring Task-Weaken-1.06 ... OK
+#9 18.48 Building Task-Weaken-1.06 ... OK
+#9 18.61 Successfully installed Task-Weaken-1.06
+#9 19.03 --> Working on Safe::Isa
+#9 19.03 Fetching http://www.cpan.org/authors/id/E/ET/ETHER/Safe-Isa-1.000010.tar.gz ... OK
+#9 19.07 Configuring Safe-Isa-1.000010 ... OK
+#9 19.14 Building Safe-Isa-1.000010 ... OK
+#9 19.27 Successfully installed Safe-Isa-1.000010
+#9 19.33 --> Working on Clone
+#9 19.33 Fetching http://www.cpan.org/authors/id/A/AT/ATOOMIC/Clone-0.51.tar.gz ... OK
+#9 19.37 Configuring Clone-0.51 ... OK
+#9 19.43 Building Clone-0.51 ... OK
+#9 19.79 Successfully installed Clone-0.51
+#9 19.81 Building PPI-1.291 ... OK
+#9 20.22 Successfully installed PPI-1.291
+#9 21.06 --> Working on Exception::Class
+#9 21.06 Fetching http://www.cpan.org/authors/id/D/DR/DROLSKY/Exception-Class-1.46.tar.gz ... OK
+#9 21.12 Configuring Exception-Class-1.46 ... OK
+#9 21.21 ==> Found dependencies: Class::Data::Inheritable, Devel::StackTrace
+#9 22.03 --> Working on Class::Data::Inheritable
+#9 22.03 Fetching http://www.cpan.org/authors/id/R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz ... OK
+#9 22.17 /usr/bin/tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.lastuseddate#PS'
+#9 22.18 /usr/bin/tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.lastuseddate#PS'
+#9 22.18 Configuring Class-Data-Inheritable-0.10 ... OK
+#9 22.25 Building Class-Data-Inheritable-0.10 ... OK
+#9 22.38 Successfully installed Class-Data-Inheritable-0.10
+#9 22.49 --> Working on Devel::StackTrace
+#9 22.49 Fetching http://www.cpan.org/authors/id/D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz ... OK
+#9 22.52 Configuring Devel-StackTrace-2.05 ... OK
+#9 22.61 Building Devel-StackTrace-2.05 ... OK
+#9 22.73 Successfully installed Devel-StackTrace-2.05
+#9 22.75 Building Exception-Class-1.46 ... OK
+#9 22.88 Successfully installed Exception-Class-1.46
+#9 23.71 --> Working on Module::Pluggable
+#9 23.71 Fetching http://www.cpan.org/authors/id/S/SI/SIMONW/Module-Pluggable-6.4.tar.gz ... OK
+#9 23.75 Configuring Module-Pluggable-6.4 ... OK
+#9 23.82 Building Module-Pluggable-6.4 ... OK
+#9 23.97 Successfully installed Module-Pluggable-6.4
+#9 24.76 --> Working on File::Which
+#9 24.76 Fetching http://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz ... OK
+#9 24.79 Configuring File-Which-1.27 ... OK
+#9 24.87 Building File-Which-1.27 ... OK
+#9 25.00 Successfully installed File-Which-1.27
+#9 25.18 --> Working on PPIx::Utils::Traversal
+#9 25.18 Fetching http://www.cpan.org/authors/id/D/DB/DBOOK/PPIx-Utils-0.004.tar.gz ... OK
+#9 25.20 Configuring PPIx-Utils-0.004 ... OK
+#9 25.27 Building PPIx-Utils-0.004 ... OK
+#9 25.41 Successfully installed PPIx-Utils-0.004
+#9 25.48 --> Working on PPIx::Regexp::Util
+#9 25.48 Fetching http://www.cpan.org/authors/id/W/WY/WYANT/PPIx-Regexp-0.092.tar.gz ... OK
+#9 25.53 Configuring PPIx-Regexp-0.092 ... OK
+#9 25.61 Building PPIx-Regexp-0.092 ... OK
+#9 25.84 Successfully installed PPIx-Regexp-0.092
+#9 25.87 --> Working on PPIx::QuoteLike
+#9 25.87 Fetching http://www.cpan.org/authors/id/W/WY/WYANT/PPIx-QuoteLike-0.024.tar.gz ... OK
+#9 25.90 Configuring PPIx-QuoteLike-0.024 ... OK
+#9 26.00 Building PPIx-QuoteLike-0.024 ... OK
+#9 26.13 Successfully installed PPIx-QuoteLike-0.024
+#9 26.20 --> Working on Perl::Tidy
+#9 26.20 Fetching http://www.cpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20260826.tar.gz ... OK
+#9 26.29 Configuring Perl-Tidy-20260826 ... OK
+#9 26.37 Building Perl-Tidy-20260826 ... OK
+#9 26.70 Successfully installed Perl-Tidy-20260826
+#9 26.88 --> Working on Config::Tiny
+#9 26.88 Fetching http://www.cpan.org/authors/id/R/RS/RSAVAGE/Config-Tiny-2.30.tgz ... OK
+#9 27.03 Configuring Config-Tiny-2.30 ... OK
+#9 27.10 Building Config-Tiny-2.30 ... OK
+#9 27.24 Successfully installed Config-Tiny-2.30
+#9 27.28 --> Working on Pod::Spell
+#9 27.28 Fetching http://www.cpan.org/authors/id/H/HA/HAARG/Pod-Spell-1.27.tar.gz ... OK
+#9 27.31 ==> Found dependencies: File::ShareDir::Install
+#9 27.38 --> Working on File::ShareDir::Install
+#9 27.38 Fetching http://www.cpan.org/authors/id/E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz ... OK
+#9 27.42 Configuring File-ShareDir-Install-0.14 ... OK
+#9 27.52 Building File-ShareDir-Install-0.14 ... OK
+#9 27.66 Successfully installed File-ShareDir-Install-0.14
+#9 27.67 Configuring Pod-Spell-1.27 ... OK
+#9 27.74 ==> Found dependencies: Lingua::EN::Inflect, Class::Tiny, File::ShareDir
+#9 27.75 --> Working on Lingua::EN::Inflect
+#9 27.75 Fetching http://www.cpan.org/authors/id/D/DC/DCONWAY/Lingua-EN-Inflect-1.905.tar.gz ... OK
+#9 27.82 Configuring Lingua-EN-Inflect-1.905 ... OK
+#9 27.92 Building Lingua-EN-Inflect-1.905 ... OK
+#9 28.07 Successfully installed Lingua-EN-Inflect-1.905
+#9 28.14 --> Working on Class::Tiny
+#9 28.14 Fetching http://www.cpan.org/authors/id/D/DA/DAGOLDEN/Class-Tiny-1.008.tar.gz ... OK
+#9 28.17 Configuring Class-Tiny-1.008 ... OK
+#9 28.23 Building Class-Tiny-1.008 ... OK
+#9 28.36 Successfully installed Class-Tiny-1.008
+#9 28.39 --> Working on File::ShareDir
+#9 28.39 Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/File-ShareDir-1.118.tar.gz ... OK
+#9 28.41 Configuring File-ShareDir-1.118 ... OK
+#9 28.48 ==> Found dependencies: Class::Inspector
+#9 28.54 --> Working on Class::Inspector
+#9 28.54 Fetching http://www.cpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz ... OK
+#9 28.57 Configuring Class-Inspector-1.36 ... OK
+#9 28.64 Building Class-Inspector-1.36 ... OK
+#9 28.78 Successfully installed Class-Inspector-1.36
+#9 28.79 Building File-ShareDir-1.118 ... OK
+#9 28.97 Successfully installed File-ShareDir-1.118
+#9 28.98 Building Pod-Spell-1.27 ... OK
+#9 29.21 Successfully installed Pod-Spell-1.27
+#9 29.24 --> Working on String::Format
+#9 29.24 Fetching http://www.cpan.org/authors/id/S/SR/SREZIC/String-Format-1.18.tar.gz ... OK
+#9 29.26 Configuring String-Format-1.18 ... OK
+#9 29.32 Building String-Format-1.18 ... OK
+#9 29.45 Successfully installed String-Format-1.18
+#9 29.48 Building Perl-Critic-1.156 ... OK
+#9 29.97 Successfully installed Perl-Critic-1.156
+#9 30.04 --> Working on JSON
+#9 30.04 Fetching http://www.cpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.11.tar.gz ... OK
+#9 30.07 Configuring JSON-4.11 ... OK
+#9 30.14 Building JSON-4.11 ... OK
+#9 30.30 Successfully installed JSON-4.11
+#9 30.37 --> Working on DBD::CSV
+#9 30.37 Fetching http://www.cpan.org/authors/id/H/HM/HMBRAND/DBD-CSV-0.64.tgz ... OK
+#9 30.45 ==> Found dependencies: DBI
+#9 30.47 --> Working on DBI
+#9 30.47 Fetching http://www.cpan.org/authors/id/H/HM/HMBRAND/DBI-1.655.tgz ... OK
+#9 30.65 Configuring DBI-1.655 ... OK
+#9 30.73 Building DBI-1.655 ... OK
+#9 33.01 Successfully installed DBI-1.655
+#9 33.03 Configuring DBD-CSV-0.64 ... OK
+#9 33.10 ==> Found dependencies: Text::CSV_XS, SQL::Statement
+#9 33.12 --> Working on Text::CSV_XS
+#9 33.12 Fetching http://www.cpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.64.tgz ... OK
+#9 33.25 Configuring Text-CSV_XS-1.64 ... OK
+#9 33.33 Building Text-CSV_XS-1.64 ... OK
+#9 34.32 Successfully installed Text-CSV_XS-1.64
+#9 34.35 --> Working on SQL::Statement
+#9 34.35 Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/SQL-Statement-1.414.tar.gz ... OK
+#9 34.38 Configuring SQL-Statement-1.414 ... OK
+#9 34.46 Building SQL-Statement-1.414 ... OK
+#9 34.67 Successfully installed SQL-Statement-1.414
+#9 34.69 Building DBD-CSV-0.64 ... OK
+#9 34.84 Successfully installed DBD-CSV-0.64
+#9 34.86 --> Working on String::Interpolate
+#9 34.86 Fetching http://www.cpan.org/authors/id/N/NE/NEILB/String-Interpolate-0.33.tar.gz ... OK
+#9 34.89 Configuring String-Interpolate-0.33 ... OK
+#9 34.95 ==> Found dependencies: PadWalker, Safe::Hole
+#9 34.97 --> Working on PadWalker
+#9 34.97 Fetching http://www.cpan.org/authors/id/R/RO/ROBIN/PadWalker-2.5.tar.gz ... OK
+#9 34.99 Configuring PadWalker-2.5 ... OK
+#9 35.05 Building PadWalker-2.5 ... OK
+#9 35.36 Successfully installed PadWalker-2.5
+#9 35.43 --> Working on Safe::Hole
+#9 35.43 Fetching http://www.cpan.org/authors/id/T/TO/TODDR/Safe-Hole-0.17.tar.gz ... OK
+#9 35.47 Configuring Safe-Hole-0.17 ... OK
+#9 35.53 Building Safe-Hole-0.17 ... OK
+#9 35.80 Successfully installed Safe-Hole-0.17
+#9 35.82 Building String-Interpolate-0.33 ... OK
+#9 35.95 Successfully installed String-Interpolate-0.33
+#9 35.97 --> Working on URI
+#9 35.97 Fetching http://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.37.tar.gz ... OK
+#9 36.01 Configuring URI-5.37 ... OK
+#9 36.10 ==> Found dependencies: MIME::Base32
+#9 36.16 --> Working on MIME::Base32
+#9 36.16 Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/MIME-Base32-1.303.tar.gz ... OK
+#9 36.18 Configuring MIME-Base32-1.303 ... OK
+#9 36.24 Building MIME-Base32-1.303 ... OK
+#9 36.37 Successfully installed MIME-Base32-1.303
+#9 36.38 Building URI-5.37 ... OK
+#9 36.59 Successfully installed URI-5.37
+#9 36.66 --> Working on JSON::Parse
+#9 36.66 Fetching http://www.cpan.org/authors/id/B/BK/BKB/JSON-Parse-0.62.tar.gz ... OK
+#9 36.69 Configuring JSON-Parse-0.62 ... OK
+#9 36.75 Building JSON-Parse-0.62 ... OK
+#9 37.63 Successfully installed JSON-Parse-0.62
+#9 37.65 <== Installed dependencies for .. Finishing.
+#9 37.65 47 distributions installed
+#9 37.66 Checking system configuration ... 
+#9 37.66 Setting up project repositories ... 
+#9 169.0 
+#9 169.0 Setting up Major ... 
+#9 169.0 Downloading https://mutation-testing.org/downloads/major-3.0.1_jre11.zip
+#9 169.0 curl: (23) Failed writing received data to disk/application
+#9 169.0 retrying curl https://mutation-testing.org/downloads/major-3.0.1_jre11.zip
+#9 169.0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 169.0                                  Dload  Upload   Total   Spent    Left  Speed
+#9 169.0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 7119k    6  429k    0     0   295k      0  0:00:24  0:00:01  0:00:23  295k 53 7119k   53 3827k    0     0  1562k      0  0:00:04  0:00:02  0:00:02 1562k100 7119k  100 7119k    0     0  2152k      0  0:00:03  0:00:03 --:--:-- 2152k
+#9 172.3 Downloaded https://mutation-testing.org/downloads/major-3.0.1_jre11.zip
+#9 172.4 
+#9 172.4 Setting up EvoSuite ... 
+#9 172.4 Downloading https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-1.1.0.jar
+#9 172.4 curl: (23) Failed writing received data to disk/application
+#9 172.4 retrying curl https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-1.1.0.jar
+#9 172.4   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 172.4                                  Dload  Upload   Total   Spent    Left  Speed
+#9 172.4   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+#9 173.5  16 17.0M   16 2813k    0     0  2635k      0  0:00:06  0:00:01  0:00:05 2635k100 17.0M  100 17.0M    0     0  12.1M      0  0:00:01  0:00:01 --:--:-- 42.5M
+#9 173.8 Downloaded https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-1.1.0.jar
+#9 173.8 Downloading https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-standalone-runtime-1.1.0.jar
+#9 173.8 curl: (23) Failed writing received data to disk/application
+#9 173.8 retrying curl https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-standalone-runtime-1.1.0.jar
+#9 173.8   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 173.8                                  Dload  Upload   Total   Spent    Left  Speed
+#9 173.8   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+#9 174.5  44 7047k   44 3119k    0     0  4762k      0  0:00:01 --:--:--  0:00:01 4762k100 7047k  100 7047k    0     0   9.8M      0 --:--:-- --:--:-- --:--:-- 87.1M
+#9 174.5 Downloaded https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-standalone-runtime-1.1.0.jar
+#9 174.5 
+#9 174.5 Setting up Randoop ... 
+#9 174.5 Downloading https://github.com/randoop/randoop/releases/download/v4.3.3/randoop-4.3.3.zip
+#9 174.5 curl: (23) Failed writing received data to disk/application
+#9 174.5 retrying curl https://github.com/randoop/randoop/releases/download/v4.3.3/randoop-4.3.3.zip
+#9 174.5   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 174.5                                  Dload  Upload   Total   Spent    Left  Speed
+#9 174.5   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+#9 175.5  47 21.1M   47 10.0M    0     0  10.4M      0  0:00:02 --:--:--  0:00:02 10.4M100 21.1M  100 21.1M    0     0  16.8M      0  0:00:01  0:00:01 --:--:-- 38.2M
+#9 175.8 Downloaded https://github.com/randoop/randoop/releases/download/v4.3.3/randoop-4.3.3.zip
+#9 175.9 
+#9 175.9 Setting up Gradle dependencies ... 
+#9 175.9 Downloading https://defects4j.org/downloads/defects4j-gradle-dists-v3.zip
+#9 175.9 curl: (23) Failed writing received data to disk/application
+#9 175.9 retrying curl https://defects4j.org/downloads/defects4j-gradle-dists-v3.zip
+#9 175.9   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 175.9                                  Dload  Upload   Total   Spent    Left  Speed
+#9 175.9   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 72.7M    0 15840    0     0  25735      0  0:49:26 --:--:--  0:49:26 25714  3 72.7M    3 2937k    0     0  1691k      0  0:00:44  0:00:01  0:00:43 1691k 16 72.7M   16 11.7M    0     0  4640k      0  0:00:16  0:00:02  0:00:14 4640k 28 72.7M   28 21.0M    0     0  5966k      0  0:00:12  0:00:03  0:00:09 5965k 38 72.7M   38 28.3M    0     0  6419k      0  0:00:11  0:00:04  0:00:07 6418k 47 72.7M   47 34.3M    0     0  6362k      0  0:00:11  0:00:05  0:00:06 7153k 56 72.7M   56 40.9M    0     0  6414k      0  0:00:11  0:00:06  0:00:05 8123k 66 72.7M   66 48.0M    0     0  6519k      0  0:00:11  0:00:07  0:00:04 7506k 76 72.7M   76 55.4M    0     0  6620k      0  0:00:11  0:00:08  0:00:03 7097k 86 72.7M   86 62.8M    0     0  6710k      0  0:00:11  0:00:09  0:00:02 6971k 96 72.7M   96 70.3M    0     0  6788k      0  0:00:10  0:00:10 --:--:-- 7252k100 72.7M  100 72.7M    0     0  6815k      0  0:00:10  0:00:10 --:--:-- 7411k
+#9 186.9 Downloaded https://defects4j.org/downloads/defects4j-gradle-dists-v3.zip
+#9 186.9 Downloading https://defects4j.org/downloads/defects4j-gradle-deps-v3.zip
+#9 186.9 curl: (23) Failed writing received data to disk/application
+#9 186.9 retrying curl https://defects4j.org/downloads/defects4j-gradle-deps-v3.zip
+#9 186.9   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 186.9                                  Dload  Upload   Total   Spent    Left  Speed
+#9 186.9   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 43.0M    0 15840    0     0  24127      0  0:31:09 --:--:--  0:31:09 24109  3 43.0M    3 1624k    0     0  1031k      0  0:00:42  0:00:01  0:00:41 1031k 27 43.0M   27 11.8M    0     0  4676k      0  0:00:09  0:00:02  0:00:07 4675k 28 43.0M   28 12.4M    0     0  3458k      0  0:00:12  0:00:03  0:00:09 3458k 30 43.0M   30 13.1M    0     0  2941k      0  0:00:14  0:00:04  0:00:10 2941k 46 43.0M   46 20.0M    0     0  3618k      0  0:00:12  0:00:05  0:00:07 4090k 48 43.0M   48 20.9M    0     0  3258k      0  0:00:13  0:00:06  0:00:07 3958k 66 43.0M   66 28.3M    0     0  3806k      0  0:00:11  0:00:07  0:00:04 3356k 80 43.0M   80 34.7M    0     0  4154k      0  0:00:10  0:00:08  0:00:02 4674k 96 43.0M   96 41.6M    0     0  4422k      0  0:00:09  0:00:09 --:--:-- 5769k100 43.0M  100 43.0M    0     0  4493k      0  0:00:09  0:00:09 --:--:-- 5691k
+#9 196.7 Downloaded https://defects4j.org/downloads/defects4j-gradle-deps-v3.zip
+#9 197.3 
+#9 197.3 Setting up utility programs ... 
+#9 197.3 Downloading https://github.com/jose/build-analyzer/releases/download/v0.0.1/build-analyzer-0.0.1.jar
+#9 197.3 curl: (23) Failed writing received data to disk/application
+#9 197.3 retrying curl https://github.com/jose/build-analyzer/releases/download/v0.0.1/build-analyzer-0.0.1.jar
+#9 197.3   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#9 197.3                                  Dload  Upload   Total   Spent    Left  Speed
+#9 197.3   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+#9 198.1 100 4580k  100 4580k    0     0  5860k      0 --:--:-- --:--:-- --:--:-- 5860k
+#9 198.1 Downloaded https://github.com/jose/build-analyzer/releases/download/v0.0.1/build-analyzer-0.0.1.jar
+#9 198.1 
+#9 198.1 Defects4J successfully initialized.
+#9 198.1 
+#9 198.1 |------------------------------------------------------------------------|
+#9 198.1 |                           Defects4J version 3                          |
+#9 198.1 |------------------------------------------------------------------------|
+#9 198.1 | PLEASE READ:                                                           |
+#9 198.1 | https://github.com/rjust/defects4j/?tab=readme-ov-file#reproducibility |
+#9 198.1 |------------------------------------------------------------------------|
+#9 198.1 | Important changes:                                                     |
+#9 198.1 |   * Java 11 is required                                                |
+#9 198.1 |   * Randoop v4.3.3                                                     |
+#9 198.1 |   * Major v3.0.1                                                       |
+#9 198.1 |------------------------------------------------------------------------|
+#9 DONE 199.0s
+
+#10 [5/6] RUN pip3 install --no-cache-dir tiktoken javalang requests pyyaml
+#10 0.458 Collecting tiktoken
+#10 0.501   Downloading tiktoken-0.14.0-cp310-cp310-manylinux_2_28_aarch64.whl (1.2 MB)
+#10 0.553      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 23.6 MB/s eta 0:00:00
+#10 0.752 Collecting javalang
+#10 0.759   Downloading javalang-0.13.0-py3-none-any.whl (22 kB)
+#10 0.796 Collecting requests
+#10 0.801   Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#10 0.803      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 KB 400.0 MB/s eta 0:00:00
+#10 0.843 Collecting pyyaml
+#10 0.848   Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (740 kB)
+#10 0.864      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 740.6/740.6 KB 50.9 MB/s eta 0:00:00
+#10 1.285 Collecting regex
+#10 1.290   Downloading regex-2026.9.29-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (793 kB)
+#10 1.313      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 793.1/793.1 KB 34.8 MB/s eta 0:00:00
+#10 1.325 Collecting six
+#10 1.329   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#10 1.464 Collecting charset_normalizer<4,>=2
+#10 1.469   Downloading charset_normalizer-3.5.2-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (260 kB)
+#10 1.473      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 260.9/260.9 KB 86.1 MB/s eta 0:00:00
+#10 1.486 Collecting idna<4,>=2.5
+#10 1.490   Downloading idna-3.20-py3-none-any.whl (69 kB)
+#10 1.492      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 KB 270.3 MB/s eta 0:00:00
+#10 1.515 Collecting urllib3<3,>=1.26
+#10 1.520   Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#10 1.521      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 KB 180.4 MB/s eta 0:00:00
+#10 1.536 Collecting certifi>=2023.5.7
+#10 1.541   Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+#10 1.543      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 KB 171.2 MB/s eta 0:00:00
+#10 1.573 Installing collected packages: urllib3, six, regex, pyyaml, idna, charset_normalizer, certifi, requests, javalang, tiktoken
+#10 1.766 Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 idna-3.20 javalang-0.13.0 pyyaml-6.0.3 regex-2026.9.29 requests-2.34.2 six-1.17.0 tiktoken-0.14.0 urllib3-2.8.0
+#10 1.766 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#10 DONE 1.9s
+
+#11 [6/6] WORKDIR /work
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 28.5s done
+#12 exporting manifest sha256:a6f71da5fb9104ee1be305db9fedacf7b034bc47831204589e80fbc1bbd8dd58 done
+#12 exporting config sha256:84f80341c2a5b27cb2c8399c04c3b19c23eb0d39b25eb0948b5b195c3a69fb8c done
+#12 exporting attestation manifest sha256:965ab4ca718ff89b04f69d2c0619b18d62262fe2cf316c0d85709eb144035322 done
+#12 exporting manifest list sha256:1da9df23a6978b8f591c031de8e173c1fef23595e1e98b6f55793b06fedf3d01 done
+#12 naming to docker.io/library/llm4ts-d4j-replication:latest done
+#12 unpacking to docker.io/library/llm4ts-d4j-replication:latest
+#12 unpacking to docker.io/library/llm4ts-d4j-replication:latest 9.7s done
+#12 DONE 38.2s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image llm4ts-d4j-replication:latest Built 

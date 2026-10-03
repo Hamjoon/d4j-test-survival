@@ -1,0 +1,84 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class.To comprehensively test all methods in the following class named ParseSettings they must following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (ParseSettingsTest.java) for the given Java class.All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.parser;
+
+import org.jsoup.nodes.Attributes;
+
+import static org.jsoup.internal.Normalizer.lowerCase;
+
+/**
+ * Controls parser settings, to optionally preserve tag and/or attribute name case.
+ */
+public class ParseSettings {
+    /**
+     * HTML default settings: both tag and attribute names are lower-cased during parsing.
+     */
+    public static final ParseSettings htmlDefault;
+    /**
+     * Preserve both tag and attribute case.
+     */
+    public static final ParseSettings preserveCase;
+
+    static {
+        htmlDefault = new ParseSettings(false, false);
+        preserveCase = new ParseSettings(true, true);
+    }
+
+    private final boolean preserveTagCase;
+    private final boolean preserveAttributeCase;
+
+    /**
+     * Returns true if preserving tag name case.
+     */
+    public boolean preserveTagCase() {
+        return preserveTagCase;
+    }
+
+    /**
+     * Returns true if preserving attribute case.
+     */
+
+    /**
+     * Define parse settings.
+     * @param tag preserve tag case?
+     * @param attribute preserve attribute name case?
+     */
+    public ParseSettings(boolean tag, boolean attribute) {
+        preserveTagCase = tag;
+        preserveAttributeCase = attribute;
+    }
+
+    /**
+     * Normalizes a tag name according to the case preservation setting.
+     */
+    public String normalizeTag(String name) {
+        name = name.trim();
+        if (!preserveTagCase)
+            name = lowerCase(name);
+        return name;
+    }
+
+    /**
+     * Normalizes an attribute according to the case preservation setting.
+     */
+    public String normalizeAttribute(String name) {
+        name = name.trim();
+        if (!preserveAttributeCase)
+            name = lowerCase(name);
+        return name;
+    }
+
+    Attributes normalizeAttributes(Attributes attributes) {
+        if (!preserveAttributeCase) {
+            attributes.normalize();
+        }
+        return attributes;
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ParseSettingsTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

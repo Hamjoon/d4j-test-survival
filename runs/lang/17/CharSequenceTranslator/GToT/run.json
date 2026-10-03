@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:35:59.789299+00:00",
+  "latency_seconds": 56.427,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "17",
+  "class": "CharSequenceTranslator",
+  "technique": "GToT",
+  "finish_reason": "stop",
+  "provider": "SiliconFlow",
+  "response_id": "gen-1791005760-d2wZlKHDFz3MJN2Un4iR",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

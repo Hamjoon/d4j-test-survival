@@ -1,0 +1,140 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named XmlDeclaration. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.nodes;
+
+import org.jsoup.helper.Validate;
+
+import java.io.IOException;
+
+/**
+ An XML Declaration.
+
+ @author Jonathan Hedley, jonathan@hedley.net */
+public class XmlDeclaration extends Node {
+    private final String name;
+    private final boolean isProcessingInstruction; // <! if true, <? if false, declaration (and last data char should be ?)
+
+    /**
+     Create a new XML declaration
+     @param name of declaration
+     @param baseUri base uri
+     @param isProcessingInstruction is processing instruction
+     */
+    public XmlDeclaration(String name, String baseUri, boolean isProcessingInstruction) {
+        super(baseUri);
+        Validate.notNull(name);
+        this.name = name;
+        this.isProcessingInstruction = isProcessingInstruction;
+    }
+
+    public String nodeName() {
+        return "#declaration";
+    }
+
+
+    /**
+     * Get the name of this declaration.
+     * @return name of this declaration.
+     */
+    public String name() {
+        return name;
+    }
+
+    /**
+     Get the unencoded XML declaration.
+     @return XML declaration
+     */
+    public String getWholeDeclaration() {
+        final String decl = this.name;
+        if(decl.equals("xml") && attributes.size() > 1 ) {
+            StringBuilder sb = new StringBuilder(decl);
+            final String version = attributes.get("version");
+            if( version != null ) {
+                sb.append(" version=\"").append(version).append("\"");
+            }
+            final String encoding = attributes.get("encoding");
+            if( encoding != null ) {
+                sb.append(" encoding=\"").append(encoding).append("\"");
+            }
+            return sb.toString();
+        }
+        else {
+            return this.name;
+        }
+    }
+
+	void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+        accum
+            .append("<")
+            .append(isProcessingInstruction ? "!" : "?")
+                .append(getWholeDeclaration())
+            .append(">");
+    }
+
+	void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) {}
+
+    @Override
+    public String toString() {
+        return outerHtml();
+    }
+}
+.

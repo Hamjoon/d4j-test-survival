@@ -1,0 +1,163 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-57/r1/GToT/LocaleUtilsTest.java",
+    "source_sha256": "741b2e7f67538c3c71332e19e038330235eb697b8efc15355ad9fadc598aab78",
+    "selected_methods": [
+      "testAvailableLocaleList_Unmodifiable",
+      "testAvailableLocaleSet_CachedInstance",
+      "testAvailableLocaleSet_Unmodifiable",
+      "testConstructorIsPublic",
+      "testCountriesByLanguage_KnownLanguage",
+      "testCountriesByLanguage_Unmodifiable",
+      "testIsAvailableLocale_UnknownLocale",
+      "testLanguagesByCountry_KnownCountry",
+      "testLanguagesByCountry_Unmodifiable",
+      "testLocaleLookupList_SimpleLocale",
+      "testLocaleLookupList_WithCountry",
+      "testLocaleLookupList_WithDefault_Additional",
+      "testLocaleLookupList_WithDefault_NotDuplicated",
+      "testToLocale_WithVariant"
+    ],
+    "target": "Lang-55b",
+    "fqcn": "org.apache.commons.lang.LocaleUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-57/Lang-55b/llm/r1/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-57/r1/GToT/LocaleUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.374,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-57/Lang-55b/llm/r1/GToT/javac.err"
+  },
+  "folder": "survival/Lang-57/Lang-55b/llm/r1/GToT",
+  "classes": "survival/Lang-57/Lang-55b/llm/r1/GToT/classes",
+  "run_file": "survival/Lang-57/Lang-55b/llm/r1/GToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testLanguagesByCountry_KnownCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 50,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_WithCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_WithDefault_NotDuplicated",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 13,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocale_UnknownLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleList_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_SimpleLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_KnownLanguage",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_WithVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_CachedInstance",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_WithDefault_Additional",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 14
+  },
+  "run_seconds": 0.312,
+  "list_error": ""
+}

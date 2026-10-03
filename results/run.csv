@@ -1,0 +1,20 @@
+bug_id,class,technique,file,fqcn,tests_run,passed,failed,ignored,run_error,run_exit_status,run_seconds,counts_partial
+4,LookupTranslator,ZSL,generated/Lang-4/ZSL/LookupTranslatorTest.java,org.apache.commons.lang3.text.translate.LookupTranslatorTest,10,9,1,0,,0,0.173,False
+4,LookupTranslator,GToT,generated/Lang-4/GToT/LookupTranslatorTest.java,org.apache.commons.lang3.text.translate.LookupTranslatorTest,10,10,0,0,,0,0.166,False
+6,CharSequenceTranslator,GToT,generated/Lang-6/GToT/CharSequenceTranslatorTest.java,org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest,16,13,3,0,,0,0.172,False
+11,RandomStringUtils,ZSL,generated/Lang-11/ZSL/RandomStringUtilsTest.java,org.apache.commons.lang3.RandomStringUtilsTest,4,4,0,0,timeout; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8,124,120.027,True
+11,RandomStringUtils,ToT,generated/Lang-11/ToT/RandomStringUtilsTest.java,org.apache.commons.lang3.RandomStringUtilsTest,21,20,1,0,,0,0.183,False
+11,RandomStringUtils,GToT,generated/Lang-11/GToT/RandomStringUtilsTest.java,org.apache.commons.lang3.RandomStringUtilsTest,5,5,0,0,timeout; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8,124,120.031,True
+17,CharSequenceTranslator,ZSL,generated/Lang-17/ZSL/CharSequenceTranslatorTest.java,org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest,10,9,1,0,,0,0.175,False
+17,CharSequenceTranslator,FSL,generated/Lang-17/FSL/CharSequenceTranslatorTest.java,org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest,12,8,4,0,,0,0.244,False
+19,NumericEntityUnescaper,ZSL,generated/Lang-19/ZSL/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,13,9,4,0,,0,0.175,False
+19,NumericEntityUnescaper,ToT,generated/Lang-19/ToT/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,12,11,1,0,,0,0.172,False
+28,NumericEntityUnescaper,FSL,generated/Lang-28/FSL/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,11,10,1,0,,0,0.166,False
+28,NumericEntityUnescaper,CoT,generated/Lang-28/CoT/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,12,11,1,0,,0,0.158,False
+28,NumericEntityUnescaper,ToT,generated/Lang-28/ToT/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,11,11,0,0,,0,0.157,False
+28,NumericEntityUnescaper,GToT,generated/Lang-28/GToT/NumericEntityUnescaperTest.java,org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest,21,18,3,0,,0,0.168,False
+54,LocaleUtils,FSL,generated/Lang-54/FSL/LocaleUtilsTest.java,org.apache.commons.lang.LocaleUtilsTest,26,26,0,0,,0,0.185,False
+55,StopWatch,FSL,generated/Lang-55/FSL/StopWatchTest.java,org.apache.commons.lang.time.StopWatchTest,19,16,3,0,,0,0.335,False
+55,StopWatch,GToT,generated/Lang-55/GToT/StopWatchTest.java,org.apache.commons.lang.time.StopWatchTest,17,13,4,0,,0,0.305,False
+64,ValuedEnum,FSL,generated/Lang-64/FSL/ValuedEnumTest.java,org.apache.commons.lang.enums.ValuedEnumTest,10,9,1,0,,0,0.167,False
+64,ValuedEnum,ToT,generated/Lang-64/ToT/ValuedEnumTest.java,org.apache.commons.lang.enums.ValuedEnumTest,9,9,0,0,,0,0.149,False

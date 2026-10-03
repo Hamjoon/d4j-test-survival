@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T08:04:45.653125+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "GToT",
+  "round": 5,
+  "latency_seconds": 31.063,
+  "finish_reason": "stop",
+  "provider": "Mancer 2",
+  "response_id": "gen-1791014685-p6pATUIDQBmyhLVLQhPV",
+  "content_empty": false
+}

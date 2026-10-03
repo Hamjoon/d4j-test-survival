@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T07:59:55.309490+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ZSL",
+  "round": 2,
+  "latency_seconds": 10.782,
+  "finish_reason": "stop",
+  "provider": "Novita",
+  "response_id": "gen-1791014395-h5bp99oUDqUYR98Gwl19",
+  "content_empty": false
+}

@@ -1,0 +1,382 @@
+{
+  "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+  "classpath": "/work/survival/Lang-12/Lang-11b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-11b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testRandomAlphanumeric_ZeroLength",
+    "testRandom_WithString_Valid",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandom_StringLengthNeverExceedsRequested",
+    "testRandomAlphabetic_SurrogatePairsAreHandled",
+    "testRandom_WithCharArray_AllCharsAllowed",
+    "testRandomAlphanumeric_NegativeLength",
+    "testRandom_NumbersOnly_FalseTrue",
+    "testRandom_ZeroLength",
+    "testRandomAscii_ValidRange",
+    "testRandom_LettersAndNumbers_TrueTrue",
+    "testRandom_WithCharVarargs_Valid",
+    "testRandom_LengthAndFullRange",
+    "testRandom_CustomRange_LettersOnly",
+    "testRandomNumeric_ZeroLength",
+    "testSurrogateHighLowPairsNeverSplit",
+    "testRandom_CustomRange_NumbersOnly",
+    "testRandomNumeric_NegativeLength",
+    "testRandom_NoRestriction_FalseFalse",
+    "testRandom_MultipleCallsProduceDifferentValues",
+    "testRandom_CustomRange_InvalidBounds",
+    "testRandom_WithString_Null",
+    "testRandom_CountZeroWithSurrogatePool",
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandomNumeric_OnlyDigits",
+    "testRandom_LettersOnly_TrueFalse",
+    "testRandom_WithCharVarargs_Null",
+    "testRandomAscii_ZeroLength",
+    "testRandom_WithCharArray_NullArray"
+  ],
+  "all_listed_methods": [
+    "testRandomAlphanumeric_ZeroLength",
+    "testRandom_WithString_Valid",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandom_StringLengthNeverExceedsRequested",
+    "testRandomAlphabetic_SurrogatePairsAreHandled",
+    "testRandom_WithCharArray_AllCharsAllowed",
+    "testRandomAlphanumeric_NegativeLength",
+    "testRandom_NumbersOnly_FalseTrue",
+    "testRandom_ZeroLength",
+    "testRandomAscii_NegativeLength",
+    "testRandomAscii_ValidRange",
+    "testRandom_LettersAndNumbers_TrueTrue",
+    "testRandom_WithCharVarargs_Valid",
+    "testRandom_LengthAndFullRange",
+    "testRandom_WithString_EmptyString",
+    "testRandom_CustomRange_LettersOnly",
+    "testRandomNumeric_ZeroLength",
+    "testSurrogateHighLowPairsNeverSplit",
+    "testRandom_CustomRange_NumbersOnly",
+    "testRandomNumeric_NegativeLength",
+    "testRandom_NoRestriction_FalseFalse",
+    "testRandom_NegativeLength",
+    "testRandom_MultipleCallsProduceDifferentValues",
+    "testRandom_CustomRange_InvalidBounds",
+    "testRandom_WithString_Null",
+    "testRandom_CountZeroWithSurrogatePool",
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandomNumeric_OnlyDigits",
+    "testRandom_LettersOnly_TrueFalse",
+    "testRandom_WithCharVarargs_Null",
+    "testRandomAscii_ZeroLength",
+    "testRandom_WithCharArray_NullArray",
+    "testRandom_WithCharArray_EmptyArray"
+  ],
+  "selected_methods": [
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandomAlphabetic_SurrogatePairsAreHandled",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandomAlphanumeric_NegativeLength",
+    "testRandomAlphanumeric_ZeroLength",
+    "testRandomAscii_ValidRange",
+    "testRandomAscii_ZeroLength",
+    "testRandomNumeric_NegativeLength",
+    "testRandomNumeric_OnlyDigits",
+    "testRandomNumeric_ZeroLength",
+    "testRandom_CountZeroWithSurrogatePool",
+    "testRandom_CustomRange_InvalidBounds",
+    "testRandom_CustomRange_LettersOnly",
+    "testRandom_CustomRange_NumbersOnly",
+    "testRandom_LengthAndFullRange",
+    "testRandom_LettersAndNumbers_TrueTrue",
+    "testRandom_LettersOnly_TrueFalse",
+    "testRandom_MultipleCallsProduceDifferentValues",
+    "testRandom_NoRestriction_FalseFalse",
+    "testRandom_NumbersOnly_FalseTrue",
+    "testRandom_StringLengthNeverExceedsRequested",
+    "testRandom_WithCharArray_AllCharsAllowed",
+    "testRandom_WithCharArray_NullArray",
+    "testRandom_WithCharVarargs_Null",
+    "testRandom_WithCharVarargs_Valid",
+    "testRandom_WithString_Null",
+    "testRandom_WithString_Valid",
+    "testRandom_ZeroLength",
+    "testSurrogateHighLowPairsNeverSplit"
+  ],
+  "excluded_methods": [
+    "testRandomAscii_NegativeLength",
+    "testRandom_WithString_EmptyString",
+    "testRandom_NegativeLength",
+    "testRandom_WithCharArray_EmptyArray"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-12/Lang-11b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.RandomStringUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testRandomAlphanumeric_ZeroLength\"}\n{\"method\":\"testRandom_WithString_Valid\"}\n{\"method\":\"testRandomAlphanumeric_LettersOrDigits\"}\n{\"method\":\"testRandom_StringLengthNeverExceedsRequested\"}\n{\"method\":\"testRandomAlphabetic_SurrogatePairsAreHandled\"}\n{\"method\":\"testRandom_WithCharArray_AllCharsAllowed\"}\n{\"method\":\"testRandomAlphanumeric_NegativeLength\"}\n{\"method\":\"testRandom_NumbersOnly_FalseTrue\"}\n{\"method\":\"testRandom_ZeroLength\"}\n{\"method\":\"testRandomAscii_NegativeLength\"}\n{\"method\":\"testRandomAscii_ValidRange\"}\n{\"method\":\"testRandom_LettersAndNumbers_TrueTrue\"}\n{\"method\":\"testRandom_WithCharVarargs_Valid\"}\n{\"method\":\"testRandom_LengthAndFullRange\"}\n{\"method\":\"testRandom_WithString_EmptyString\"}\n{\"method\":\"testRandom_CustomRange_LettersOnly\"}\n{\"method\":\"testRandomNumeric_ZeroLength\"}\n{\"method\":\"testSurrogateHighLowPairsNeverSplit\"}\n{\"method\":\"testRandom_CustomRange_NumbersOnly\"}\n{\"method\":\"testRandomNumeric_NegativeLength\"}\n{\"method\":\"testRandom_NoRestriction_FalseFalse\"}\n{\"method\":\"testRandom_NegativeLength\"}\n{\"method\":\"testRandom_MultipleCallsProduceDifferentValues\"}\n{\"method\":\"testRandom_CustomRange_InvalidBounds\"}\n{\"method\":\"testRandom_WithString_Null\"}\n{\"method\":\"testRandom_CountZeroWithSurrogatePool\"}\n{\"method\":\"testRandomAlphabetic_OnlyLetters\"}\n{\"method\":\"testRandomNumeric_OnlyDigits\"}\n{\"method\":\"testRandom_LettersOnly_TrueFalse\"}\n{\"method\":\"testRandom_WithCharVarargs_Null\"}\n{\"method\":\"testRandomAscii_ZeroLength\"}\n{\"method\":\"testRandom_WithCharArray_NullArray\"}\n{\"method\":\"testRandom_WithCharArray_EmptyArray\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.088
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-12/Lang-11b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.RandomStringUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testRandomAscii_NegativeLength,testRandom_WithString_EmptyString,testRandom_NegativeLength,testRandom_WithCharArray_EmptyArray"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testRandomAlphanumeric_ZeroLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testRandom_WithString_Valid\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandomAlphanumeric_LettersOrDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testRandom_StringLengthNeverExceedsRequested\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAlphabetic_SurrogatePairsAreHandled\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithCharArray_AllCharsAllowed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandomAlphanumeric_NegativeLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_NumbersOnly_FalseTrue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandom_ZeroLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAscii_ValidRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_LettersAndNumbers_TrueTrue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithCharVarargs_Valid\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_LengthAndFullRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_CustomRange_LettersOnly\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomNumeric_ZeroLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSurrogateHighLowPairsNeverSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandom_CustomRange_NumbersOnly\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomNumeric_NegativeLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_NoRestriction_FalseFalse\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_MultipleCallsProduceDifferentValues\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_CustomRange_InvalidBounds\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithString_Null\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_CountZeroWithSurrogatePool\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAlphabetic_OnlyLetters\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomNumeric_OnlyDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_LettersOnly_TrueFalse\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithCharVarargs_Null\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAscii_ZeroLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithCharArray_NullArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.147,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testRandomAlphanumeric_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithString_Valid",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumeric_LettersOrDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_StringLengthNeverExceedsRequested",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic_SurrogatePairsAreHandled",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharArray_AllCharsAllowed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumeric_NegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NumbersOnly_FalseTrue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii_ValidRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersAndNumbers_TrueTrue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharVarargs_Valid",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LengthAndFullRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_LettersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogateHighLowPairsNeverSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_NumbersOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_NegativeLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NoRestriction_FalseFalse",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_MultipleCallsProduceDifferentValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CustomRange_InvalidBounds",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithString_Null",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_CountZeroWithSurrogatePool",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic_OnlyLetters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_OnlyDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersOnly_TrueFalse",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharVarargs_Null",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii_ZeroLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharArray_NullArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 29
+  },
+  "wall_seconds": 0.236
+}

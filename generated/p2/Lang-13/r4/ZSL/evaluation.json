@@ -1,0 +1,134 @@
+{
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ZSL",
+  "round": 4,
+  "directory": "runs/lang/13/SerializationUtils/ZSL/r4",
+  "response": "runs/lang/13/SerializationUtils/ZSL/r4/response.md",
+  "response_sha256": "cbad765075cb0e52d7a4f350f34c4970a7a2c1e3e05235ae8de2aa6b08c26a38",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "SerializationUtilsTest",
+  "package": "org.apache.commons.lang3",
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-13/r4/ZSL/SerializationUtilsTest.java",
+  "extracted_sha256": "ce0bec8a83ed93ce578264feda28b34145224358364591d342d9a280e3cd4fdf",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-13/r4/ZSL/classes",
+      "-cp",
+      "/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r4/ZSL/SerializationUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.421,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-13/r4/ZSL/javac.err"
+  },
+  "run_file": "generated/p2/Lang-13/r4/ZSL/run-t.jsonl",
+  "listed": 11,
+  "counts": {
+    "pass": 10,
+    "fail": 1
+  },
+  "methods": [
+    {
+      "method": "testSerialize_NullObject_RoundTripReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 29,
+      "launch": 1
+    },
+    {
+      "method": "testClone_DeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 9,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_NullInputStream_ThrowsIAE",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ObjectInputStreamClosedEvenOnException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClone_ObjectWithNonSerializableField_ThrowsSerializationException",
+      "status": "fail",
+      "message": "Expected exception: org.apache.commons.lang3.SerializationException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ObjectOutputStreamClosedEvenOnException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClassLoaderAwareObjectInputStream_FallbackToThreadContext",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_NullByteArray_ThrowsIAE",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NullOutputStream_ThrowsIAE",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeDeserialize_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.291
+}

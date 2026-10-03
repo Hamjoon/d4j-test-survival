@@ -1,0 +1,12 @@
+{"method": "testEnumClassIsCorrectInToString", "status": "fail", "message": "toString must contain the short class name", "exception": "java.lang.AssertionError", "milliseconds": 21, "launch": 1}
+{"method": "testCompareToEqual", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCompareToDifferentEnumTypeThrowsException", "status": "fail", "message": "Expected exception: java.lang.ClassCastException", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "testGetValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToNullThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToStringCaching", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToLessThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumNullClassThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToGreaterThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumInvalidValueReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumValidValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToStringFormat", "status": "fail", "message": "toString() for A does not match expected format expected:<[]DummyEnum[A=1]> but was:<[ValuedEnumTest.]DummyEnum[A=1]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}

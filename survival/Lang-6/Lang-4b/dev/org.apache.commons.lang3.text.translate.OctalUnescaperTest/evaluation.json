@@ -1,0 +1,46 @@
+{
+  "input": {
+    "file": "devtests/Lang-6/org/apache/commons/lang3/text/translate/OctalUnescaperTest.java",
+    "source_sha256": "b40eca3ce0b58572d1ea8493696a8045fc73429d9c9400fcbf41818e8e1ce1ce",
+    "selected_methods": [
+      "testBetween"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.text.translate.OctalUnescaperTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-6/Lang-4b/dev/classes/org.apache.commons.lang3.text.translate.OctalUnescaperTest",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-6/org/apache/commons/lang3/text/translate/OctalUnescaperTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.272,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-6/Lang-4b/dev/org.apache.commons.lang3.text.translate.OctalUnescaperTest/javac.err"
+  },
+  "folder": "survival/Lang-6/Lang-4b/dev/org.apache.commons.lang3.text.translate.OctalUnescaperTest",
+  "classes": "survival/Lang-6/Lang-4b/dev/classes/org.apache.commons.lang3.text.translate.OctalUnescaperTest",
+  "run_file": "survival/Lang-6/Lang-4b/dev/org.apache.commons.lang3.text.translate.OctalUnescaperTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testBetween",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 1
+  },
+  "run_seconds": 0.206,
+  "list_error": ""
+}

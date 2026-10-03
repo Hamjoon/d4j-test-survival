@@ -1,0 +1,110 @@
+{
+  "fqcn": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+  "classpath": "devtests/Lang-43/classes-t:tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testBuiltInDateTimeFormat",
+    "testOverriddenBuiltinFormat",
+    "testBuiltInChoiceFormat",
+    "testEscapedQuote_LANG_477",
+    "testExtendedFormats",
+    "testExtendedAndBuiltInFormats",
+    "testBuiltInNumberFormat"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "devtests/Lang-43/classes-t:tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testBuiltInDateTimeFormat\"}\n{\"method\":\"testOverriddenBuiltinFormat\"}\n{\"method\":\"testBuiltInChoiceFormat\"}\n{\"method\":\"testEscapedQuote_LANG_477\"}\n{\"method\":\"testExtendedFormats\"}\n{\"method\":\"testExtendedAndBuiltInFormats\"}\n{\"method\":\"testBuiltInNumberFormat\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.127
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "devtests/Lang-43/classes-t:tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testBuiltInDateTimeFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2704}\n{\"method\":\"testOverriddenBuiltinFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":81}\n{\"method\":\"testBuiltInChoiceFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":87}\n{\"method\":\"testEscapedQuote_LANG_477\",\"status\":\"error\",\"message\":\"Java heap space\",\"exception\":\"java.lang.OutOfMemoryError\",\"milliseconds\":5703}\n{\"method\":\"testExtendedFormats\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testExtendedAndBuiltInFormats\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2670}\n{\"method\":\"testBuiltInNumberFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":286}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 11.677,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testBuiltInDateTimeFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2704,
+      "launch": 1
+    },
+    {
+      "method": "testOverriddenBuiltinFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 81,
+      "launch": 1
+    },
+    {
+      "method": "testBuiltInChoiceFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 87,
+      "launch": 1
+    },
+    {
+      "method": "testEscapedQuote_LANG_477",
+      "status": "error",
+      "message": "Java heap space",
+      "exception": "java.lang.OutOfMemoryError",
+      "milliseconds": 5703,
+      "launch": 1
+    },
+    {
+      "method": "testExtendedFormats",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testExtendedAndBuiltInFormats",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2670,
+      "launch": 1
+    },
+    {
+      "method": "testBuiltInNumberFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 286,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 6,
+    "error": 1
+  },
+  "wall_seconds": 11.81
+}

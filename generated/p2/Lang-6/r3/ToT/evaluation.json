@@ -1,0 +1,143 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "ToT",
+  "round": 3,
+  "directory": "runs/lang/6/CharSequenceTranslator/ToT/r3",
+  "response": "runs/lang/6/CharSequenceTranslator/ToT/r3/response.md",
+  "response_sha256": "7042572e9429dd33eda3b51f885ccbe2d8c018b30d8e20080d4381ec2c5e1701",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r3/ToT/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "edf5335a4bccba0946506917a7989d4bc55694cb387b24e57570182807b93ece",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r3/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r3/ToT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.323,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-6/r3/ToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-6/r3/ToT/run-t.jsonl",
+  "listed": 12,
+  "counts": {
+    "pass": 8,
+    "error": 2,
+    "fail": 2
+  },
+  "methods": [
+    {
+      "method": "expert2_translateWriter_multipleTranslatorsViaWith",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_surrogatePairConsumedCorrectly",
+      "status": "error",
+      "message": "index 2,length 2",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "expert3_with_emptyArray_returnsSameInstance",
+      "status": "error",
+      "message": "class org.apache.commons.lang3.text.translate.AggregateTranslator cannot be cast to class org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator (org.apache.commons.lang3.text.translate.AggregateTranslator and org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator are in unnamed module of loader 'app')",
+      "exception": "java.lang.ClassCastException",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "expert1_translateString_simpleReplacement",
+      "status": "fail",
+      "message": "expected:<bcbr[cbcbcdbrbc]bc> but was:<bcbr[bccbcdbcbr]bc>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "expert1_translateString_nullInput_returnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_upperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_surrogateCodePoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_nullWriter_throwsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_basicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_consumedZero_writesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert3_with_mergesTranslatorsInCorrectOrder",
+      "status": "fail",
+      "message": "expected:<[Y]> but was:<[X]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_nullInput_isNoOp",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.232
+}

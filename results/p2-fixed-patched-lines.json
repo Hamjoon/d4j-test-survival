@@ -1,0 +1,188 @@
+{
+  "57": {
+    "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+    "lines": [
+      223
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "11": {
+    "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+    "lines": [
+      245,
+      246,
+      247,
+      248
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "6": {
+    "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+    "lines": [
+      95
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "28": {
+    "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+    "lines": [
+      63,
+      64,
+      65,
+      66,
+      67,
+      69
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "17": {
+    "source_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+    "lines": [
+      83,
+      89,
+      90
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "19": {
+    "source_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+    "lines": [
+      40,
+      50,
+      51,
+      52,
+      57,
+      58,
+      59,
+      84,
+      86
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "43": {
+    "source_path": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java",
+    "lines": [
+      422
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "54": {
+    "source_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+    "lines": [
+      114,
+      115,
+      116
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "55": {
+    "source_path": "src/java/org/apache/commons/lang/time/StopWatch.java",
+    "lines": [
+      118,
+      120
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "64": {
+    "source_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java",
+    "lines": [
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      209,
+      211,
+      213,
+      214,
+      215
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "4": {
+    "source_path": "src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
+    "lines": [
+      31,
+      46,
+      51,
+      77
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "12": {
+    "source_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+    "lines": [
+      230,
+      231,
+      232,
+      235,
+      236,
+      237,
+      244
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "13": {
+    "source_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+    "lines": [
+      239,
+      240,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      279,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287
+    ],
+    "rule": "actual fixed-version lines"
+  },
+  "5": {
+    "source_path": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+    "lines": [
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      148
+    ],
+    "rule": "actual fixed-version lines"
+  }
+}

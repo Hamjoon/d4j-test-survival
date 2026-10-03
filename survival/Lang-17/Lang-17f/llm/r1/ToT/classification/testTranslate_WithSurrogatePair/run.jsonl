@@ -1,0 +1,1 @@
+{"method": "testTranslate_WithSurrogatePair", "status": "error", "message": "index 2,length 2", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 21, "launch": 1}

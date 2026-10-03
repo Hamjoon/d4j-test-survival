@@ -1,0 +1,40 @@
+{
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ToT",
+  "round": 6,
+  "directory": "runs/lang/13/SerializationUtils/ToT/r6",
+  "response": "runs/lang/13/SerializationUtils/ToT/r6/response.md",
+  "response_sha256": "921cf5b1c623a19fc874b4aab32217b0951b00c6a654c4c45fdc5b714b75fa35",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "SerializationUtilsTest",
+  "package": "org.apache.commons.lang3",
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-13/r6/ToT/SerializationUtilsTest.java",
+  "extracted_sha256": "9fb8043d33c614b5afad22195634615cea203b4ef3d2bcefc91d082fa60a83c5",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-13/r6/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r6/ToT/SerializationUtilsTest.java"
+    ],
+    "compile_ok": false,
+    "exit_status": 1,
+    "seconds": 0.322,
+    "error_count": 2,
+    "categories": {
+      "IT": 1,
+      "CFS": 1
+    },
+    "stderr_file": "generated/p2/Lang-13/r6/ToT/javac.err"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "verdict": "mixed/neither",
+  "records": [
+    {
+      "record_index": 314,
+      "project": "Lang",
+      "bug_id": "4",
+      "class": "LookupTranslator",
+      "relative_java_path": "org/apache/commons/lang3/text/translate/LookupTranslator.java",
+      "buggy_path": "/work/d4j/Lang-4b/src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
+      "fixed_path": "/work/d4j/Lang-4f/src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
+      "equals_buggy": true,
+      "equals_fixed": false,
+      "buggy_equals_fixed": false,
+      "differing_lines_buggy": 0,
+      "differing_lines_fixed": 4,
+      "normalized_sha256": {
+        "json": "45528f8f565f77f6f171da05a32f96a9e536895499c6f28824599f80577c626a",
+        "b": "45528f8f565f77f6f171da05a32f96a9e536895499c6f28824599f80577c626a",
+        "f": "38d792191084af51dffcb700e2ba7e8175fffdbe0897abc7c2b324da14b6dee8"
+      }
+    },
+    {
+      "record_index": 399,
+      "project": "Csv",
+      "bug_id": "1",
+      "class": "ExtendedBufferedReader",
+      "relative_java_path": "org/apache/commons/csv/ExtendedBufferedReader.java",
+      "buggy_path": "/work/d4j/Csv-1b/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+      "fixed_path": "/work/d4j/Csv-1f/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+      "equals_buggy": true,
+      "equals_fixed": false,
+      "buggy_equals_fixed": false,
+      "differing_lines_buggy": 0,
+      "differing_lines_fixed": 1,
+      "normalized_sha256": {
+        "json": "f79be846e78737e782423cfd1962ca95ce3be32e0101735c6c4a7456ee841711",
+        "b": "f79be846e78737e782423cfd1962ca95ce3be32e0101735c6c4a7456ee841711",
+        "f": "e5a48e5e67ddb45dfd25d8787f4adada6c065119cf90f52fec927e07976f9be7"
+      }
+    },
+    {
+      "record_index": 235,
+      "project": "Cli",
+      "bug_id": "5",
+      "class": "Util",
+      "relative_java_path": "org/apache/commons/cli/Util.java",
+      "buggy_path": "/work/d4j/Cli-5b/src/java/org/apache/commons/cli/Util.java",
+      "fixed_path": "/work/d4j/Cli-5f/src/java/org/apache/commons/cli/Util.java",
+      "equals_buggy": false,
+      "equals_fixed": false,
+      "buggy_equals_fixed": false,
+      "differing_lines_buggy": 1,
+      "differing_lines_fixed": 4,
+      "normalized_sha256": {
+        "json": "3fa0067484a9db1e8cf4181fa21a59af3541233b8561bccaee2a303bf109a0dc",
+        "b": "51630d9d420863d146ae0880ddf92b709ff3629112bba033d6c5ad1b895acc15",
+        "f": "c96f5c39f4c7919918935ad3a099de0c0968648d686d85be96805c3f7b87001e"
+      }
+    },
+    {
+      "record_index": 58,
+      "project": "Closure",
+      "bug_id": "4",
+      "class": "NamedType",
+      "relative_java_path": "com/google/javascript/rhino/jstype/NamedType.java",
+      "buggy_path": "/work/d4j/Closure-4b/src/com/google/javascript/rhino/jstype/NamedType.java",
+      "fixed_path": "/work/d4j/Closure-4f/src/com/google/javascript/rhino/jstype/NamedType.java",
+      "equals_buggy": true,
+      "equals_fixed": false,
+      "buggy_equals_fixed": false,
+      "differing_lines_buggy": 0,
+      "differing_lines_fixed": 2,
+      "normalized_sha256": {
+        "json": "91040c3832a85ab11673a11240f01b574c923d2dc4f3313e4b2450ba86a4bd8c",
+        "b": "91040c3832a85ab11673a11240f01b574c923d2dc4f3313e4b2450ba86a4bd8c",
+        "f": "be768e278cfa467d1791d02387407ae6b035a2b5e8451c3dce8466e9e2b38b24"
+      }
+    },
+    {
+      "record_index": 440,
+      "project": "Mockito",
+      "bug_id": "1",
+      "class": "InvocationMatcher",
+      "relative_java_path": "org/mockito/internal/invocation/InvocationMatcher.java",
+      "buggy_path": "/work/d4j/Mockito-1b/src/org/mockito/internal/invocation/InvocationMatcher.java",
+      "fixed_path": "/work/d4j/Mockito-1f/src/org/mockito/internal/invocation/InvocationMatcher.java",
+      "equals_buggy": true,
+      "equals_fixed": false,
+      "buggy_equals_fixed": false,
+      "differing_lines_buggy": 0,
+      "differing_lines_fixed": 12,
+      "normalized_sha256": {
+        "json": "50db055b5009fc999f0ad0c6f0b8de0226b4cbabb7cd0bebd015f9756aed1029",
+        "b": "50db055b5009fc999f0ad0c6f0b8de0226b4cbabb7cd0bebd015f9756aed1029",
+        "f": "297000db66ca90b85eee62b8e3fba93e591cad018d5466bf101bea4a892d8154"
+      }
+    }
+  ]
+}

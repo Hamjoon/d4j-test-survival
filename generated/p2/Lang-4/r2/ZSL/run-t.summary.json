@@ -1,0 +1,129 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/generated/p2/Lang-4/r2/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testConstructorWithEmptyLookup",
+    "testShortestAndLongestLengthsViaBehaviour",
+    "testSequentialTranslationsCoverWholeString",
+    "testLookupMapWorksWithCharSequenceImplementations",
+    "testNoMatchWhenInputShorterThanLongestKey",
+    "testGreedyMatchingPrefersLongestKey",
+    "testConstructorWithNullLookup",
+    "testNonMatchingInputProducesNoOutput",
+    "testTranslateWithIndexEqualToLengthReturnsZero"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-4/r2/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testConstructorWithEmptyLookup\"}\n{\"method\":\"testShortestAndLongestLengthsViaBehaviour\"}\n{\"method\":\"testSequentialTranslationsCoverWholeString\"}\n{\"method\":\"testLookupMapWorksWithCharSequenceImplementations\"}\n{\"method\":\"testNoMatchWhenInputShorterThanLongestKey\"}\n{\"method\":\"testGreedyMatchingPrefersLongestKey\"}\n{\"method\":\"testConstructorWithNullLookup\"}\n{\"method\":\"testNonMatchingInputProducesNoOutput\"}\n{\"method\":\"testTranslateWithIndexEqualToLengthReturnsZero\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.086
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-4/r2/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testConstructorWithEmptyLookup\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testShortestAndLongestLengthsViaBehaviour\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSequentialTranslationsCoverWholeString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLookupMapWorksWithCharSequenceImplementations\",\"status\":\"fail\",\"message\":\"Exact same CharSequence instance should be found expected:<3> but was:<0>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"testNoMatchWhenInputShorterThanLongestKey\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGreedyMatchingPrefersLongestKey\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorWithNullLookup\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNonMatchingInputProducesNoOutput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateWithIndexEqualToLengthReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.123,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testConstructorWithEmptyLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testShortestAndLongestLengthsViaBehaviour",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSequentialTranslationsCoverWholeString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLookupMapWorksWithCharSequenceImplementations",
+      "status": "fail",
+      "message": "Exact same CharSequence instance should be found expected:<3> but was:<0>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNoMatchWhenInputShorterThanLongestKey",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyMatchingPrefersLongestKey",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithNullLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNonMatchingInputProducesNoOutput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithIndexEqualToLengthReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8,
+    "fail": 1
+  },
+  "wall_seconds": 0.21
+}

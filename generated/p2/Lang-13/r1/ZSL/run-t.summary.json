@@ -1,0 +1,165 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/generated/p2/Lang-13/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testClone_PerformsDeepCopy",
+    "testDeserializeByteArray_NullArray_Throws",
+    "testClone_NullInputReturnsNull",
+    "testSerializeToByteArray_NullObjectProducesValidArray",
+    "testSerializeAndDeserialize_RoundTrip",
+    "testClone_UsesCustomClassLoaderFallback",
+    "testSerialize_WithNullOutputStream_Throws",
+    "testSerialize_NonSerializableObject_ThrowsSerializationException",
+    "testSerialize_WritesObjectAndClosesStream",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserialize_ClosesInputStream",
+    "testDeserialize_InvalidData_ThrowsSerializationException",
+    "testDeserialize_WithNullInputStream_Throws"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-13/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testClone_PerformsDeepCopy\"}\n{\"method\":\"testDeserializeByteArray_NullArray_Throws\"}\n{\"method\":\"testClone_NullInputReturnsNull\"}\n{\"method\":\"testSerializeToByteArray_NullObjectProducesValidArray\"}\n{\"method\":\"testSerializeAndDeserialize_RoundTrip\"}\n{\"method\":\"testClone_UsesCustomClassLoaderFallback\"}\n{\"method\":\"testSerialize_WithNullOutputStream_Throws\"}\n{\"method\":\"testSerialize_NonSerializableObject_ThrowsSerializationException\"}\n{\"method\":\"testSerialize_WritesObjectAndClosesStream\"}\n{\"method\":\"testDeserializeByteArray_RoundTrip\"}\n{\"method\":\"testDeserialize_ClosesInputStream\"}\n{\"method\":\"testDeserialize_InvalidData_ThrowsSerializationException\"}\n{\"method\":\"testDeserialize_WithNullInputStream_Throws\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.083
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-13/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testClone_PerformsDeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":24}\n{\"method\":\"testDeserializeByteArray_NullArray_Throws\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testClone_NullInputReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeToByteArray_NullObjectProducesValidArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeAndDeserialize_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_UsesCustomClassLoaderFallback\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_WithNullOutputStream_Throws\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_NonSerializableObject_ThrowsSerializationException\",\"status\":\"error\",\"message\":\"class org.apache.commons.lang3.SerializationUtilsTest$3 cannot be cast to class java.io.Serializable (org.apache.commons.lang3.SerializationUtilsTest$3 is in unnamed module of loader 'app'; java.io.Serializable is in module java.base of loader 'bootstrap')\",\"exception\":\"java.lang.ClassCastException\",\"milliseconds\":2}\n{\"method\":\"testSerialize_WritesObjectAndClosesStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeByteArray_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ClosesInputStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_InvalidData_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_WithNullInputStream_Throws\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.139,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testClone_PerformsDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 24,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_NullArray_Throws",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NullInputReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_NullObjectProducesValidArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeAndDeserialize_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_UsesCustomClassLoaderFallback",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_WithNullOutputStream_Throws",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NonSerializableObject_ThrowsSerializationException",
+      "status": "error",
+      "message": "class org.apache.commons.lang3.SerializationUtilsTest$3 cannot be cast to class java.io.Serializable (org.apache.commons.lang3.SerializationUtilsTest$3 is in unnamed module of loader 'app'; java.io.Serializable is in module java.base of loader 'bootstrap')",
+      "exception": "java.lang.ClassCastException",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_WritesObjectAndClosesStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ClosesInputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_InvalidData_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_WithNullInputStream_Throws",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12,
+    "error": 1
+  },
+  "wall_seconds": 0.222
+}

@@ -1,0 +1,218 @@
+{
+  "fqcn": "org.apache.commons.lang3.StringEscapeUtilsTest",
+  "classpath": "/work/devtests/Lang-28/classes-t:/work/tools/runner:/defects4j/framework/projects/Lang/lib/junit/junit/4.7/junit-4.7.jar:/defects4j/framework/projects/Lang/lib/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:/work/d4j/Lang-28b/target/classes:/work/d4j/Lang-28b/target/test-classes:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-28b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testConstructor",
+    "testEscapeJava",
+    "testEscapeJavaWithSlash",
+    "testUnescapeJava",
+    "testEscapeEcmaScript",
+    "testEscapeHtml",
+    "testUnescapeHtml4",
+    "testUnescapeHexCharsHtml",
+    "testUnescapeUnknownEntity",
+    "testEscapeHtmlVersions",
+    "testEscapeXml",
+    "testStandaloneAmphersand",
+    "testLang313",
+    "testEscapeCsvString",
+    "testEscapeCsvWriter",
+    "testUnescapeCsvString",
+    "testUnescapeCsvWriter",
+    "testEscapeHtmlHighUnicode",
+    "testEscapeHiragana"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-28/classes-t:/work/tools/runner:/defects4j/framework/projects/Lang/lib/junit/junit/4.7/junit-4.7.jar:/defects4j/framework/projects/Lang/lib/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:/work/d4j/Lang-28b/target/classes:/work/d4j/Lang-28b/target/test-classes:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.StringEscapeUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testConstructor\"}\n{\"method\":\"testEscapeJava\"}\n{\"method\":\"testEscapeJavaWithSlash\"}\n{\"method\":\"testUnescapeJava\"}\n{\"method\":\"testEscapeEcmaScript\"}\n{\"method\":\"testEscapeHtml\"}\n{\"method\":\"testUnescapeHtml4\"}\n{\"method\":\"testUnescapeHexCharsHtml\"}\n{\"method\":\"testUnescapeUnknownEntity\"}\n{\"method\":\"testEscapeHtmlVersions\"}\n{\"method\":\"testEscapeXml\"}\n{\"method\":\"testStandaloneAmphersand\"}\n{\"method\":\"testLang313\"}\n{\"method\":\"testEscapeCsvString\"}\n{\"method\":\"testEscapeCsvWriter\"}\n{\"method\":\"testUnescapeCsvString\"}\n{\"method\":\"testUnescapeCsvWriter\"}\n{\"method\":\"testEscapeHtmlHighUnicode\"}\n{\"method\":\"testEscapeHiragana\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.081
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-28/classes-t:/work/tools/runner:/defects4j/framework/projects/Lang/lib/junit/junit/4.7/junit-4.7.jar:/defects4j/framework/projects/Lang/lib/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:/work/d4j/Lang-28b/target/classes:/work/d4j/Lang-28b/target/test-classes:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.StringEscapeUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testConstructor\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testEscapeJava\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testEscapeJavaWithSlash\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testUnescapeJava\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":7}\n{\"method\":\"testEscapeEcmaScript\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeHtml\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testUnescapeHtml4\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testUnescapeHexCharsHtml\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":75}\n{\"method\":\"testUnescapeUnknownEntity\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeHtmlVersions\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeXml\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testStandaloneAmphersand\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLang313\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeCsvString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testEscapeCsvWriter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testUnescapeCsvString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testUnescapeCsvWriter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeHtmlHighUnicode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEscapeHiragana\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.199,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeJava",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeJavaWithSlash",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeJava",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 7,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeEcmaScript",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeHtml",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeHtml4",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeHexCharsHtml",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 75,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeUnknownEntity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeHtmlVersions",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeXml",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStandaloneAmphersand",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLang313",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeCsvString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeCsvWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeCsvString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testUnescapeCsvWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeHtmlHighUnicode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEscapeHiragana",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 19
+  },
+  "wall_seconds": 0.281
+}

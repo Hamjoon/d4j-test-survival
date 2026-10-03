@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:40:37.619423+00:00",
+  "latency_seconds": 81.451,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "54",
+  "class": "LocaleUtils",
+  "technique": "CoT",
+  "finish_reason": "length",
+  "provider": "CoreWeave",
+  "response_id": "gen-1791006037-yO17ohs0XnkVRxho8tPZ",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": false
+}

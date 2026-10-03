@@ -1,0 +1,71 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/survival/Lang-19/Lang-6b/dev/classes/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testSupplementaryUnescaping"
+  ],
+  "all_listed_methods": [
+    "testSupplementaryUnescaping",
+    "testUnfinishedEntity",
+    "testOutOfBounds"
+  ],
+  "selected_methods": [
+    "testSupplementaryUnescaping"
+  ],
+  "excluded_methods": [
+    "testUnfinishedEntity",
+    "testOutOfBounds"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-19/Lang-6b/dev/classes/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSupplementaryUnescaping\"}\n{\"method\":\"testUnfinishedEntity\"}\n{\"method\":\"testOutOfBounds\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.066
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-19/Lang-6b/dev/classes/org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testUnfinishedEntity,testOutOfBounds"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testSupplementaryUnescaping\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":21}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.095,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testSupplementaryUnescaping",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 1
+  },
+  "wall_seconds": 0.162
+}

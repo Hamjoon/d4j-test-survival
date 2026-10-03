@@ -1,0 +1,1 @@
+{"method": "testEntityWithWhitespaceInsideIsRejected", "status": "fail", "message": "expected:<0> but was:<3>", "exception": "java.lang.AssertionError", "milliseconds": 19, "launch": 1}

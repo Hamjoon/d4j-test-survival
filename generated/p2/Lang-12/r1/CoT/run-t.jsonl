@@ -1,0 +1,19 @@
+{"method": "testRandomWithEmptyCharStringThrows", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>", "exception": "java.lang.Exception", "milliseconds": 21, "launch": 1}
+{"method": "testRandomLettersAndNumbersFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testRandomLettersOnlyFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithSurrogateRangeDoesNotThrow", "status": "timeout", "message": "Exceeded 30000 ms", "exception": null, "milliseconds": 30014, "launch": 1}
+{"method": "testRandomZeroLengthWithAllParametersReturnsEmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 2}
+{"method": "testRandomWithEmptyCharArrayThrows", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>", "exception": "java.lang.Exception", "milliseconds": 2, "launch": 2}
+{"method": "testRandomNegativeLengthThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomWithNullCharStringBehavesLikeRandom", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomStartEndDefaultsWhenBothZeroAndNoLettersNumbers", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomWithCustomCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomAlphanumericContainsLetterOrDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomNumericOnlyDigits", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomNegativeLengthWithAllParametersThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomZeroLength", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomWithCustomCharString", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}
+{"method": "testRandomNumbersOnlyFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomAlphabeticOnlyLetters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomWithNullCharArrayBehavesLikeRandom", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 2}
+{"method": "testRandomAsciiRange", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 2}

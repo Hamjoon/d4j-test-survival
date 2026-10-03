@@ -1,0 +1,327 @@
+{
+  "fqcn": "org.apache.commons.lang.LocaleUtilsTest",
+  "classpath": "/work/generated/p2/Lang-57/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-57b/target/classes:/work/d4j/Lang-57b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-57b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testCountriesByLanguage_NullParameter",
+    "testLocaleLookupList_SingleArgument_NoVariant",
+    "testToLocale_InvalidTrailingUnderscore",
+    "testCountriesByLanguage_CachingBehavior",
+    "testAvailableLocaleList_ContentsMatchJDK",
+    "testToLocale_InvalidCountryLowerCase",
+    "testToLocale_NullInput",
+    "testToLocale_InvalidMissingUnderscore",
+    "testToLocale_ValidLanguageAndCountry",
+    "testInternalCollectionsAreUnmodifiable",
+    "testToLocale_InvalidCountryTooShort",
+    "testCountriesByLanguage_Unmodifiable",
+    "testToLocale_InvalidTooShort",
+    "testLocaleLookupList_TwoArguments_DefaultNotDuplicate",
+    "testAvailableLocaleSet_Unmodifiable",
+    "testLanguagesByCountry_CachingBehavior",
+    "testLanguagesByCountry_NullParameter",
+    "testLocaleLookupList_SingleArgument_WithVariant",
+    "testCountriesByLanguage_ValidLanguage_NoVariants",
+    "testLocaleLookupList_TwoArguments_DefaultIsAlreadyInList",
+    "testToLocale_ValidLanguageOnly",
+    "testLanguagesByCountry_Unmodifiable",
+    "testAvailableLocaleSet_LazyInitializationAndContents",
+    "testAvailableLocaleList_Unmodifiable",
+    "testIsAvailableLocale_KnownAndUnknown",
+    "testToLocale_ValidLanguageCountryAndVariant",
+    "testLanguagesByCountry_ValidCountry_NoVariants",
+    "testLocaleLookupList_Unmodifiable",
+    "testLocaleLookupList_NullLocale",
+    "testToLocale_InvalidCountryNonAlpha",
+    "testToLocale_InvalidUpperCaseLanguage"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-57/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-57b/target/classes:/work/d4j/Lang-57b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.LocaleUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testCountriesByLanguage_NullParameter\"}\n{\"method\":\"testLocaleLookupList_SingleArgument_NoVariant\"}\n{\"method\":\"testToLocale_InvalidTrailingUnderscore\"}\n{\"method\":\"testCountriesByLanguage_CachingBehavior\"}\n{\"method\":\"testAvailableLocaleList_ContentsMatchJDK\"}\n{\"method\":\"testToLocale_InvalidCountryLowerCase\"}\n{\"method\":\"testToLocale_NullInput\"}\n{\"method\":\"testToLocale_InvalidMissingUnderscore\"}\n{\"method\":\"testToLocale_ValidLanguageAndCountry\"}\n{\"method\":\"testInternalCollectionsAreUnmodifiable\"}\n{\"method\":\"testToLocale_InvalidCountryTooShort\"}\n{\"method\":\"testCountriesByLanguage_Unmodifiable\"}\n{\"method\":\"testToLocale_InvalidTooShort\"}\n{\"method\":\"testLocaleLookupList_TwoArguments_DefaultNotDuplicate\"}\n{\"method\":\"testAvailableLocaleSet_Unmodifiable\"}\n{\"method\":\"testLanguagesByCountry_CachingBehavior\"}\n{\"method\":\"testLanguagesByCountry_NullParameter\"}\n{\"method\":\"testLocaleLookupList_SingleArgument_WithVariant\"}\n{\"method\":\"testCountriesByLanguage_ValidLanguage_NoVariants\"}\n{\"method\":\"testLocaleLookupList_TwoArguments_DefaultIsAlreadyInList\"}\n{\"method\":\"testToLocale_ValidLanguageOnly\"}\n{\"method\":\"testLanguagesByCountry_Unmodifiable\"}\n{\"method\":\"testAvailableLocaleSet_LazyInitializationAndContents\"}\n{\"method\":\"testAvailableLocaleList_Unmodifiable\"}\n{\"method\":\"testIsAvailableLocale_KnownAndUnknown\"}\n{\"method\":\"testToLocale_ValidLanguageCountryAndVariant\"}\n{\"method\":\"testLanguagesByCountry_ValidCountry_NoVariants\"}\n{\"method\":\"testLocaleLookupList_Unmodifiable\"}\n{\"method\":\"testLocaleLookupList_NullLocale\"}\n{\"method\":\"testToLocale_InvalidCountryNonAlpha\"}\n{\"method\":\"testToLocale_InvalidUpperCaseLanguage\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.089
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-57/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-57b/target/classes:/work/d4j/Lang-57b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.LocaleUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testCountriesByLanguage_NullParameter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":41}\n{\"method\":\"testLocaleLookupList_SingleArgument_NoVariant\",\"status\":\"fail\",\"message\":\"expected:<3> but was:<2>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":2}\n{\"method\":\"testToLocale_InvalidTrailingUnderscore\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCountriesByLanguage_CachingBehavior\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testAvailableLocaleList_ContentsMatchJDK\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testToLocale_InvalidCountryLowerCase\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_NullInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_InvalidMissingUnderscore\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_ValidLanguageAndCountry\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testInternalCollectionsAreUnmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_InvalidCountryTooShort\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCountriesByLanguage_Unmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_InvalidTooShort\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupList_TwoArguments_DefaultNotDuplicate\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAvailableLocaleSet_Unmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLanguagesByCountry_CachingBehavior\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLanguagesByCountry_NullParameter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupList_SingleArgument_WithVariant\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCountriesByLanguage_ValidLanguage_NoVariants\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupList_TwoArguments_DefaultIsAlreadyInList\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_ValidLanguageOnly\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLanguagesByCountry_Unmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAvailableLocaleSet_LazyInitializationAndContents\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAvailableLocaleList_Unmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsAvailableLocale_KnownAndUnknown\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_ValidLanguageCountryAndVariant\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLanguagesByCountry_ValidCountry_NoVariants\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupList_Unmodifiable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLocaleLookupList_NullLocale\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_InvalidCountryNonAlpha\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToLocale_InvalidUpperCaseLanguage\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.182,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testCountriesByLanguage_NullParameter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 41,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_SingleArgument_NoVariant",
+      "status": "fail",
+      "message": "expected:<3> but was:<2>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidTrailingUnderscore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_CachingBehavior",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleList_ContentsMatchJDK",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidCountryLowerCase",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidMissingUnderscore",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_ValidLanguageAndCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testInternalCollectionsAreUnmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidCountryTooShort",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidTooShort",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_TwoArguments_DefaultNotDuplicate",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_CachingBehavior",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_NullParameter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_SingleArgument_WithVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_ValidLanguage_NoVariants",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_TwoArguments_DefaultIsAlreadyInList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_ValidLanguageOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_LazyInitializationAndContents",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleList_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocale_KnownAndUnknown",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_ValidLanguageCountryAndVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_ValidCountry_NoVariants",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_NullLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidCountryNonAlpha",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_InvalidUpperCaseLanguage",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 30,
+    "fail": 1
+  },
+  "wall_seconds": 0.272
+}

@@ -1,0 +1,65 @@
+{
+  "fqcn": "LegacyFixture",
+  "classpath": "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+  "timeout_ms": 300,
+  "listed_methods": [
+    "testFail",
+    "testPass"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "LegacyFixture",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testFail\"}\n{\"method\":\"testPass\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.083
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/tmp/p2-runner-llkbele4:tools/runner:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "LegacyFixture",
+        "--timeout-ms",
+        "300"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testFail\",\"status\":\"fail\",\"message\":\"assertion\",\"exception\":\"junit.framework.AssertionFailedError\",\"milliseconds\":17}\n{\"method\":\"testPass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.101,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testFail",
+      "status": "fail",
+      "message": "assertion",
+      "exception": "junit.framework.AssertionFailedError",
+      "milliseconds": 17,
+      "launch": 1
+    },
+    {
+      "method": "testPass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1,
+    "pass": 1
+  },
+  "wall_seconds": 0.185
+}

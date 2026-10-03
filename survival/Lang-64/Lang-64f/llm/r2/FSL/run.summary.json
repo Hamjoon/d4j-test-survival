@@ -1,0 +1,190 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "classpath": "/work/survival/Lang-64/Lang-64f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-64f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testGetEnumByValue_NotFound",
+    "testGetEnumByValue_NullClass",
+    "testGetValue",
+    "testIteratorOrderMatchesValueOrdering",
+    "testEnumListContainsAllInstances",
+    "testCompareTo_Equality",
+    "testToString_Memoisation",
+    "testCompareTo_NullArgument",
+    "testCompareTo_LessThan",
+    "testCompareTo_WrongType",
+    "testGetEnumByValue_Found",
+    "testCompareTo_GreaterThan"
+  ],
+  "all_listed_methods": [
+    "testToString_Format",
+    "testGetEnumByValue_NotFound",
+    "testGetEnumByValue_NullClass",
+    "testGetValue",
+    "testIteratorOrderMatchesValueOrdering",
+    "testEnumListContainsAllInstances",
+    "testCompareTo_Equality",
+    "testToString_Memoisation",
+    "testCompareTo_NullArgument",
+    "testCompareTo_LessThan",
+    "testCompareTo_WrongType",
+    "testGetEnumByValue_Found",
+    "testCompareTo_GreaterThan"
+  ],
+  "selected_methods": [
+    "testCompareTo_Equality",
+    "testCompareTo_GreaterThan",
+    "testCompareTo_LessThan",
+    "testCompareTo_NullArgument",
+    "testCompareTo_WrongType",
+    "testEnumListContainsAllInstances",
+    "testGetEnumByValue_Found",
+    "testGetEnumByValue_NotFound",
+    "testGetEnumByValue_NullClass",
+    "testGetValue",
+    "testIteratorOrderMatchesValueOrdering",
+    "testToString_Memoisation"
+  ],
+  "excluded_methods": [
+    "testToString_Format"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-64/Lang-64f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.ValuedEnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testToString_Format\"}\n{\"method\":\"testGetEnumByValue_NotFound\"}\n{\"method\":\"testGetEnumByValue_NullClass\"}\n{\"method\":\"testGetValue\"}\n{\"method\":\"testIteratorOrderMatchesValueOrdering\"}\n{\"method\":\"testEnumListContainsAllInstances\"}\n{\"method\":\"testCompareTo_Equality\"}\n{\"method\":\"testToString_Memoisation\"}\n{\"method\":\"testCompareTo_NullArgument\"}\n{\"method\":\"testCompareTo_LessThan\"}\n{\"method\":\"testCompareTo_WrongType\"}\n{\"method\":\"testGetEnumByValue_Found\"}\n{\"method\":\"testCompareTo_GreaterThan\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.085
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-64/Lang-64f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.ValuedEnumTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testToString_Format"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testGetEnumByValue_NotFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testGetEnumByValue_NullClass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testGetValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIteratorOrderMatchesValueOrdering\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEnumListContainsAllInstances\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_Equality\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToString_Memoisation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCompareTo_NullArgument\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_LessThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_WrongType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumByValue_Found\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareTo_GreaterThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.118,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testGetEnumByValue_NotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValue_NullClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIteratorOrderMatchesValueOrdering",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContainsAllInstances",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_Equality",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString_Memoisation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_NullArgument",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_LessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_WrongType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValue_Found",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_GreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12
+  },
+  "wall_seconds": 0.203
+}

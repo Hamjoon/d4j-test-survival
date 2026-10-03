@@ -1,0 +1,310 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-6b/dev/classes/org.apache.commons.lang3.SerializationUtilsTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testException",
+    "testDeserializeBytesBadStream",
+    "testDeserializeStreamBadStream",
+    "testSerializeBytesUnserializable",
+    "testSerializeStreamNullNull",
+    "testSerializeStreamNullObj",
+    "testClone",
+    "testSerializeBytesNull",
+    "testSerializeStreamObjNull",
+    "testSerializeIOException",
+    "testDeserializeBytes",
+    "testCloneNull",
+    "testSerializeStream",
+    "testDeserializeStream",
+    "testCloneUnserializable",
+    "testSerializeStreamUnserializable",
+    "testDeserializeStreamOfNull",
+    "testDeserializeStreamClassNotFound",
+    "testDeserializeBytesOfNull",
+    "testSerializeBytes",
+    "testDeserializeBytesNull",
+    "testConstructor",
+    "testDeserializeStreamNull"
+  ],
+  "all_listed_methods": [
+    "testException",
+    "testDeserializeBytesBadStream",
+    "testDeserializeStreamBadStream",
+    "testSerializeBytesUnserializable",
+    "testSerializeStreamNullNull",
+    "testSerializeStreamNullObj",
+    "testClone",
+    "testSerializeBytesNull",
+    "testSerializeStreamObjNull",
+    "testSerializeIOException",
+    "testDeserializeBytes",
+    "testCloneNull",
+    "testPrimitiveTypeClassSerialization",
+    "testSerializeStream",
+    "testDeserializeStream",
+    "testCloneUnserializable",
+    "testSerializeStreamUnserializable",
+    "testDeserializeStreamOfNull",
+    "testDeserializeStreamClassNotFound",
+    "testDeserializeBytesOfNull",
+    "testSerializeBytes",
+    "testDeserializeBytesNull",
+    "testConstructor",
+    "testDeserializeStreamNull"
+  ],
+  "selected_methods": [
+    "testClone",
+    "testCloneNull",
+    "testCloneUnserializable",
+    "testConstructor",
+    "testDeserializeBytes",
+    "testDeserializeBytesBadStream",
+    "testDeserializeBytesNull",
+    "testDeserializeBytesOfNull",
+    "testDeserializeStream",
+    "testDeserializeStreamBadStream",
+    "testDeserializeStreamClassNotFound",
+    "testDeserializeStreamNull",
+    "testDeserializeStreamOfNull",
+    "testException",
+    "testSerializeBytes",
+    "testSerializeBytesNull",
+    "testSerializeBytesUnserializable",
+    "testSerializeIOException",
+    "testSerializeStream",
+    "testSerializeStreamNullNull",
+    "testSerializeStreamNullObj",
+    "testSerializeStreamObjNull",
+    "testSerializeStreamUnserializable"
+  ],
+  "excluded_methods": [
+    "testPrimitiveTypeClassSerialization"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-6b/dev/classes/org.apache.commons.lang3.SerializationUtilsTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testException\"}\n{\"method\":\"testDeserializeBytesBadStream\"}\n{\"method\":\"testDeserializeStreamBadStream\"}\n{\"method\":\"testSerializeBytesUnserializable\"}\n{\"method\":\"testSerializeStreamNullNull\"}\n{\"method\":\"testSerializeStreamNullObj\"}\n{\"method\":\"testClone\"}\n{\"method\":\"testSerializeBytesNull\"}\n{\"method\":\"testSerializeStreamObjNull\"}\n{\"method\":\"testSerializeIOException\"}\n{\"method\":\"testDeserializeBytes\"}\n{\"method\":\"testCloneNull\"}\n{\"method\":\"testPrimitiveTypeClassSerialization\"}\n{\"method\":\"testSerializeStream\"}\n{\"method\":\"testDeserializeStream\"}\n{\"method\":\"testCloneUnserializable\"}\n{\"method\":\"testSerializeStreamUnserializable\"}\n{\"method\":\"testDeserializeStreamOfNull\"}\n{\"method\":\"testDeserializeStreamClassNotFound\"}\n{\"method\":\"testDeserializeBytesOfNull\"}\n{\"method\":\"testSerializeBytes\"}\n{\"method\":\"testDeserializeBytesNull\"}\n{\"method\":\"testConstructor\"}\n{\"method\":\"testDeserializeStreamNull\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.084
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-6b/dev/classes/org.apache.commons.lang3.SerializationUtilsTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testPrimitiveTypeClassSerialization"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":25}\n{\"method\":\"testDeserializeBytesBadStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":8}\n{\"method\":\"testDeserializeStreamBadStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeBytesUnserializable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":10}\n{\"method\":\"testSerializeStreamNullNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeStreamNullObj\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testClone\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testSerializeBytesNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeStreamObjNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeIOException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeBytes\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCloneNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCloneUnserializable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeStreamUnserializable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserializeStreamOfNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeStreamClassNotFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserializeBytesOfNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeBytes\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeBytesNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructor\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeStreamNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.169,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 25,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeBytesBadStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeStreamBadStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeBytesUnserializable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 10,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeStreamNullNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeStreamNullObj",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClone",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeBytesNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeStreamObjNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeIOException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeBytes",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneUnserializable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeStreamUnserializable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeStreamOfNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeStreamClassNotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeBytesOfNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeBytes",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeBytesNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeStreamNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 23
+  },
+  "wall_seconds": 0.254
+}

@@ -1,0 +1,118 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-64/r2/ToT/ValuedEnumTest.java",
+    "source_sha256": "cf2037584d455afb04205e8c749a7dac80a7fb7d17fa892f79515c1fbb45b19d",
+    "selected_methods": [
+      "testCompareToEqual",
+      "testCompareToGreaterThan",
+      "testCompareToLessThan",
+      "testCompareToNullThrowsException",
+      "testGetEnumInvalidValueReturnsNull",
+      "testGetEnumNullClassThrowsException",
+      "testGetEnumValidValue",
+      "testGetValue",
+      "testToStringCaching"
+    ],
+    "target": "Lang-54b",
+    "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-64/Lang-54b/llm/r2/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-54b/target/classes:/work/d4j/Lang-54b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-64/r2/ToT/ValuedEnumTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.282,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-64/Lang-54b/llm/r2/ToT/javac.err"
+  },
+  "folder": "survival/Lang-64/Lang-54b/llm/r2/ToT",
+  "classes": "survival/Lang-64/Lang-54b/llm/r2/ToT/classes",
+  "run_file": "survival/Lang-64/Lang-54b/llm/r2/ToT/run.jsonl",
+  "methods": [
+    {
+      "method": "testCompareToEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNullThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToStringCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToLessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumNullClassThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToGreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumInvalidValueReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumValidValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9
+  },
+  "run_seconds": 0.214,
+  "list_error": ""
+}

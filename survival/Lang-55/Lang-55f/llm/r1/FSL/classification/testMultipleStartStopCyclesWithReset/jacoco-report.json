@@ -1,0 +1,16 @@
+{
+  "command": [
+    "java",
+    "-jar",
+    "tools/jacococli.jar",
+    "report",
+    "/work/survival/Lang-55/Lang-55f/llm/r1/FSL/classification/testMultipleStartStopCyclesWithReset/jacoco.exec",
+    "--classfiles",
+    "d4j/Lang-55f/target/classes/org/apache/commons/lang/time/StopWatch.class",
+    "--sourcefiles",
+    "d4j/Lang-55f/src/java",
+    "--xml",
+    "survival/Lang-55/Lang-55f/llm/r1/FSL/classification/testMultipleStartStopCyclesWithReset/jacoco.xml"
+  ],
+  "exit_status": 0
+}

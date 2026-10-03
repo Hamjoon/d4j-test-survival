@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "raw_responses_unchanged": 70,
+  "structured_sources_unchanged": 68,
+  "developer_source_copies_unchanged": 49,
+  "compiled_checkouts": 28,
+  "record_timepoints": 105,
+  "developer_methods": 729,
+  "llm_methods": 1085,
+  "credential_scan_files": 3078,
+  "checks": [
+    "byte-preserving extraction and CSV reconciliation",
+    "source SHA-256 provenance",
+    "timeline order, dates, presence and all 28 compiles",
+    "complete method status accounting",
+    "counts and target reconciliation",
+    "classpath copy precedence",
+    "timeout relaunch excludes every measured method",
+    "API key absent from artifacts"
+  ]
+}

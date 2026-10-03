@@ -1,0 +1,151 @@
+{
+  "bug_id": 64,
+  "class": "ValuedEnum",
+  "technique": "GToT",
+  "round": 3,
+  "directory": "runs/lang/64/ValuedEnum/GToT/r3",
+  "response": "runs/lang/64/ValuedEnum/GToT/r3/response.md",
+  "response_sha256": "c642b3e13d94f4b45cc3dc3341487c945ac8694615b00816e272531b82b8bd25",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "ValuedEnumTest",
+  "package": "org.apache.commons.lang.enums",
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-64/r3/GToT/ValuedEnumTest.java",
+  "extracted_sha256": "81dea82572d21fbeab3003f5acd2c869f0b8be06887fe74f0e4d27d53355dfc9",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-64/r3/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-64/r3/GToT/ValuedEnumTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.288,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-64/r3/GToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-64/r3/GToT/run-t.jsonl",
+  "listed": 13,
+  "counts": {
+    "pass": 10,
+    "fail": 2,
+    "error": 1
+  },
+  "methods": [
+    {
+      "method": "testCompareToEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToDifferentEnumType",
+      "status": "fail",
+      "message": "Expected exception: java.lang.ClassCastException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToStringCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToLessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContainsAllValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumNullClassThrowsException",
+      "status": "error",
+      "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>",
+      "exception": "java.lang.Exception",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToGreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumInvalidValueReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumValidValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringFormat",
+      "status": "fail",
+      "message": "expected:<[]TestEnum[ONE=1]> but was:<[ValuedEnumTest.]TestEnum[ONE=1]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.217
+}

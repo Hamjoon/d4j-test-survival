@@ -1,0 +1,152 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "classpath": "/work/survival/Lang-64/Lang-55b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-55b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testGetEnumNullClassThrows",
+    "testGetValue",
+    "testCompareToOrdering",
+    "testGetEnumByValueFound",
+    "testCompareToIncompatibleTypeThrows",
+    "testEnumListAndIterator",
+    "testCompareToNullThrows",
+    "testGetEnumByValueNotFound",
+    "testToStringFormat"
+  ],
+  "all_listed_methods": [
+    "testGetEnumNullClassThrows",
+    "testGetValue",
+    "testCompareToOrdering",
+    "testGetEnumByValueFound",
+    "testCompareToIncompatibleTypeThrows",
+    "testEnumListAndIterator",
+    "testCompareToNullThrows",
+    "testGetEnumByValueNotFound",
+    "testToStringFormat"
+  ],
+  "selected_methods": [
+    "testCompareToIncompatibleTypeThrows",
+    "testCompareToNullThrows",
+    "testCompareToOrdering",
+    "testEnumListAndIterator",
+    "testGetEnumByValueFound",
+    "testGetEnumByValueNotFound",
+    "testGetEnumNullClassThrows",
+    "testGetValue",
+    "testToStringFormat"
+  ],
+  "excluded_methods": [],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-64/Lang-55b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.ValuedEnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testGetEnumNullClassThrows\"}\n{\"method\":\"testGetValue\"}\n{\"method\":\"testCompareToOrdering\"}\n{\"method\":\"testGetEnumByValueFound\"}\n{\"method\":\"testCompareToIncompatibleTypeThrows\"}\n{\"method\":\"testEnumListAndIterator\"}\n{\"method\":\"testCompareToNullThrows\"}\n{\"method\":\"testGetEnumByValueNotFound\"}\n{\"method\":\"testToStringFormat\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.082
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-64/Lang-55b/llm/r1/ToT/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.ValuedEnumTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testGetEnumNullClassThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testGetValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToOrdering\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumByValueFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToIncompatibleTypeThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testEnumListAndIterator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToNullThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGetEnumByValueNotFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToStringFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.123,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testGetEnumNullClassThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToOrdering",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValueFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToIncompatibleTypeThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListAndIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNullThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValueNotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9
+  },
+  "wall_seconds": 0.206
+}

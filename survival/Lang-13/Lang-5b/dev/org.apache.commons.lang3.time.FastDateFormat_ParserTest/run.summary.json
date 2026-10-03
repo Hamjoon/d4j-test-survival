@@ -1,0 +1,280 @@
+{
+  "fqcn": "org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+  "classpath": "/work/survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_ParserTest:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-5b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testShortDateStyleWithLocales",
+    "testMilleniumBug",
+    "testLocaleMatches",
+    "testDayOf",
+    "testParseZone",
+    "testAmPm",
+    "testLowYearPadding",
+    "testParseNumerics",
+    "testLang303",
+    "testLang538",
+    "testToStringContainsName",
+    "test_Equality_Hash",
+    "testParseLongShort",
+    "testEquals",
+    "testQuotes",
+    "testTimeZoneMatches",
+    "testPatternMatches",
+    "testLocales"
+  ],
+  "all_listed_methods": [
+    "testSpecialCharacters",
+    "testShortDateStyleWithLocales",
+    "testMilleniumBug",
+    "testLocaleMatches",
+    "testDayOf",
+    "testParseZone",
+    "testAmPm",
+    "testLowYearPadding",
+    "testLocales_Long_AD",
+    "testLocales_Long_BC",
+    "testParseNumerics",
+    "testLang303",
+    "testLang538",
+    "testToStringContainsName",
+    "testLANG_831",
+    "testLANG_832",
+    "test_Equality_Hash",
+    "testLocales_ShortNoEra_AD",
+    "testLocales_ShortNoEra_BC",
+    "testParseLongShort",
+    "testLocales_LongNoEra_AD",
+    "testLocales_LongNoEra_BC",
+    "testLocales_Short_AD",
+    "testLocales_Short_BC",
+    "testEquals",
+    "testParses",
+    "testQuotes",
+    "testTimeZoneMatches",
+    "testPatternMatches"
+  ],
+  "selected_methods": [
+    "testAmPm",
+    "testDayOf",
+    "testEquals",
+    "testLang303",
+    "testLang538",
+    "testLocaleMatches",
+    "testLocales",
+    "testLowYearPadding",
+    "testMilleniumBug",
+    "testParseLongShort",
+    "testParseNumerics",
+    "testParseZone",
+    "testPatternMatches",
+    "testQuotes",
+    "testShortDateStyleWithLocales",
+    "testTimeZoneMatches",
+    "testToStringContainsName",
+    "test_Equality_Hash"
+  ],
+  "excluded_methods": [
+    "testSpecialCharacters",
+    "testLocales_Long_AD",
+    "testLocales_Long_BC",
+    "testLANG_831",
+    "testLANG_832",
+    "testLocales_ShortNoEra_AD",
+    "testLocales_ShortNoEra_BC",
+    "testLocales_LongNoEra_AD",
+    "testLocales_LongNoEra_BC",
+    "testLocales_Short_AD",
+    "testLocales_Short_BC",
+    "testParses"
+  ],
+  "missing_methods": [
+    "testLocales"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_ParserTest:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSpecialCharacters\"}\n{\"method\":\"testShortDateStyleWithLocales\"}\n{\"method\":\"testMilleniumBug\"}\n{\"method\":\"testLocaleMatches\"}\n{\"method\":\"testDayOf\"}\n{\"method\":\"testParseZone\"}\n{\"method\":\"testAmPm\"}\n{\"method\":\"testLowYearPadding\"}\n{\"method\":\"testLocales_Long_AD\"}\n{\"method\":\"testLocales_Long_BC\"}\n{\"method\":\"testParseNumerics\"}\n{\"method\":\"testLang303\"}\n{\"method\":\"testLang538\"}\n{\"method\":\"testToStringContainsName\"}\n{\"method\":\"testLANG_831\"}\n{\"method\":\"testLANG_832\"}\n{\"method\":\"test_Equality_Hash\"}\n{\"method\":\"testLocales_ShortNoEra_AD\"}\n{\"method\":\"testLocales_ShortNoEra_BC\"}\n{\"method\":\"testParseLongShort\"}\n{\"method\":\"testLocales_LongNoEra_AD\"}\n{\"method\":\"testLocales_LongNoEra_BC\"}\n{\"method\":\"testLocales_Short_AD\"}\n{\"method\":\"testLocales_Short_BC\"}\n{\"method\":\"testEquals\"}\n{\"method\":\"testParses\"}\n{\"method\":\"testQuotes\"}\n{\"method\":\"testTimeZoneMatches\"}\n{\"method\":\"testPatternMatches\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.095
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_ParserTest:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testSpecialCharacters,testLocales_Long_AD,testLocales_Long_BC,testLANG_831,testLANG_832,testLocales_ShortNoEra_AD,testLocales_ShortNoEra_BC,testLocales_LongNoEra_AD,testLocales_LongNoEra_BC,testLocales_Short_AD,testLocales_Short_BC,testParses"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testShortDateStyleWithLocales\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":44}\n{\"method\":\"testMilleniumBug\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testLocaleMatches\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":82}\n{\"method\":\"testDayOf\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testParseZone\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testAmPm\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":5}\n{\"method\":\"testLowYearPadding\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testParseNumerics\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testLang303\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":7}\n{\"method\":\"testLang538\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToStringContainsName\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"test_Equality_Hash\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":15}\n{\"method\":\"testParseLongShort\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testEquals\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testQuotes\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testTimeZoneMatches\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testPatternMatches\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.283,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testShortDateStyleWithLocales",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 44,
+      "launch": 1
+    },
+    {
+      "method": "testMilleniumBug",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 82,
+      "launch": 1
+    },
+    {
+      "method": "testDayOf",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testParseZone",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAmPm",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testLowYearPadding",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testParseNumerics",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLang303",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 7,
+      "launch": 1
+    },
+    {
+      "method": "testLang538",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringContainsName",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "test_Equality_Hash",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 15,
+      "launch": 1
+    },
+    {
+      "method": "testParseLongShort",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testQuotes",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTimeZoneMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testPatternMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocales",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    }
+  ],
+  "counts": {
+    "pass": 17,
+    "not-run": 1
+  },
+  "wall_seconds": 0.38
+}

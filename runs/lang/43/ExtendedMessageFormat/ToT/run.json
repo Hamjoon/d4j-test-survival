@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:39:22.861923+00:00",
+  "latency_seconds": 41.195,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "43",
+  "class": "ExtendedMessageFormat",
+  "technique": "ToT",
+  "finish_reason": "stop",
+  "provider": "AkashML",
+  "response_id": "gen-1791005963-Vr3rYmd9SPN4YUFCgL93",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

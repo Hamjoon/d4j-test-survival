@@ -1,0 +1,192 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/generated/p2/Lang-13/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "deserialize_CorruptData_ShouldThrowSerializationException",
+    "serialize_NullObject_ShouldProduceByteArrayRepresentingNull",
+    "serialize_NullOutputStream_ShouldThrowIllegalArgumentException",
+    "serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException",
+    "clone_NullInputShouldReturnNull",
+    "clone_WhenSerializationFails_ShouldThrowSerializationException",
+    "classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader",
+    "clone_ShouldReturnDeepCopy",
+    "deserialize_NullInputStream_ShouldThrowIllegalArgumentException",
+    "deserialize_NullByteArray_ShouldThrowIllegalArgumentException",
+    "deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream",
+    "constructor_ShouldBePublicAndDoNothing",
+    "serialize_ToOutputStream_ShouldWriteBytesAndCloseStream",
+    "classLoaderAwareObjectInputStream_WhenClassNotFoundAnywhere_ShouldThrowSerializationException",
+    "deserialize_FromByteArray_ShouldRecreateObject",
+    "serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-13/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"deserialize_CorruptData_ShouldThrowSerializationException\"}\n{\"method\":\"serialize_NullObject_ShouldProduceByteArrayRepresentingNull\"}\n{\"method\":\"serialize_NullOutputStream_ShouldThrowIllegalArgumentException\"}\n{\"method\":\"serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException\"}\n{\"method\":\"clone_NullInputShouldReturnNull\"}\n{\"method\":\"clone_WhenSerializationFails_ShouldThrowSerializationException\"}\n{\"method\":\"classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader\"}\n{\"method\":\"clone_ShouldReturnDeepCopy\"}\n{\"method\":\"deserialize_NullInputStream_ShouldThrowIllegalArgumentException\"}\n{\"method\":\"deserialize_NullByteArray_ShouldThrowIllegalArgumentException\"}\n{\"method\":\"deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream\"}\n{\"method\":\"constructor_ShouldBePublicAndDoNothing\"}\n{\"method\":\"serialize_ToOutputStream_ShouldWriteBytesAndCloseStream\"}\n{\"method\":\"classLoaderAwareObjectInputStream_WhenClassNotFoundAnywhere_ShouldThrowSerializationException\"}\n{\"method\":\"deserialize_FromByteArray_ShouldRecreateObject\"}\n{\"method\":\"serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.092
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-13/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"deserialize_CorruptData_ShouldThrowSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":40}\n{\"method\":\"serialize_NullObject_ShouldProduceByteArrayRepresentingNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"serialize_NullOutputStream_ShouldThrowIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":9}\n{\"method\":\"clone_NullInputShouldReturnNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"clone_WhenSerializationFails_ShouldThrowSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"clone_ShouldReturnDeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"deserialize_NullInputStream_ShouldThrowIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"deserialize_NullByteArray_ShouldThrowIllegalArgumentException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"constructor_ShouldBePublicAndDoNothing\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"serialize_ToOutputStream_ShouldWriteBytesAndCloseStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"classLoaderAwareObjectInputStream_WhenClassNotFoundAnywhere_ShouldThrowSerializationException\",\"status\":\"fail\",\"message\":\"Expected test to throw an instance of org.apache.commons.lang3.SerializationException\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":3}\n{\"method\":\"deserialize_FromByteArray_ShouldRecreateObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.181,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "deserialize_CorruptData_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 40,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullObject_ShouldProduceByteArrayRepresentingNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullOutputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 9,
+      "launch": 1
+    },
+    {
+      "method": "clone_NullInputShouldReturnNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "clone_WhenSerializationFails_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "clone_ShouldReturnDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullInputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullByteArray_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "constructor_ShouldBePublicAndDoNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ToOutputStream_ShouldWriteBytesAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "classLoaderAwareObjectInputStream_WhenClassNotFoundAnywhere_ShouldThrowSerializationException",
+      "status": "fail",
+      "message": "Expected test to throw an instance of org.apache.commons.lang3.SerializationException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromByteArray_ShouldRecreateObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 15,
+    "fail": 1
+  },
+  "wall_seconds": 0.274
+}

@@ -1,0 +1,7 @@
+
+[stderr]
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+
+[exit] 0
+[seconds] 4.889

@@ -1,0 +1,262 @@
+[
+  {
+    "bug_id": 4,
+    "class": "LookupTranslator",
+    "D_r": 136,
+    "L_r_1": 53,
+    "target_reached": false,
+    "dev_counts": {
+      "pass": 136,
+      "fail": 1
+    },
+    "llm_counts": {
+      "fail": 4,
+      "pass": 53
+    },
+    "dev_classes": 4,
+    "dev_compiled": 4,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 5,
+    "class": "LocaleUtils",
+    "D_r": 12,
+    "L_r_1": 130,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 12,
+      "error": 1
+    },
+    "llm_counts": {
+      "pass": 130,
+      "fail": 9
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 6,
+    "class": "CharSequenceTranslator",
+    "D_r": 141,
+    "L_r_1": 57,
+    "target_reached": false,
+    "dev_counts": {
+      "pass": 141,
+      "error": 1
+    },
+    "llm_counts": {
+      "pass": 57,
+      "error": 2,
+      "fail": 3
+    },
+    "dev_classes": 9,
+    "dev_compiled": 9,
+    "llm_compiled": 4
+  },
+  {
+    "bug_id": 11,
+    "class": "RandomStringUtils",
+    "D_r": 10,
+    "L_r_1": 104,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 10,
+      "fail": 1
+    },
+    "llm_counts": {
+      "pass": 104,
+      "timeout": 2,
+      "fail": 1,
+      "error": 1
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 12,
+    "class": "RandomStringUtils",
+    "D_r": 8,
+    "L_r_1": 87,
+    "target_reached": true,
+    "dev_counts": {
+      "error": 2,
+      "pass": 8
+    },
+    "llm_counts": {
+      "pass": 87,
+      "error": 8,
+      "timeout": 1
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 4
+  },
+  {
+    "bug_id": 13,
+    "class": "SerializationUtils",
+    "D_r": 207,
+    "L_r_1": 43,
+    "target_reached": false,
+    "dev_counts": {
+      "pass": 207,
+      "error": 1
+    },
+    "llm_counts": {
+      "pass": 43,
+      "error": 2,
+      "fail": 1
+    },
+    "dev_classes": 12,
+    "dev_compiled": 12,
+    "llm_compiled": 3
+  },
+  {
+    "bug_id": 17,
+    "class": "CharSequenceTranslator",
+    "D_r": 44,
+    "L_r_1": 49,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 44,
+      "fail": 1
+    },
+    "llm_counts": {
+      "pass": 49,
+      "fail": 16
+    },
+    "dev_classes": 8,
+    "dev_compiled": 8,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 19,
+    "class": "NumericEntityUnescaper",
+    "D_r": 30,
+    "L_r_1": 53,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 30,
+      "error": 2
+    },
+    "llm_counts": {
+      "fail": 7,
+      "pass": 53,
+      "error": 1
+    },
+    "dev_classes": 3,
+    "dev_compiled": 3,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 28,
+    "class": "NumericEntityUnescaper",
+    "D_r": 19,
+    "L_r_1": 61,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 19,
+      "fail": 1
+    },
+    "llm_counts": {
+      "pass": 61,
+      "fail": 4,
+      "error": 1
+    },
+    "dev_classes": 2,
+    "dev_compiled": 2,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 43,
+    "class": "ExtendedMessageFormat",
+    "D_r": 6,
+    "L_r_1": 38,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 6,
+      "error": 1
+    },
+    "llm_counts": {
+      "pass": 38,
+      "error": 7,
+      "fail": 8
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 3
+  },
+  {
+    "bug_id": 54,
+    "class": "LocaleUtils",
+    "D_r": 11,
+    "L_r_1": 76,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 11,
+      "error": 1
+    },
+    "llm_counts": {
+      "pass": 76,
+      "fail": 4
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 3
+  },
+  {
+    "bug_id": 55,
+    "class": "StopWatch",
+    "D_r": 5,
+    "L_r_1": 66,
+    "target_reached": true,
+    "dev_counts": {
+      "pass": 5,
+      "fail": 1
+    },
+    "llm_counts": {
+      "pass": 66,
+      "fail": 9
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 4
+  },
+  {
+    "bug_id": 57,
+    "class": "LocaleUtils",
+    "D_r": 0,
+    "L_r_1": 139,
+    "target_reached": true,
+    "dev_counts": {
+      "error": 11
+    },
+    "llm_counts": {
+      "pass": 139,
+      "fail": 3,
+      "error": 3
+    },
+    "dev_classes": 1,
+    "dev_compiled": 1,
+    "llm_compiled": 5
+  },
+  {
+    "bug_id": 64,
+    "class": "ValuedEnum",
+    "D_r": 74,
+    "L_r_1": 30,
+    "target_reached": false,
+    "dev_counts": {
+      "pass": 74,
+      "fail": 1
+    },
+    "llm_counts": {
+      "pass": 30,
+      "fail": 2
+    },
+    "dev_classes": 4,
+    "dev_compiled": 4,
+    "llm_compiled": 3
+  }
+]

@@ -1,0 +1,12 @@
+{"method": "testAvailableLocaleSet", "status": "pass", "message": null, "exception": null, "milliseconds": 49, "launch": 1}
+{"method": "testIsAvailableLocale", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testAvailableLocaleList", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLang328", "status": "error", "message": "Invalid locale format: fr__POSIX", "exception": "java.lang.IllegalArgumentException", "milliseconds": 2, "launch": 1}
+{"method": "testCountriesByLanguage", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLocaleLookupList_LocaleLocale", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLanguagesByCountry", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToLocale_1Part", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testToLocale_2Part", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToLocale_3Part", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLocaleLookupList_Locale", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}

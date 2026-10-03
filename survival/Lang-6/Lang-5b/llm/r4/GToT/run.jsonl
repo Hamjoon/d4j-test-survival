@@ -1,0 +1,15 @@
+{"method": "testTranslateWriter_MixedConsumeAndZeroConsume", "status": "pass", "message": null, "exception": null, "milliseconds": 27, "launch": 1}
+{"method": "testTranslateString_Identity", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_NullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_SurrogatePairCodepoint", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_WithSurrogatePairsAndZeroConsume", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_IOExceptionPropagation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_EmptyInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_UpperCaseAndLocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_NullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_Identity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_WithSurrogatePairs", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_BasicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_ZeroConsumedWritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

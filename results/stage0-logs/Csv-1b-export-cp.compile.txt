@@ -1,0 +1,11 @@
+$ defects4j export -p cp.compile -w /work/d4j/Csv-1b
+
+[stdout]
+/work/d4j/Csv-1b/target/classes
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.cp.compile)............................................ OK
+
+
+[exit status] 0
+[wall seconds] 0.406

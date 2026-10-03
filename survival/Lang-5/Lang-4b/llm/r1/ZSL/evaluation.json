@@ -1,0 +1,226 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-5/r1/ZSL/LocaleUtilsTest.java",
+    "source_sha256": "c82b09bd6993ef7a0b0c9f8db0e7451de90f00fc5a10d0784eb995da8f6a8bd5",
+    "selected_methods": [
+      "testAvailableLocaleListAndSet_Consistent",
+      "testAvailableLocaleList_MatchesJDK",
+      "testAvailableLocaleList_Unmodifiable",
+      "testAvailableLocaleSet_MatchesJDK",
+      "testAvailableLocaleSet_Unmodifiable",
+      "testCountriesByLanguage_FilteringAndCaching",
+      "testCountriesByLanguage_NullParameter",
+      "testIsAvailableLocale_KnownLocale",
+      "testIsAvailableLocale_UnknownLocale",
+      "testLanguagesByCountry_FilteringAndCaching",
+      "testLanguagesByCountry_NullParameter",
+      "testLocaleLookupList_DefaultAlreadyInList",
+      "testLocaleLookupList_NullLocale",
+      "testLocaleLookupList_SimpleLocale",
+      "testLocaleLookupList_Unmodifiable",
+      "testLocaleLookupList_VariantOnlyAddsLanguageAndDefault",
+      "testLocaleLookupList_WithVariantAndDefault",
+      "testToLocale_LanguageAndCountry",
+      "testToLocale_NullInput",
+      "testToLocale_TwoLetterLanguageOnly",
+      "testToLocale_WithVariant"
+    ],
+    "target": "Lang-4b",
+    "fqcn": "org.apache.commons.lang3.LocaleUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-5/Lang-4b/llm/r1/ZSL/classes",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-5/r1/ZSL/LocaleUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.374,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-5/Lang-4b/llm/r1/ZSL/javac.err"
+  },
+  "folder": "survival/Lang-5/Lang-4b/llm/r1/ZSL",
+  "classes": "survival/Lang-5/Lang-4b/llm/r1/ZSL/classes",
+  "run_file": "survival/Lang-5/Lang-4b/llm/r1/ZSL/run.jsonl",
+  "methods": [
+    {
+      "method": "testIsAvailableLocale_KnownLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 54,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_NullParameter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_LanguageAndCountry",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_VariantOnlyAddsLanguageAndDefault",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_TwoLetterLanguageOnly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_DefaultAlreadyInList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_MatchesJDK",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCountriesByLanguage_FilteringAndCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleSet_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleList_MatchesJDK",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_NullParameter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsAvailableLocale_UnknownLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLanguagesByCountry_FilteringAndCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleListAndSet_Consistent",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testAvailableLocaleList_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_SimpleLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToLocale_WithVariant",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_WithVariantAndDefault",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_Unmodifiable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleLookupList_NullLocale",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 21
+  },
+  "run_seconds": 0.575,
+  "list_error": ""
+}

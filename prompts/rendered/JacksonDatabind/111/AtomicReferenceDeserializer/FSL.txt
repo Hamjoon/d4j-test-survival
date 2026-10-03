@@ -1,0 +1,134 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named AtomicReferenceDeserializer. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package com.fasterxml.jackson.databind.deser.std;
+
+import java.util.concurrent.atomic.AtomicReference;
+
+import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.databind.deser.ValueInstantiator;
+import com.fasterxml.jackson.databind.jsontype.TypeDeserializer;
+
+public class AtomicReferenceDeserializer
+    extends ReferenceTypeDeserializer<AtomicReference<Object>>
+{
+    private static final long serialVersionUID = 1L;
+
+    /*
+    /**********************************************************
+    /* Life-cycle
+    /**********************************************************
+     */
+
+    /**
+     * @since 2.9
+     */
+    public AtomicReferenceDeserializer(JavaType fullType, ValueInstantiator inst,
+            TypeDeserializer typeDeser, JsonDeserializer<?> deser)
+    {
+        super(fullType, inst, typeDeser, deser);
+    }
+
+    /*
+    /**********************************************************
+    /* Abstract method implementations
+    /**********************************************************
+     */
+
+    @Override
+    public AtomicReferenceDeserializer withResolved(TypeDeserializer typeDeser, JsonDeserializer<?> valueDeser) {
+        return new AtomicReferenceDeserializer(_fullType, _valueInstantiator,
+                typeDeser, valueDeser);
+    }
+
+    @Override
+    public AtomicReference<Object> getNullValue(DeserializationContext ctxt) throws JsonMappingException {
+        return new AtomicReference<Object>();
+    }
+
+    @Override
+    public Object getEmptyValue(DeserializationContext ctxt) {
+        return new AtomicReference<Object>();
+    }
+    
+    @Override
+    public AtomicReference<Object> referenceValue(Object contents) {
+        return new AtomicReference<Object>(contents);
+    }
+
+    @Override
+    public Object getReferenced(AtomicReference<Object> reference) {
+        return reference.get();
+    }
+
+    @Override // since 2.9
+    public AtomicReference<Object> updateReference(AtomicReference<Object> reference, Object contents) {
+        reference.set(contents);
+        return reference;
+    }
+
+    @Override // since 2.9
+    public Boolean supportsUpdate(DeserializationConfig config) {
+        // yes; regardless of value deserializer reference itself may be updated
+        return Boolean.TRUE;
+    }
+}
+.

@@ -1,0 +1,163 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testInputShorterThanLongestKey",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testNonStringCharSequenceKey",
+    "testIOExceptionPropagation",
+    "testEmptyLookupTable",
+    "testBasicTranslation",
+    "testShortestAndLongestAffectTranslation",
+    "testNullLookupTable"
+  ],
+  "all_listed_methods": [
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testInputShorterThanLongestKey",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testNonStringCharSequenceKey",
+    "testIOExceptionPropagation",
+    "testEmptyLookupTable",
+    "testBasicTranslation",
+    "testShortestAndLongestAffectTranslation",
+    "testNullLookupTable"
+  ],
+  "selected_methods": [
+    "testBasicTranslation",
+    "testDuplicateKeyOverridesPrevious",
+    "testEmptyLookupTable",
+    "testGreedyLongestMatch",
+    "testIOExceptionPropagation",
+    "testInputShorterThanLongestKey",
+    "testNonStringCharSequenceKey",
+    "testNullLookupTable",
+    "testShortestAndLongestAffectTranslation",
+    "testTranslateReturnsZeroWhenNoMatch"
+  ],
+  "excluded_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testTranslateReturnsZeroWhenNoMatch\"}\n{\"method\":\"testInputShorterThanLongestKey\"}\n{\"method\":\"testGreedyLongestMatch\"}\n{\"method\":\"testDuplicateKeyOverridesPrevious\"}\n{\"method\":\"testNonStringCharSequenceKey\"}\n{\"method\":\"testIOExceptionPropagation\"}\n{\"method\":\"testEmptyLookupTable\"}\n{\"method\":\"testBasicTranslation\"}\n{\"method\":\"testShortestAndLongestAffectTranslation\"}\n{\"method\":\"testNullLookupTable\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.083
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testTranslateReturnsZeroWhenNoMatch\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testInputShorterThanLongestKey\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testGreedyLongestMatch\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDuplicateKeyOverridesPrevious\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNonStringCharSequenceKey\",\"status\":\"fail\",\"message\":\"expected:<[k]> but was:<[V]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":2}\n{\"method\":\"testIOExceptionPropagation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEmptyLookupTable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testBasicTranslation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testShortestAndLongestAffectTranslation\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNullLookupTable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.115,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testTranslateReturnsZeroWhenNoMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testInputShorterThanLongestKey",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyLongestMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDuplicateKeyOverridesPrevious",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNonStringCharSequenceKey",
+      "status": "fail",
+      "message": "expected:<[k]> but was:<[V]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testIOExceptionPropagation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEmptyLookupTable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testBasicTranslation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testShortestAndLongestAffectTranslation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNullLookupTable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9,
+    "fail": 1
+  },
+  "wall_seconds": 0.199
+}

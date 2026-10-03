@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "new_completions": 55,
+  "new_http_attempts": 55,
+  "max_overlapping_http_attempts": 4,
+  "reused_completions": 70,
+  "immutable_llm_sources": 122,
+  "developer_population": 703,
+  "developer_own_population": 95,
+  "llm_population": 1466,
+  "records_at_target": 14,
+  "new_reported_cost_usd": 0.044579747,
+  "reported_cost_including_reused_usd": 0.10662464,
+  "credential_scan_files": 4336,
+  "checks": [
+    "exact request parameters and rendered prompts",
+    "raw assistant responses and canonical attempt copies",
+    "source bytes and hashes unchanged",
+    "round-1 artifacts reused",
+    "per-method run accounting",
+    "full-D_r stopping and 30-round cap",
+    "record and global cost ledgers",
+    "dev-own filter without extra runs",
+    "Lang-57 retained with required reporting policy",
+    "population method identities",
+    "API credential absent from artifacts"
+  ]
+}

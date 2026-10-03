@@ -1,0 +1,122 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:162: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:162: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:166: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:174: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:174: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:178: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:185: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:185: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:189: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:197: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:197: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:201: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:223: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:223: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:227: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:236: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(2);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:236: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(2);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:238: error: cannot find symbol
+                new Class[]{ParsePosition.class},
+                            ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:246: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:246: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:251: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class,
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:263: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+        ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:263: error: cannot find symbol
+        ParsePosition pos = new ParsePosition(0);
+                                ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+generated/p2/Lang-43/r1/FSL/ExtendedMessageFormatTest.java:267: error: cannot find symbol
+                new Class[]{String.class, ParsePosition.class, boolean.class},
+                                          ^
+  symbol:   class ParsePosition
+  location: class ExtendedMessageFormatTest
+24 errors

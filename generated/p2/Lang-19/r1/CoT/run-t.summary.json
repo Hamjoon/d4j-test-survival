@@ -1,0 +1,175 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/generated/p2/Lang-19/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-19b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testEntityAtEndOfString",
+    "testDecimalEntityMissingSemicolonThrowsException",
+    "testEntityWithInvalidNumberFormat",
+    "testDecimalEntityWithSemicolon",
+    "testDecimalEntityWithoutSemicolon",
+    "testHexEntityWithSemicolon",
+    "testEntityWithUpperCaseX",
+    "testHexEntityWithoutSemicolon",
+    "testEntityWithOnlyHashAndXNoDigits",
+    "testNonEntityInputReturnsZero",
+    "testEntityWithOnlyHashNoDigits",
+    "testEntityWithNegativeNumber",
+    "testSupplementaryCharacter",
+    "testMultipleEntitiesSequentially"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-19/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testEntityAtEndOfString\"}\n{\"method\":\"testDecimalEntityMissingSemicolonThrowsException\"}\n{\"method\":\"testEntityWithInvalidNumberFormat\"}\n{\"method\":\"testDecimalEntityWithSemicolon\"}\n{\"method\":\"testDecimalEntityWithoutSemicolon\"}\n{\"method\":\"testHexEntityWithSemicolon\"}\n{\"method\":\"testEntityWithUpperCaseX\"}\n{\"method\":\"testHexEntityWithoutSemicolon\"}\n{\"method\":\"testEntityWithOnlyHashAndXNoDigits\"}\n{\"method\":\"testNonEntityInputReturnsZero\"}\n{\"method\":\"testEntityWithOnlyHashNoDigits\"}\n{\"method\":\"testEntityWithNegativeNumber\"}\n{\"method\":\"testSupplementaryCharacter\"}\n{\"method\":\"testMultipleEntitiesSequentially\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.087
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-19/r1/CoT/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testEntityAtEndOfString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testDecimalEntityMissingSemicolonThrowsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityWithInvalidNumberFormat\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDecimalEntityWithSemicolon\",\"status\":\"fail\",\"message\":\"Should consume the whole entity expected:<10> but was:<5>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"testDecimalEntityWithoutSemicolon\",\"status\":\"error\",\"message\":\"String index out of range: 11\",\"exception\":\"java.lang.StringIndexOutOfBoundsException\",\"milliseconds\":0}\n{\"method\":\"testHexEntityWithSemicolon\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityWithUpperCaseX\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHexEntityWithoutSemicolon\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityWithOnlyHashAndXNoDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNonEntityInputReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityWithOnlyHashNoDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityWithNegativeNumber\",\"status\":\"fail\",\"message\":\"Expected IllegalArgumentException due to negative code point\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":0}\n{\"method\":\"testSupplementaryCharacter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testMultipleEntitiesSequentially\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nFAIL: 12a3[2][6]\nFAIL: [3][3]\nFAIL: [2][2]\n",
+      "wall_seconds": 0.129,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testEntityAtEndOfString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityMissingSemicolonThrowsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithInvalidNumberFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityWithSemicolon",
+      "status": "fail",
+      "message": "Should consume the whole entity expected:<10> but was:<5>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityWithoutSemicolon",
+      "status": "error",
+      "message": "String index out of range: 11",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityWithSemicolon",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithUpperCaseX",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityWithoutSemicolon",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithOnlyHashAndXNoDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNonEntityInputReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithOnlyHashNoDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithNegativeNumber",
+      "status": "fail",
+      "message": "Expected IllegalArgumentException due to negative code point",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSupplementaryCharacter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleEntitiesSequentially",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 11,
+    "fail": 2,
+    "error": 1
+  },
+  "wall_seconds": 0.217
+}

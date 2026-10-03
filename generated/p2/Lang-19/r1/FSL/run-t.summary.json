@@ -1,0 +1,164 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/generated/p2/Lang-19/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-19b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testReturnedCountMatchesConsumed",
+    "testHexSurrogatePairEntity",
+    "testDecimalEntityWithSemicolon",
+    "testHexEntityLowerCase",
+    "testSurrogatePairEntity",
+    "testInvalidNumberFormatReturnsZero",
+    "testEntityFollowedByExtraChars",
+    "testEmptyNumericPart",
+    "testHexEntityUpperCase",
+    "testTranslationWithOffset",
+    "testNonEntityInput",
+    "testHexEntityWithoutSemicolonThrows",
+    "testDecimalEntityWithoutSemicolonThrows"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-19/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testReturnedCountMatchesConsumed\"}\n{\"method\":\"testHexSurrogatePairEntity\"}\n{\"method\":\"testDecimalEntityWithSemicolon\"}\n{\"method\":\"testHexEntityLowerCase\"}\n{\"method\":\"testSurrogatePairEntity\"}\n{\"method\":\"testInvalidNumberFormatReturnsZero\"}\n{\"method\":\"testEntityFollowedByExtraChars\"}\n{\"method\":\"testEmptyNumericPart\"}\n{\"method\":\"testHexEntityUpperCase\"}\n{\"method\":\"testTranslationWithOffset\"}\n{\"method\":\"testNonEntityInput\"}\n{\"method\":\"testHexEntityWithoutSemicolonThrows\"}\n{\"method\":\"testDecimalEntityWithoutSemicolonThrows\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.08
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-19/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testReturnedCountMatchesConsumed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testHexSurrogatePairEntity\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDecimalEntityWithSemicolon\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHexEntityLowerCase\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSurrogatePairEntity\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testInvalidNumberFormatReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityFollowedByExtraChars\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEmptyNumericPart\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHexEntityUpperCase\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslationWithOffset\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testNonEntityInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testHexEntityWithoutSemicolonThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDecimalEntityWithoutSemicolonThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nFAIL: YZ[3][5]\nFAIL: [2][2]\n",
+      "wall_seconds": 0.13,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testReturnedCountMatchesConsumed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testHexSurrogatePairEntity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityWithSemicolon",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityLowerCase",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogatePairEntity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testInvalidNumberFormatReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityFollowedByExtraChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEmptyNumericPart",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityUpperCase",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslationWithOffset",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testNonEntityInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityWithoutSemicolonThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityWithoutSemicolonThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13
+  },
+  "wall_seconds": 0.21
+}

@@ -1,0 +1,13 @@
+{"method": "testCompareToEqual", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testGetValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToDifferentEnumType", "status": "fail", "message": "Expected exception: java.lang.ClassCastException", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "testToStringCaching", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCompareToLessThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEnumListContainsAllValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumNullClassThrowsException", "status": "error", "message": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.reflect.InvocationTargetException>", "exception": "java.lang.Exception", "milliseconds": 0, "launch": 1}
+{"method": "testCompareToNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToGreaterThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumInvalidValueReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumValidValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToStringFormat", "status": "fail", "message": "expected:<[]TestEnum[ONE=1]> but was:<[ValuedEnumTest.]TestEnum[ONE=1]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testIterator", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

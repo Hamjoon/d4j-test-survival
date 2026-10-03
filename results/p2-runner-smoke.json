@@ -1,0 +1,48 @@
+{
+  "extraction_checks": "passed",
+  "runs": {
+    "RunnerFixture": {
+      "counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 1,
+        "ignored": 2,
+        "timeout": 1
+      },
+      "listed": 7,
+      "launches": 2
+    },
+    "CrashFixture": {
+      "counts": {
+        "pass": 1,
+        "not-run": 2
+      },
+      "listed": 3,
+      "launches": 1
+    },
+    "LegacyFixture": {
+      "counts": {
+        "fail": 1,
+        "pass": 1
+      },
+      "listed": 2,
+      "launches": 1
+    },
+    "Lang-4-ZSL": {
+      "counts": {
+        "fail": 1,
+        "pass": 9
+      },
+      "listed": 10,
+      "launches": 1
+    },
+    "Lang-11-ZSL": {
+      "counts": {
+        "pass": 14,
+        "timeout": 1
+      },
+      "listed": 15,
+      "launches": 2
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"method": "testDecimalEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds", "status": "fail", "message": "Expected StringIndexOutOfBoundsException because the terminating ';' is missing", "exception": "java.lang.AssertionError", "milliseconds": 18, "launch": 1}

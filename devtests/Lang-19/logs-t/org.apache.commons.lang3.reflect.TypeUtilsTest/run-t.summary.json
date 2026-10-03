@@ -1,0 +1,137 @@
+{
+  "fqcn": "org.apache.commons.lang3.reflect.TypeUtilsTest",
+  "classpath": "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-19b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testGetTypeArguments",
+    "testIsInstance",
+    "testIsAssignable",
+    "testGetPrimitiveArrayComponentType",
+    "testTypesSatisfyVariables",
+    "testIsArrayTypeClasses",
+    "testDetermineTypeVariableAssignments",
+    "testGetRawType",
+    "testGetArrayComponentType",
+    "testIsArrayGenericTypes"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.reflect.TypeUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testGetTypeArguments\"}\n{\"method\":\"testIsInstance\"}\n{\"method\":\"testIsAssignable\"}\n{\"method\":\"testGetPrimitiveArrayComponentType\"}\n{\"method\":\"testTypesSatisfyVariables\"}\n{\"method\":\"testIsArrayTypeClasses\"}\n{\"method\":\"testDetermineTypeVariableAssignments\"}\n{\"method\":\"testGetRawType\"}\n{\"method\":\"testGetArrayComponentType\"}\n{\"method\":\"testIsArrayGenericTypes\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.101
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.reflect.TypeUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testGetTypeArguments\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":25}\n{\"method\":\"testIsInstance\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testIsAssignable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":15}\n{\"method\":\"testGetPrimitiveArrayComponentType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTypesSatisfyVariables\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsArrayTypeClasses\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDetermineTypeVariableAssignments\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testGetRawType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testGetArrayComponentType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsArrayGenericTypes\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.15,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testGetTypeArguments",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 25,
+      "launch": 1
+    },
+    {
+      "method": "testIsInstance",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testIsAssignable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 15,
+      "launch": 1
+    },
+    {
+      "method": "testGetPrimitiveArrayComponentType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTypesSatisfyVariables",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsArrayTypeClasses",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDetermineTypeVariableAssignments",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetRawType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testGetArrayComponentType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsArrayGenericTypes",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 10
+  },
+  "wall_seconds": 0.252
+}

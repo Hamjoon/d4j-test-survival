@@ -1,0 +1,150 @@
+{
+  "bug_id": 64,
+  "class": "ValuedEnum",
+  "technique": "FSL",
+  "round": 2,
+  "directory": "runs/lang/64/ValuedEnum/FSL/r2",
+  "response": "runs/lang/64/ValuedEnum/FSL/r2/response.md",
+  "response_sha256": "f956b3b8805108077c021970d521dbe59362a6c8012015a319de2f65bf3cd1e4",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "ValuedEnumTest",
+  "package": "org.apache.commons.lang.enums",
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-64/r2/FSL/ValuedEnumTest.java",
+  "extracted_sha256": "f8247922bd23aad9bfc76d5ce2780d4e2ccdf72b0833348f0982369f3ee5d2ec",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-64/r2/FSL/classes",
+      "-cp",
+      "/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-64/r2/FSL/ValuedEnumTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.286,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-64/r2/FSL/javac.err"
+  },
+  "run_file": "generated/p2/Lang-64/r2/FSL/run-t.jsonl",
+  "listed": 13,
+  "counts": {
+    "fail": 1,
+    "pass": 12
+  },
+  "methods": [
+    {
+      "method": "testToString_Format",
+      "status": "fail",
+      "message": "toString does not contain class name",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValue_NotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValue_NullClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIteratorOrderMatchesValueOrdering",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContainsAllInstances",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_Equality",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString_Memoisation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_NullArgument",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_LessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_WrongType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValue_Found",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareTo_GreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.219
+}

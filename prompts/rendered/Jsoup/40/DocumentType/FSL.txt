@@ -1,0 +1,110 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named DocumentType. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.nodes;
+
+import org.jsoup.helper.StringUtil;
+import org.jsoup.helper.Validate;
+
+/**
+ * A {@code <!DOCTYPE>} node.
+ */
+public class DocumentType extends Node {
+    // todo: quirk mode from publicId and systemId
+
+    /**
+     * Create a new doctype element.
+     * @param name the doctype's name
+     * @param publicId the doctype's public ID
+     * @param systemId the doctype's system ID
+     * @param baseUri the doctype's base URI
+     */
+    public DocumentType(String name, String publicId, String systemId, String baseUri) {
+        super(baseUri);
+
+        Validate.notEmpty(name);
+        attr("name", name);
+        attr("publicId", publicId);
+        attr("systemId", systemId);
+    }
+
+    @Override
+    public String nodeName() {
+        return "#doctype";
+    }
+
+    @Override
+    void outerHtmlHead(StringBuilder accum, int depth, Document.OutputSettings out) {
+        accum.append("<!DOCTYPE");
+        if (!StringUtil.isBlank(attr("name")))
+            accum.append(" ").append(attr("name"));
+        if (!StringUtil.isBlank(attr("publicId")))
+            accum.append(" PUBLIC \"").append(attr("publicId")).append('"');
+        if (!StringUtil.isBlank(attr("systemId")))
+            accum.append(" \"").append(attr("systemId")).append('"');
+        accum.append('>');
+    }
+
+    @Override
+    void outerHtmlTail(StringBuilder accum, int depth, Document.OutputSettings out) {
+    }
+}
+.

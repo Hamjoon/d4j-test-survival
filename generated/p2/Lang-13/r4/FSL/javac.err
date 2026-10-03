@@ -1,0 +1,9 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-13/r4/FSL/SerializationUtilsTest.java:35: error: incompatible types: inference variable T has incompatible bounds
+        Map<String, String> cloned = SerializationUtils.clone((Serializable) original);
+                                                             ^
+    lower bounds: Map<String,String>,Serializable
+    lower bounds: Serializable
+  where T is a type-variable:
+    T extends Serializable declared in method <T>clone(T)
+1 error

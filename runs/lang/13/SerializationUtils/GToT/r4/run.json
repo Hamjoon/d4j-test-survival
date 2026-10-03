@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-03T08:03:25.621373+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "GToT",
+  "round": 4,
+  "latency_seconds": 72.617,
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "response_id": "gen-1791014605-y7pr21p0Mf4P7gKIlYUe",
+  "content_empty": false,
+  "successful_attempt_directory": "runs/lang/13/SerializationUtils/GToT/r4/attempt-1"
+}

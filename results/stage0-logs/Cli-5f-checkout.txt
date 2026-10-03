@@ -1,0 +1,21 @@
+$ defects4j checkout -p Cli -v 5f -w /work/d4j/Cli-5f
+
+[stdout]
+
+[stderr]
+Checking out 3880640e to /work/d4j/Cli-5f.................................. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 3880640e:2b0a94ae..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Cli-5f.......................................... OK
+
+[exit status] 0
+[wall seconds] 2.521

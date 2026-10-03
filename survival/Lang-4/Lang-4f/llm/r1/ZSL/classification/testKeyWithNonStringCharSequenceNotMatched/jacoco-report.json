@@ -1,0 +1,16 @@
+{
+  "command": [
+    "java",
+    "-jar",
+    "tools/jacococli.jar",
+    "report",
+    "/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classification/testKeyWithNonStringCharSequenceNotMatched/jacoco.exec",
+    "--classfiles",
+    "d4j/Lang-4f/target/classes/org/apache/commons/lang3/text/translate/LookupTranslator.class",
+    "--sourcefiles",
+    "d4j/Lang-4f/src/main/java",
+    "--xml",
+    "survival/Lang-4/Lang-4f/llm/r1/ZSL/classification/testKeyWithNonStringCharSequenceNotMatched/jacoco.xml"
+  ],
+  "exit_status": 0
+}

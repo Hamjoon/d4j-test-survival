@@ -1,0 +1,13 @@
+{"method": "testClone_DeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 25, "launch": 1}
+{"method": "testSerialize_WithNullOutputStreamThrowsIAE", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerialize_WithFaultySerializableThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 8, "launch": 1}
+{"method": "testSerializeToByteArray_NullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_NullInputReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeToByteArray_NormalObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_WithFaultySerializableThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserialize_ByteArrayNormal", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_WithFailingClassLoaderFallback", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerialize_NullObjectProducesValidByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_WithCorruptStreamThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_NormalObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_ValidStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

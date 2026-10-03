@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "method_timepoint_rows": 12803,
+  "record_timepoints": 105,
+  "actual_method_executions": 8432,
+  "nonpopulation_exclusions_across_files": 1383,
+  "duplicate_population_rows": 0,
+  "duplicate_method_executions": 0,
+  "source_hashes_unchanged": true,
+  "full_identity_cross_product_verified": true,
+  "classpath_and_working_directories_verified": true,
+  "counts": {
+    "pass": 8265,
+    "fail": 162,
+    "compile-fail": 207,
+    "not-run": 6,
+    "error": 5,
+    "absent": 4158
+  },
+  "missing_inherited_methods": [
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-6b",
+      "method": "testFormattedExceptionMessageNull",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-6b",
+      "method": "testLocales",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-5b",
+      "method": "testFormattedExceptionMessageNull",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-5b",
+      "method": "testLocales",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-4b",
+      "method": "testFormattedExceptionMessageNull",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "bug_id": 13,
+      "timepoint": "Lang-4b",
+      "method": "testLocales",
+      "status": "not-run",
+      "exception": "JUnitMethodMissing",
+      "message": "Baseline method absent from JUnit listing at target version (possibly inherited)",
+      "milliseconds": null,
+      "launch": 0
+    }
+  ],
+  "credential_scan_files": 10620,
+  "credential_absent": true
+}

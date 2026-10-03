@@ -1,0 +1,14 @@
+{"method": "testTranslate_SimpleString", "status": "pass", "message": null, "exception": null, "milliseconds": 25, "launch": 1}
+{"method": "testTranslate_WithSurrogatePair", "status": "fail", "message": "expected:<x[SMILE][y]> but was:<x[SMILE][]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 3, "launch": 1}
+{"method": "testHex_NegativeCodepoint", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateToWriter_NullWriter_Throws", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_SurrogatePairConsumedCorrectly", "status": "error", "message": "index 2,length 2", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 1, "launch": 1}
+{"method": "testHex_UpperCaseAndLocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_NullInput_WritesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_UsesProvidedWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_MixedCharacters", "status": "fail", "message": "expected:<AB[SMILE][c]> but was:<AB[SMILE][]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testWith_MergesTranslatorsInOrder", "status": "error", "message": "index 5,length 5", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 2, "launch": 1}
+{"method": "testWith_EmptyArrayReturnsSameInstanceWrappedInAggregate", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_BasicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateToWriter_FallbackCopyBehaviour", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}

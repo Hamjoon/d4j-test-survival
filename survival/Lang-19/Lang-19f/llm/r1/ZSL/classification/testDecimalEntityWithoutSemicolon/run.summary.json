@@ -1,0 +1,93 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/survival/Lang-19/Lang-19f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-19f/target/classes:/work/d4j/Lang-19f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-19f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testDecimalEntityWithoutSemicolon"
+  ],
+  "all_listed_methods": [
+    "testEntityBeyondBMP",
+    "testEntityWithWhitespaceInsideIsRejected",
+    "testEntityWithNegativeNumberIsRejected",
+    "testDecimalEntityWithSemicolon",
+    "testDecimalEntityWithoutSemicolon",
+    "testHexEntityLowerCase",
+    "testInvalidNumberReturnsZeroAndWritesNothing",
+    "testHexEntityUpperCase",
+    "testEntityWithZeroValue",
+    "testHexEntityWithLeadingZeros",
+    "testNonEntityInputReturnsZero",
+    "testEntityWithLeadingZeros",
+    "testEntityNotAtStart"
+  ],
+  "selected_methods": [
+    "testDecimalEntityWithoutSemicolon"
+  ],
+  "excluded_methods": [
+    "testEntityBeyondBMP",
+    "testEntityWithWhitespaceInsideIsRejected",
+    "testEntityWithNegativeNumberIsRejected",
+    "testDecimalEntityWithSemicolon",
+    "testHexEntityLowerCase",
+    "testInvalidNumberReturnsZeroAndWritesNothing",
+    "testHexEntityUpperCase",
+    "testEntityWithZeroValue",
+    "testHexEntityWithLeadingZeros",
+    "testNonEntityInputReturnsZero",
+    "testEntityWithLeadingZeros",
+    "testEntityNotAtStart"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-19/Lang-19f/llm/r1/ZSL/classification/testDecimalEntityWithoutSemicolon/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+      "-cp",
+      "/work/survival/Lang-19/Lang-19f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-19f/target/classes:/work/d4j/Lang-19f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testEntityBeyondBMP\"}\n{\"method\":\"testEntityWithWhitespaceInsideIsRejected\"}\n{\"method\":\"testEntityWithNegativeNumberIsRejected\"}\n{\"method\":\"testDecimalEntityWithSemicolon\"}\n{\"method\":\"testDecimalEntityWithoutSemicolon\"}\n{\"method\":\"testHexEntityLowerCase\"}\n{\"method\":\"testInvalidNumberReturnsZeroAndWritesNothing\"}\n{\"method\":\"testHexEntityUpperCase\"}\n{\"method\":\"testEntityWithZeroValue\"}\n{\"method\":\"testHexEntityWithLeadingZeros\"}\n{\"method\":\"testNonEntityInputReturnsZero\"}\n{\"method\":\"testEntityWithLeadingZeros\"}\n{\"method\":\"testEntityNotAtStart\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.146
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-19/Lang-19f/llm/r1/ZSL/classification/testDecimalEntityWithoutSemicolon/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+        "-cp",
+        "/work/survival/Lang-19/Lang-19f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-19f/target/classes:/work/d4j/Lang-19f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testEntityBeyondBMP,testEntityWithWhitespaceInsideIsRejected,testEntityWithNegativeNumberIsRejected,testDecimalEntityWithSemicolon,testHexEntityLowerCase,testInvalidNumberReturnsZeroAndWritesNothing,testHexEntityUpperCase,testEntityWithZeroValue,testHexEntityWithLeadingZeros,testNonEntityInputReturnsZero,testEntityWithLeadingZeros,testEntityNotAtStart"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testDecimalEntityWithoutSemicolon\",\"status\":\"fail\",\"message\":\"Expected exception: java.lang.StringIndexOutOfBoundsException\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":23}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.179,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testDecimalEntityWithoutSemicolon",
+      "status": "fail",
+      "message": "Expected exception: java.lang.StringIndexOutOfBoundsException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 23,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1
+  },
+  "wall_seconds": 0.327
+}

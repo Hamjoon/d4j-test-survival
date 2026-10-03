@@ -1,0 +1,34 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.configuration.injection.filter;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class TypeBasedCandidateFilter implements MockCandidateFilter {
+
+    MockCandidateFilter next;
+
+    public TypeBasedCandidateFilter(MockCandidateFilter next) {
+        this.next = next;
+    }
+
+    public OngoingInjecter filterCandidate(Collection<Object> mocks, Field field, Object fieldInstance) {
+        List<Object> mockTypeMatches = new ArrayList<Object>();
+        for (Object mock : mocks) {
+            if (field.getType().isAssignableFrom(mock.getClass())) {
+                mockTypeMatches.add(mock);
+            }
+        }
+
+        return next.filterCandidate(mockTypeMatches, field, fieldInstance);
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (TypeBasedCandidateFilterTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

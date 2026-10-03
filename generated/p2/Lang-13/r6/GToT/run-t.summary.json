@@ -1,0 +1,219 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/generated/p2/Lang-13/r6/GToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-13b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testClone_DeepCopy",
+    "testClone_NullInputReturnsNull",
+    "testDeserialize_ByteArray_ValidData",
+    "testClassLoaderAwareObjectInputStream_FallbackToThreadContext",
+    "testDeserialize_InputStream_ValidData",
+    "testDeserialize_InputStream_NullThrows",
+    "testSerialize_ToOutputStream_NullObjectWritesNullReference",
+    "testDeserialize_InputStream_CorruptedDataThrows",
+    "testClone_NonSerializableFails",
+    "testConstructorIsPublic",
+    "testSerialize_ToOutputStream_NullStreamThrows",
+    "testSerialize_ClosesStreamEvenOnFailure",
+    "testSerialize_ReturnsByteArray",
+    "testDeserialize_ByteArray_CorruptedDataThrows",
+    "testDeserialize_ByteArray_NullThrows",
+    "testSerialize_ToOutputStream_WritesBytes",
+    "testSerialize_ReturnsByteArrayForNull",
+    "testSerialize_ToOutputStream_IOExceptionIsWrapped",
+    "testDeserialize_ClosesStreamEvenOnFailure"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-13/r6/GToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testClone_DeepCopy\"}\n{\"method\":\"testClone_NullInputReturnsNull\"}\n{\"method\":\"testDeserialize_ByteArray_ValidData\"}\n{\"method\":\"testClassLoaderAwareObjectInputStream_FallbackToThreadContext\"}\n{\"method\":\"testDeserialize_InputStream_ValidData\"}\n{\"method\":\"testDeserialize_InputStream_NullThrows\"}\n{\"method\":\"testSerialize_ToOutputStream_NullObjectWritesNullReference\"}\n{\"method\":\"testDeserialize_InputStream_CorruptedDataThrows\"}\n{\"method\":\"testClone_NonSerializableFails\"}\n{\"method\":\"testConstructorIsPublic\"}\n{\"method\":\"testSerialize_ToOutputStream_NullStreamThrows\"}\n{\"method\":\"testSerialize_ClosesStreamEvenOnFailure\"}\n{\"method\":\"testSerialize_ReturnsByteArray\"}\n{\"method\":\"testDeserialize_ByteArray_CorruptedDataThrows\"}\n{\"method\":\"testDeserialize_ByteArray_NullThrows\"}\n{\"method\":\"testSerialize_ToOutputStream_WritesBytes\"}\n{\"method\":\"testSerialize_ReturnsByteArrayForNull\"}\n{\"method\":\"testSerialize_ToOutputStream_IOExceptionIsWrapped\"}\n{\"method\":\"testDeserialize_ClosesStreamEvenOnFailure\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.088
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-13/r6/GToT/classes:/work/tools/runner:/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testClone_DeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":24}\n{\"method\":\"testClone_NullInputReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_ByteArray_ValidData\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testClassLoaderAwareObjectInputStream_FallbackToThreadContext\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_InputStream_ValidData\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_InputStream_NullThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":5}\n{\"method\":\"testSerialize_ToOutputStream_NullObjectWritesNullReference\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_InputStream_CorruptedDataThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_NonSerializableFails\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":7}\n{\"method\":\"testConstructorIsPublic\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_ToOutputStream_NullStreamThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_ClosesStreamEvenOnFailure\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerialize_ReturnsByteArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ByteArray_CorruptedDataThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ByteArray_NullThrows\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_ToOutputStream_WritesBytes\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_ReturnsByteArrayForNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_ToOutputStream_IOExceptionIsWrapped\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ClosesStreamEvenOnFailure\",\"status\":\"fail\",\"message\":\"InputStream must be closed even when deserialization fails\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.154,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testClone_DeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 24,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NullInputReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ByteArray_ValidData",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testClassLoaderAwareObjectInputStream_FallbackToThreadContext",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_InputStream_ValidData",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_InputStream_NullThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ToOutputStream_NullObjectWritesNullReference",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_InputStream_CorruptedDataThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NonSerializableFails",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 7,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ToOutputStream_NullStreamThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ClosesStreamEvenOnFailure",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ReturnsByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ByteArray_CorruptedDataThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ByteArray_NullThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ToOutputStream_WritesBytes",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ReturnsByteArrayForNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_ToOutputStream_IOExceptionIsWrapped",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ClosesStreamEvenOnFailure",
+      "status": "fail",
+      "message": "InputStream must be closed even when deserialization fails",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 18,
+    "fail": 1
+  },
+  "wall_seconds": 0.243
+}

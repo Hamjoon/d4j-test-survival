@@ -1,0 +1,16 @@
+{"method": "testWith_mergesTranslatorsInCorrectOrder", "status": "fail", "message": "expected:<[ccccc]> but was:<[bcbcb]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 21, "launch": 1}
+{"method": "testTranslateToWriter_zeroConsumptionCopiesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateToWriter_nullInputDoesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateStringHelper_emojiReplacement", "status": "error", "message": "index 2,length 2", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 0, "launch": 1}
+{"method": "testAtoBTranslator_basicTranslation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testAtoBTranslator_noTranslationReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_withNoAdditionalTranslatorsReturnsSameInstanceWrapped", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateStringHelper_simpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateStringHelper_nullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_nullWriterThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_negativeValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_basicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_propagatesIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_fullAlgorithm_simple", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_surrogatePairHandling", "status": "fail", "message": "expected:<:)[a]> but was:<:)[]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testHex_localeIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

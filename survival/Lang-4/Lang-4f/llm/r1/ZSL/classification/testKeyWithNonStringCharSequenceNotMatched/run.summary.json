@@ -1,0 +1,87 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testKeyWithNonStringCharSequenceNotMatched"
+  ],
+  "all_listed_methods": [
+    "testFallbackWhenLongestExceedsInputLength",
+    "testKeyWithNonStringCharSequenceNotMatched",
+    "testShortestAndLongestValuesViaReflection",
+    "testMultipleTranslationsInSingleString",
+    "testSimpleTranslation",
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testGreedyLongestMatch",
+    "testTranslateDoesNotModifyWriterOnZeroMatch",
+    "testConstructorWithEmptyLookupDoesNothing",
+    "testConstructorWithNullLookupDoesNothing"
+  ],
+  "selected_methods": [
+    "testKeyWithNonStringCharSequenceNotMatched"
+  ],
+  "excluded_methods": [
+    "testFallbackWhenLongestExceedsInputLength",
+    "testShortestAndLongestValuesViaReflection",
+    "testMultipleTranslationsInSingleString",
+    "testSimpleTranslation",
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testGreedyLongestMatch",
+    "testTranslateDoesNotModifyWriterOnZeroMatch",
+    "testConstructorWithEmptyLookupDoesNothing",
+    "testConstructorWithNullLookupDoesNothing"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classification/testKeyWithNonStringCharSequenceNotMatched/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testFallbackWhenLongestExceedsInputLength\"}\n{\"method\":\"testKeyWithNonStringCharSequenceNotMatched\"}\n{\"method\":\"testShortestAndLongestValuesViaReflection\"}\n{\"method\":\"testMultipleTranslationsInSingleString\"}\n{\"method\":\"testSimpleTranslation\"}\n{\"method\":\"testTranslateReturnsZeroWhenNoMatch\"}\n{\"method\":\"testGreedyLongestMatch\"}\n{\"method\":\"testTranslateDoesNotModifyWriterOnZeroMatch\"}\n{\"method\":\"testConstructorWithEmptyLookupDoesNothing\"}\n{\"method\":\"testConstructorWithNullLookupDoesNothing\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.189
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classification/testKeyWithNonStringCharSequenceNotMatched/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r1/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testFallbackWhenLongestExceedsInputLength,testShortestAndLongestValuesViaReflection,testMultipleTranslationsInSingleString,testSimpleTranslation,testTranslateReturnsZeroWhenNoMatch,testGreedyLongestMatch,testTranslateDoesNotModifyWriterOnZeroMatch,testConstructorWithEmptyLookupDoesNothing,testConstructorWithNullLookupDoesNothing"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testKeyWithNonStringCharSequenceNotMatched\",\"status\":\"fail\",\"message\":\"expected:<[foo]> but was:<[bar]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":21}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.198,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testKeyWithNonStringCharSequenceNotMatched",
+      "status": "fail",
+      "message": "expected:<[foo]> but was:<[bar]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 21,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1
+  },
+  "wall_seconds": 0.39
+}

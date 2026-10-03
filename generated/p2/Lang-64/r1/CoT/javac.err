@@ -1,0 +1,82 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:13: error: package TestValuedEnum does not exist
+        assertEquals(1, TestValuedEnum.ONE.getValue());
+                                      ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:14: error: package TestValuedEnum does not exist
+        assertEquals(2, TestValuedEnum.TWO.getValue());
+                                      ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:15: error: package TestValuedEnum does not exist
+        assertEquals(-5, TestValuedEnum.NEG.getValue());
+                                       ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:20: error: cannot find symbol
+        assertTrue(TestValuedEnum.ONE.compareTo(TestValuedEnum.TWO) < 0);
+                                                ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:20: error: package TestValuedEnum does not exist
+        assertTrue(TestValuedEnum.ONE.compareTo(TestValuedEnum.TWO) < 0);
+                                 ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:25: error: cannot find symbol
+        assertTrue(TestValuedEnum.TWO.compareTo(TestValuedEnum.ONE) > 0);
+                                                ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:25: error: package TestValuedEnum does not exist
+        assertTrue(TestValuedEnum.TWO.compareTo(TestValuedEnum.ONE) > 0);
+                                 ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:31: error: cannot find symbol
+        assertEquals(0, TestValuedEnum.ONE.compareTo(TestValuedEnum.SAME));
+                                                     ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:31: error: package TestValuedEnum does not exist
+        assertEquals(0, TestValuedEnum.ONE.compareTo(TestValuedEnum.SAME));
+                                      ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:37: error: package TestValuedEnum does not exist
+        assertEquals(expected, TestValuedEnum.ONE.toString());
+                                             ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:40: error: package TestValuedEnum does not exist
+        assertSame(expected, TestValuedEnum.ONE.toString());
+                                           ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:48: error: cannot find symbol
+        assertSame(TestValuedEnum.ONE, TestValuedEnum.getEnumByValue(1));
+                   ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:48: error: cannot find symbol
+        assertSame(TestValuedEnum.ONE, TestValuedEnum.getEnumByValue(1));
+                                       ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:49: error: cannot find symbol
+        assertSame(TestValuedEnum.TWO, TestValuedEnum.getEnumByValue(2));
+                   ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:49: error: cannot find symbol
+        assertSame(TestValuedEnum.TWO, TestValuedEnum.getEnumByValue(2));
+                                       ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:50: error: cannot find symbol
+        assertSame(TestValuedEnum.NEG, TestValuedEnum.getEnumByValue(-5));
+                   ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:50: error: cannot find symbol
+        assertSame(TestValuedEnum.NEG, TestValuedEnum.getEnumByValue(-5));
+                                       ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:55: error: cannot find symbol
+        assertNull(TestValuedEnum.getEnumByValue(999));
+                   ^
+  symbol:   variable TestValuedEnum
+  location: class ValuedEnumTest
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:72: error: package TestValuedEnum does not exist
+        TestValuedEnum.ONE.compareTo(null);
+                      ^
+generated/p2/Lang-64/r1/CoT/ValuedEnumTest.java:78: error: package TestValuedEnum does not exist
+        TestValuedEnum.ONE.compareTo("not an enum");
+                      ^
+20 errors

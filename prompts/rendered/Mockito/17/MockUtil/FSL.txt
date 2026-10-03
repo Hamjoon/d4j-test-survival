@@ -1,0 +1,159 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named MockUtil. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.util;
+
+import static org.mockito.Mockito.RETURNS_DEFAULTS;
+import static org.mockito.Mockito.withSettings;
+
+import org.mockito.cglib.proxy.*;
+import org.mockito.exceptions.misusing.NotAMockException;
+import org.mockito.internal.MockHandler;
+import org.mockito.internal.MockHandlerInterface;
+import org.mockito.internal.creation.MethodInterceptorFilter;
+import org.mockito.internal.creation.MockSettingsImpl;
+import org.mockito.internal.creation.jmock.ClassImposterizer;
+import org.mockito.internal.util.reflection.LenientCopyTool;
+
+
+@SuppressWarnings("unchecked")
+public class MockUtil {
+    
+    private final CreationValidator creationValidator;
+
+    public MockUtil(CreationValidator creationValidator) {
+        this.creationValidator = creationValidator;
+    }
+    
+    public MockUtil() {
+        this(new CreationValidator());
+    }
+
+    public <T> T createMock(Class<T> classToMock, MockSettingsImpl settings) {
+        creationValidator.validateType(classToMock);
+        creationValidator.validateExtraInterfaces(classToMock, settings.getExtraInterfaces());
+        creationValidator.validateMockedType(classToMock, settings.getSpiedInstance());
+
+        settings.initiateMockName(classToMock);
+
+        MockHandler<T> mockHandler = new MockHandler<T>(settings);
+        MethodInterceptorFilter filter = new MethodInterceptorFilter(mockHandler, settings);
+        Class<?>[] interfaces = settings.getExtraInterfaces();
+
+        Class<?>[] ancillaryTypes;
+            ancillaryTypes = interfaces == null ? new Class<?>[0] : interfaces;
+
+        Object spiedInstance = settings.getSpiedInstance();
+        
+        T mock = ClassImposterizer.INSTANCE.imposterise(filter, classToMock, ancillaryTypes);
+        
+        if (spiedInstance != null) {
+            new LenientCopyTool().copyToMock(spiedInstance, mock);
+        }
+        
+        return mock;
+    }
+
+    public <T> void resetMock(T mock) {
+        MockHandlerInterface<T> oldMockHandler = getMockHandler(mock);
+        MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler);
+        MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, 
+                        (MockSettingsImpl) withSettings().defaultAnswer(RETURNS_DEFAULTS));
+        ((Factory) mock).setCallback(0, newFilter);
+    }
+
+    public <T> MockHandlerInterface<T> getMockHandler(T mock) {
+        if (mock == null) {
+            throw new NotAMockException("Argument should be a mock, but is null!");
+        }
+
+        if (isMockitoMock(mock)) {
+            return (MockHandlerInterface) getInterceptor(mock).getHandler();
+        } else {
+            throw new NotAMockException("Argument should be a mock, but is: " + mock.getClass());
+        }
+    }
+
+    private <T> boolean isMockitoMock(T mock) {
+        return Enhancer.isEnhanced(mock.getClass()) && getInterceptor(mock) != null;
+    }
+
+    public boolean isMock(Object mock) {
+        return mock != null && isMockitoMock(mock);
+    }
+
+    private <T> MethodInterceptorFilter getInterceptor(T mock) {
+        Factory factory = (Factory) mock;
+        Callback callback = factory.getCallback(0);
+        if (callback instanceof MethodInterceptorFilter) {
+            return (MethodInterceptorFilter) callback;
+        }
+        return null;
+    }
+
+    public MockName getMockName(Object mock) {
+        return getMockHandler(mock).getMockSettings().getMockName();
+    }
+}.

@@ -1,0 +1,5 @@
+{"method":"testRandom_withCustomCharArray","status":"pass"}
+{"method":"testRandomAscii_rangeAndLength","status":"pass"}
+{"method":"testRandomNumeric_containsOnlyDigits","status":"pass"}
+{"method":"testRandom_highSurrogateFollowedByLow","status":"pass"}
+{"method":"testRandom_charArraySource_nonNull","status":"pass"}

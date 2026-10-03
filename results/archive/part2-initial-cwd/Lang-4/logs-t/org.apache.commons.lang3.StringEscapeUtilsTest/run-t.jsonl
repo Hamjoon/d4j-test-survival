@@ -1,0 +1,25 @@
+{"method": "testEscapeXmlAllCharacters", "status": "pass", "message": null, "exception": null, "milliseconds": 25, "launch": 1}
+{"method": "testUnescapeJava", "status": "pass", "message": null, "exception": null, "milliseconds": 8, "launch": 1}
+{"method": "testStandaloneAmphersand", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testUnescapeHtml4", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeHtml", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeJava", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeJson", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeJavaWithSlash", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeXmlSupplementaryCharacters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang313", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang708", "status": "error", "message": "src/test/resources/lang-708-input.txt (No such file or directory)", "exception": "java.io.FileNotFoundException", "milliseconds": 1, "launch": 1}
+{"method": "testLang720", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeEcmaScript", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeCsvString", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeCsvWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHtmlHighUnicode", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testUnescapeHexCharsHtml", "status": "pass", "message": null, "exception": null, "milliseconds": 71, "launch": 1}
+{"method": "testUnescapeXmlSupplementaryCharacters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testUnescapeCsvString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testUnescapeCsvWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHtmlVersions", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testUnescapeUnknownEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHiragana", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeXml", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

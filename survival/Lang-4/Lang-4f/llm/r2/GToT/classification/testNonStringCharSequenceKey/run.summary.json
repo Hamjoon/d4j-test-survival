@@ -1,0 +1,87 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNonStringCharSequenceKey"
+  ],
+  "all_listed_methods": [
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testInputShorterThanLongestKey",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testNonStringCharSequenceKey",
+    "testIOExceptionPropagation",
+    "testEmptyLookupTable",
+    "testBasicTranslation",
+    "testShortestAndLongestAffectTranslation",
+    "testNullLookupTable"
+  ],
+  "selected_methods": [
+    "testNonStringCharSequenceKey"
+  ],
+  "excluded_methods": [
+    "testTranslateReturnsZeroWhenNoMatch",
+    "testInputShorterThanLongestKey",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testIOExceptionPropagation",
+    "testEmptyLookupTable",
+    "testBasicTranslation",
+    "testShortestAndLongestAffectTranslation",
+    "testNullLookupTable"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classification/testNonStringCharSequenceKey/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testTranslateReturnsZeroWhenNoMatch\"}\n{\"method\":\"testInputShorterThanLongestKey\"}\n{\"method\":\"testGreedyLongestMatch\"}\n{\"method\":\"testDuplicateKeyOverridesPrevious\"}\n{\"method\":\"testNonStringCharSequenceKey\"}\n{\"method\":\"testIOExceptionPropagation\"}\n{\"method\":\"testEmptyLookupTable\"}\n{\"method\":\"testBasicTranslation\"}\n{\"method\":\"testShortestAndLongestAffectTranslation\"}\n{\"method\":\"testNullLookupTable\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.151
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classification/testNonStringCharSequenceKey/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r2/GToT/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testTranslateReturnsZeroWhenNoMatch,testInputShorterThanLongestKey,testGreedyLongestMatch,testDuplicateKeyOverridesPrevious,testIOExceptionPropagation,testEmptyLookupTable,testBasicTranslation,testShortestAndLongestAffectTranslation,testNullLookupTable"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNonStringCharSequenceKey\",\"status\":\"fail\",\"message\":\"expected:<[k]> but was:<[V]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":20}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.185,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNonStringCharSequenceKey",
+      "status": "fail",
+      "message": "expected:<[k]> but was:<[V]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 20,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1
+  },
+  "wall_seconds": 0.337
+}

@@ -1,0 +1,178 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named AnnotationMap. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package com.fasterxml.jackson.databind.introspect;
+
+import java.lang.annotation.Annotation;
+import java.util.*;
+
+import com.fasterxml.jackson.databind.util.Annotations;
+
+/**
+ * Simple helper class used to keep track of collection of
+ * Jackson Annotations associated with annotatable things
+ * (methods, constructors, classs).
+ * Note that only Jackson-owned annotations are tracked (for now?).
+ */
+public final class AnnotationMap implements Annotations
+{
+    protected HashMap<Class<? extends Annotation>,Annotation> _annotations;
+
+    public AnnotationMap() { }
+    
+    private AnnotationMap(HashMap<Class<? extends Annotation>,Annotation> a) {
+        _annotations = a;
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public <A extends Annotation> A get(Class<A> cls)
+    {
+        if (_annotations == null) {
+            return null;
+        }
+        return (A) _annotations.get(cls);
+    }
+
+    /**
+     * @since 2.3
+     */
+    public Iterable<Annotation> annotations() {
+        if (_annotations == null || _annotations.size() == 0) {
+            return Collections.emptyList();
+        }
+        return _annotations.values();
+    }
+    
+    public static AnnotationMap merge(AnnotationMap primary, AnnotationMap secondary)
+    {
+        if (primary == null || primary._annotations == null || primary._annotations.isEmpty()) {
+            return secondary;
+        }
+        if (secondary == null || secondary._annotations == null || secondary._annotations.isEmpty()) {
+            return primary;
+        }
+        HashMap<Class<? extends Annotation>,Annotation> annotations
+            = new HashMap<Class<? extends Annotation>,Annotation>();
+        // add secondary ones first
+        for (Annotation ann : secondary._annotations.values()) {
+            annotations.put(ann.annotationType(), ann);
+        }
+        // to be overridden by primary ones
+        for (Annotation ann : primary._annotations.values()) {
+            annotations.put(ann.annotationType(), ann);
+        }
+        return new AnnotationMap(annotations);
+    }
+    
+    @Override
+    public int size() {
+        return (_annotations == null) ? 0 : _annotations.size();
+    }
+
+    /**
+     * Method called to add specified annotation in the Map, but
+     * only if it didn't yet exist.
+     */
+    public boolean addIfNotPresent(Annotation ann)
+    {
+        if (_annotations == null || !_annotations.containsKey(ann.annotationType())) {
+            _add(ann);
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Method called to add specified annotation in the Map.
+     * 
+     * @return True if the addition changed the contents, that is, this map did not
+     *   already have specified annotation
+     */
+    public boolean add(Annotation ann) {
+        return _add(ann);
+    }
+
+    @Override
+    public String toString() {
+        if (_annotations == null) {
+            return "[null]";
+        }
+        return _annotations.toString();
+    }
+
+    /*
+    /**********************************************************
+    /* Helper methods
+    /**********************************************************
+     */
+
+    protected final boolean _add(Annotation ann) {
+        if (_annotations == null) {
+            _annotations = new HashMap<Class<? extends Annotation>,Annotation>();
+        }
+        Annotation previous = _annotations.put(ann.annotationType(), ann);
+        return (previous != null) && previous.equals(ann);
+    }
+}
+
+
+.

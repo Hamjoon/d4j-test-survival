@@ -1,0 +1,9 @@
+{"method": "testNoMatchReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 25, "launch": 1}
+{"method": "testIndexNearEnd", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSimpleTranslation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDuplicateKeyKeepsLastValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGreedyLongestMatch", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWriterIOExceptionPropagates", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInputNullThrowsNPE", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEmptyLookupArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNullLookupArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

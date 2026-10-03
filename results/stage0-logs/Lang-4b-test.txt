@@ -1,0 +1,12 @@
+$ defects4j test -w /work/d4j/Lang-4b
+
+[stdout]
+Failing tests: 1
+  - org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
+
+[stderr]
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+
+[exit status] 0
+[wall seconds] 28.527

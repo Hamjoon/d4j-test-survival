@@ -1,0 +1,12 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "classes.modified",
+    "-w",
+    "/work/d4j/Lang-55b"
+  ],
+  "exit_status": 0,
+  "seconds": 0.511
+}

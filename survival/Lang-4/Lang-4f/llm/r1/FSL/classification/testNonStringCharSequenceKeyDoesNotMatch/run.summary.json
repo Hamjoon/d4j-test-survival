@@ -1,0 +1,87 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNonStringCharSequenceKeyDoesNotMatch"
+  ],
+  "all_listed_methods": [
+    "testPartialMatchWhenInputShorterThanLongestKey",
+    "testSimpleTranslation",
+    "testNonStringCharSequenceKeyDoesNotMatch",
+    "testCaseSensitivity",
+    "testNoMatchReturnsZeroAndWritesNothing",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testConstructorWithEmptyLookupArray",
+    "testConstructorWithNullLookup",
+    "testMultipleTranslationsInSequence"
+  ],
+  "selected_methods": [
+    "testNonStringCharSequenceKeyDoesNotMatch"
+  ],
+  "excluded_methods": [
+    "testPartialMatchWhenInputShorterThanLongestKey",
+    "testSimpleTranslation",
+    "testCaseSensitivity",
+    "testNoMatchReturnsZeroAndWritesNothing",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testConstructorWithEmptyLookupArray",
+    "testConstructorWithNullLookup",
+    "testMultipleTranslationsInSequence"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r1/FSL/classification/testNonStringCharSequenceKeyDoesNotMatch/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testPartialMatchWhenInputShorterThanLongestKey\"}\n{\"method\":\"testSimpleTranslation\"}\n{\"method\":\"testNonStringCharSequenceKeyDoesNotMatch\"}\n{\"method\":\"testCaseSensitivity\"}\n{\"method\":\"testNoMatchReturnsZeroAndWritesNothing\"}\n{\"method\":\"testGreedyLongestMatch\"}\n{\"method\":\"testDuplicateKeyOverridesPrevious\"}\n{\"method\":\"testConstructorWithEmptyLookupArray\"}\n{\"method\":\"testConstructorWithNullLookup\"}\n{\"method\":\"testMultipleTranslationsInSequence\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.138
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r1/FSL/classification/testNonStringCharSequenceKeyDoesNotMatch/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testPartialMatchWhenInputShorterThanLongestKey,testSimpleTranslation,testCaseSensitivity,testNoMatchReturnsZeroAndWritesNothing,testGreedyLongestMatch,testDuplicateKeyOverridesPrevious,testConstructorWithEmptyLookupArray,testConstructorWithNullLookup,testMultipleTranslationsInSequence"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNonStringCharSequenceKeyDoesNotMatch\",\"status\":\"fail\",\"message\":\"Lookup with non‑String key must fail to match a String subsequence expected:<0> but was:<2>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":21}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.173,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNonStringCharSequenceKeyDoesNotMatch",
+      "status": "fail",
+      "message": "Lookup with non‑String key must fail to match a String subsequence expected:<0> but was:<2>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 21,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1
+  },
+  "wall_seconds": 0.312
+}

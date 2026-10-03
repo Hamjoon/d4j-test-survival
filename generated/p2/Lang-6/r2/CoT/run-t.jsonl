@@ -1,0 +1,15 @@
+{"method": "testTranslate_Writer_MultiCharReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 23, "launch": 1}
+{"method": "testTranslate_String_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_UpperCaseAndLocaleIndependent", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_ZeroAndNegativeValues", "status": "fail", "message": "expected:<[-1]> but was:<[FFFFFFFF]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_Writer_NullInput_NoExceptionAndNoOutput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_String_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_MultiCharConsumerIncrementsPositionCorrectly", "status": "fail", "message": "expected:<a[b]xy> but was:<a[]xy>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testWith_MergesTranslatorsInOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testTranslate_String_EmptyInput_ReturnsEmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_EmptyArray_ReturnsAggregateContainingOnlyThis", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_Writer_IOExceptionPropagates", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_Writer_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}

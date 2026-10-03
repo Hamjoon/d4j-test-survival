@@ -1,0 +1,11 @@
+{"method":"testWithMergesMultipleTranslators_CumulativeEffect","status":"pass"}
+{"method":"testTranslateWithNullWriterThrowsException","status":"pass"}
+{"method":"testEmojiTranslatorHandlesSurrogatePairs","status":"fail","message":"expected:<Hello [smile][ World]> but was:<Hello [smile][Worl]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateReplacesWhenConsumeOne","status":"pass"}
+{"method":"testTranslateCopiesWhenConsumeZero","status":"pass"}
+{"method":"testLoopAdvancesCorrectlyWhenConsumingMultipleCodePoints","status":"pass"}
+{"method":"testHexUtilityUpperCase","status":"pass"}
+{"method":"testTranslateNullInputReturnsNull","status":"pass"}
+{"method":"testTranslateWithIdentityTranslatorWritesExactlyInput","status":"pass"}
+{"method":"testWithMergesTranslators_OrderMatters","status":"pass"}
+{"summary":{"run":10,"failures":1,"ignored":0,"ms":23}}

@@ -1,0 +1,22 @@
+{"method":"testRandomFullSignatureWithCustomCharArray","status":"pass"}
+{"method":"testRandomAlphanumericLettersOrDigits","status":"pass"}
+{"method":"testRandomWithStringSource","status":"pass"}
+{"method":"testSurrogatePairsAreWellFormed","status":"pass"}
+{"method":"testRandomNegativeLength","status":"pass"}
+{"method":"testRandomWithCharArraySource","status":"pass"}
+{"method":"testRandomWithCustomStartEnd","status":"pass"}
+{"method":"testRandomFullSignatureLettersOnly","status":"pass"}
+{"method":"testRandomFullSignatureNumbersOnly","status":"pass"}
+{"method":"testRandomWithBothLettersAndNumbersFalseUsesAllChars","status":"pass"}
+{"method":"testRandomNumericOnlyDigits","status":"pass"}
+{"method":"testRandomCharArrayEmpty","status":"pass"}
+{"method":"testSurrogatePairDoesNotBreakLength","status":"pass"}
+{"method":"testRandomWithStartEqualsEndThrowsArrayIndexOutOfBounds","status":"fail","message":"bound must be positive","exception":"java.lang.IllegalArgumentException"}
+{"method":"testDeterministicRandomViaCustomOverload","status":"pass"}
+{"method":"testRandomFullSignatureLettersAndNumbers","status":"pass"}
+{"method":"testRandomWithLettersAndNumbersBothFalse","status":"pass"}
+{"method":"testRandomZeroLength","status":"pass"}
+{"method":"testRandomAlphabeticOnlyLetters","status":"pass"}
+{"method":"testRandomAsciiRange","status":"pass"}
+{"method":"testRandomStringEmpty","status":"pass"}
+{"summary":{"run":21,"failures":1,"ignored":0,"ms":30}}

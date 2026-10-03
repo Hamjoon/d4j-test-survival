@@ -1,0 +1,14 @@
+{"method": "testConstructor_String_oddDash", "status": "pass", "message": null, "exception": null, "milliseconds": 23, "launch": 1}
+{"method": "testSerialization", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testClass", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor_String_simple", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEquals_Object", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testContains_Char", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor_String_combo", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor_String_oddCombinations", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor_String_comboNegated", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHashCode", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetInstance_Stringarray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor_String_oddNegate", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetInstance", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testStatics", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

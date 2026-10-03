@@ -1,0 +1,10 @@
+{"method":"testGetEnumNullClassThrows","status":"pass"}
+{"method":"testGetValue","status":"pass"}
+{"method":"testCompareToOrdering","status":"pass"}
+{"method":"testGetEnumByValueFound","status":"pass"}
+{"method":"testCompareToIncompatibleTypeThrows","status":"pass"}
+{"method":"testEnumListAndIterator","status":"pass"}
+{"method":"testCompareToNullThrows","status":"pass"}
+{"method":"testGetEnumByValueNotFound","status":"pass"}
+{"method":"testToStringFormat","status":"pass"}
+{"summary":{"run":9,"failures":0,"ignored":0,"ms":18}}

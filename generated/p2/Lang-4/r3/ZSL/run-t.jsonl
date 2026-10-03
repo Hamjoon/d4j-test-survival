@@ -1,0 +1,10 @@
+{"method": "testNonStringValue", "status": "pass", "message": null, "exception": null, "milliseconds": 18, "launch": 1}
+{"method": "testOverlappingKeys", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGreedyTranslation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testKeyMustBeStringForLookup", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testInputShorterThanLongestKey", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMultipleTranslationsSequentially", "status": "fail", "message": "expected:<X[c]YZ> but was:<X[]YZ>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testConstructionShortestAndLongest", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEmptyLookupArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNoMatch", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNullLookupTable", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "before_raw": 1466,
+  "before_duplicates": 147,
+  "before_unique": 1319,
+  "after": {
+    "D_r": 703,
+    "D_r_own": 95,
+    "L_r": 1509,
+    "duplicates_removed": 156,
+    "L_r_unique": 1353,
+    "methods_hashed": 2020
+  },
+  "additional_calls": 5,
+  "additional_cost_usd": 0.004514208,
+  "generation_wall_seconds": 121.107,
+  "population_wall_seconds": 0.204
+}

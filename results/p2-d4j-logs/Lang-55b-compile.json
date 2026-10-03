@@ -1,0 +1,10 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/work/d4j/Lang-55b"
+  ],
+  "exit_status": 0,
+  "seconds": 0.556
+}

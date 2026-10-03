@@ -1,0 +1,11 @@
+$ bash -c 'TIMEFORMAT="wall_seconds=%3R"; time defects4j compile -w "$1"' _ /work/d4j/Closure-4b
+
+[stdout]
+
+[stderr]
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+wall_seconds=8.468
+
+[exit status] 0
+[wall seconds] 8.469

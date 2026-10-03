@@ -1,0 +1,22 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-13/r1/FSL/SerializationUtilsTest.java:284: error: cannot find symbol
+        Map<String, Integer> map = new java.util.HashMap<>();
+        ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+generated/p2/Lang-13/r1/FSL/SerializationUtilsTest.java:289: error: cannot find symbol
+        assertTrue(result instanceof Map);
+                                     ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+generated/p2/Lang-13/r1/FSL/SerializationUtilsTest.java:291: error: cannot find symbol
+        Map<String, Integer> restored = (Map<String, Integer>) result;
+        ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+generated/p2/Lang-13/r1/FSL/SerializationUtilsTest.java:291: error: cannot find symbol
+        Map<String, Integer> restored = (Map<String, Integer>) result;
+                                         ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+4 errors

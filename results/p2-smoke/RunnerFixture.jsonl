@@ -1,0 +1,7 @@
+{"method": "a_pass", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "b_fail", "status": "fail", "message": "expected assertion", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "c_error", "status": "error", "message": "expected error", "exception": "java.lang.IllegalStateException", "milliseconds": 0, "launch": 1}
+{"method": "d_ignored", "status": "ignored", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "e_timeout", "status": "timeout", "message": "Exceeded 300 ms", "exception": null, "milliseconds": 306, "launch": 1}
+{"method": "f_afterTimeout", "status": "pass", "message": null, "exception": null, "milliseconds": 18, "launch": 2}
+{"method": "g_assumption", "status": "ignored", "message": "got: <false>, expected: is <true>", "exception": "org.junit.AssumptionViolatedException", "milliseconds": 3, "launch": 2}

@@ -1,0 +1,154 @@
+{
+  "input": {
+    "file": "devtests/Lang-13/org/apache/commons/lang3/time/FastDateFormat_PrinterTest.java",
+    "source_sha256": "25467d4c03585a5f047089b54d98363462cd3bf2d2200f04274d33e4f95aae3c",
+    "selected_methods": [
+      "testEquals",
+      "testFormat",
+      "testLang303",
+      "testLang538",
+      "testLang645",
+      "testLocaleMatches",
+      "testLowYearPadding",
+      "testMilleniumBug",
+      "testPatternMatches",
+      "testShortDateStyleWithLocales",
+      "testSimpleDate",
+      "testTimeZoneMatches",
+      "testToStringContainsName"
+    ],
+    "target": "Lang-11b",
+    "fqcn": "org.apache.commons.lang3.time.FastDateFormat_PrinterTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-11b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_PrinterTest",
+      "-cp",
+      "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-13/org/apache/commons/lang3/time/FastDateFormat_PrinterTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.245,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.time.FastDateFormat_PrinterTest/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.time.FastDateFormat_PrinterTest",
+  "classes": "survival/Lang-13/Lang-11b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_PrinterTest",
+  "run_file": "survival/Lang-13/Lang-11b/dev/org.apache.commons.lang3.time.FastDateFormat_PrinterTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testSimpleDate",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 36,
+      "launch": 1
+    },
+    {
+      "method": "testShortDateStyleWithLocales",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 7,
+      "launch": 1
+    },
+    {
+      "method": "testMilleniumBug",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLocaleMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLowYearPadding",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testLang303",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 7,
+      "launch": 1
+    },
+    {
+      "method": "testLang538",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testLang645",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToStringContainsName",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 72,
+      "launch": 1
+    },
+    {
+      "method": "testTimeZoneMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPatternMatches",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13
+  },
+  "run_seconds": 0.322,
+  "list_error": ""
+}

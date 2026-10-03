@@ -1,0 +1,15 @@
+As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (UncheckedIOExceptionTest.java) to comprehensively test all methods in the following class named UncheckedIOException. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup;
+
+import java.io.IOException;
+
+public class UncheckedIOException extends RuntimeException {
+    public UncheckedIOException(IOException cause) {
+        super(cause);
+    }
+
+
+    public IOException ioException() {
+        return (IOException) getCause();
+    }
+}

@@ -1,0 +1,7 @@
+{"method": "testSetFormatsByArgumentIndexThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testSetFormatThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testApplyPatternWithCustomRegistry", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testSetFormatsThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSetFormatByArgumentIndexThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToPatternWithoutCustomFormats", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testApplyPatternWithoutRegistryFallsBackToMessageFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 51, "launch": 1}

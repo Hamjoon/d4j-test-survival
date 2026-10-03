@@ -1,0 +1,176 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named ResolvedRecursiveType. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package com.fasterxml.jackson.databind.type;
+
+import com.fasterxml.jackson.databind.JavaType;
+
+/**
+ * Internal placeholder type used for self-references.
+ *
+ * @since 2.7
+ */
+public class ResolvedRecursiveType extends TypeBase
+{
+    private static final long serialVersionUID = 1L;
+
+    protected JavaType _referencedType;
+
+    public ResolvedRecursiveType(Class<?> erasedType, TypeBindings bindings) {
+        super(erasedType, bindings, null, null, 0, null, null, false);
+    }
+
+    public void setReference(JavaType ref)
+    {
+        // sanity check; should not be called multiple times
+        if (_referencedType != null) {
+            throw new IllegalStateException("Trying to re-set self reference; old value = "+_referencedType+", new = "+ref);
+        }
+        _referencedType = ref;
+    }
+   
+
+    public JavaType getSelfReferencedType() { return _referencedType; }
+
+    @Override
+    public StringBuilder getGenericSignature(StringBuilder sb) {
+        return _referencedType.getGenericSignature(sb);
+    }
+
+    @Override
+    public StringBuilder getErasedSignature(StringBuilder sb) {
+        return _referencedType.getErasedSignature(sb);
+    }
+
+    @Override
+    public JavaType withContentType(JavaType contentType) {
+        return this;
+    }
+    
+    @Override
+    public JavaType withTypeHandler(Object h) {
+        return this;
+    }
+
+    @Override
+    public JavaType withContentTypeHandler(Object h) {
+        return this;
+    }
+
+    @Override
+    public JavaType withValueHandler(Object h) {
+        return this;
+    }
+
+    @Override
+    public JavaType withContentValueHandler(Object h) {
+        return this;
+    }
+
+    @Override
+    public JavaType withStaticTyping() {
+        return this;
+    }
+
+    @Deprecated // since 2.7
+    @Override
+    protected JavaType _narrow(Class<?> subclass) {
+        return this;
+    }
+
+    @Override
+    public JavaType refine(Class<?> rawType, TypeBindings bindings,
+            JavaType superClass, JavaType[] superInterfaces) {
+        return null;
+    }
+
+    @Override
+    public boolean isContainerType() {
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(40)
+                .append("[recursive type; ");
+        if (_referencedType == null) {
+            sb.append("UNRESOLVED");
+        } else {
+            // [databind#1301]: Typically resolves to a loop so short-cut
+            //   and only include type-erased class
+            sb.append(_referencedType.getRawClass().getName());
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (o == null) return false;
+        // Do NOT ever match unresolved references
+        if (_referencedType == null) {
+            return false;
+        }
+        return (o.getClass() == getClass()
+                && _referencedType.equals(((ResolvedRecursiveType) o).getSelfReferencedType()));
+    }
+}
+.

@@ -1,0 +1,9 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-64/r3/FSL/ValuedEnumTest.java:68: error: non-static variable this cannot be referenced from a static context
+            public static final OtherEnum X = new OtherEnum("X", 1);
+                                              ^
+generated/p2/Lang-64/r3/FSL/ValuedEnumTest.java:68: error: Illegal static declaration in inner class OtherEnum
+            public static final OtherEnum X = new OtherEnum("X", 1);
+                                          ^
+  modifier 'static' is only allowed in constant variable declarations
+2 errors

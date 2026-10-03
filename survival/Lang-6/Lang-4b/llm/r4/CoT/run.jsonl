@@ -1,0 +1,9 @@
+{"method": "testTranslateWriter_NoOpLeavesInputUnchanged", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 1}
+{"method": "testWith_MergesTranslatorsInCorrectOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_NoAdditionalTranslators_ReturnsSameBehaviour", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_EmptyInput_ReturnsEmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_UpperCaseConversion", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

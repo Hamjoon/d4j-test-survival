@@ -1,0 +1,1 @@
+{"method": "testSurrogatePairEntity", "status": "fail", "message": "expected:<[턞]> but was:<[𝄞]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 17, "launch": 1}

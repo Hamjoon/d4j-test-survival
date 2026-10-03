@@ -1,0 +1,182 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "GToT",
+  "round": 4,
+  "directory": "runs/lang/6/CharSequenceTranslator/GToT/r4",
+  "response": "runs/lang/6/CharSequenceTranslator/GToT/r4/response.md",
+  "response_sha256": "34bd4042ddb64fa3b1066b626a759ab53dd1765a792ddf709de79ed5bab99e81",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r4/GToT/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "bacf55b17cbb87096be1558223a102a9d34f00392d19ebd2733ff8a54dd625a9",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r4/GToT/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r4/GToT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.347,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-6/r4/GToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-6/r4/GToT/run-t.jsonl",
+  "listed": 17,
+  "counts": {
+    "pass": 15,
+    "fail": 2
+  },
+  "methods": [
+    {
+      "method": "testTranslateWriter_MixedConsumeAndZeroConsume",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_Identity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_SurrogatePairCodepoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_WithSurrogatePairsAndZeroConsume",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_IOExceptionPropagation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_EmptyInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_NullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_MultiCodepointConsume",
+      "status": "fail",
+      "message": "ABToXTranslator should replace each \"ab\" with \"X\" expected:<X[]cX> but was:<X[X]cX>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_Identity",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWithMethod_MergesTranslators",
+      "status": "fail",
+      "message": "Merged translator should apply both translations in order expected:<[ccc]c> but was:<[bcb]c>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_WithSurrogatePairs",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_BasicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_ZeroConsumedWritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.255
+}

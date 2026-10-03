@@ -1,0 +1,159 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "ToT",
+  "round": 2,
+  "directory": "runs/lang/6/CharSequenceTranslator/ToT/r2",
+  "response": "runs/lang/6/CharSequenceTranslator/ToT/r2/response.md",
+  "response_sha256": "c12bc0152968d600129b497889ae4e172213f5f74965dbf3fe9693d42ba9b775",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r2/ToT/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "b1bc48ccb62260c03d8b296826a3d769367958ff712bb5d78efc2628b1f630d8",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r2/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r2/ToT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.342,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-6/r2/ToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-6/r2/ToT/run-t.jsonl",
+  "listed": 14,
+  "counts": {
+    "pass": 10,
+    "fail": 2,
+    "error": 2
+  },
+  "methods": [
+    {
+      "method": "testTranslate_SimpleString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 25,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_WithSurrogatePair",
+      "status": "fail",
+      "message": "expected:<x[SMILE][y]> but was:<x[SMILE][]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testHex_NegativeCodepoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_NullWriter_Throws",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_SurrogatePairConsumedCorrectly",
+      "status": "error",
+      "message": "index 2,length 2",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_NullInput_WritesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_UsesProvidedWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_MixedCharacters",
+      "status": "fail",
+      "message": "expected:<AB[SMILE][c]> but was:<AB[SMILE][]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_MergesTranslatorsInOrder",
+      "status": "error",
+      "message": "index 5,length 5",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testWith_EmptyArrayReturnsSameInstanceWrappedInAggregate",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_BasicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_FallbackCopyBehaviour",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.281
+}

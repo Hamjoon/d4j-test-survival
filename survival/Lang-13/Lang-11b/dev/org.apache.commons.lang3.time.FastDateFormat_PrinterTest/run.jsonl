@@ -1,0 +1,13 @@
+{"method": "testSimpleDate", "status": "pass", "message": null, "exception": null, "milliseconds": 36, "launch": 1}
+{"method": "testShortDateStyleWithLocales", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testMilleniumBug", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLocaleMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLowYearPadding", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang303", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testLang538", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLang645", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testToStringContainsName", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEquals", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 72, "launch": 1}
+{"method": "testTimeZoneMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testPatternMatches", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

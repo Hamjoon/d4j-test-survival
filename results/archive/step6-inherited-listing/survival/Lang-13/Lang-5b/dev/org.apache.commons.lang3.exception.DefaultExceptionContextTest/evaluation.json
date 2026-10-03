@@ -1,0 +1,109 @@
+{
+  "input": {
+    "file": "devtests/Lang-13/org/apache/commons/lang3/exception/DefaultExceptionContextTest.java",
+    "source_sha256": "d4e04b598f7db21d3aa5aeb446f78182a1aeffcdd6df804761e94778bc0a1a82",
+    "selected_methods": [
+      "testAddContextValue",
+      "testFormattedExceptionMessageNull",
+      "testGetContextEntries",
+      "testGetContextLabels",
+      "testGetContextValues",
+      "testGetFirstContextValue",
+      "testJavaSerialization",
+      "testSetContextValue"
+    ],
+    "target": "Lang-5b",
+    "fqcn": "org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+    "population": "dev"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+      "-cp",
+      "/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "devtests/Lang-13/org/apache/commons/lang3/exception/DefaultExceptionContextTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.238,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+  "classes": "survival/Lang-13/Lang-5b/dev/classes/org.apache.commons.lang3.exception.DefaultExceptionContextTest",
+  "run_file": "survival/Lang-13/Lang-5b/dev/org.apache.commons.lang3.exception.DefaultExceptionContextTest/run.jsonl",
+  "methods": [
+    {
+      "method": "testAddContextValue",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testFormattedExceptionMessageNull",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testGetContextEntries",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testGetContextLabels",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testGetContextValues",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testGetFirstContextValue",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testJavaSerialization",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testSetContextValue",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    }
+  ],
+  "counts": {
+    "not-run": 8
+  },
+  "run_seconds": 0.098,
+  "list_error": "Listing failed: exit=0; methods=7; missing=['testFormattedExceptionMessageNull']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n"
+}

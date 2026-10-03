@@ -1,0 +1,14 @@
+{"method": "testContextedException", "status": "pass", "message": null, "exception": null, "milliseconds": 26, "launch": 1}
+{"method": "testNullExceptionPassing", "status": "pass", "message": null, "exception": null, "milliseconds": 9, "launch": 1}
+{"method": "testRawMessage", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testContextedExceptionThrowable", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testContextedExceptionStringThrowableContext", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testContextedExceptionString", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testContextedExceptionStringThrowable", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testAddContextValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testJavaSerialization", "status": "pass", "message": null, "exception": null, "milliseconds": 13, "launch": 1}
+{"method": "testSetContextValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetContextEntries", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetContextLabels", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testGetFirstContextValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetContextValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

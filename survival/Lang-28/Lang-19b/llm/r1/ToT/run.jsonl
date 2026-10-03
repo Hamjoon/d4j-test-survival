@@ -1,0 +1,11 @@
+{"method": "testMultipleEntitiesInOneString", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testNonEntityReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityLowerCaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDecimalEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMalformedNumberReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityUpperCaseX", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityAtStringEndWithoutSemicolon", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testWriterIOExceptionIsPropagated", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityWithOnlyHashAndSemicolonReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testMissingSemicolonCausesIndexOutOfBounds", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityWithEmptyDigitsReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

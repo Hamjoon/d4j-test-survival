@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T07:55:41.588481+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "ToT",
+  "round": 2,
+  "latency_seconds": 12.989,
+  "finish_reason": "stop",
+  "provider": "Phala",
+  "response_id": "gen-1791014141-bWE3LZzeF5vVlGipxUAT",
+  "content_empty": false
+}

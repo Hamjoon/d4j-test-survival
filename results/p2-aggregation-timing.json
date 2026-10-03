@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "purpose": "initial complete aggregation",
+      "wall_seconds": 0.205
+    },
+    {
+      "purpose": "final aggregation with coverage-rerun caveat",
+      "wall_seconds": 0.246
+    }
+  ],
+  "source": "recorded aggregate.py results in this session; report construction process time, excluding editing"
+}

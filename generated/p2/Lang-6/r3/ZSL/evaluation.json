@@ -1,0 +1,166 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "ZSL",
+  "round": 3,
+  "directory": "runs/lang/6/CharSequenceTranslator/ZSL/r3",
+  "response": "runs/lang/6/CharSequenceTranslator/ZSL/r3/response.md",
+  "response_sha256": "c9f96459617fdcd4bfce3a96a7d9fc37eabebe060fa9eddb10a24a73a12d4dd5",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r3/ZSL/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "abd81b2988b7d0a089cc0ecc688fd5121e4f99f717b0612a5d783cfed3ee079f",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r3/ZSL/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r3/ZSL/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.335,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-6/r3/ZSL/javac.err"
+  },
+  "run_file": "generated/p2/Lang-6/r3/ZSL/run-t.jsonl",
+  "listed": 15,
+  "counts": {
+    "pass": 11,
+    "fail": 4
+  },
+  "methods": [
+    {
+      "method": "testHex_surrogatePairCodepoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_surrogatePairReplacement",
+      "status": "fail",
+      "message": "expected:<testSMILE[e]nd> but was:<testSMILE[]nd>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testWith_mergesTranslatorsInOrder",
+      "status": "fail",
+      "message": "expected:<[c]> but was:<[b]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testHex_upperCaseAlways",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_ioExceptionWrapped",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_multipleTranslatorsChain",
+      "status": "fail",
+      "message": "expected:<[d]> but was:<[b]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_negativeValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_basicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_nullWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_consumesCorrectNumberOfCodePoints",
+      "status": "fail",
+      "message": "expected:<bSMILE[x]> but was:<bSMILE[]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_simpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_nullInputDoesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_nullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWriter_noTranslationWritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateString_emptyInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.22
+}

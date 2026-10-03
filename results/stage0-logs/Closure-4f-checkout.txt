@@ -1,0 +1,23 @@
+$ defects4j checkout -p Closure -v 4f -w /work/d4j/Closure-4f
+
+[stdout]
+
+[stderr]
+Checking out efefb736 to /work/d4j/Closure-4f.............................. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+sed: can't read /work/d4j/Closure-4f/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory
+sed: can't read /work/d4j/Closure-4f/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff efefb736:1c95684b..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Closure-4f...................................... OK
+
+[exit status] 0
+[wall seconds] 5.039

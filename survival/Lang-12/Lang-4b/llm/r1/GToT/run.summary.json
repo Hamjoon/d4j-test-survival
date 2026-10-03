@@ -1,0 +1,276 @@
+{
+  "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+  "classpath": "/work/survival/Lang-12/Lang-4b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testRandom_WithStringPool",
+    "testRandom_LengthAndAnyChar",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandom_LettersOnlyViaFlags",
+    "testRandom_NullCharArrayFallsBackToAllChars",
+    "testRandom_NullStringFallsBackToAllChars",
+    "testSurrogatePairs_DoNotBreakLength",
+    "testRandom_WithCustomCharArray",
+    "testConstructorIsPublic",
+    "testRandom_NoLettersNoNumbers_AnyUnicode",
+    "testRandom_DeterministicWithSeededRandom",
+    "testRandom_LettersAndNumbersViaFlags",
+    "testRandom_StartEndCustomRange",
+    "testRandomAscii_OnlyPrintableAscii",
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandom_WithCharVarargs",
+    "testRandomNumeric_OnlyDigits",
+    "testRandom_StartEndDefaultsWhenBothZero",
+    "testRandom_NumbersOnlyViaFlags"
+  ],
+  "all_listed_methods": [
+    "testRandom_WithStringPool",
+    "testRandom_LengthAndAnyChar",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandom_LettersOnlyViaFlags",
+    "testRandom_NullCharArrayFallsBackToAllChars",
+    "testRandom_NullStringFallsBackToAllChars",
+    "testRandom_NegativeCount_Throws",
+    "testSurrogatePairs_DoNotBreakLength",
+    "testRandom_ZeroLength",
+    "testRandom_WithCustomCharArray",
+    "testRandom_WithEmptyCharArray_Throws",
+    "testConstructorIsPublic",
+    "testRandom_NoLettersNoNumbers_AnyUnicode",
+    "testRandom_DeterministicWithSeededRandom",
+    "testRandom_LettersAndNumbersViaFlags",
+    "testRandom_NegativeLength",
+    "testRandom_StartEndCustomRange",
+    "testRandomAscii_OnlyPrintableAscii",
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandom_WithCharVarargs",
+    "testRandomNumeric_OnlyDigits",
+    "testRandom_StartEndDefaultsWhenBothZero",
+    "testRandom_WithEmptyString_Throws",
+    "testRandom_WithEmptyCharVarargs_Throws",
+    "testRandom_NumbersOnlyViaFlags"
+  ],
+  "selected_methods": [
+    "testConstructorIsPublic",
+    "testRandomAlphabetic_OnlyLetters",
+    "testRandomAlphanumeric_LettersOrDigits",
+    "testRandomAscii_OnlyPrintableAscii",
+    "testRandomNumeric_OnlyDigits",
+    "testRandom_DeterministicWithSeededRandom",
+    "testRandom_LengthAndAnyChar",
+    "testRandom_LettersAndNumbersViaFlags",
+    "testRandom_LettersOnlyViaFlags",
+    "testRandom_NoLettersNoNumbers_AnyUnicode",
+    "testRandom_NullCharArrayFallsBackToAllChars",
+    "testRandom_NullStringFallsBackToAllChars",
+    "testRandom_NumbersOnlyViaFlags",
+    "testRandom_StartEndCustomRange",
+    "testRandom_StartEndDefaultsWhenBothZero",
+    "testRandom_WithCharVarargs",
+    "testRandom_WithCustomCharArray",
+    "testRandom_WithStringPool",
+    "testSurrogatePairs_DoNotBreakLength"
+  ],
+  "excluded_methods": [
+    "testRandom_NegativeCount_Throws",
+    "testRandom_ZeroLength",
+    "testRandom_WithEmptyCharArray_Throws",
+    "testRandom_NegativeLength",
+    "testRandom_WithEmptyString_Throws",
+    "testRandom_WithEmptyCharVarargs_Throws"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-12/Lang-4b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.RandomStringUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testRandom_WithStringPool\"}\n{\"method\":\"testRandom_LengthAndAnyChar\"}\n{\"method\":\"testRandomAlphanumeric_LettersOrDigits\"}\n{\"method\":\"testRandom_LettersOnlyViaFlags\"}\n{\"method\":\"testRandom_NullCharArrayFallsBackToAllChars\"}\n{\"method\":\"testRandom_NullStringFallsBackToAllChars\"}\n{\"method\":\"testRandom_NegativeCount_Throws\"}\n{\"method\":\"testSurrogatePairs_DoNotBreakLength\"}\n{\"method\":\"testRandom_ZeroLength\"}\n{\"method\":\"testRandom_WithCustomCharArray\"}\n{\"method\":\"testRandom_WithEmptyCharArray_Throws\"}\n{\"method\":\"testConstructorIsPublic\"}\n{\"method\":\"testRandom_NoLettersNoNumbers_AnyUnicode\"}\n{\"method\":\"testRandom_DeterministicWithSeededRandom\"}\n{\"method\":\"testRandom_LettersAndNumbersViaFlags\"}\n{\"method\":\"testRandom_NegativeLength\"}\n{\"method\":\"testRandom_StartEndCustomRange\"}\n{\"method\":\"testRandomAscii_OnlyPrintableAscii\"}\n{\"method\":\"testRandomAlphabetic_OnlyLetters\"}\n{\"method\":\"testRandom_WithCharVarargs\"}\n{\"method\":\"testRandomNumeric_OnlyDigits\"}\n{\"method\":\"testRandom_StartEndDefaultsWhenBothZero\"}\n{\"method\":\"testRandom_WithEmptyString_Throws\"}\n{\"method\":\"testRandom_WithEmptyCharVarargs_Throws\"}\n{\"method\":\"testRandom_NumbersOnlyViaFlags\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.084
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-12/Lang-4b/llm/r1/GToT/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.RandomStringUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testRandom_NegativeCount_Throws,testRandom_ZeroLength,testRandom_WithEmptyCharArray_Throws,testRandom_NegativeLength,testRandom_WithEmptyString_Throws,testRandom_WithEmptyCharVarargs_Throws"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testRandom_WithStringPool\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testRandom_LengthAndAnyChar\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandomAlphanumeric_LettersOrDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testRandom_LettersOnlyViaFlags\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandom_NullCharArrayFallsBackToAllChars\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_NullStringFallsBackToAllChars\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSurrogatePairs_DoNotBreakLength\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandom_WithCustomCharArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructorIsPublic\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_NoLettersNoNumbers_AnyUnicode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_DeterministicWithSeededRandom\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_LettersAndNumbersViaFlags\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_StartEndCustomRange\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAscii_OnlyPrintableAscii\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandomAlphabetic_OnlyLetters\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_WithCharVarargs\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testRandomNumeric_OnlyDigits\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_StartEndDefaultsWhenBothZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testRandom_NumbersOnlyViaFlags\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.143,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testRandom_WithStringPool",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LengthAndAnyChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumeric_LettersOrDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersOnlyViaFlags",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NullCharArrayFallsBackToAllChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NullStringFallsBackToAllChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogatePairs_DoNotBreakLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCustomCharArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorIsPublic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NoLettersNoNumbers_AnyUnicode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_DeterministicWithSeededRandom",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_LettersAndNumbersViaFlags",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_StartEndCustomRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAscii_OnlyPrintableAscii",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabetic_OnlyLetters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_WithCharVarargs",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumeric_OnlyDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_StartEndDefaultsWhenBothZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandom_NumbersOnlyViaFlags",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 19
+  },
+  "wall_seconds": 0.228
+}

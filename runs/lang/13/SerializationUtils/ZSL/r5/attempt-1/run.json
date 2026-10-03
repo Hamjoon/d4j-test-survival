@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T08:04:40.936911+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ZSL",
+  "round": 5,
+  "latency_seconds": 61.503,
+  "finish_reason": "stop",
+  "provider": "AkashML",
+  "response_id": "gen-1791014681-kycXsID4pUGi2YBRVe2h",
+  "content_empty": false
+}

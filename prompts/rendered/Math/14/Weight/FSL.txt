@@ -1,0 +1,135 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named Weight. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.apache.commons.math3.optimization;
+
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.Array2DRowRealMatrix;
+import org.apache.commons.math3.linear.NonSquareMatrixException;
+
+/**
+ * Weight matrix of the residuals between model and observations.
+ * <br/>
+ * Immutable class.
+ *
+ * @version $Id$
+ * @deprecated As of 3.1 (to be removed in 4.0).
+ * @since 3.1
+ */
+@Deprecated
+public class Weight implements OptimizationData {
+    /** Weight matrix. */
+    private final RealMatrix weightMatrix;
+
+    /**
+     * Creates a diagonal weight matrix.
+     *
+     * @param weight List of the values of the diagonal.
+     */
+    public Weight(double[] weight) {
+        final int dim = weight.length;
+        weightMatrix = new Array2DRowRealMatrix(dim, dim);
+        for (int i = 0; i < dim; i++) {
+            weightMatrix.setEntry(i, i, weight[i]);
+        }
+    }
+
+    /**
+     * @param weight Weight matrix.
+     * @throws NonSquareMatrixException if the argument is not
+     * a square matrix.
+     */
+    public Weight(RealMatrix weight) {
+        if (weight.getColumnDimension() != weight.getRowDimension()) {
+            throw new NonSquareMatrixException(weight.getColumnDimension(),
+                                               weight.getRowDimension());
+        }
+
+        weightMatrix = weight.copy();
+    }
+
+    /**
+     * Gets the initial guess.
+     *
+     * @return the initial guess.
+     */
+    public RealMatrix getWeight() {
+        return weightMatrix.copy();
+    }
+}
+.

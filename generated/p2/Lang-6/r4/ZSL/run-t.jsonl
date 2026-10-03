@@ -1,0 +1,20 @@
+{"method": "testTranslateString_WithSurrogatePair", "status": "fail", "message": "Emoji should be replaced with [SMILE] expected:<Hello [SMILE][ ]World> but was:<Hello [SMILE][]World>", "exception": "org.junit.ComparisonFailure", "milliseconds": 23, "launch": 1}
+{"method": "testHex_NegativeCodepoint", "status": "fail", "message": "expected:<[-1]> but was:<[FFFFFFFF]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_NullWriter_ThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_NullInput_WritesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_ConsumedZeroFallsBackToCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testWith_ArrayOrderPreserved", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWriter_ConsumeSurrogatePair", "status": "fail", "message": "expected:<Start[SMILE][E]nd> but was:<Start[SMILE][]nd>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testWith_MultipleTranslatorsIncludingSurrogate", "status": "fail", "message": "Merged translator should handle both simple and surrogate translations expected:<A[SMILE][b]> but was:<A[SMILE][]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_Zero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_UpperCaseEnforced", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_MultiDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_WriterThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_TranslatorThrowsIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_SingleDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_ConsumedZeroCopiesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testWith_MergesTwoTranslatorsInOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_EmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

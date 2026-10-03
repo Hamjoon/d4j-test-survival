@@ -1,0 +1,404 @@
+{
+  "fqcn": "org.apache.commons.lang3.ObjectUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.ObjectUtilsTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-12b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNotEqual",
+    "testComparatorMedian",
+    "testHashCodeMulti_multiple_nullArray",
+    "testToString_Object",
+    "testMax",
+    "testMin",
+    "testFirstNonNull",
+    "testMode",
+    "testNull",
+    "testCloneOfStringArray",
+    "testComparatorMedian_emptyItems",
+    "testIdentityToString",
+    "testCloneOfPrimitiveArray",
+    "testComparatorMedian_nullComparator",
+    "testCloneOfCloneable",
+    "testPossibleCloneOfCloneable",
+    "testHashCodeMulti_multiple_emptyArray",
+    "testPossibleCloneOfUncloneable",
+    "testCloneOfNotCloneable",
+    "testHashCodeMulti_multiple_likeList",
+    "testMedian_nullItems",
+    "testToString_ObjectString",
+    "testCloneOfUncloneable",
+    "testPossibleCloneOfNotCloneable",
+    "testCompare",
+    "testComparatorMedian_nullItems",
+    "testHashCode",
+    "testMedian_emptyItems",
+    "testEquals",
+    "testIsNull",
+    "testMedian",
+    "testConstructor"
+  ],
+  "all_listed_methods": [
+    "testNotEqual",
+    "testComparatorMedian",
+    "testHashCodeMulti_multiple_nullArray",
+    "testToString_Object",
+    "testMax",
+    "testMin",
+    "testFirstNonNull",
+    "testMode",
+    "testNull",
+    "testCloneOfStringArray",
+    "testComparatorMedian_emptyItems",
+    "testIdentityToString",
+    "testCloneOfPrimitiveArray",
+    "testComparatorMedian_nullComparator",
+    "testCloneOfCloneable",
+    "testPossibleCloneOfCloneable",
+    "testHashCodeMulti_multiple_emptyArray",
+    "testPossibleCloneOfUncloneable",
+    "testCloneOfNotCloneable",
+    "testHashCodeMulti_multiple_likeList",
+    "testMedian_nullItems",
+    "testToString_ObjectString",
+    "testCloneOfUncloneable",
+    "testPossibleCloneOfNotCloneable",
+    "testCompare",
+    "testComparatorMedian_nullItems",
+    "testHashCode",
+    "testMedian_emptyItems",
+    "testEquals",
+    "testIsNull",
+    "testMedian",
+    "testConstructor"
+  ],
+  "selected_methods": [
+    "testCloneOfCloneable",
+    "testCloneOfNotCloneable",
+    "testCloneOfPrimitiveArray",
+    "testCloneOfStringArray",
+    "testCloneOfUncloneable",
+    "testComparatorMedian",
+    "testComparatorMedian_emptyItems",
+    "testComparatorMedian_nullComparator",
+    "testComparatorMedian_nullItems",
+    "testCompare",
+    "testConstructor",
+    "testEquals",
+    "testFirstNonNull",
+    "testHashCode",
+    "testHashCodeMulti_multiple_emptyArray",
+    "testHashCodeMulti_multiple_likeList",
+    "testHashCodeMulti_multiple_nullArray",
+    "testIdentityToString",
+    "testIsNull",
+    "testMax",
+    "testMedian",
+    "testMedian_emptyItems",
+    "testMedian_nullItems",
+    "testMin",
+    "testMode",
+    "testNotEqual",
+    "testNull",
+    "testPossibleCloneOfCloneable",
+    "testPossibleCloneOfNotCloneable",
+    "testPossibleCloneOfUncloneable",
+    "testToString_Object",
+    "testToString_ObjectString"
+  ],
+  "excluded_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.ObjectUtilsTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.ObjectUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testNotEqual\"}\n{\"method\":\"testComparatorMedian\"}\n{\"method\":\"testHashCodeMulti_multiple_nullArray\"}\n{\"method\":\"testToString_Object\"}\n{\"method\":\"testMax\"}\n{\"method\":\"testMin\"}\n{\"method\":\"testFirstNonNull\"}\n{\"method\":\"testMode\"}\n{\"method\":\"testNull\"}\n{\"method\":\"testCloneOfStringArray\"}\n{\"method\":\"testComparatorMedian_emptyItems\"}\n{\"method\":\"testIdentityToString\"}\n{\"method\":\"testCloneOfPrimitiveArray\"}\n{\"method\":\"testComparatorMedian_nullComparator\"}\n{\"method\":\"testCloneOfCloneable\"}\n{\"method\":\"testPossibleCloneOfCloneable\"}\n{\"method\":\"testHashCodeMulti_multiple_emptyArray\"}\n{\"method\":\"testPossibleCloneOfUncloneable\"}\n{\"method\":\"testCloneOfNotCloneable\"}\n{\"method\":\"testHashCodeMulti_multiple_likeList\"}\n{\"method\":\"testMedian_nullItems\"}\n{\"method\":\"testToString_ObjectString\"}\n{\"method\":\"testCloneOfUncloneable\"}\n{\"method\":\"testPossibleCloneOfNotCloneable\"}\n{\"method\":\"testCompare\"}\n{\"method\":\"testComparatorMedian_nullItems\"}\n{\"method\":\"testHashCode\"}\n{\"method\":\"testMedian_emptyItems\"}\n{\"method\":\"testEquals\"}\n{\"method\":\"testIsNull\"}\n{\"method\":\"testMedian\"}\n{\"method\":\"testConstructor\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.102
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-12b/dev/classes/org.apache.commons.lang3.ObjectUtilsTest:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.ObjectUtilsTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNotEqual\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testComparatorMedian\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testHashCodeMulti_multiple_nullArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testToString_Object\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testMax\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":13}\n{\"method\":\"testMin\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testFirstNonNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testMode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":4}\n{\"method\":\"testCloneOfStringArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testComparatorMedian_emptyItems\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIdentityToString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCloneOfPrimitiveArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testComparatorMedian_nullComparator\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCloneOfCloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testPossibleCloneOfCloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testHashCodeMulti_multiple_emptyArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testPossibleCloneOfUncloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCloneOfNotCloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHashCodeMulti_multiple_likeList\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testMedian_nullItems\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToString_ObjectString\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCloneOfUncloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testPossibleCloneOfNotCloneable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompare\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testComparatorMedian_nullItems\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHashCode\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testMedian_emptyItems\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEquals\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testMedian\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testConstructor\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.172,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNotEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_nullArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToString_Object",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMax",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 13,
+      "launch": 1
+    },
+    {
+      "method": "testMin",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testFirstNonNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testMode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfStringArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_emptyItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIdentityToString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfPrimitiveArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_nullComparator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_emptyArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfUncloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfNotCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCodeMulti_multiple_likeList",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian_nullItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToString_ObjectString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneOfUncloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPossibleCloneOfNotCloneable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompare",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testComparatorMedian_nullItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHashCode",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian_emptyItems",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEquals",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMedian",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 32
+  },
+  "wall_seconds": 0.275
+}

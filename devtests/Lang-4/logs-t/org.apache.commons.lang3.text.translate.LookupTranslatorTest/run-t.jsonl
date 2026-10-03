@@ -1,0 +1,2 @@
+{"method": "testBasicLookup", "status": "pass", "message": null, "exception": null, "milliseconds": 18, "launch": 1}
+{"method": "testLang882", "status": "fail", "message": "Incorrect codepoint consumption expected:<3> but was:<0>", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}

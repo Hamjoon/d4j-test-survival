@@ -1,0 +1,12 @@
+{"method": "testUnsplitResetsSplitState", "status": "pass", "message": null, "exception": null, "milliseconds": 33, "launch": 1}
+{"method": "testStartAfterStopWithoutResetThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 6, "launch": 1}
+{"method": "testMultipleCycles", "status": "pass", "message": null, "exception": null, "milliseconds": 15, "launch": 1}
+{"method": "testResumeWhenNotSuspendedThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testStartStopBasic", "status": "pass", "message": null, "exception": null, "milliseconds": 13, "launch": 1}
+{"method": "testGetTimeDuringRunning", "status": "pass", "message": null, "exception": null, "milliseconds": 9, "launch": 1}
+{"method": "testUnsplitWithoutSplitThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSuspendWhenNotRunningThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSplitWhenNotRunningThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testStopWhenNotRunningThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testStartWhenAlreadyStartedThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSuspendResumeExcludesSuspendedPeriod", "status": "pass", "message": null, "exception": null, "milliseconds": 27, "launch": 1}

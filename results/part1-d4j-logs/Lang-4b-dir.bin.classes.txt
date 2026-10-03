@@ -1,0 +1,8 @@
+target/classes
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.dir.bin.classes)....................................... OK
+
+
+[exit] 0
+[seconds] 0.42

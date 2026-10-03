@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T08:06:43.662968+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 64,
+  "class": "ValuedEnum",
+  "technique": "ToT",
+  "round": 3,
+  "latency_seconds": 64.909,
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "response_id": "gen-1791014803-hZGH1kXviSPHW6Tm5qF3",
+  "content_empty": false
+}

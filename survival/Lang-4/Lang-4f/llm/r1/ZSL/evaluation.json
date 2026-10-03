@@ -1,0 +1,119 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-4/r1/ZSL/LookupTranslatorTest.java",
+    "source_sha256": "59adc338dd6c15fa1723c0caab8a2f7a6656e4e1c09161c2621b0991e98eac7d",
+    "selected_methods": [
+      "testConstructorWithEmptyLookupDoesNothing",
+      "testConstructorWithNullLookupDoesNothing",
+      "testGreedyLongestMatch",
+      "testKeyWithNonStringCharSequenceNotMatched",
+      "testMultipleTranslationsInSingleString",
+      "testShortestAndLongestValuesViaReflection",
+      "testSimpleTranslation",
+      "testTranslateDoesNotModifyWriterOnZeroMatch",
+      "testTranslateReturnsZeroWhenNoMatch"
+    ],
+    "target": "Lang-4f",
+    "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-4/Lang-4f/llm/r1/ZSL/classes",
+      "-cp",
+      "/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-4/r1/ZSL/LookupTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.318,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-4/Lang-4f/llm/r1/ZSL/javac.err"
+  },
+  "folder": "survival/Lang-4/Lang-4f/llm/r1/ZSL",
+  "classes": "survival/Lang-4/Lang-4f/llm/r1/ZSL/classes",
+  "run_file": "survival/Lang-4/Lang-4f/llm/r1/ZSL/run.jsonl",
+  "methods": [
+    {
+      "method": "testKeyWithNonStringCharSequenceNotMatched",
+      "status": "fail",
+      "message": "expected:<[foo]> but was:<[bar]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testShortestAndLongestValuesViaReflection",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleTranslationsInSingleString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSimpleTranslation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateReturnsZeroWhenNoMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyLongestMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateDoesNotModifyWriterOnZeroMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithEmptyLookupDoesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithNullLookupDoesNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1,
+    "pass": 8
+  },
+  "run_seconds": 0.23,
+  "list_error": ""
+}

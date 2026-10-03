@@ -1,0 +1,11 @@
+{"method": "testTranslate_WithSurrogatePair", "status": "error", "message": "index 2,length 2", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 20, "launch": 1}
+{"method": "testTranslate_BasicReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_IsUpperCaseAndLocaleIndependent", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_NullInput_NoOutput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_BasicBehaviour", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_EmptyString_ReturnsEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_ZeroAdditionalTranslators_ReturnsSelf", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testHex_BasicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_NullWriter_ThrowsIAE", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_PropagatesIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

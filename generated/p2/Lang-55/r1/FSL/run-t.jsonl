@@ -1,0 +1,19 @@
+{"method": "testUnsplitRestoresRunningState", "status": "pass", "message": null, "exception": null, "milliseconds": 123, "launch": 1}
+{"method": "testStopBeforeStart", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testToSplitStringWithoutSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testStartAfterStopWithoutReset", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testGetSplitTimeWhenNotSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testResumeWhenNotSuspended", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testResetClearsState", "status": "pass", "message": null, "exception": null, "milliseconds": 17, "launch": 1}
+{"method": "testSplitAndSplitTime", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testStartStopAndTime", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testSuspendWhenNotRunning", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testIllegalStateTransitionsAfterSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testStartWhenAlreadyRunning", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testInitialState", "status": "fail", "message": "expected:<0[0]:00:00.000> but was:<0[]:00:00.000>", "exception": "org.junit.ComparisonFailure", "milliseconds": 15, "launch": 1}
+{"method": "testMultipleStartStopCyclesWithReset", "status": "pass", "message": null, "exception": null, "milliseconds": 8, "launch": 1}
+{"method": "testUnsplitWithoutSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSuspendResume", "status": "pass", "message": null, "exception": null, "milliseconds": 38, "launch": 1}
+{"method": "testToStringFormat", "status": "fail", "message": "toString should match HH:MM:SS.mmm pattern", "exception": "java.lang.AssertionError", "milliseconds": 7, "launch": 1}
+{"method": "testToSplitStringFormat", "status": "fail", "message": "toSplitString should match HH:MM:SS.mmm pattern", "exception": "java.lang.AssertionError", "milliseconds": 7, "launch": 1}
+{"method": "testSplitWhenNotRunning", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

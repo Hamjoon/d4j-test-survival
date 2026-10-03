@@ -1,0 +1,132 @@
+{
+  "records": [
+    {
+      "bug_id": 4,
+      "class": "LookupTranslator",
+      "D_r": 136,
+      "D_r_own": 1,
+      "own_test_class": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 5,
+      "class": "LocaleUtils",
+      "D_r": 12,
+      "D_r_own": 12,
+      "own_test_class": "org.apache.commons.lang3.LocaleUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 6,
+      "class": "CharSequenceTranslator",
+      "D_r": 141,
+      "D_r_own": 0,
+      "own_test_class": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "own_test_class_present": false,
+      "own_baseline_empty": true
+    },
+    {
+      "bug_id": 11,
+      "class": "RandomStringUtils",
+      "D_r": 10,
+      "D_r_own": 10,
+      "own_test_class": "org.apache.commons.lang3.RandomStringUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 12,
+      "class": "RandomStringUtils",
+      "D_r": 8,
+      "D_r_own": 8,
+      "own_test_class": "org.apache.commons.lang3.RandomStringUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 13,
+      "class": "SerializationUtils",
+      "D_r": 207,
+      "D_r_own": 23,
+      "own_test_class": "org.apache.commons.lang3.SerializationUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 17,
+      "class": "CharSequenceTranslator",
+      "D_r": 44,
+      "D_r_own": 0,
+      "own_test_class": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "own_test_class_present": false,
+      "own_baseline_empty": true
+    },
+    {
+      "bug_id": 19,
+      "class": "NumericEntityUnescaper",
+      "D_r": 30,
+      "D_r_own": 1,
+      "own_test_class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 28,
+      "class": "NumericEntityUnescaper",
+      "D_r": 19,
+      "D_r_own": 0,
+      "own_test_class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": true
+    },
+    {
+      "bug_id": 43,
+      "class": "ExtendedMessageFormat",
+      "D_r": 6,
+      "D_r_own": 6,
+      "own_test_class": "org.apache.commons.lang.text.ExtendedMessageFormatTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 54,
+      "class": "LocaleUtils",
+      "D_r": 11,
+      "D_r_own": 11,
+      "own_test_class": "org.apache.commons.lang.LocaleUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 55,
+      "class": "StopWatch",
+      "D_r": 5,
+      "D_r_own": 5,
+      "own_test_class": "org.apache.commons.lang.time.StopWatchTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    },
+    {
+      "bug_id": 57,
+      "class": "LocaleUtils",
+      "D_r": 0,
+      "D_r_own": 0,
+      "own_test_class": "org.apache.commons.lang.LocaleUtilsTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": true
+    },
+    {
+      "bug_id": 64,
+      "class": "ValuedEnum",
+      "D_r": 74,
+      "D_r_own": 18,
+      "own_test_class": "org.apache.commons.lang.enums.ValuedEnumTest",
+      "own_test_class_present": true,
+      "own_baseline_empty": false
+    }
+  ],
+  "extra_compilations": 0,
+  "extra_runs": 0
+}

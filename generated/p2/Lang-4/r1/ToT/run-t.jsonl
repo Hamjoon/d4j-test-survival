@@ -1,0 +1,18 @@
+{"method": "testTranslateFromNonZeroIndex", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testConstructorWithEmptyLookup", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testInternalKeyIsString", "status": "fail", "message": "Stored key should be a java.lang.String", "exception": "java.lang.AssertionError", "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWithNullInputThrowsNPE", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateNoMatchReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWithInvalidIndexThrowsIOOBE", "status": "fail", "message": "Expected exception: java.lang.IndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWhenRemainingShorterThanShortestKey", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateFallsBackToShorterMatch", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLookupWithDifferentCharSequenceImplementations", "status": "fail", "message": "expected:<3> but was:<0>", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateRespectsInputBoundary", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorCalculatesShortestAndLongest", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWithNullWriterThrowsNPE", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGreedyWhenPrefixesOverlap", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructorWithNullLookup", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDuplicateKeysLastOneWins", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateGreedyLongestMatch", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslatePropagatesIOException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWithEmptyReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

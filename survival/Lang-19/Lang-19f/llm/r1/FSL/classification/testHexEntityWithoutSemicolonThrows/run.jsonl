@@ -1,0 +1,1 @@
+{"method": "testHexEntityWithoutSemicolonThrows", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 18, "launch": 1}

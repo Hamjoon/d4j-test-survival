@@ -1,0 +1,6 @@
+{"method": "testBadStates", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 1}
+{"method": "testLang315", "status": "fail", "message": "null", "exception": "junit.framework.AssertionFailedError", "milliseconds": 419, "launch": 1}
+{"method": "testStopWatchSimpleGet", "status": "pass", "message": null, "exception": null, "milliseconds": 517, "launch": 1}
+{"method": "testStopWatchSimple", "status": "pass", "message": null, "exception": null, "milliseconds": 556, "launch": 1}
+{"method": "testStopWatchSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 1667, "launch": 1}
+{"method": "testStopWatchSuspend", "status": "pass", "message": null, "exception": null, "milliseconds": 1664, "launch": 1}

@@ -1,0 +1,13 @@
+{"method": "testTranslateWriter_MultipleCodePointsConsumed", "status": "fail", "message": "expected:<Z[ab]c> but was:<Z[Z]c>", "exception": "org.junit.ComparisonFailure", "milliseconds": 23, "launch": 1}
+{"method": "testHex_NegativeCodepoint", "status": "fail", "message": "expected:<[-1A]> but was:<[FFFFFFE6]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_NoOpLeavesInputUnchanged", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_MergesTranslatorsInCorrectOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_NoAdditionalTranslators_ReturnsSameBehaviour", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_EmptyInput_ReturnsEmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_UpperCaseConversion", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SurrogatePairReplacement", "status": "fail", "message": "Emoji should be replaced with [SMILE] expected:<Smile: [SMILE][!]> but was:<Smile: [SMILE][]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_HandlesFullSurrogatePairAdvancement", "status": "fail", "message": "expected:<A*[B]> but was:<A*[]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}

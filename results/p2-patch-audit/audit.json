@@ -1,0 +1,418 @@
+{
+  "records": [
+    {
+      "bug_id": 57,
+      "patch": "results/p2-patch-audit/57.src.patch",
+      "sha256": "9b14e3627726d20bb08cb8985b1fcd0dcaf1c2ec659b825c39484103e400aa39",
+      "files": [
+        {
+          "old_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+          "new_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            223
+          ],
+          "new_side_changed_lines": [
+            223
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 11,
+      "patch": "results/p2-patch-audit/11.src.patch",
+      "sha256": "9ab79c99f7c87820773904a533499370c06a4f70742193bcc38f8388622ff90c",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            245,
+            246,
+            247,
+            248
+          ],
+          "new_side_changed_lines": [
+            245
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 6,
+      "patch": "results/p2-patch-audit/6.src.patch",
+      "sha256": "3af46d22f5c1d17a7d57f26ff4bc80257cd9f19cf0cbc858b5868421b7c229ed",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            95
+          ],
+          "new_side_changed_lines": [
+            95
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 28,
+      "patch": "results/p2-patch-audit/28.src.patch",
+      "sha256": "5109ae30bb4efcaa98181615870515ed5598f714f26c7c173630abea5f60f455",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            63,
+            64,
+            65,
+            66,
+            67,
+            69
+          ],
+          "new_side_changed_lines": [
+            63
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 17,
+      "patch": "results/p2-patch-audit/17.src.patch",
+      "sha256": "b9f2521f72447b3dcbe2970caf9ceafca528c84c3fc9fcf2eb19eaf0abcbf048",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            83,
+            89,
+            90
+          ],
+          "new_side_changed_lines": [
+            83,
+            90,
+            94,
+            96,
+            97,
+            98,
+            99,
+            100,
+            102
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 19,
+      "patch": "results/p2-patch-audit/19.src.patch",
+      "sha256": "3bc705f8aefc922ddb2314b6a5cef5cb1cffa7a0d11853a0e1a00cc14c899c59",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            40,
+            50,
+            51,
+            52,
+            57,
+            58,
+            59,
+            84,
+            86
+          ],
+          "new_side_changed_lines": [
+            40,
+            54,
+            80
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 43,
+      "patch": "results/p2-patch-audit/43.src.patch",
+      "sha256": "cbd65b24168871cf77f6b002b470d6304cf1f847a4d79132f62149fb8b6b3f81",
+      "files": [
+        {
+          "old_path": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java",
+          "new_path": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            422
+          ],
+          "new_side_changed_lines": [
+            422
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 54,
+      "patch": "results/p2-patch-audit/54.src.patch",
+      "sha256": "4d63ba22b9326764e578d79f583c94c85a7b469a3be458d13deb3de2813c02bd",
+      "files": [
+        {
+          "old_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+          "new_path": "src/java/org/apache/commons/lang/LocaleUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            114,
+            115,
+            116
+          ],
+          "new_side_changed_lines": [
+            114
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 55,
+      "patch": "results/p2-patch-audit/55.src.patch",
+      "sha256": "fb68ddbb329314e122752639f96d7ebce11d630e1ea4e87d7b49d9c4ea4eac38",
+      "files": [
+        {
+          "old_path": "src/java/org/apache/commons/lang/time/StopWatch.java",
+          "new_path": "src/java/org/apache/commons/lang/time/StopWatch.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            118,
+            120
+          ],
+          "new_side_changed_lines": [
+            118
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 64,
+      "patch": "results/p2-patch-audit/64.src.patch",
+      "sha256": "3e2c5d3832513fdfa0d6edbd3ec7fe6c7c6eb0999a051baeeedcf222bebd550e",
+      "files": [
+        {
+          "old_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java",
+          "new_path": "src/java/org/apache/commons/lang/enums/ValuedEnum.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            209,
+            211,
+            213,
+            214,
+            215
+          ],
+          "new_side_changed_lines": [
+            183,
+            192
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 4,
+      "patch": "results/p2-patch-audit/4.src.patch",
+      "sha256": "4e1338f4167ba29c8204b114df2af719c45d68efdbb5c0169bb1732c1deee1bc",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            31,
+            46,
+            51,
+            77
+          ],
+          "new_side_changed_lines": [
+            31,
+            46,
+            51,
+            77
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 12,
+      "patch": "results/p2-patch-audit/12.src.patch",
+      "sha256": "7197b4b2ffd7ea84d7231eb394a98700dd81a0163c66f2312d524c69584ccadd",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            230,
+            231,
+            232,
+            235,
+            236,
+            237,
+            244
+          ],
+          "new_side_changed_lines": [
+            230
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 13,
+      "patch": "results/p2-patch-audit/13.src.patch",
+      "sha256": "9b6897eb664e73e64fde187f723ba21861dbf84816dbd2e799f15f68d2b19423",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            239,
+            240,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            279,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287
+          ],
+          "new_side_changed_lines": [
+            239,
+            252,
+            268
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    },
+    {
+      "bug_id": 5,
+      "patch": "results/p2-patch-audit/5.src.patch",
+      "sha256": "4742c0b5972295de0c0eb45d5c0f405c3606c9e35e633b445ffa068859670f17",
+      "files": [
+        {
+          "old_path": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+          "new_path": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+          "old_matches_b": false,
+          "old_matches_f": true,
+          "new_matches_b": true,
+          "new_matches_f": false,
+          "old_side_changed_lines": [
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            148
+          ],
+          "new_side_changed_lines": [
+            97,
+            128
+          ]
+        }
+      ],
+      "orientation": "fixed-to-buggy"
+    }
+  ],
+  "complete": true
+}

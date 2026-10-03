@@ -1,0 +1,14 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-13/r6/ToT/SerializationUtilsTest.java:104: error: incompatible types: inference variable T has incompatible bounds
+        Map<String, Integer> copy = SerializationUtils.clone((Serializable) original);
+                                                            ^
+    lower bounds: Map<String,Integer>,Serializable
+    lower bounds: Serializable
+  where T is a type-variable:
+    T extends Serializable declared in method <T>clone(T)
+generated/p2/Lang-13/r6/ToT/SerializationUtilsTest.java:259: error: cannot find symbol
+        ClassLoaderAwareObjectInputStream in = new SerializationUtils.ClassLoaderAwareObjectInputStream(
+        ^
+  symbol:   class ClassLoaderAwareObjectInputStream
+  location: class SerializationUtilsTest
+2 errors

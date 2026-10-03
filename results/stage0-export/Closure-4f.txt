@@ -1,0 +1,83 @@
+$ defects4j export -p classes.modified -w /work/d4j/Closure-4f
+
+[stdout]
+com.google.javascript.rhino.jstype.NamedType
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.classes.modified)...................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.438
+
+$ defects4j export -p dir.src.classes -w /work/d4j/Closure-4f
+
+[stdout]
+src
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.dir.src.classes)....................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.393
+
+$ defects4j export -p dir.src.tests -w /work/d4j/Closure-4f
+
+[stdout]
+test
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.dir.src.tests)......................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.391
+
+$ defects4j export -p dir.bin.classes -w /work/d4j/Closure-4f
+
+[stdout]
+build/classes
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.dir.bin.classes)....................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.415
+
+$ defects4j export -p dir.bin.tests -w /work/d4j/Closure-4f
+
+[stdout]
+build/test
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.dir.bin.tests)......................................... OK
+
+
+[exit status] 0
+[wall seconds] 0.419
+
+$ defects4j export -p cp.compile -w /work/d4j/Closure-4f
+
+[stdout]
+/work/d4j/Closure-4f/build/classes:/work/d4j/Closure-4f/lib/args4j.jar:/work/d4j/Closure-4f/lib/guava.jar:/work/d4j/Closure-4f/lib/json.jar:/work/d4j/Closure-4f/lib/jsr305.jar:/work/d4j/Closure-4f/lib/protobuf-java.jar:/work/d4j/Closure-4f/build/lib/rhino.jar:/work/d4j/Closure-4f/lib/ant.jar
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.cp.compile)............................................ OK
+
+
+[exit status] 0
+[wall seconds] 5.946
+
+$ defects4j export -p cp.test -w /work/d4j/Closure-4f
+
+[stdout]
+/work/d4j/Closure-4f/build/classes:/work/d4j/Closure-4f/lib/args4j.jar:/work/d4j/Closure-4f/lib/guava.jar:/work/d4j/Closure-4f/lib/json.jar:/work/d4j/Closure-4f/lib/jsr305.jar:/work/d4j/Closure-4f/lib/protobuf-java.jar:/work/d4j/Closure-4f/build/lib/rhino.jar:/work/d4j/Closure-4f/lib/ant.jar:/work/d4j/Closure-4f/lib/ant-launcher.jar:/work/d4j/Closure-4f/lib/caja-r4314.jar:/work/d4j/Closure-4f/lib/jarjar.jar:/work/d4j/Closure-4f/lib/junit.jar:/work/d4j/Closure-4f/build/test
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.cp.test)............................................... OK
+
+
+[exit status] 0
+[wall seconds] 2.055

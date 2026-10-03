@@ -1,0 +1,8 @@
+{"method": "testDeserializeCorruptedDataThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testSerializeAndCloseOutputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testSerializeNullObjectProducesValidStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCloneDeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testSerializeObjectWithNonSerializableFieldThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testCloneObjectWithNonSerializableFieldThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerializeConvenienceMethodRoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStreamFallback", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}

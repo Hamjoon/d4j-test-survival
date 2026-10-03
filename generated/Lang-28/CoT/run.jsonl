@@ -1,0 +1,13 @@
+{"method":"testTranslateLargeUnicodeCodePoint","status":"fail","message":"expected:<[😀]> but was:<[]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateWithIndexNotAtStart","status":"pass"}
+{"method":"testTranslateZeroLengthNumericPart","status":"pass"}
+{"method":"testTranslateHexEntityLowercase","status":"pass"}
+{"method":"testTranslateDecimalEntity","status":"pass"}
+{"method":"testConstructorIsPublic","status":"pass"}
+{"method":"testTranslateHexEntityUppercase","status":"pass"}
+{"method":"testTranslateNonEntityReturnsZero","status":"pass"}
+{"method":"testTranslateInvalidNumberFormat","status":"pass"}
+{"method":"testTranslateMissingSemicolon","status":"pass"}
+{"method":"testTranslateIncompletePrefix","status":"pass"}
+{"method":"testTranslateWriterThrowsIOException","status":"pass"}
+{"summary":{"run":12,"failures":1,"ignored":0,"ms":22}}

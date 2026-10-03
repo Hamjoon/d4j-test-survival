@@ -1,0 +1,39 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "FSL",
+  "round": 3,
+  "directory": "runs/lang/6/CharSequenceTranslator/FSL/r3",
+  "response": "runs/lang/6/CharSequenceTranslator/FSL/r3/response.md",
+  "response_sha256": "fedc7d902e0e245d4c960e4f4807e1c05648219aa63c545ecaf9a8477c11f3c9",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r3/FSL/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "b7e48a85c9cafd745ec76b1f6bce488af586aed27788071417893ac3eca8de87",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r3/FSL/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r3/FSL/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": false,
+    "exit_status": 1,
+    "seconds": 0.325,
+    "error_count": 5,
+    "categories": {
+      "CFS": 5
+    },
+    "stderr_file": "generated/p2/Lang-6/r3/FSL/javac.err"
+  }
+}

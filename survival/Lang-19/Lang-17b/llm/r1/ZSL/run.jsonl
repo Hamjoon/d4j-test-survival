@@ -1,0 +1,9 @@
+{"method": "testEntityWithWhitespaceInsideIsRejected", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testDecimalEntityWithSemicolon", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDecimalEntityWithoutSemicolon", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "testHexEntityLowerCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidNumberReturnsZeroAndWritesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityUpperCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithLeadingZeros", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testNonEntityInputReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityNotAtStart", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

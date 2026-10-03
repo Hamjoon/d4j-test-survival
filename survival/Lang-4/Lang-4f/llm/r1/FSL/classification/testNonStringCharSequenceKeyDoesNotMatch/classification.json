@@ -1,0 +1,57 @@
+{
+  "input": {
+    "bug_id": 4,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "FSL",
+    "class": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+    "method": "testNonStringCharSequenceKeyDoesNotMatch",
+    "status_at_f": "fail",
+    "exception": "java.lang.AssertionError",
+    "source_sha256": "dceb98d3646b249ad4d0cbd2bcb3aabd29db82e6f78586ea9765dce502ad7369",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    57,
+    61,
+    62,
+    63,
+    70,
+    71,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "executed_line_count": 23,
+  "patched_lines": [
+    31,
+    46,
+    51,
+    77
+  ],
+  "intersecting_lines": [
+    46,
+    51,
+    77
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "java.lang.AssertionError",
+  "xml_file": "survival/Lang-4/Lang-4f/llm/r1/FSL/classification/testNonStringCharSequenceKeyDoesNotMatch/jacoco.xml",
+  "exec_file": "survival/Lang-4/Lang-4f/llm/r1/FSL/classification/testNonStringCharSequenceKeyDoesNotMatch/jacoco.exec"
+}

@@ -1,0 +1,80 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named Weight by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (WeightTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the Weight class:
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.apache.commons.math3.optimization;
+
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.Array2DRowRealMatrix;
+import org.apache.commons.math3.linear.NonSquareMatrixException;
+
+/**
+ * Weight matrix of the residuals between model and observations.
+ * <br/>
+ * Immutable class.
+ *
+ * @version $Id$
+ * @deprecated As of 3.1 (to be removed in 4.0).
+ * @since 3.1
+ */
+@Deprecated
+public class Weight implements OptimizationData {
+    /** Weight matrix. */
+    private final RealMatrix weightMatrix;
+
+    /**
+     * Creates a diagonal weight matrix.
+     *
+     * @param weight List of the values of the diagonal.
+     */
+    public Weight(double[] weight) {
+        final int dim = weight.length;
+        weightMatrix = new Array2DRowRealMatrix(dim, dim);
+        for (int i = 0; i < dim; i++) {
+            weightMatrix.setEntry(i, i, weight[i]);
+        }
+    }
+
+    /**
+     * @param weight Weight matrix.
+     * @throws NonSquareMatrixException if the argument is not
+     * a square matrix.
+     */
+    public Weight(RealMatrix weight) {
+        if (weight.getColumnDimension() != weight.getRowDimension()) {
+            throw new NonSquareMatrixException(weight.getColumnDimension(),
+                                               weight.getRowDimension());
+        }
+
+        weightMatrix = weight.copy();
+    }
+
+    /**
+     * Gets the initial guess.
+     *
+     * @return the initial guess.
+     */
+    public RealMatrix getWeight() {
+        return weightMatrix.copy();
+    }
+}

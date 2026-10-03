@@ -1,0 +1,26 @@
+bug_id,class,technique,file,syntax_ok,error
+4,LookupTranslator,ZSL,generated/Lang-4/ZSL/LookupTranslatorTest.java,True,
+4,LookupTranslator,CoT,generated/Lang-4/CoT/LookupTranslatorTest.java,False,"Could not process token at ""#"", line 1: ###Test START##"
+4,LookupTranslator,GToT,generated/Lang-4/GToT/LookupTranslatorTest.java,True,
+6,CharSequenceTranslator,GToT,generated/Lang-6/GToT/CharSequenceTranslatorTest.java,True,
+11,RandomStringUtils,ZSL,generated/Lang-11/ZSL/RandomStringUtilsTest.java,True,
+11,RandomStringUtils,CoT,generated/Lang-11/CoT/RandomStringUtilsTest.java,False,"Could not process token at ""#"", line 1: ###Test START##"
+11,RandomStringUtils,ToT,generated/Lang-11/ToT/RandomStringUtilsTest.java,True,
+11,RandomStringUtils,GToT,generated/Lang-11/GToT/RandomStringUtilsTest.java,True,
+13,SerializationUtils,GToT,generated/Lang-13/GToT/SerializationUtilsTest.java,False,"Could not process token at ""#"", line 1: ###Test START##"
+17,CharSequenceTranslator,ZSL,generated/Lang-17/ZSL/CharSequenceTranslatorTest.java,True,
+17,CharSequenceTranslator,FSL,generated/Lang-17/FSL/CharSequenceTranslatorTest.java,True,
+19,NumericEntityUnescaper,ZSL,generated/Lang-19/ZSL/NumericEntityUnescaperTest.java,True,
+19,NumericEntityUnescaper,ToT,generated/Lang-19/ToT/NumericEntityUnescaperTest.java,True,
+28,NumericEntityUnescaper,FSL,generated/Lang-28/FSL/NumericEntityUnescaperTest.java,True,
+28,NumericEntityUnescaper,CoT,generated/Lang-28/CoT/NumericEntityUnescaperTest.java,True,
+28,NumericEntityUnescaper,ToT,generated/Lang-28/ToT/NumericEntityUnescaperTest.java,True,
+28,NumericEntityUnescaper,GToT,generated/Lang-28/GToT/NumericEntityUnescaperTest.java,True,
+54,LocaleUtils,FSL,generated/Lang-54/FSL/LocaleUtilsTest.java,True,
+55,StopWatch,FSL,generated/Lang-55/FSL/StopWatchTest.java,True,
+55,StopWatch,CoT,generated/Lang-55/CoT/StopWatchTest.java,False,"Could not process token at ""#"", line 1: ###Test START##"
+55,StopWatch,GToT,generated/Lang-55/GToT/StopWatchTest.java,True,
+64,ValuedEnum,ZSL,generated/Lang-64/ZSL/ValuedEnumTest.java,False,"JavaSyntaxError: Expected '(' at Separator ""("" line 159, position 53"
+64,ValuedEnum,FSL,generated/Lang-64/FSL/ValuedEnumTest.java,True,
+64,ValuedEnum,CoT,generated/Lang-64/CoT/ValuedEnumTest.java,False,"Could not process token at ""#"", line 1: ###Test START##"
+64,ValuedEnum,ToT,generated/Lang-64/ToT/ValuedEnumTest.java,True,

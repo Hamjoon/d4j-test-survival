@@ -1,0 +1,9 @@
+{"method": "testWithMergesMultipleTranslators_CumulativeEffect", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testTranslateWithNullWriterThrowsException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateReplacesWhenConsumeOne", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateCopiesWhenConsumeZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLoopAdvancesCorrectlyWhenConsumingMultipleCodePoints", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexUtilityUpperCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateNullInputReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWithIdentityTranslatorWritesExactlyInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWithMergesTranslators_OrderMatters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

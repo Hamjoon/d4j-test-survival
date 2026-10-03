@@ -1,0 +1,44 @@
+{
+  "selection_checks": [
+    {
+      "selected": [
+        "keep",
+        "missing"
+      ],
+      "counts": {
+        "pass": 1,
+        "not-run": 1
+      },
+      "launches": 1
+    },
+    {
+      "selected": [
+        "hang",
+        "keep"
+      ],
+      "counts": {
+        "timeout": 1,
+        "pass": 1
+      },
+      "launches": 2
+    }
+  ],
+  "proposed_patch_reversal_verified": [
+    4,
+    5,
+    6,
+    11,
+    12,
+    13,
+    17,
+    19,
+    28,
+    43,
+    54,
+    55,
+    57,
+    64
+  ],
+  "classification_executed": false,
+  "complete": true
+}

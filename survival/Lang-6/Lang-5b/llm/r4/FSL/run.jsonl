@@ -1,0 +1,8 @@
+{"method": "testTranslate_WithWriter_NullWriter_Throws", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testTranslate_WithWriter_ZeroConsumeWritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_UpperCaseAndCorrectConversion", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_ComplexMixedScenario", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testTranslate_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_WithWriter_NullInput_WritesNothing", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_WithWriter_SurrogatePairNotConsumed_PassesThrough", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}

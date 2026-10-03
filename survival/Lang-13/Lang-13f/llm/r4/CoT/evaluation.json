@@ -1,0 +1,154 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-13/r4/CoT/SerializationUtilsTest.java",
+    "source_sha256": "9c63531adf92f9ff8eea4e9689ee985bf1bd9fe29ca864fa8cf3443eec582327",
+    "selected_methods": [
+      "testCloneSerializationFailure",
+      "testCloneWithValidObject",
+      "testDeserializeFromByteArray",
+      "testDeserializeFromByteArray_CorruptedData",
+      "testDeserializeFromInputStream",
+      "testDeserializeFromInputStream_CorruptedData",
+      "testDeserializeFromInputStream_NullInputStream",
+      "testPublicConstructor",
+      "testSerializeNullObject",
+      "testSerializeReturnsByteArray",
+      "testSerializeToOutputStream",
+      "testSerializeToOutputStream_NullOutputStream",
+      "testSerializeToOutputStream_SerializationFailure"
+    ],
+    "target": "Lang-13f",
+    "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-13f/llm/r4/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r4/CoT/SerializationUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.283,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-13f/llm/r4/CoT/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-13f/llm/r4/CoT",
+  "classes": "survival/Lang-13/Lang-13f/llm/r4/CoT/classes",
+  "run_file": "survival/Lang-13/Lang-13f/llm/r4/CoT/run.jsonl",
+  "methods": [
+    {
+      "method": "testSerializeToOutputStream_SerializationFailure",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 29,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToOutputStream_NullOutputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromInputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromInputStream_CorruptedData",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromByteArray_CorruptedData",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeFromInputStream_NullInputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneWithValidObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeReturnsByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCloneSerializationFailure",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testPublicConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeNullObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToOutputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 13
+  },
+  "run_seconds": 0.263,
+  "list_error": ""
+}

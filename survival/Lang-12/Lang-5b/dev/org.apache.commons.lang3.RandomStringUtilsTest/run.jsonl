@@ -1,0 +1,8 @@
+{"method": "testRandomStringUtilsHomog", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 1}
+{"method": "testRandomAscii", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLang100", "status": "pass", "message": null, "exception": null, "milliseconds": 11, "launch": 1}
+{"method": "testRandomAlphaNumeric", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAlphabetic", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomNumeric", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomStringUtils", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testConstructor", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

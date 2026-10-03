@@ -1,0 +1,201 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named MockitoCore. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal;
+
+import org.mockito.InOrder;
+import org.mockito.MockSettings;
+import org.mockito.exceptions.Reporter;
+import org.mockito.exceptions.misusing.NotAMockException;
+import org.mockito.internal.creation.MockSettingsImpl;
+import org.mockito.internal.invocation.Invocation;
+import org.mockito.internal.progress.IOngoingStubbing;
+import org.mockito.internal.progress.MockingProgress;
+import org.mockito.internal.progress.ThreadSafeMockingProgress;
+import org.mockito.internal.stubbing.OngoingStubbingImpl;
+import org.mockito.internal.stubbing.StubberImpl;
+import org.mockito.internal.util.MockUtil;
+import org.mockito.internal.verification.api.VerificationMode;
+import org.mockito.stubbing.*;
+
+import java.util.Arrays;
+import java.util.List;
+
+@SuppressWarnings("unchecked")
+public class MockitoCore {
+
+    private final Reporter reporter = new Reporter();
+    private final MockUtil mockUtil = new MockUtil();
+    private final MockingProgress mockingProgress = new ThreadSafeMockingProgress();
+    
+    public <T> T mock(Class<T> classToMock, MockSettings mockSettings, boolean shouldResetOngoingStubbing) { return mock(classToMock, mockSettings); }
+    public <T> T mock(Class<T> classToMock, MockSettings mockSettings) {
+        mockingProgress.validateState();
+            mockingProgress.resetOngoingStubbing();
+        return mockUtil.createMock(classToMock, (MockSettingsImpl) mockSettings);
+    }
+    
+    public IOngoingStubbing stub() {
+        IOngoingStubbing stubbing = mockingProgress.pullOngoingStubbing();
+        if (stubbing == null) {
+            mockingProgress.reset();
+            reporter.missingMethodInvocation();
+        }
+        return stubbing;
+    }
+
+    @Deprecated
+    public <T> DeprecatedOngoingStubbing<T> stub(T methodCall) {
+        mockingProgress.stubbingStarted();
+        return (DeprecatedOngoingStubbing) stub();
+    }
+
+    public <T> OngoingStubbing<T> when(T methodCall) {
+        mockingProgress.stubbingStarted();
+        return (OngoingStubbing) stub();
+    }
+    
+    
+    public <T> T verify(T mock, VerificationMode mode) {
+        if (mock == null) {
+            reporter.nullPassedToVerify();
+        } else if (!mockUtil.isMock(mock)) {
+            reporter.notAMockPassedToVerify();
+        }
+        mockingProgress.verificationStarted(mode);
+        return mock;
+    }
+    
+    public <T> void reset(T ... mocks) {
+        mockingProgress.validateState();
+        mockingProgress.reset();
+        mockingProgress.resetOngoingStubbing();
+        
+        for (T m : mocks) {
+            mockUtil.resetMock(m);
+        }
+    }
+    
+    public void verifyNoMoreInteractions(Object... mocks) {
+        assertMocksNotEmpty(mocks);
+        mockingProgress.validateState();
+        for (Object mock : mocks) {
+            try {
+                if (mock == null) {
+                    reporter.nullPassedToVerifyNoMoreInteractions();
+                }
+                mockUtil.getMockHandler(mock).verifyNoMoreInteractions();
+            } catch (NotAMockException e) {
+                reporter.notAMockPassedToVerifyNoMoreInteractions();
+            }
+        }
+    }
+    
+    private void assertMocksNotEmpty(Object[] mocks) {
+        if (mocks == null || mocks.length == 0) {
+            reporter.mocksHaveToBePassedToVerifyNoMoreInteractions();
+        }
+    }
+    
+    public InOrder inOrder(Object... mocks) {
+        if (mocks == null || mocks.length == 0) {
+            reporter.mocksHaveToBePassedWhenCreatingInOrder();
+        }
+        for (Object mock : mocks) {
+            if (mock == null) {
+                reporter.nullPassedWhenCreatingInOrder();
+            } else if (!mockUtil.isMock(mock)) {
+                reporter.notAMockPassedWhenCreatingInOrder();
+            }
+        }
+        return new InOrderImpl(Arrays.asList(mocks));
+    }
+    
+    public Stubber doAnswer(Answer answer) {
+        mockingProgress.stubbingStarted();
+        mockingProgress.resetOngoingStubbing();
+        return new StubberImpl().doAnswer(answer);
+    }
+    
+    public <T> VoidMethodStubbable<T> stubVoid(T mock) {
+        MockHandlerInterface<T> handler = mockUtil.getMockHandler(mock);
+        mockingProgress.stubbingStarted();
+        return handler.voidMethodStubbable(mock);
+    }
+
+    public void validateMockitoUsage() {
+        mockingProgress.validateState();
+    }
+
+    /**
+     * For testing purposes only. Is not the part of main API.
+     * @return last invocation
+     */
+    public Invocation getLastInvocation() {
+        OngoingStubbingImpl ongoingStubbing = ((OngoingStubbingImpl) mockingProgress.pullOngoingStubbing());
+        List<Invocation> allInvocations = ongoingStubbing.getRegisteredInvocations();
+        return allInvocations.get(allInvocations.size()-1);
+    }
+}.

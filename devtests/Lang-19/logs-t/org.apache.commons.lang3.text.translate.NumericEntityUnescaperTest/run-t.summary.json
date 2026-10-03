@@ -1,0 +1,75 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-19b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testSupplementaryUnescaping",
+    "testUnfinishedEntity",
+    "testOutOfBounds"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSupplementaryUnescaping\"}\n{\"method\":\"testUnfinishedEntity\"}\n{\"method\":\"testOutOfBounds\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.078
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/devtests/Lang-19/classes-t:/work/tools/runner:/work/d4j/Lang-19b/target/classes:/work/d4j/Lang-19b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testSupplementaryUnescaping\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testUnfinishedEntity\",\"status\":\"error\",\"message\":\"String index out of range: 19\",\"exception\":\"java.lang.StringIndexOutOfBoundsException\",\"milliseconds\":2}\n{\"method\":\"testOutOfBounds\",\"status\":\"error\",\"message\":\"String index out of range: 7\",\"exception\":\"java.lang.StringIndexOutOfBoundsException\",\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.109,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testSupplementaryUnescaping",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testUnfinishedEntity",
+      "status": "error",
+      "message": "String index out of range: 19",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testOutOfBounds",
+      "status": "error",
+      "message": "String index out of range: 7",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 1,
+    "error": 2
+  },
+  "wall_seconds": 0.189
+}

@@ -1,0 +1,13 @@
+{"method": "testToString_Format", "status": "fail", "message": "toString does not contain class name", "exception": "java.lang.AssertionError", "milliseconds": 22, "launch": 1}
+{"method": "testGetEnumByValue_NotFound", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testGetEnumByValue_NullClass", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testGetValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testIteratorOrderMatchesValueOrdering", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEnumListContainsAllInstances", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testCompareTo_Equality", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToString_Memoisation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareTo_NullArgument", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareTo_LessThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareTo_WrongType", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumByValue_Found", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareTo_GreaterThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

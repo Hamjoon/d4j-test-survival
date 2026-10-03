@@ -1,0 +1,15 @@
+{"method": "testRandomLettersAndNumbersFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 28, "launch": 1}
+{"method": "testRandomLettersOnlyFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testRandomZeroLengthWithAllParametersReturnsEmptyString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithNullCharStringBehavesLikeRandom", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomStartEndDefaultsWhenBothZeroAndNoLettersNumbers", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithCustomCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAlphanumericContainsLetterOrDigit", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomNumericOnlyDigits", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomNegativeLengthWithAllParametersThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomZeroLength", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithCustomCharString", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomNumbersOnlyFlag", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAlphabeticOnlyLetters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithNullCharArrayBehavesLikeRandom", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAsciiRange", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

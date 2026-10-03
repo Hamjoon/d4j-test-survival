@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T08:01:48.272707+00:00",
+  "status": 200,
+  "complete": true,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "GToT",
+  "round": 3,
+  "latency_seconds": 45.047,
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "response_id": "gen-1791014508-gnhfscFSaI4X6FuteQzE",
+  "content_empty": false
+}

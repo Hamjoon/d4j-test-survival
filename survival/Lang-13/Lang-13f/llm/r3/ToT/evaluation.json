@@ -1,0 +1,163 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-13/r3/ToT/SerializationUtilsTest.java",
+    "source_sha256": "d92372a7d0348d1893652889b0b430833a61d090b36475e2fe852a2cf3e5b3a9",
+    "selected_methods": [
+      "classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader",
+      "clone_ShouldReturnDeepCopy",
+      "clone_WhenSerializationFails_ShouldThrowSerializationException",
+      "constructor_ShouldBePublicAndDoNothing",
+      "deserialize_CorruptData_ShouldThrowSerializationException",
+      "deserialize_FromByteArray_ShouldRecreateObject",
+      "deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream",
+      "deserialize_NullByteArray_ShouldThrowIllegalArgumentException",
+      "deserialize_NullInputStream_ShouldThrowIllegalArgumentException",
+      "serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion",
+      "serialize_NullObject_ShouldProduceByteArrayRepresentingNull",
+      "serialize_NullOutputStream_ShouldThrowIllegalArgumentException",
+      "serialize_ToOutputStream_ShouldWriteBytesAndCloseStream",
+      "serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException"
+    ],
+    "target": "Lang-13f",
+    "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-13/Lang-13f/llm/r3/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-13f/target/classes:/work/d4j/Lang-13f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r3/ToT/SerializationUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.326,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-13/Lang-13f/llm/r3/ToT/javac.err"
+  },
+  "folder": "survival/Lang-13/Lang-13f/llm/r3/ToT",
+  "classes": "survival/Lang-13/Lang-13f/llm/r3/ToT/classes",
+  "run_file": "survival/Lang-13/Lang-13f/llm/r3/ToT/run.jsonl",
+  "methods": [
+    {
+      "method": "deserialize_CorruptData_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 25,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullObject_ShouldProduceByteArrayRepresentingNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullOutputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "clone_WhenSerializationFails_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "clone_ShouldReturnDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullInputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullByteArray_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "constructor_ShouldBePublicAndDoNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ToOutputStream_ShouldWriteBytesAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromByteArray_ShouldRecreateObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 14
+  },
+  "run_seconds": 0.24,
+  "list_error": ""
+}

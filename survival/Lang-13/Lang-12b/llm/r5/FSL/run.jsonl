@@ -1,0 +1,12 @@
+{"method": "testClone_DeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 25, "launch": 1}
+{"method": "testClone_ImmutableObject", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerializeToByteArray_NullObject", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_ValidStreamReturnsObjectAndClosesStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeDeserialize_ComplexObjectGraph", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testDeserialize_CorruptDataThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserialize_ValidByteArrayRoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_NullObjectProducesNonNullByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_WritesObjectAndClosesStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_SerializationFailureThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 4, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerializeToByteArray_SimpleObjectRoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

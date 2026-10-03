@@ -1,0 +1,20 @@
+{"method": "testUnescapeJava", "status": "pass", "message": null, "exception": null, "milliseconds": 47, "launch": 1}
+{"method": "testStandaloneAmphersand", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testUnescapeHtml4", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeHtml", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeJava", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeJavaWithSlash", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang313", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLang720", "status": "fail", "message": "expected:<𠮷[A]> but was:<𠮷[?]>", "exception": "junit.framework.ComparisonFailure", "milliseconds": 3, "launch": 1}
+{"method": "testEscapeEcmaScript", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testEscapeCsvString", "status": "pass", "message": null, "exception": null, "milliseconds": 6, "launch": 1}
+{"method": "testEscapeCsvWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHtmlHighUnicode", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testUnescapeHexCharsHtml", "status": "pass", "message": null, "exception": null, "milliseconds": 109, "launch": 1}
+{"method": "testUnescapeCsvString", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testUnescapeCsvWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHtmlVersions", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testUnescapeUnknownEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeHiragana", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEscapeXml", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testConstructor", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

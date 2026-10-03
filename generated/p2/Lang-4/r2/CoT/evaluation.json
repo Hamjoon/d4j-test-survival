@@ -1,0 +1,134 @@
+{
+  "bug_id": 4,
+  "class": "LookupTranslator",
+  "technique": "CoT",
+  "round": 2,
+  "directory": "runs/lang/4/LookupTranslator/CoT/r2",
+  "response": "runs/lang/4/LookupTranslator/CoT/r2/response.md",
+  "response_sha256": "ab385dc748332a441ce2776191026aba0ebd6ec1e872d4d9f06390229e2c6306",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "LookupTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-4/r2/CoT/LookupTranslatorTest.java",
+  "extracted_sha256": "aacbc3a079c01bb7348dd06ec26961b304bc886a9630e5218004c8a591fe320f",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-4/r2/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-4/r2/CoT/LookupTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.283,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-4/r2/CoT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-4/r2/CoT/run-t.jsonl",
+  "listed": 11,
+  "counts": {
+    "pass": 10,
+    "fail": 1
+  },
+  "methods": [
+    {
+      "method": "testConstructorWithEmptyLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testNoMatchReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithIndexBeyondLength",
+      "status": "fail",
+      "message": "Expected exception: java.lang.StringIndexOutOfBoundsException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSimpleTranslation",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithNullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyLongestMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testConstructorWithNullLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testWriterThrowsIOExceptionIsPropagated",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithIndexEqualToLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDuplicateKeyOverrides",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateWithNegativeIndex",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.217
+}

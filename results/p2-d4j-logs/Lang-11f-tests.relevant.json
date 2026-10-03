@@ -1,0 +1,12 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.relevant",
+    "-w",
+    "/work/d4j/Lang-11f"
+  ],
+  "exit_status": 0,
+  "seconds": 0.376
+}

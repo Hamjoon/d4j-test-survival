@@ -1,0 +1,20 @@
+--- dataset
++++ Lang-64b
+@@ -31,7 +31,7 @@
+  * not <code>==</code>. The equals() method will try <code>==</code> first so
+  * in most cases the effect is the same.</p>
+  *
+- * <p>To use this class, it must be subclassd. For example:</p>
++ * <p>To use this class, it must be subclassed. For example:</p>
+  *
+  * <pre>
+  * public final class JavaVersionEnum extends ValuedEnum {
+@@ -166,7 +166,7 @@
+      * <p>Tests for order.</p>
+      *
+      * <p>The default ordering is numeric by value, but this
+-     * can be overridden by subclasss.</p>
++     * can be overridden by subclasses.</p>
+      *
+      * <p>NOTE: From v2.2 the enums must be of the same type.
+      * If the parameter is in a different class loader than this instance,

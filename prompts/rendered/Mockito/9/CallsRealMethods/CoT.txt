@@ -1,0 +1,45 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named CallsRealMethods by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (CallsRealMethodsTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the CallsRealMethods class:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.stubbing.answers;
+
+import java.io.Serializable;
+
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+
+/**
+ * Optional Answer that adds partial mocking support
+ * <p>
+ * {@link Answer} can be used to define the return values of unstubbed invocations.
+ * <p>
+ * This implementation can be helpful when working with legacy code.
+ * When this implementation is used, unstubbed methods will delegate to the real implementation.
+ * This is a way to create a partial mock object that calls real methods by default.
+ * <p>
+ * As usual you are going to read <b>the partial mock warning</b>:
+ * Object oriented programming is more less tackling complexity by dividing the complexity into separate, specific, SRPy objects.
+ * How does partial mock fit into this paradigm? Well, it just doesn't... 
+ * Partial mock usually means that the complexity has been moved to a different method on the same object.
+ * In most cases, this is not the way you want to design your application.
+ * <p>
+ * However, there are rare cases when partial mocks come handy: 
+ * dealing with code you cannot change easily (3rd party interfaces, interim refactoring of legacy code etc.)
+ * However, I wouldn't use partial mocks for new, test-driven & well-designed code.
+ * <p>
+ */
+public class CallsRealMethods implements Answer<Object>, Serializable {
+    private static final long serialVersionUID = 9057165148930624087L;
+
+    public Object answer(InvocationOnMock invocation) throws Throwable {
+        return invocation.callRealMethod();
+    }
+}

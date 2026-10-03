@@ -1,0 +1,137 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-19/r1/CoT/NumericEntityUnescaperTest.java",
+    "source_sha256": "d94f679fdeb9a2aa819ca74eb752769f6fa18715b4954591e338e3f67d6dbd16",
+    "selected_methods": [
+      "testDecimalEntityMissingSemicolonThrowsException",
+      "testEntityAtEndOfString",
+      "testEntityWithInvalidNumberFormat",
+      "testEntityWithOnlyHashAndXNoDigits",
+      "testEntityWithOnlyHashNoDigits",
+      "testEntityWithUpperCaseX",
+      "testHexEntityWithSemicolon",
+      "testHexEntityWithoutSemicolon",
+      "testMultipleEntitiesSequentially",
+      "testNonEntityInputReturnsZero",
+      "testSupplementaryCharacter"
+    ],
+    "target": "Lang-11b",
+    "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-19/Lang-11b/llm/r1/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-19/r1/CoT/NumericEntityUnescaperTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.295,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-19/Lang-11b/llm/r1/CoT/javac.err"
+  },
+  "folder": "survival/Lang-19/Lang-11b/llm/r1/CoT",
+  "classes": "survival/Lang-19/Lang-11b/llm/r1/CoT/classes",
+  "run_file": "survival/Lang-19/Lang-11b/llm/r1/CoT/run.jsonl",
+  "methods": [
+    {
+      "method": "testEntityAtEndOfString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityMissingSemicolonThrowsException",
+      "status": "fail",
+      "message": "Expected exception: java.lang.StringIndexOutOfBoundsException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithInvalidNumberFormat",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityWithSemicolon",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithUpperCaseX",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityWithoutSemicolon",
+      "status": "fail",
+      "message": "Expected StringIndexOutOfBoundsException due to missing semicolon",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithOnlyHashAndXNoDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNonEntityInputReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testEntityWithOnlyHashNoDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSupplementaryCharacter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleEntitiesSequentially",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9,
+    "fail": 2
+  },
+  "run_seconds": 0.245,
+  "list_error": ""
+}

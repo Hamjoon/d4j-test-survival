@@ -1,0 +1,147 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNoMatchLeavesInputUnchanged",
+    "testSimpleLookup",
+    "testGreedyLongestMatch",
+    "testDuplicateKeyOverridesPrevious",
+    "testTranslateMethodDirectly",
+    "testEmptyLookupTable",
+    "testUnicodeSequences",
+    "testNullLookupTable"
+  ],
+  "all_listed_methods": [
+    "testKeyAsDifferentCharSequenceImplementation",
+    "testNoMatchLeavesInputUnchanged",
+    "testSimpleLookup",
+    "testGreedyLongestMatch",
+    "testBoundaryWithShortRemainingInput",
+    "testDuplicateKeyOverridesPrevious",
+    "testTranslateMethodDirectly",
+    "testEmptyLookupTable",
+    "testUnicodeSequences",
+    "testNullLookupTable"
+  ],
+  "selected_methods": [
+    "testDuplicateKeyOverridesPrevious",
+    "testEmptyLookupTable",
+    "testGreedyLongestMatch",
+    "testNoMatchLeavesInputUnchanged",
+    "testNullLookupTable",
+    "testSimpleLookup",
+    "testTranslateMethodDirectly",
+    "testUnicodeSequences"
+  ],
+  "excluded_methods": [
+    "testKeyAsDifferentCharSequenceImplementation",
+    "testBoundaryWithShortRemainingInput"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testKeyAsDifferentCharSequenceImplementation\"}\n{\"method\":\"testNoMatchLeavesInputUnchanged\"}\n{\"method\":\"testSimpleLookup\"}\n{\"method\":\"testGreedyLongestMatch\"}\n{\"method\":\"testBoundaryWithShortRemainingInput\"}\n{\"method\":\"testDuplicateKeyOverridesPrevious\"}\n{\"method\":\"testTranslateMethodDirectly\"}\n{\"method\":\"testEmptyLookupTable\"}\n{\"method\":\"testUnicodeSequences\"}\n{\"method\":\"testNullLookupTable\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.082
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r2/FSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testKeyAsDifferentCharSequenceImplementation,testBoundaryWithShortRemainingInput"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNoMatchLeavesInputUnchanged\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testSimpleLookup\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testGreedyLongestMatch\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDuplicateKeyOverridesPrevious\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateMethodDirectly\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEmptyLookupTable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testUnicodeSequences\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testNullLookupTable\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.135,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNoMatchLeavesInputUnchanged",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testSimpleLookup",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGreedyLongestMatch",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDuplicateKeyOverridesPrevious",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateMethodDirectly",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEmptyLookupTable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testUnicodeSequences",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNullLookupTable",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8
+  },
+  "wall_seconds": 0.218
+}

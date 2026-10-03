@@ -1,0 +1,77 @@
+{
+  "approved_after": "Step 3",
+  "authorized_through": "Step 9",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 4096,
+  "message_roles": [
+    "user"
+  ],
+  "techniques": [
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT"
+  ],
+  "max_concurrency": 4,
+  "max_rounds": 30,
+  "http_retries": 3,
+  "http_retry_wait_seconds": 10,
+  "round_target": "D_r (full developer passing population)",
+  "records_requiring_extra_rounds": [
+    4,
+    6,
+    13,
+    64
+  ],
+  "dev_own_fqcn_rule": "CUT package + '.' + CUT simple name + 'Test'",
+  "survival_population_values": [
+    "dev",
+    "llm"
+  ],
+  "survival_own_class_column": "boolean; filter existing dev rows; false for llm",
+  "step8_dev_own_tables": [
+    "survival by time point",
+    "survival by days",
+    "failure kinds",
+    "class-level 2x2",
+    "counts matched"
+  ],
+  "class_level_2x2_excluded_records": [
+    57
+  ],
+  "empty_developer_population_outcome": "N/A",
+  "lang57_developer_note": "all developer methods are trigger tests; no developer baseline at t",
+  "lang57_observation_for_handovers_b_and_c": "139 LLM methods passed at the buggy version where every developer method fails.",
+  "push": false,
+  "source_edits": false,
+  "dev_own_missing_test_class_records": [
+    6,
+    17
+  ],
+  "dev_own_zero_passing_baseline_records": [
+    6,
+    17,
+    28,
+    57
+  ],
+  "llm_population": "passing at t and not an exact duplicate within record",
+  "round_stop": "L_r_unique >= full D_r or 30 total rounds",
+  "dedup_rule": "SHA-256 of original source inside method braces after removing every whitespace character",
+  "dedup_order": [
+    "round ascending",
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT",
+    "source order"
+  ],
+  "step8_llm_counts": "report raw passing, exact duplicates removed, and unique population together",
+  "step5b_initial_short_records": [
+    13
+  ],
+  "step7_patch_lines": "actual fixed-version lines",
+  "step7_orientation_deviation": "The original document assumed buggy-to-fixed orientation; the Defects4J patches are fixed-to-buggy."
+}

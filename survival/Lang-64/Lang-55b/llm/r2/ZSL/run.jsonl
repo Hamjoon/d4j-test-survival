@@ -1,0 +1,9 @@
+{"method": "testGetEnumNullClassThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testCompareToEqual", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testGetValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testIteratorAndListContainAllEnums", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToInvalidTypeThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCompareToLessThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCompareToGreaterThan", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumInvalidValueReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testGetEnumValidValue", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

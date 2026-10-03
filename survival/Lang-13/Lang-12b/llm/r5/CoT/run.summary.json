@@ -1,0 +1,173 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-12b/llm/r5/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-12b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testSerialize_AndCloseException_IsSwallowed",
+    "testClone_DeepCopy",
+    "testSerializeToByteArray_RoundTrip",
+    "testClone_NullInput_ReturnsNull",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testDeserialize_ValidStream_ReturnsObject",
+    "testSerialize_NullObject_WritesNullReference",
+    "testClone_SerializationFailure_ThrowsSerializationException",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserialize_CorruptData_ThrowsSerializationException"
+  ],
+  "all_listed_methods": [
+    "testSerialize_AndCloseException_IsSwallowed",
+    "testClone_DeepCopy",
+    "testSerializeToByteArray_RoundTrip",
+    "testDeserialize_NullInputStream_ThrowsIllegalArgumentException",
+    "testClone_NullInput_ReturnsNull",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+    "testDeserialize_ValidStream_ReturnsObject",
+    "testSerialize_NullObject_WritesNullReference",
+    "testClone_SerializationFailure_ThrowsSerializationException",
+    "testConstructorInstantiates",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserializeByteArray_NullInput_ThrowsIllegalArgumentException",
+    "testDeserialize_CorruptData_ThrowsSerializationException"
+  ],
+  "selected_methods": [
+    "testClone_DeepCopy",
+    "testClone_NullInput_ReturnsNull",
+    "testClone_SerializationFailure_ThrowsSerializationException",
+    "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserialize_CorruptData_ThrowsSerializationException",
+    "testDeserialize_ValidStream_ReturnsObject",
+    "testSerializeToByteArray_RoundTrip",
+    "testSerialize_AndCloseException_IsSwallowed",
+    "testSerialize_NullObject_WritesNullReference"
+  ],
+  "excluded_methods": [
+    "testDeserialize_NullInputStream_ThrowsIllegalArgumentException",
+    "testSerialize_NullOutputStream_ThrowsIllegalArgumentException",
+    "testConstructorInstantiates",
+    "testDeserializeByteArray_NullInput_ThrowsIllegalArgumentException"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-12b/llm/r5/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSerialize_AndCloseException_IsSwallowed\"}\n{\"method\":\"testClone_DeepCopy\"}\n{\"method\":\"testSerializeToByteArray_RoundTrip\"}\n{\"method\":\"testDeserialize_NullInputStream_ThrowsIllegalArgumentException\"}\n{\"method\":\"testClone_NullInput_ReturnsNull\"}\n{\"method\":\"testDeserializeByteArray_CorruptData_ThrowsSerializationException\"}\n{\"method\":\"testSerialize_NullOutputStream_ThrowsIllegalArgumentException\"}\n{\"method\":\"testDeserialize_ValidStream_ReturnsObject\"}\n{\"method\":\"testSerialize_NullObject_WritesNullReference\"}\n{\"method\":\"testClone_SerializationFailure_ThrowsSerializationException\"}\n{\"method\":\"testConstructorInstantiates\"}\n{\"method\":\"testDeserializeByteArray_RoundTrip\"}\n{\"method\":\"testDeserializeByteArray_NullInput_ThrowsIllegalArgumentException\"}\n{\"method\":\"testDeserialize_CorruptData_ThrowsSerializationException\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.087
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-12b/llm/r5/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testDeserialize_NullInputStream_ThrowsIllegalArgumentException,testSerialize_NullOutputStream_ThrowsIllegalArgumentException,testConstructorInstantiates,testDeserializeByteArray_NullInput_ThrowsIllegalArgumentException"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testSerialize_AndCloseException_IsSwallowed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testClone_DeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":5}\n{\"method\":\"testSerializeToByteArray_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_NullInput_ReturnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeByteArray_CorruptData_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_ValidStream_ReturnsObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerialize_NullObject_WritesNullReference\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_SerializationFailure_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":8}\n{\"method\":\"testDeserializeByteArray_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_CorruptData_ThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.144,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testSerialize_AndCloseException_IsSwallowed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testClone_DeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 5,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_CorruptData_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ValidStream_ReturnsObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NullObject_WritesNullReference",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_SerializationFailure_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 8,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_CorruptData_ThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 10
+  },
+  "wall_seconds": 0.232
+}

@@ -1,0 +1,179 @@
+{
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "classpath": "/work/survival/Lang-64/Lang-55b/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-55b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testCompareToEqual",
+    "testStaticGetEnumFound",
+    "testCompareToIncompatibleType",
+    "testGetValue",
+    "testStaticGetEnumNullClass",
+    "testEnumListContainsAllInstances",
+    "testToStringCaching",
+    "testCompareToLessThan",
+    "testCompareToNull",
+    "testCompareToGreaterThan",
+    "testStaticGetEnumNotFound"
+  ],
+  "all_listed_methods": [
+    "testCompareToEqual",
+    "testStaticGetEnumFound",
+    "testCompareToIncompatibleType",
+    "testGetValue",
+    "testStaticGetEnumNullClass",
+    "testEnumListContainsAllInstances",
+    "testToStringCaching",
+    "testCompareToLessThan",
+    "testCompareToNull",
+    "testCompareToGreaterThan",
+    "testStaticGetEnumNotFound",
+    "testToStringFormat"
+  ],
+  "selected_methods": [
+    "testCompareToEqual",
+    "testCompareToGreaterThan",
+    "testCompareToIncompatibleType",
+    "testCompareToLessThan",
+    "testCompareToNull",
+    "testEnumListContainsAllInstances",
+    "testGetValue",
+    "testStaticGetEnumFound",
+    "testStaticGetEnumNotFound",
+    "testStaticGetEnumNullClass",
+    "testToStringCaching"
+  ],
+  "excluded_methods": [
+    "testToStringFormat"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-64/Lang-55b/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.enums.ValuedEnumTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testCompareToEqual\"}\n{\"method\":\"testStaticGetEnumFound\"}\n{\"method\":\"testCompareToIncompatibleType\"}\n{\"method\":\"testGetValue\"}\n{\"method\":\"testStaticGetEnumNullClass\"}\n{\"method\":\"testEnumListContainsAllInstances\"}\n{\"method\":\"testToStringCaching\"}\n{\"method\":\"testCompareToLessThan\"}\n{\"method\":\"testCompareToNull\"}\n{\"method\":\"testCompareToGreaterThan\"}\n{\"method\":\"testStaticGetEnumNotFound\"}\n{\"method\":\"testToStringFormat\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.102
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-64/Lang-55b/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-55b/target/classes:/work/d4j/Lang-55b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.enums.ValuedEnumTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testToStringFormat"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testCompareToEqual\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":21}\n{\"method\":\"testStaticGetEnumFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCompareToIncompatibleType\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":2}\n{\"method\":\"testGetValue\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testStaticGetEnumNullClass\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEnumListContainsAllInstances\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testToStringCaching\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToLessThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testCompareToNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testCompareToGreaterThan\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testStaticGetEnumNotFound\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.128,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testCompareToEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testStaticGetEnumFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToIncompatibleType",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStaticGetEnumNullClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContainsAllInstances",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringCaching",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToLessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToGreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStaticGetEnumNotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 11
+  },
+  "wall_seconds": 0.231
+}

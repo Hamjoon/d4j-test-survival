@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T05:27:22.795149+00:00",
+  "latency_seconds": 86.86,
+  "status": 200,
+  "attempt": 1,
+  "model": "openai/gpt-oss-120b",
+  "bug_id": "57",
+  "class": "LocaleUtils",
+  "technique": "FSL",
+  "finish_reason": "stop",
+  "provider": "DekaLLM",
+  "response_id": "gen-1791005243-9hroRpj9GG2X8ljCCej0",
+  "content_empty": false,
+  "start_marker": true,
+  "end_marker": true
+}

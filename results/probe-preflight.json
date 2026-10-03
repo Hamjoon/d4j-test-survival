@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-03T05:21:51.559542+00:00",
+  "step": 6,
+  "status": "completed",
+  "container_key_present": true,
+  "model": "openai/gpt-oss-120b",
+  "generation_requests_made": 1,
+  "http_status": 200,
+  "finish_reason": "stop",
+  "completion_tokens": 2266,
+  "provider": "CoreWeave",
+  "reported_cost": 0.00040445,
+  "reason": "User-authorized replacement model probe succeeded; stop for review before Step 7."
+}

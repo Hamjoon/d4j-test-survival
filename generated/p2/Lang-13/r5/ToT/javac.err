@@ -1,0 +1,27 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-13/r5/ToT/SerializationUtilsTest.java:138: error: cannot find symbol
+        assertTrue("OutputStream must be closed after serialize()", ((ByteArrayOutputStream) baos).isClosed());
+                                                                                                  ^
+  symbol:   method isClosed()
+  location: class ByteArrayOutputStream
+generated/p2/Lang-13/r5/ToT/SerializationUtilsTest.java:181: error: cannot find symbol
+        assertTrue("InputStream must be closed after deserialize()", ((ByteArrayInputStream) bais).isClosed());
+                                                                                                  ^
+  symbol:   method isClosed()
+  location: class ByteArrayInputStream
+generated/p2/Lang-13/r5/ToT/SerializationUtilsTest.java:286: error: cannot find symbol
+        Map<String, Object> map = new java.util.HashMap<>();
+        ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+generated/p2/Lang-13/r5/ToT/SerializationUtilsTest.java:292: error: cannot find symbol
+        Map<String, Object> restored = (Map<String, Object>) SerializationUtils.deserialize(data);
+        ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+generated/p2/Lang-13/r5/ToT/SerializationUtilsTest.java:292: error: cannot find symbol
+        Map<String, Object> restored = (Map<String, Object>) SerializationUtils.deserialize(data);
+                                        ^
+  symbol:   class Map
+  location: class SerializationUtilsTest
+5 errors

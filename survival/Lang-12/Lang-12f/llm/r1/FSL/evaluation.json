@@ -1,0 +1,199 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-12/r1/FSL/RandomStringUtilsTest.java",
+    "source_sha256": "a21dc4ddad108099be7242bcf9bf23bbe12b915e81ecab093a459f80a59cad08",
+    "selected_methods": [
+      "testNegativeLengthThrowsException_random",
+      "testNegativeLengthThrowsException_randomAlphabetic",
+      "testNegativeLengthThrowsException_randomAlphanumeric",
+      "testNegativeLengthThrowsException_randomAscii",
+      "testNegativeLengthThrowsException_randomFullSignature",
+      "testNegativeLengthThrowsException_randomNumeric",
+      "testNegativeLengthThrowsException_randomWithCharArray",
+      "testNegativeLengthThrowsException_randomWithString",
+      "testRandomAlphabeticContainsOnlyLetters",
+      "testRandomAlphanumericContainsOnlyLettersOrDigits",
+      "testRandomAsciiWithinPrintableRange",
+      "testRandomDefaultRandomProducesStringOfRequestedLength",
+      "testRandomNumericContainsOnlyDigits",
+      "testRandomWithCustomCharArrayUsesOnlySuppliedChars",
+      "testRandomWithCustomStringUsesOnlySuppliedChars",
+      "testRandomWithLettersAndNumbersBothFalseProducesFullUnicodeRange",
+      "testSurrogatePairGenerationAndPrivateHighSurrogateSkipping",
+      "testZeroLengthReturnsEmptyString"
+    ],
+    "target": "Lang-12f",
+    "fqcn": "org.apache.commons.lang3.RandomStringUtilsTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-12/Lang-12f/llm/r1/FSL/classes",
+      "-cp",
+      "/work/d4j/Lang-12f/target/classes:/work/d4j/Lang-12f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-12/r1/FSL/RandomStringUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.292,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-12/Lang-12f/llm/r1/FSL/javac.err"
+  },
+  "folder": "survival/Lang-12/Lang-12f/llm/r1/FSL",
+  "classes": "survival/Lang-12/Lang-12f/llm/r1/FSL/classes",
+  "run_file": "survival/Lang-12/Lang-12f/llm/r1/FSL/run.jsonl",
+  "methods": [
+    {
+      "method": "testNegativeLengthThrowsException_randomFullSignature",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testRandomDefaultRandomProducesStringOfRequestedLength",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSurrogatePairGenerationAndPrivateHighSurrogateSkipping",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithCustomCharArrayUsesOnlySuppliedChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomAlphabetic",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphabeticContainsOnlyLetters",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomAlphanumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomNumericContainsOnlyDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithLettersAndNumbersBothFalseProducesFullUnicodeRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomNumeric",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAsciiWithinPrintableRange",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_random",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomWithCustomStringUsesOnlySuppliedChars",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomWithCharArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testZeroLengthReturnsEmptyString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testRandomAlphanumericContainsOnlyLettersOrDigits",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomAscii",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testNegativeLengthThrowsException_randomWithString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 18
+  },
+  "run_seconds": 0.243,
+  "list_error": ""
+}

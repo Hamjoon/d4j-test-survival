@@ -1,0 +1,174 @@
+{
+  "bug_id": 13,
+  "class": "SerializationUtils",
+  "technique": "ToT",
+  "round": 3,
+  "directory": "runs/lang/13/SerializationUtils/ToT/r3",
+  "response": "runs/lang/13/SerializationUtils/ToT/r3/response.md",
+  "response_sha256": "998c22e1bb21604aebaba28c84b94544164e6918e9efaa488c82ab3c35d5da93",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "SerializationUtilsTest",
+  "package": "org.apache.commons.lang3",
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-13/r3/ToT/SerializationUtilsTest.java",
+  "extracted_sha256": "d92372a7d0348d1893652889b0b430833a61d090b36475e2fe852a2cf3e5b3a9",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-13/r3/ToT/classes",
+      "-cp",
+      "/work/d4j/Lang-13b/target/classes:/work/d4j/Lang-13b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-13/r3/ToT/SerializationUtilsTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.358,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-13/r3/ToT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-13/r3/ToT/run-t.jsonl",
+  "listed": 16,
+  "counts": {
+    "pass": 15,
+    "fail": 1
+  },
+  "methods": [
+    {
+      "method": "deserialize_CorruptData_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 40,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullObject_ShouldProduceByteArrayRepresentingNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "serialize_NullOutputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "serialize_WhenObjectIsNotSerializable_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 9,
+      "launch": 1
+    },
+    {
+      "method": "clone_NullInputShouldReturnNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "clone_WhenSerializationFails_ShouldThrowSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "classLoaderAwareObjectInputStream_ShouldFallbackToThreadContextClassLoader",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "clone_ShouldReturnDeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullInputStream_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_NullByteArray_ShouldThrowIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromInputStream_ShouldRecreateObjectAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "constructor_ShouldBePublicAndDoNothing",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ToOutputStream_ShouldWriteBytesAndCloseStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "classLoaderAwareObjectInputStream_WhenClassNotFoundAnywhere_ShouldThrowSerializationException",
+      "status": "fail",
+      "message": "Expected test to throw an instance of org.apache.commons.lang3.SerializationException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "deserialize_FromByteArray_ShouldRecreateObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "serialize_ByteArrayOverload_ShouldReturnSameBytesAsStreamVersion",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.274
+}

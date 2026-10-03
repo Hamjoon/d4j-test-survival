@@ -1,0 +1,61 @@
+{
+  "input": {
+    "bug_id": 19,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "ZSL",
+    "class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+    "method": "testEntityWithWhitespaceInsideIsRejected",
+    "status_at_f": "fail",
+    "exception": "java.lang.AssertionError",
+    "source_sha256": "3a59ac8ba3881ad335ddc09dee2b6133895b01c991fb771e7d8c0c9b0b95167c",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    31,
+    38,
+    40,
+    41,
+    42,
+    44,
+    45,
+    55,
+    57,
+    58,
+    59,
+    61,
+    66,
+    69,
+    74,
+    76,
+    81,
+    84,
+    86
+  ],
+  "executed_line_count": 19,
+  "patched_lines": [
+    40,
+    50,
+    51,
+    52,
+    57,
+    58,
+    59,
+    84,
+    86
+  ],
+  "intersecting_lines": [
+    40,
+    57,
+    58,
+    59,
+    84,
+    86
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "java.lang.AssertionError",
+  "xml_file": "survival/Lang-19/Lang-19f/llm/r1/ZSL/classification/testEntityWithWhitespaceInsideIsRejected/jacoco.xml",
+  "exec_file": "survival/Lang-19/Lang-19f/llm/r1/ZSL/classification/testEntityWithWhitespaceInsideIsRejected/jacoco.exec"
+}

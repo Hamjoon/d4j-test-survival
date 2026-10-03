@@ -1,0 +1,56 @@
+{
+  "input": {
+    "bug_id": 55,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "FSL",
+    "class": "org.apache.commons.lang.time.StopWatchTest",
+    "method": "testMultipleStartStopCyclesWithReset",
+    "status_at_f": "fail",
+    "exception": "java.lang.AssertionError",
+    "source_sha256": "a2dd4b0c055522711405ad1fe2f865447848d3c81217514b221bf2ebac0b6bc0",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    65,
+    70,
+    75,
+    79,
+    85,
+    86,
+    96,
+    99,
+    102,
+    103,
+    104,
+    105,
+    115,
+    118,
+    119,
+    121,
+    122,
+    130,
+    131,
+    132,
+    133,
+    134,
+    211,
+    212,
+    214,
+    215
+  ],
+  "executed_line_count": 26,
+  "patched_lines": [
+    118,
+    120
+  ],
+  "intersecting_lines": [
+    118
+  ],
+  "coverage_status": "pass",
+  "coverage_exception": null,
+  "xml_file": "survival/Lang-55/Lang-55f/llm/r1/FSL/classification/testMultipleStartStopCyclesWithReset/jacoco.xml",
+  "exec_file": "survival/Lang-55/Lang-55f/llm/r1/FSL/classification/testMultipleStartStopCyclesWithReset/jacoco.exec"
+}

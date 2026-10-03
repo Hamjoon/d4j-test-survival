@@ -1,0 +1,31 @@
+{
+  "source": "bundle/extraction_outputs/Defects4J_filtered_valid_outputs.csv",
+  "sha256": "361928543b3d9b337ba6b8668c5bdf6ec2c5642b586939b585f801aa14f0b684",
+  "lang_rows": 2293,
+  "regex": "^(ZEROSHOT|FEWSHOT|COT|TOT)-",
+  "regex_covers_every_lang_row": true,
+  "unmatched_count": 0,
+  "unmatched_identifiers": [],
+  "valid_counts": {
+    "CoT": 606,
+    "ToT": 706,
+    "FSL": 612,
+    "ZSL": 369
+  },
+  "total_counts": {
+    "CoT": 606,
+    "ToT": 706,
+    "FSL": 612,
+    "ZSL": 369
+  },
+  "expected_valid_counts": {
+    "ZSL": 369,
+    "FSL": 306,
+    "CoT": 303,
+    "ToT": 353
+  },
+  "interpretation": "Historical GPT-3.5-turbo reference rate only; not a comparison target.",
+  "matches_expected": false,
+  "all_lang_rows_have_true_flag": true,
+  "exact_unique_lang_rows": 980
+}

@@ -1,0 +1,49 @@
+{
+  "input": {
+    "bug_id": 6,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "ToT",
+    "class": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+    "method": "testTranslateWriter_multipleCodePointsAndSurrogates",
+    "status_at_f": "fail",
+    "exception": "org.junit.ComparisonFailure",
+    "source_sha256": "0e3e71aba94ebfde86d315d829abf8a40ee0531bbc0ed13e14e760dae3452dec",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    32,
+    76,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    94,
+    95,
+    97,
+    98,
+    108,
+    109,
+    110,
+    111
+  ],
+  "executed_line_count": 20,
+  "patched_lines": [
+    95
+  ],
+  "intersecting_lines": [
+    95
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "org.junit.ComparisonFailure",
+  "xml_file": "survival/Lang-6/Lang-6f/llm/r1/ToT/classification/testTranslateWriter_multipleCodePointsAndSurrogates/jacoco.xml",
+  "exec_file": "survival/Lang-6/Lang-6f/llm/r1/ToT/classification/testTranslateWriter_multipleCodePointsAndSurrogates/jacoco.exec"
+}

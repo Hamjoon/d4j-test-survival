@@ -1,0 +1,7 @@
+{"method": "expert2_translateWriter_multipleTranslatorsViaWith", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "expert1_hex_upperCaseAndLocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "expert1_hex_surrogateCodePoint", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "expert2_translateWriter_nullWriter_throwsException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "expert1_hex_basicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "expert2_translateWriter_consumedZero_writesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "expert2_translateWriter_nullInput_isNoOp", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

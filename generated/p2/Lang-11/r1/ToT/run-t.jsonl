@@ -1,0 +1,21 @@
+{"method": "testRandomFullSignatureWithCustomCharArray", "status": "pass", "message": null, "exception": null, "milliseconds": 23, "launch": 1}
+{"method": "testRandomAlphanumericLettersOrDigits", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testRandomWithStringSource", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSurrogatePairsAreWellFormed", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testRandomNegativeLength", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testRandomWithCharArraySource", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithCustomStartEnd", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomFullSignatureLettersOnly", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomFullSignatureNumbersOnly", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithBothLettersAndNumbersFalseUsesAllChars", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomNumericOnlyDigits", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testRandomCharArrayEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSurrogatePairDoesNotBreakLength", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithStartEqualsEndThrowsArrayIndexOutOfBounds", "status": "error", "message": "bound must be positive", "exception": "java.lang.IllegalArgumentException", "milliseconds": 2, "launch": 1}
+{"method": "testDeterministicRandomViaCustomOverload", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomFullSignatureLettersAndNumbers", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomWithLettersAndNumbersBothFalse", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomZeroLength", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAlphabeticOnlyLetters", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testRandomAsciiRange", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testRandomStringEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

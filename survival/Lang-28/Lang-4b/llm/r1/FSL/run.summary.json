@@ -1,0 +1,169 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+  "classpath": "/work/survival/Lang-28/Lang-4b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testNonEntityReturnsZero",
+    "testHexEntityUnescapedLowercaseX",
+    "testInvalidHexNumberReturnsZero",
+    "testDecimalEntityUnescaped",
+    "testInvalidDecimalNumberReturnsZero",
+    "testHexEntityUnescapedUppercaseX",
+    "testEntityAtNonZeroIndex",
+    "testEntityMissingHashReturnsZero",
+    "testMissingSemicolonThrowsException",
+    "testMultipleEntitiesOnlyFirstProcessedPerCall"
+  ],
+  "all_listed_methods": [
+    "testNonEntityReturnsZero",
+    "testHexEntityUnescapedLowercaseX",
+    "testInvalidHexNumberReturnsZero",
+    "testDecimalEntityUnescaped",
+    "testEntityWithHighCodePoint",
+    "testInvalidDecimalNumberReturnsZero",
+    "testHexEntityUnescapedUppercaseX",
+    "testEntityAtNonZeroIndex",
+    "testEntityMissingHashReturnsZero",
+    "testMissingSemicolonThrowsException",
+    "testMultipleEntitiesOnlyFirstProcessedPerCall"
+  ],
+  "selected_methods": [
+    "testDecimalEntityUnescaped",
+    "testEntityAtNonZeroIndex",
+    "testEntityMissingHashReturnsZero",
+    "testHexEntityUnescapedLowercaseX",
+    "testHexEntityUnescapedUppercaseX",
+    "testInvalidDecimalNumberReturnsZero",
+    "testInvalidHexNumberReturnsZero",
+    "testMissingSemicolonThrowsException",
+    "testMultipleEntitiesOnlyFirstProcessedPerCall",
+    "testNonEntityReturnsZero"
+  ],
+  "excluded_methods": [
+    "testEntityWithHighCodePoint"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-28/Lang-4b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testNonEntityReturnsZero\"}\n{\"method\":\"testHexEntityUnescapedLowercaseX\"}\n{\"method\":\"testInvalidHexNumberReturnsZero\"}\n{\"method\":\"testDecimalEntityUnescaped\"}\n{\"method\":\"testEntityWithHighCodePoint\"}\n{\"method\":\"testInvalidDecimalNumberReturnsZero\"}\n{\"method\":\"testHexEntityUnescapedUppercaseX\"}\n{\"method\":\"testEntityAtNonZeroIndex\"}\n{\"method\":\"testEntityMissingHashReturnsZero\"}\n{\"method\":\"testMissingSemicolonThrowsException\"}\n{\"method\":\"testMultipleEntitiesOnlyFirstProcessedPerCall\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.088
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-28/Lang-4b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-4b/target/classes:/work/d4j/Lang-4b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testEntityWithHighCodePoint"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testNonEntityReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":19}\n{\"method\":\"testHexEntityUnescapedLowercaseX\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testInvalidHexNumberReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDecimalEntityUnescaped\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testInvalidDecimalNumberReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHexEntityUnescapedUppercaseX\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityAtNonZeroIndex\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testEntityMissingHashReturnsZero\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testMissingSemicolonThrowsException\",\"status\":\"fail\",\"message\":\"Expected exception: java.lang.StringIndexOutOfBoundsException\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":1}\n{\"method\":\"testMultipleEntitiesOnlyFirstProcessedPerCall\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.131,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testNonEntityReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityUnescapedLowercaseX",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testInvalidHexNumberReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDecimalEntityUnescaped",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testInvalidDecimalNumberReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHexEntityUnescapedUppercaseX",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityAtNonZeroIndex",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEntityMissingHashReturnsZero",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testMissingSemicolonThrowsException",
+      "status": "fail",
+      "message": "Expected exception: java.lang.StringIndexOutOfBoundsException",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleEntitiesOnlyFirstProcessedPerCall",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 9,
+    "fail": 1
+  },
+  "wall_seconds": 0.22
+}

@@ -1,0 +1,134 @@
+{
+  "bug_id": 64,
+  "class": "ValuedEnum",
+  "technique": "ZSL",
+  "round": 2,
+  "directory": "runs/lang/64/ValuedEnum/ZSL/r2",
+  "response": "runs/lang/64/ValuedEnum/ZSL/r2/response.md",
+  "response_sha256": "135049c309d2647df760230ba63bb4b5a4ea08fc91de8487a1d59ae62deefeef",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "ValuedEnumTest",
+  "package": "org.apache.commons.lang.enums",
+  "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-64/r2/ZSL/ValuedEnumTest.java",
+  "extracted_sha256": "1c8931d3af8e236d7ac79bcf8d4790e8f41feeef2a234dba73691333ed4d2476",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-64/r2/ZSL/classes",
+      "-cp",
+      "/work/d4j/Lang-64b/target/classes:/work/d4j/Lang-64b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-64/r2/ZSL/ValuedEnumTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.319,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-64/r2/ZSL/javac.err"
+  },
+  "run_file": "generated/p2/Lang-64/r2/ZSL/run-t.jsonl",
+  "listed": 11,
+  "counts": {
+    "pass": 10,
+    "fail": 1
+  },
+  "methods": [
+    {
+      "method": "testGetEnumNullClassThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 19,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToEqual",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIteratorAndListContainAllEnums",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToInvalidTypeThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToLessThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToNullThrows",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToGreaterThan",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumInvalidValueReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumValidValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testToStringFormat",
+      "status": "fail",
+      "message": "expected:<[]TestEnum[ONE=1]> but was:<[ValuedEnumTest.]TestEnum[ONE=1]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 3,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.206
+}

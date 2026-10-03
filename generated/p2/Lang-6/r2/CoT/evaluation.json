@@ -1,0 +1,166 @@
+{
+  "bug_id": 6,
+  "class": "CharSequenceTranslator",
+  "technique": "CoT",
+  "round": 2,
+  "directory": "runs/lang/6/CharSequenceTranslator/CoT/r2",
+  "response": "runs/lang/6/CharSequenceTranslator/CoT/r2/response.md",
+  "response_sha256": "5a27935f21877c471549865e71e995cd1d5dc0d0df3db9ea3dbf68b2a084a980",
+  "msr_detected": true,
+  "csr_v2": true,
+  "class_name": "CharSequenceTranslatorTest",
+  "package": "org.apache.commons.lang3.text.translate",
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "csr_success": null,
+  "selection": "markers",
+  "marker_pair": true,
+  "braces_balanced": true,
+  "html_detected": false,
+  "file": "generated/p2/Lang-6/r2/CoT/CharSequenceTranslatorTest.java",
+  "extracted_sha256": "070c294d121dde5843346a397c370d48e1ac62e04631c45b34fd145a4af02480",
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "generated/p2/Lang-6/r2/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-6/r2/CoT/CharSequenceTranslatorTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.388,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "generated/p2/Lang-6/r2/CoT/javac.err"
+  },
+  "run_file": "generated/p2/Lang-6/r2/CoT/run-t.jsonl",
+  "listed": 15,
+  "counts": {
+    "pass": 13,
+    "fail": 2
+  },
+  "methods": [
+    {
+      "method": "testTranslate_Writer_MultiCharReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_ConsumerReturnsZero_WritesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testHex_UpperCaseAndLocaleIndependent",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_ZeroAndNegativeValues",
+      "status": "fail",
+      "message": "expected:<[-1]> but was:<[FFFFFFFF]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_NullWriter_ThrowsIllegalArgumentException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_NullInput_NoExceptionAndNoOutput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_SurrogatePair_UnchangedWhenNotConsumed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_NullInput_ReturnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_MultiCharConsumerIncrementsPositionCorrectly",
+      "status": "fail",
+      "message": "expected:<a[b]xy> but was:<a[]xy>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_MergesTranslatorsInOrder",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_String_EmptyInput_ReturnsEmptyString",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testWith_EmptyArray_ReturnsAggregateContainingOnlyThis",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_IOExceptionPropagates",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslate_Writer_SimpleReplacement",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "run_seconds": 0.248
+}

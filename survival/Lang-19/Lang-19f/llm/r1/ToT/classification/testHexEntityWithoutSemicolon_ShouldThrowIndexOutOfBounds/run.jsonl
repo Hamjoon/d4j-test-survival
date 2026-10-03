@@ -1,0 +1,1 @@
+{"method": "testHexEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds", "status": "fail", "message": "Expected StringIndexOutOfBoundsException because the terminating ';' is missing", "exception": "java.lang.AssertionError", "milliseconds": 20, "launch": 1}

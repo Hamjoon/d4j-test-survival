@@ -1,0 +1,12 @@
+{"method": "testWith_multipleTranslators", "status": "pass", "message": null, "exception": null, "milliseconds": 20, "launch": 1}
+{"method": "testTranslateToWriter_nullWriter", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testWith_mergesTranslatorsInOrder", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateConvenience_nullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_passthroughWhenNotConsumed", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_surrogateCodePoint", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testHex_negativeValue", "status": "fail", "message": "expected:<[-1]> but was:<[FFFFFFFF]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 2, "launch": 1}
+{"method": "testHex_basicValues", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateConvenience_basicReplacement", "status": "fail", "message": "expected:<bb[]> but was:<bb[b]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_consumesAndAdvancesCorrectly", "status": "fail", "message": "expected:<X[SMILE][b]> but was:<X[SMILE][?]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateConvenience_surrogatePairHandling", "status": "fail", "message": "expected:<x[SMILE][y]> but was:<x[SMILE][?]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateToWriter_nullInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

@@ -1,0 +1,9 @@
+{"method": "testTranslateStartsAtWrongIndex", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testTranslateNonEntityInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateHexEntityMissingSemicolon", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "testTranslateDecimalEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateEmptyEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateDecimalEntityMissingSemicolon", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateHexEntityUpperCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateSurrogatePair", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateInvalidNumberFormat", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

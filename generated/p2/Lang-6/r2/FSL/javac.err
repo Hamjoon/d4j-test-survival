@@ -1,0 +1,27 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+generated/p2/Lang-6/r2/FSL/CharSequenceTranslatorTest.java:195: error: cannot find symbol
+        Locale defaultLocale = Locale.getDefault();
+        ^
+  symbol:   class Locale
+  location: class CharSequenceTranslatorTest
+generated/p2/Lang-6/r2/FSL/CharSequenceTranslatorTest.java:195: error: cannot find symbol
+        Locale defaultLocale = Locale.getDefault();
+                               ^
+  symbol:   variable Locale
+  location: class CharSequenceTranslatorTest
+generated/p2/Lang-6/r2/FSL/CharSequenceTranslatorTest.java:197: error: cannot find symbol
+            Locale.setDefault(new Locale("tr", "TR"));
+                                  ^
+  symbol:   class Locale
+  location: class CharSequenceTranslatorTest
+generated/p2/Lang-6/r2/FSL/CharSequenceTranslatorTest.java:197: error: cannot find symbol
+            Locale.setDefault(new Locale("tr", "TR"));
+            ^
+  symbol:   variable Locale
+  location: class CharSequenceTranslatorTest
+generated/p2/Lang-6/r2/FSL/CharSequenceTranslatorTest.java:200: error: cannot find symbol
+            Locale.setDefault(defaultLocale);
+            ^
+  symbol:   variable Locale
+  location: class CharSequenceTranslatorTest
+5 errors

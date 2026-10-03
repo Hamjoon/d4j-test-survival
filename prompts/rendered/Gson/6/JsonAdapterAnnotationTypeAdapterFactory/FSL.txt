@@ -1,0 +1,132 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named JsonAdapterAnnotationTypeAdapterFactory. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (C) 2014 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.google.gson.internal.bind;
+
+import com.google.gson.Gson;
+import com.google.gson.TypeAdapter;
+import com.google.gson.TypeAdapterFactory;
+import com.google.gson.annotations.JsonAdapter;
+import com.google.gson.internal.ConstructorConstructor;
+import com.google.gson.reflect.TypeToken;
+
+/**
+ * Given a type T, looks for the annotation {@link JsonAdapter} and uses an instance of the
+ * specified class as the default type adapter.
+ *
+ * @since 2.3
+ */
+public final class JsonAdapterAnnotationTypeAdapterFactory implements TypeAdapterFactory {
+
+  private final ConstructorConstructor constructorConstructor;
+
+  public JsonAdapterAnnotationTypeAdapterFactory(ConstructorConstructor constructorConstructor) {
+    this.constructorConstructor = constructorConstructor;
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> targetType) {
+    JsonAdapter annotation = targetType.getRawType().getAnnotation(JsonAdapter.class);
+    if (annotation == null) {
+      return null;
+    }
+    return (TypeAdapter<T>) getTypeAdapter(constructorConstructor, gson, targetType, annotation);
+  }
+
+  @SuppressWarnings("unchecked") // Casts guarded by conditionals.
+  static TypeAdapter<?> getTypeAdapter(ConstructorConstructor constructorConstructor, Gson gson,
+      TypeToken<?> fieldType, JsonAdapter annotation) {
+    Class<?> value = annotation.value();
+    TypeAdapter<?> typeAdapter;
+    if (TypeAdapter.class.isAssignableFrom(value)) {
+      Class<TypeAdapter<?>> typeAdapterClass = (Class<TypeAdapter<?>>) value;
+      typeAdapter = constructorConstructor.get(TypeToken.get(typeAdapterClass)).construct();
+    } else if (TypeAdapterFactory.class.isAssignableFrom(value)) {
+      Class<TypeAdapterFactory> typeAdapterFactory = (Class<TypeAdapterFactory>) value;
+      typeAdapter = constructorConstructor.get(TypeToken.get(typeAdapterFactory))
+          .construct()
+          .create(gson, fieldType);
+    } else {
+      throw new IllegalArgumentException(
+          "@JsonAdapter value must be TypeAdapter or TypeAdapterFactory reference.");
+    }
+      typeAdapter = typeAdapter.nullSafe();
+    return typeAdapter;
+  }
+}
+.

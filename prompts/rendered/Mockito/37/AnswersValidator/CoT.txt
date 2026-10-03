@@ -1,0 +1,72 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named AnswersValidator by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (AnswersValidatorTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the AnswersValidator class:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.stubbing.answers;
+
+import org.mockito.exceptions.Reporter;
+import org.mockito.internal.invocation.Invocation;
+import org.mockito.stubbing.Answer;
+
+public class AnswersValidator {
+
+    private Reporter reporter = new Reporter();
+    
+    public void validate(Answer<?> answer, Invocation invocation) {
+        if (answer instanceof ThrowsException) {
+            validateException((ThrowsException) answer, invocation);
+        }
+        
+        if (answer instanceof Returns) {
+            validateReturnValue((Returns) answer, invocation);
+        }
+        
+        if (answer instanceof DoesNothing) {
+            validateDoNothing((DoesNothing) answer, invocation);
+        }
+        
+    }
+
+
+    private void validateDoNothing(DoesNothing answer, Invocation invocation) {
+        if (!invocation.isVoid()) {
+            reporter.onlyVoidMethodsCanBeSetToDoNothing();
+        }
+    }
+
+    private void validateReturnValue(Returns answer, Invocation invocation) {
+        if (invocation.isVoid()) {
+            reporter.cannotStubVoidMethodWithAReturnValue();
+        }
+        
+        if (answer.returnsNull() && invocation.returnsPrimitive()) {
+            reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), "null", invocation.getMethodName());
+        } 
+
+        if (!answer.returnsNull() && !invocation.isValidReturnType(answer.getReturnType())) {
+            reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), answer.printReturnType(), invocation.getMethodName());
+        }
+    }
+
+    private void validateException(ThrowsException answer, Invocation invocation) {
+        Throwable throwable = answer.getThrowable();
+        if (throwable == null) {
+            reporter.cannotStubWithNullThrowable();
+        }
+        
+        if (throwable instanceof RuntimeException || throwable instanceof Error) {
+            return;
+        }
+        
+        if (!invocation.isValidException(throwable)) {
+            reporter.checkedExceptionInvalid(throwable);
+        }
+    }
+}

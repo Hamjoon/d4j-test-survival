@@ -1,0 +1,11 @@
+{"method":"testGetEnumWithNullClassThrowsIllegalArgumentException","status":"pass"}
+{"method":"testCompareToEqual","status":"pass"}
+{"method":"testGetValue","status":"pass"}
+{"method":"testGetEnumByValueNotFoundReturnsNull","status":"pass"}
+{"method":"testCompareToLessThan","status":"pass"}
+{"method":"testGetEnumByValueExists","status":"pass"}
+{"method":"testCompareToGreaterThan","status":"pass"}
+{"method":"testToStringFormat","status":"fail","message":"expected:<[]DummyEnum[ONE=1]> but was:<[ValuedEnumTest.]DummyEnum[ONE=1]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testCompareToWithDifferentTypeThrows","status":"pass"}
+{"method":"testCompareToWithNullThrows","status":"pass"}
+{"summary":{"run":10,"failures":1,"ignored":0,"ms":28}}

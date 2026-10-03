@@ -1,0 +1,43 @@
+{
+  "input": {
+    "bug_id": 17,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "ToT",
+    "class": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+    "method": "testTranslate_WithSurrogatePair",
+    "status_at_f": "error",
+    "exception": "java.lang.StringIndexOutOfBoundsException",
+    "source_sha256": "92d82b17e0dc48a9fdebd8a7b64951ffe4eff8e5ced14fc0c811fe5df8d09c1e",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    32,
+    54,
+    58,
+    76,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    94,
+    95
+  ],
+  "executed_line_count": 12,
+  "patched_lines": [
+    83,
+    89,
+    90
+  ],
+  "intersecting_lines": [
+    83
+  ],
+  "coverage_status": "error",
+  "coverage_exception": "java.lang.StringIndexOutOfBoundsException",
+  "xml_file": "survival/Lang-17/Lang-17f/llm/r1/ToT/classification/testTranslate_WithSurrogatePair/jacoco.xml",
+  "exec_file": "survival/Lang-17/Lang-17f/llm/r1/ToT/classification/testTranslate_WithSurrogatePair/jacoco.exec"
+}

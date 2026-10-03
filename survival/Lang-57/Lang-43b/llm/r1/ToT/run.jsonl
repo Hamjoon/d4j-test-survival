@@ -1,0 +1,15 @@
+{"method": "testLocaleLookupList_SingleArgument_Simple", "status": "pass", "message": null, "exception": null, "milliseconds": 39, "launch": 1}
+{"method": "testLocaleLookupList_TwoArgs_DefaultNotInList", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLanguagesByCountry_Caching", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCountriesByLanguage_Caching", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testIsAvailableLocale_UnknownLocale", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testAvailableLocaleSet_LazyInitialisation", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testLocaleLookupList_SingleArgument_WithVariant", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testCountriesByLanguage_ValidLanguage", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testAvailableLocaleList_NotNullAndUnmodifiable", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLocaleLookupList_TwoArgs_NullLocale", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testToLocale_WithVariant", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testCacheConsistency_AvailableLocaleSetAfterLookup", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLocaleLookupList_Unmodifiable", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLanguagesByCountry_ValidCountry", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testLocaleLookupList_TwoArgs_NoCountry_NoVariant", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

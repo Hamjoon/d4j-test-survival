@@ -1,0 +1,100 @@
+{
+  "input": {
+    "file": "generated/p2/Lang-64/r2/CoT/ValuedEnumTest.java",
+    "source_sha256": "e537cfbd5b9049b0181daa24f80b4554d23a43623df1acf733b283c4d03dbdc8",
+    "selected_methods": [
+      "testCompareToOrdering",
+      "testEnumListContents",
+      "testGetEnumByValueFound",
+      "testGetEnumByValueNotFound",
+      "testGetEnumWithNullClass",
+      "testGetValue",
+      "testIterator"
+    ],
+    "target": "Lang-64f",
+    "fqcn": "org.apache.commons.lang.enums.ValuedEnumTest",
+    "population": "llm"
+  },
+  "compile": {
+    "command": [
+      "javac",
+      "-d",
+      "survival/Lang-64/Lang-64f/llm/r2/CoT/classes",
+      "-cp",
+      "/work/d4j/Lang-64f/target/classes:/work/d4j/Lang-64f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "generated/p2/Lang-64/r2/CoT/ValuedEnumTest.java"
+    ],
+    "compile_ok": true,
+    "exit_status": 0,
+    "seconds": 0.307,
+    "error_count": 0,
+    "categories": {},
+    "stderr_file": "survival/Lang-64/Lang-64f/llm/r2/CoT/javac.err"
+  },
+  "folder": "survival/Lang-64/Lang-64f/llm/r2/CoT",
+  "classes": "survival/Lang-64/Lang-64f/llm/r2/CoT/classes",
+  "run_file": "survival/Lang-64/Lang-64f/llm/r2/CoT/run.jsonl",
+  "methods": [
+    {
+      "method": "testGetEnumWithNullClass",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testGetValue",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testCompareToOrdering",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValueFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testGetEnumByValueNotFound",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testEnumListContents",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIterator",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 7
+  },
+  "run_seconds": 0.217,
+  "list_error": ""
+}

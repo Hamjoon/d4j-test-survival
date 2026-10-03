@@ -1,0 +1,15 @@
+{"method": "testTranslateString_WithSurrogatePair", "status": "fail", "message": "expected:<Hello [SMILE] worl[d]> but was:<Hello [SMILE] worl[]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 22, "launch": 1}
+{"method": "testTranslate_MultipleCodePointsConsumed", "status": "fail", "message": "expected:<Z[]c> but was:<Z[Z]c>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testWith_NullArrayArgument", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testTranslateString_EmptyInput_ReturnsEmpty", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testWith_MergesTranslatorsCorrectly", "status": "fail", "message": "expected:<[ccccc]> but was:<[bcbcb]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testTranslate_ZeroConsumedWritesOriginalChar", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_IOExceptionPropagation", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHex_UpperCaseAndLocaleIndependence", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_NullInput_NoOutput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslate_ComplexSurrogatePairPositionAdvancement", "status": "fail", "message": "expected:<YY[z]> but was:<YY[]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 1, "launch": 1}
+{"method": "testTranslateWriter_NullWriter_ThrowsIllegalArgumentException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_SimpleReplacement", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslateWriter_WithSurrogatePair", "status": "fail", "message": "expected:<X[SMILE][Y]> but was:<X[SMILE][?]>", "exception": "org.junit.ComparisonFailure", "milliseconds": 0, "launch": 1}
+{"method": "testTranslateString_NullInput_ReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

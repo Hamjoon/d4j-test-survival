@@ -1,0 +1,195 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-5b/llm/r5/FSL/classes:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-5b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testClone_DeepCopy",
+    "testClone_ImmutableObject",
+    "testSerializeToByteArray_NullObject",
+    "testDeserialize_ValidStreamReturnsObjectAndClosesStream",
+    "testSerializeDeserialize_ComplexObjectGraph",
+    "testDeserialize_CorruptDataThrowsSerializationException",
+    "testDeserialize_ValidByteArrayRoundTrip",
+    "testSerialize_NullObjectProducesNonNullByteArray",
+    "testSerialize_WritesObjectAndClosesStream",
+    "testClone_SerializationFailureThrowsSerializationException",
+    "testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader",
+    "testSerializeToByteArray_SimpleObjectRoundTrip"
+  ],
+  "all_listed_methods": [
+    "testClone_DeepCopy",
+    "testClone_ImmutableObject",
+    "testSerializeToByteArray_NullObject",
+    "testClone_NullInputReturnsNull",
+    "testDeserialize_ValidStreamReturnsObjectAndClosesStream",
+    "testDeserialize_NullByteArrayThrows",
+    "testSerializeDeserialize_ComplexObjectGraph",
+    "testSerialize_NullOutputStreamThrows",
+    "testDeserialize_CorruptDataThrowsSerializationException",
+    "testDeserialize_ValidByteArrayRoundTrip",
+    "testSerialize_NullObjectProducesNonNullByteArray",
+    "testSerialize_WritesObjectAndClosesStream",
+    "testClone_SerializationFailureThrowsSerializationException",
+    "testDeserialize_NullInputStreamThrows",
+    "testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader",
+    "testSerializeToByteArray_SimpleObjectRoundTrip"
+  ],
+  "selected_methods": [
+    "testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader",
+    "testClone_DeepCopy",
+    "testClone_ImmutableObject",
+    "testClone_SerializationFailureThrowsSerializationException",
+    "testDeserialize_CorruptDataThrowsSerializationException",
+    "testDeserialize_ValidByteArrayRoundTrip",
+    "testDeserialize_ValidStreamReturnsObjectAndClosesStream",
+    "testSerializeDeserialize_ComplexObjectGraph",
+    "testSerializeToByteArray_NullObject",
+    "testSerializeToByteArray_SimpleObjectRoundTrip",
+    "testSerialize_NullObjectProducesNonNullByteArray",
+    "testSerialize_WritesObjectAndClosesStream"
+  ],
+  "excluded_methods": [
+    "testClone_NullInputReturnsNull",
+    "testDeserialize_NullByteArrayThrows",
+    "testSerialize_NullOutputStreamThrows",
+    "testDeserialize_NullInputStreamThrows"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-5b/llm/r5/FSL/classes:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testClone_DeepCopy\"}\n{\"method\":\"testClone_ImmutableObject\"}\n{\"method\":\"testSerializeToByteArray_NullObject\"}\n{\"method\":\"testClone_NullInputReturnsNull\"}\n{\"method\":\"testDeserialize_ValidStreamReturnsObjectAndClosesStream\"}\n{\"method\":\"testDeserialize_NullByteArrayThrows\"}\n{\"method\":\"testSerializeDeserialize_ComplexObjectGraph\"}\n{\"method\":\"testSerialize_NullOutputStreamThrows\"}\n{\"method\":\"testDeserialize_CorruptDataThrowsSerializationException\"}\n{\"method\":\"testDeserialize_ValidByteArrayRoundTrip\"}\n{\"method\":\"testSerialize_NullObjectProducesNonNullByteArray\"}\n{\"method\":\"testSerialize_WritesObjectAndClosesStream\"}\n{\"method\":\"testClone_SerializationFailureThrowsSerializationException\"}\n{\"method\":\"testDeserialize_NullInputStreamThrows\"}\n{\"method\":\"testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader\"}\n{\"method\":\"testSerializeToByteArray_SimpleObjectRoundTrip\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.094
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-5b/llm/r5/FSL/classes:/work/tools/runner:/work/d4j/Lang-5b/target/classes:/work/d4j/Lang-5b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testClone_NullInputReturnsNull,testDeserialize_NullByteArrayThrows,testSerialize_NullOutputStreamThrows,testDeserialize_NullInputStreamThrows"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testClone_DeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"testClone_ImmutableObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSerializeToByteArray_NullObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ValidStreamReturnsObjectAndClosesStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeDeserialize_ComplexObjectGraph\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":6}\n{\"method\":\"testDeserialize_CorruptDataThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testDeserialize_ValidByteArrayRoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_NullObjectProducesNonNullByteArray\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_WritesObjectAndClosesStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testClone_SerializationFailureThrowsSerializationException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":3}\n{\"method\":\"testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeToByteArray_SimpleObjectRoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.128,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testClone_DeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "testClone_ImmutableObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_NullObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ValidStreamReturnsObjectAndClosesStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeDeserialize_ComplexObjectGraph",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 6,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_CorruptDataThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ValidByteArrayRoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_NullObjectProducesNonNullByteArray",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_WritesObjectAndClosesStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testClone_SerializationFailureThrowsSerializationException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 3,
+      "launch": 1
+    },
+    {
+      "method": "testClassLoaderAwareObjectInputStream_FallbackToContextClassLoader",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_SimpleObjectRoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 12
+  },
+  "wall_seconds": 0.223
+}

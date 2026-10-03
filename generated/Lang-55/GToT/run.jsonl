@@ -1,0 +1,18 @@
+{"method":"testGetTimeWhenUnstartedReturnsZero","status":"pass"}
+{"method":"testToSplitStringFormatAndException","status":"fail","message":"toSplitString must match HH:mm:ss.SSS","exception":"java.lang.AssertionError"}
+{"method":"testUnsplitResetsSplitState","status":"pass"}
+{"method":"testStartAfterStopWithoutResetThrows","status":"pass"}
+{"method":"testMultipleCycles","status":"pass"}
+{"method":"testResetClearsState","status":"fail","message":"After reset toString must be 00:00:00.000 expected:<0[0]:00:00.000> but was:<0[]:00:00.000>","exception":"org.junit.ComparisonFailure"}
+{"method":"testResumeWhenNotSuspendedThrows","status":"pass"}
+{"method":"testStartStopBasic","status":"pass"}
+{"method":"testGetTimeDuringRunning","status":"pass"}
+{"method":"testSplitAndGetSplitTime","status":"fail","message":"Split time must equal elapsed time at split moment expected:<10> but was:<16>","exception":"java.lang.AssertionError"}
+{"method":"testUnsplitWithoutSplitThrows","status":"pass"}
+{"method":"testSuspendWhenNotRunningThrows","status":"pass"}
+{"method":"testSplitWhenNotRunningThrows","status":"pass"}
+{"method":"testStopWhenNotRunningThrows","status":"pass"}
+{"method":"testStartWhenAlreadyStartedThrows","status":"pass"}
+{"method":"testSuspendResumeExcludesSuspendedPeriod","status":"pass"}
+{"method":"testToStringFormat","status":"fail","message":"toString must match HH:mm:ss.SSS","exception":"java.lang.AssertionError"}
+{"summary":{"run":17,"failures":4,"ignored":0,"ms":147}}

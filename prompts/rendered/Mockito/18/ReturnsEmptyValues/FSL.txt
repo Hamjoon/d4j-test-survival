@@ -1,0 +1,182 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named ReturnsEmptyValues. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+
+package org.mockito.internal.stubbing.defaultanswers;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import org.mockito.internal.util.MockUtil;
+import org.mockito.internal.util.ObjectMethodsGuru;
+import org.mockito.internal.util.Primitives;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.mock.MockName;
+import org.mockito.stubbing.Answer;
+
+/**
+ * Default answer of every Mockito mock.
+ * <ul>
+ * <li>
+ *  Returns appropriate primitive for primitive-returning methods
+ * </li>
+ * <li>
+ *  Returns consistent values for primitive wrapper classs (e.g. int-returning method returns 0 <b>and</b> Integer-returning method returns 0, too)
+ * </li>
+ * <li>
+ *  Returns empty collection for collection-returning methods (works for most commonly used collection types)
+ * </li>
+ * <li>
+ *  Returns description of mock for toString() method
+ * </li>
+ * <li>
+ *  Returns zero if references are equals otherwise non-zero for Comparable#compareTo(T other) method (see issue 184)
+ * </li>
+ * <li>
+ *  Returns null for everything else
+ * </li>
+ * </ul>
+ */
+public class ReturnsEmptyValues implements Answer<Object>, Serializable {
+    
+    private static final long serialVersionUID = 1998191268711234347L;
+    ObjectMethodsGuru methodsGuru = new ObjectMethodsGuru();
+    MockUtil mockUtil = new MockUtil();
+
+    /* (non-Javadoc)
+     * @see org.mockito.stubbing.Answer#answer(org.mockito.invocation.InvocationOnMock)
+     */
+    public Object answer(InvocationOnMock invocation) {
+        if (methodsGuru.isToString(invocation.getMethod())) {
+            Object mock = invocation.getMock();
+            MockName name = mockUtil.getMockName(mock);
+            if (name.isDefault()) {
+                return "Mock for " + mockUtil.getMockSettings(mock).getTypeToMock().getSimpleName() + ", hashCode: " + mock.hashCode();
+            } else {
+                return name.toString();
+            }
+        } else if (methodsGuru.isCompareToMethod(invocation.getMethod())) {
+            //see issue 184.
+            //mocks by default should return 0 if references are the same, otherwise some other value because they are not the same. Hence we return 1 (anything but 0 is good).
+            //Only for compareTo() method by the Comparable interface
+            return invocation.getMock() == invocation.getArguments()[0] ? 0 : 1;
+        }
+        
+        Class<?> returnType = invocation.getMethod().getReturnType();
+        return returnValueFor(returnType);
+    }
+    
+    Object returnValueFor(Class<?> type) {
+        if (Primitives.isPrimitiveOrWrapper(type)) {
+            return Primitives.defaultValueForPrimitiveOrWrapper(type);
+            //new instances are used instead of Collections.emptyList(), etc.
+            //to avoid UnsupportedOperationException if code under test modifies returned collection
+        } else if (type == Collection.class) {
+            return new LinkedList<Object>();
+        } else if (type == Set.class) {
+            return new HashSet<Object>();
+        } else if (type == HashSet.class) {
+            return new HashSet<Object>();
+        } else if (type == SortedSet.class) {
+            return new TreeSet<Object>();
+        } else if (type == TreeSet.class) {
+            return new TreeSet<Object>();
+        } else if (type == LinkedHashSet.class) {
+            return new LinkedHashSet<Object>();
+        } else if (type == List.class) {
+            return new LinkedList<Object>();
+        } else if (type == LinkedList.class) {
+            return new LinkedList<Object>();
+        } else if (type == ArrayList.class) {
+            return new ArrayList<Object>();
+        } else if (type == Map.class) {
+            return new HashMap<Object, Object>();
+        } else if (type == HashMap.class) {
+            return new HashMap<Object, Object>();
+        } else if (type == SortedMap.class) {
+            return new TreeMap<Object, Object>();
+        } else if (type == TreeMap.class) {
+            return new TreeMap<Object, Object>();
+        } else if (type == LinkedHashMap.class) {
+            return new LinkedHashMap<Object, Object>();
+        }
+        //Let's not care about the rest of collections.
+        return null;
+    }
+
+}
+.

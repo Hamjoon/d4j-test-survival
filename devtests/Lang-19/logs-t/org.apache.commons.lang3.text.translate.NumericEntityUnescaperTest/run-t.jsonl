@@ -1,0 +1,3 @@
+{"method": "testSupplementaryUnescaping", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testUnfinishedEntity", "status": "error", "message": "String index out of range: 19", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 2, "launch": 1}
+{"method": "testOutOfBounds", "status": "error", "message": "String index out of range: 7", "exception": "java.lang.StringIndexOutOfBoundsException", "milliseconds": 0, "launch": 1}

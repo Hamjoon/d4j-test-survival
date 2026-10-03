@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "generation_requests_verified": 70,
+  "extraction_rows": 70,
+  "generated_sources_unchanged": 25,
+  "syntax_rows": 25,
+  "compile_rows": 19,
+  "compile_diagnostic_rows": 0,
+  "credential_scan_files": 1147,
+  "checks": [
+    "fixed request parameters and exact prompt",
+    "verbatim assistant/raw.java",
+    "materialized bytes equal combine",
+    "source SHA-256 unchanged through compile/run",
+    "cross-stage counts and diagnostics",
+    "original model list preserved",
+    "extractor unchanged",
+    "credential absent from artifacts"
+  ]
+}

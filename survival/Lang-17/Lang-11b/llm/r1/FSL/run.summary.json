@@ -1,0 +1,152 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "classpath": "/work/survival/Lang-17/Lang-11b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-11b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testWith_multipleTranslators",
+    "testTranslateToWriter_nullWriter",
+    "testWith_mergesTranslatorsInOrder",
+    "testTranslateConvenience_nullInput",
+    "testTranslateToWriter_passthroughWhenNotConsumed",
+    "testHex_surrogateCodePoint",
+    "testHex_basicValues",
+    "testTranslateToWriter_nullInput"
+  ],
+  "all_listed_methods": [
+    "testWith_multipleTranslators",
+    "testTranslateToWriter_nullWriter",
+    "testWith_mergesTranslatorsInOrder",
+    "testTranslateConvenience_nullInput",
+    "testTranslateToWriter_passthroughWhenNotConsumed",
+    "testHex_surrogateCodePoint",
+    "testHex_negativeValue",
+    "testHex_basicValues",
+    "testTranslateConvenience_basicReplacement",
+    "testTranslateToWriter_consumesAndAdvancesCorrectly",
+    "testTranslateConvenience_surrogatePairHandling",
+    "testTranslateToWriter_nullInput"
+  ],
+  "selected_methods": [
+    "testHex_basicValues",
+    "testHex_surrogateCodePoint",
+    "testTranslateConvenience_nullInput",
+    "testTranslateToWriter_nullInput",
+    "testTranslateToWriter_nullWriter",
+    "testTranslateToWriter_passthroughWhenNotConsumed",
+    "testWith_mergesTranslatorsInOrder",
+    "testWith_multipleTranslators"
+  ],
+  "excluded_methods": [
+    "testHex_negativeValue",
+    "testTranslateConvenience_basicReplacement",
+    "testTranslateToWriter_consumesAndAdvancesCorrectly",
+    "testTranslateConvenience_surrogatePairHandling"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-17/Lang-11b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testWith_multipleTranslators\"}\n{\"method\":\"testTranslateToWriter_nullWriter\"}\n{\"method\":\"testWith_mergesTranslatorsInOrder\"}\n{\"method\":\"testTranslateConvenience_nullInput\"}\n{\"method\":\"testTranslateToWriter_passthroughWhenNotConsumed\"}\n{\"method\":\"testHex_surrogateCodePoint\"}\n{\"method\":\"testHex_negativeValue\"}\n{\"method\":\"testHex_basicValues\"}\n{\"method\":\"testTranslateConvenience_basicReplacement\"}\n{\"method\":\"testTranslateToWriter_consumesAndAdvancesCorrectly\"}\n{\"method\":\"testTranslateConvenience_surrogatePairHandling\"}\n{\"method\":\"testTranslateToWriter_nullInput\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.091
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-17/Lang-11b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-11b/target/classes:/work/d4j/Lang-11b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testHex_negativeValue,testTranslateConvenience_basicReplacement,testTranslateToWriter_consumesAndAdvancesCorrectly,testTranslateConvenience_surrogatePairHandling"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testWith_multipleTranslators\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":20}\n{\"method\":\"testTranslateToWriter_nullWriter\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testWith_mergesTranslatorsInOrder\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateConvenience_nullInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateToWriter_passthroughWhenNotConsumed\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_surrogateCodePoint\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testHex_basicValues\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testTranslateToWriter_nullInput\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.113,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testWith_multipleTranslators",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 20,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_nullWriter",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testWith_mergesTranslatorsInOrder",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateConvenience_nullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_passthroughWhenNotConsumed",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_surrogateCodePoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testHex_basicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testTranslateToWriter_nullInput",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8
+  },
+  "wall_seconds": 0.205
+}

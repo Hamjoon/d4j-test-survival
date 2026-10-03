@@ -1,0 +1,8 @@
+Cli-5 Util source discrepancy (raw lines before normalization)
+
+JSON line 20: ' * Contains useful helper methods for classs within this package.'; line_is_ascii=True
+buggy line 20: ' * Contains useful helper methods for classes within this package.'; line_is_ascii=True
+fixed line 20: ' * Contains useful helper methods for classes within this package.'; line_is_ascii=True
+
+The single JSON-versus-buggy difference survives the exact required normalization.
+No source, dataset, or normalization rule was changed.

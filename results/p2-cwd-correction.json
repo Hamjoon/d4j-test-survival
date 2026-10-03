@@ -1,0 +1,21 @@
+{
+  "initial_cwd": "/work",
+  "corrected_cwd": "each target checkout",
+  "initial_dev_wall_seconds": 67.067,
+  "changes": [
+    {
+      "bug_id": 4,
+      "fqcn": "org.apache.commons.lang3.StringEscapeUtilsTest",
+      "method": "testLang708",
+      "before": "error",
+      "after": "pass"
+    },
+    {
+      "bug_id": 6,
+      "fqcn": "org.apache.commons.lang3.StringEscapeUtilsTest",
+      "method": "testLang708",
+      "before": "error",
+      "after": "pass"
+    }
+  ]
+}

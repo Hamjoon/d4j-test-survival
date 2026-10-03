@@ -1,0 +1,80 @@
+{
+  "command": [
+    "timeout",
+    "120",
+    "java",
+    "-javaagent:tools/jacocoagent.jar=destfile=generated/Lang-17/FSL/jacoco.exec,includes=org.apache.commons.lang3.text.translate.*",
+    "-cp",
+    "generated/Lang-17/FSL/classes:tools/runner:/work/d4j/Lang-17b/target/classes:/work/d4j/Lang-17b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+    "JsonRunner",
+    "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest"
+  ],
+  "exit_status": 0,
+  "summary": {
+    "run": 12,
+    "failures": 4,
+    "ignored": 0,
+    "ms": 27
+  },
+  "methods": [
+    {
+      "method": "testWith_multipleTranslators",
+      "status": "pass"
+    },
+    {
+      "method": "testTranslateToWriter_nullWriter",
+      "status": "pass"
+    },
+    {
+      "method": "testWith_mergesTranslatorsInOrder",
+      "status": "pass"
+    },
+    {
+      "method": "testTranslateConvenience_nullInput",
+      "status": "pass"
+    },
+    {
+      "method": "testTranslateToWriter_passthroughWhenNotConsumed",
+      "status": "pass"
+    },
+    {
+      "method": "testHex_surrogateCodePoint",
+      "status": "pass"
+    },
+    {
+      "method": "testHex_negativeValue",
+      "status": "fail",
+      "message": "expected:<[-1]> but was:<[FFFFFFFF]>",
+      "exception": "org.junit.ComparisonFailure"
+    },
+    {
+      "method": "testHex_basicValues",
+      "status": "pass"
+    },
+    {
+      "method": "testTranslateConvenience_basicReplacement",
+      "status": "fail",
+      "message": "expected:<bb[]> but was:<bb[b]>",
+      "exception": "org.junit.ComparisonFailure"
+    },
+    {
+      "method": "testTranslateToWriter_consumesAndAdvancesCorrectly",
+      "status": "fail",
+      "message": "expected:<X[SMILE][b]> but was:<X[SMILE][?]>",
+      "exception": "org.junit.ComparisonFailure"
+    },
+    {
+      "method": "testTranslateConvenience_surrogatePairHandling",
+      "status": "fail",
+      "message": "expected:<x[SMILE][y]> but was:<x[SMILE][?]>",
+      "exception": "org.junit.ComparisonFailure"
+    },
+    {
+      "method": "testTranslateToWriter_nullInput",
+      "status": "pass"
+    }
+  ],
+  "stdout_non_json": [],
+  "run_error": "",
+  "wall_seconds": 0.244
+}

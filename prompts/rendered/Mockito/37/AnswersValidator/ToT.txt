@@ -1,0 +1,68 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+/*
+ * Copyright (c) 2007 Mockito contributors
+ * This program is made available under the terms of the MIT License.
+ */
+package org.mockito.internal.stubbing.answers;
+
+import org.mockito.exceptions.Reporter;
+import org.mockito.internal.invocation.Invocation;
+import org.mockito.stubbing.Answer;
+
+public class AnswersValidator {
+
+    private Reporter reporter = new Reporter();
+    
+    public void validate(Answer<?> answer, Invocation invocation) {
+        if (answer instanceof ThrowsException) {
+            validateException((ThrowsException) answer, invocation);
+        }
+        
+        if (answer instanceof Returns) {
+            validateReturnValue((Returns) answer, invocation);
+        }
+        
+        if (answer instanceof DoesNothing) {
+            validateDoNothing((DoesNothing) answer, invocation);
+        }
+        
+    }
+
+
+    private void validateDoNothing(DoesNothing answer, Invocation invocation) {
+        if (!invocation.isVoid()) {
+            reporter.onlyVoidMethodsCanBeSetToDoNothing();
+        }
+    }
+
+    private void validateReturnValue(Returns answer, Invocation invocation) {
+        if (invocation.isVoid()) {
+            reporter.cannotStubVoidMethodWithAReturnValue();
+        }
+        
+        if (answer.returnsNull() && invocation.returnsPrimitive()) {
+            reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), "null", invocation.getMethodName());
+        } 
+
+        if (!answer.returnsNull() && !invocation.isValidReturnType(answer.getReturnType())) {
+            reporter.wrongTypeOfReturnValue(invocation.printMethodReturnType(), answer.printReturnType(), invocation.getMethodName());
+        }
+    }
+
+    private void validateException(ThrowsException answer, Invocation invocation) {
+        Throwable throwable = answer.getThrowable();
+        if (throwable == null) {
+            reporter.cannotStubWithNullThrowable();
+        }
+        
+        if (throwable instanceof RuntimeException || throwable instanceof Error) {
+            return;
+        }
+        
+        if (!invocation.isValidException(throwable)) {
+            reporter.checkedExceptionInvalid(throwable);
+        }
+    }
+}
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (AnswersValidatorTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

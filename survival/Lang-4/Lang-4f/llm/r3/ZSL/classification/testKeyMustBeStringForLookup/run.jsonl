@@ -1,0 +1,1 @@
+{"method": "testKeyMustBeStringForLookup", "status": "fail", "message": "expected:<0> but was:<6>", "exception": "java.lang.AssertionError", "milliseconds": 23, "launch": 1}

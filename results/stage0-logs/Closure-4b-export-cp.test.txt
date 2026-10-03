@@ -1,0 +1,11 @@
+$ defects4j export -p cp.test -w /work/d4j/Closure-4b
+
+[stdout]
+/work/d4j/Closure-4b/build/classes:/work/d4j/Closure-4b/lib/args4j.jar:/work/d4j/Closure-4b/lib/guava.jar:/work/d4j/Closure-4b/lib/json.jar:/work/d4j/Closure-4b/lib/jsr305.jar:/work/d4j/Closure-4b/lib/protobuf-java.jar:/work/d4j/Closure-4b/build/lib/rhino.jar:/work/d4j/Closure-4b/lib/ant.jar:/work/d4j/Closure-4b/lib/ant-launcher.jar:/work/d4j/Closure-4b/lib/caja-r4314.jar:/work/d4j/Closure-4b/lib/jarjar.jar:/work/d4j/Closure-4b/lib/junit.jar:/work/d4j/Closure-4b/build/test
+[stderr]
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Running ant (export.cp.test)............................................... OK
+
+
+[exit status] 0
+[wall seconds] 1.914

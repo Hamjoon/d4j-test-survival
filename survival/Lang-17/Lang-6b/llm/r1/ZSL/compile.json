@@ -1,0 +1,16 @@
+{
+  "command": [
+    "javac",
+    "-d",
+    "survival/Lang-17/Lang-6b/llm/r1/ZSL/classes",
+    "-cp",
+    "/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+    "generated/p2/Lang-17/r1/ZSL/CharSequenceTranslatorTest.java"
+  ],
+  "compile_ok": true,
+  "exit_status": 0,
+  "seconds": 0.306,
+  "error_count": 0,
+  "categories": {},
+  "stderr_file": "survival/Lang-17/Lang-6b/llm/r1/ZSL/javac.err"
+}

@@ -1,0 +1,1 @@
+{"method": "testNonStringCharSequenceKeyDoesNotMatch", "status": "fail", "message": "Lookup with non‑String key must fail to match a String subsequence expected:<0> but was:<2>", "exception": "java.lang.AssertionError", "milliseconds": 21, "launch": 1}

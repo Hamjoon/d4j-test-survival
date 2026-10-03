@@ -1,0 +1,239 @@
+{
+  "fqcn": "org.apache.commons.lang.time.StopWatchTest",
+  "classpath": "/work/survival/Lang-55/Lang-43b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-43b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testUnsplitRestoresRunningState",
+    "testStopBeforeStart",
+    "testToSplitStringWithoutSplit",
+    "testStartAfterStopWithoutReset",
+    "testGetSplitTimeWhenNotSplit",
+    "testResumeWhenNotSuspended",
+    "testResetClearsState",
+    "testSplitAndSplitTime",
+    "testStartStopAndTime",
+    "testSuspendWhenNotRunning",
+    "testIllegalStateTransitionsAfterSplit",
+    "testStartWhenAlreadyRunning",
+    "testMultipleStartStopCyclesWithReset",
+    "testUnsplitWithoutSplit",
+    "testSuspendResume",
+    "testSplitWhenNotRunning"
+  ],
+  "all_listed_methods": [
+    "testUnsplitRestoresRunningState",
+    "testStopBeforeStart",
+    "testToSplitStringWithoutSplit",
+    "testStartAfterStopWithoutReset",
+    "testGetSplitTimeWhenNotSplit",
+    "testResumeWhenNotSuspended",
+    "testResetClearsState",
+    "testSplitAndSplitTime",
+    "testStartStopAndTime",
+    "testSuspendWhenNotRunning",
+    "testIllegalStateTransitionsAfterSplit",
+    "testStartWhenAlreadyRunning",
+    "testInitialState",
+    "testMultipleStartStopCyclesWithReset",
+    "testUnsplitWithoutSplit",
+    "testSuspendResume",
+    "testToStringFormat",
+    "testToSplitStringFormat",
+    "testSplitWhenNotRunning"
+  ],
+  "selected_methods": [
+    "testGetSplitTimeWhenNotSplit",
+    "testIllegalStateTransitionsAfterSplit",
+    "testMultipleStartStopCyclesWithReset",
+    "testResetClearsState",
+    "testResumeWhenNotSuspended",
+    "testSplitAndSplitTime",
+    "testSplitWhenNotRunning",
+    "testStartAfterStopWithoutReset",
+    "testStartStopAndTime",
+    "testStartWhenAlreadyRunning",
+    "testStopBeforeStart",
+    "testSuspendResume",
+    "testSuspendWhenNotRunning",
+    "testToSplitStringWithoutSplit",
+    "testUnsplitRestoresRunningState",
+    "testUnsplitWithoutSplit"
+  ],
+  "excluded_methods": [
+    "testInitialState",
+    "testToStringFormat",
+    "testToSplitStringFormat"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-55/Lang-43b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang.time.StopWatchTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testUnsplitRestoresRunningState\"}\n{\"method\":\"testStopBeforeStart\"}\n{\"method\":\"testToSplitStringWithoutSplit\"}\n{\"method\":\"testStartAfterStopWithoutReset\"}\n{\"method\":\"testGetSplitTimeWhenNotSplit\"}\n{\"method\":\"testResumeWhenNotSuspended\"}\n{\"method\":\"testResetClearsState\"}\n{\"method\":\"testSplitAndSplitTime\"}\n{\"method\":\"testStartStopAndTime\"}\n{\"method\":\"testSuspendWhenNotRunning\"}\n{\"method\":\"testIllegalStateTransitionsAfterSplit\"}\n{\"method\":\"testStartWhenAlreadyRunning\"}\n{\"method\":\"testInitialState\"}\n{\"method\":\"testMultipleStartStopCyclesWithReset\"}\n{\"method\":\"testUnsplitWithoutSplit\"}\n{\"method\":\"testSuspendResume\"}\n{\"method\":\"testToStringFormat\"}\n{\"method\":\"testToSplitStringFormat\"}\n{\"method\":\"testSplitWhenNotRunning\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.107
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-55/Lang-43b/llm/r1/FSL/classes:/work/tools/runner:/work/d4j/Lang-43b/target/classes:/work/d4j/Lang-43b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang.time.StopWatchTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testInitialState,testToStringFormat,testToSplitStringFormat"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testUnsplitRestoresRunningState\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":44}\n{\"method\":\"testStopBeforeStart\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testToSplitStringWithoutSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testStartAfterStopWithoutReset\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testGetSplitTimeWhenNotSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testResumeWhenNotSuspended\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testResetClearsState\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":16}\n{\"method\":\"testSplitAndSplitTime\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testStartStopAndTime\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":21}\n{\"method\":\"testSuspendWhenNotRunning\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testIllegalStateTransitionsAfterSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testStartWhenAlreadyRunning\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testMultipleStartStopCyclesWithReset\",\"status\":\"fail\",\"message\":\"null\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":9}\n{\"method\":\"testUnsplitWithoutSplit\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n{\"method\":\"testSuspendResume\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":41}\n{\"method\":\"testSplitWhenNotRunning\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":1}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.262,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testUnsplitRestoresRunningState",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 44,
+      "launch": 1
+    },
+    {
+      "method": "testStopBeforeStart",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testToSplitStringWithoutSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testStartAfterStopWithoutReset",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testGetSplitTimeWhenNotSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testResumeWhenNotSuspended",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testResetClearsState",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 16,
+      "launch": 1
+    },
+    {
+      "method": "testSplitAndSplitTime",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testStartStopAndTime",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 21,
+      "launch": 1
+    },
+    {
+      "method": "testSuspendWhenNotRunning",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testIllegalStateTransitionsAfterSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testStartWhenAlreadyRunning",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testMultipleStartStopCyclesWithReset",
+      "status": "fail",
+      "message": "null",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 9,
+      "launch": 1
+    },
+    {
+      "method": "testUnsplitWithoutSplit",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "testSuspendResume",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 41,
+      "launch": 1
+    },
+    {
+      "method": "testSplitWhenNotRunning",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 1,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 15,
+    "fail": 1
+  },
+  "wall_seconds": 0.37
+}

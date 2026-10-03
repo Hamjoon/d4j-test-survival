@@ -1,0 +1,57 @@
+{
+  "input": {
+    "bug_id": 19,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "CoT",
+    "class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+    "method": "testDecimalEntityMissingSemicolonThrowsException",
+    "status_at_f": "fail",
+    "exception": "java.lang.AssertionError",
+    "source_sha256": "d94f679fdeb9a2aa819ca74eb752769f6fa18715b4954591e338e3f67d6dbd16",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    31,
+    38,
+    40,
+    41,
+    42,
+    44,
+    45,
+    55,
+    57,
+    61,
+    66,
+    69,
+    74,
+    76,
+    81,
+    84,
+    86
+  ],
+  "executed_line_count": 17,
+  "patched_lines": [
+    40,
+    50,
+    51,
+    52,
+    57,
+    58,
+    59,
+    84,
+    86
+  ],
+  "intersecting_lines": [
+    40,
+    57,
+    84,
+    86
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "java.lang.AssertionError",
+  "xml_file": "survival/Lang-19/Lang-19f/llm/r1/CoT/classification/testDecimalEntityMissingSemicolonThrowsException/jacoco.xml",
+  "exec_file": "survival/Lang-19/Lang-19f/llm/r1/CoT/classification/testDecimalEntityMissingSemicolonThrowsException/jacoco.exec"
+}

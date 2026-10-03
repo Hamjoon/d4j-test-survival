@@ -1,0 +1,16 @@
+{
+  "command": [
+    "java",
+    "-jar",
+    "tools/jacococli.jar",
+    "report",
+    "/work/survival/Lang-19/Lang-19f/llm/r1/ToT/classification/testDecimalEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds/jacoco.exec",
+    "--classfiles",
+    "d4j/Lang-19f/target/classes/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.class",
+    "--sourcefiles",
+    "d4j/Lang-19f/src/main/java",
+    "--xml",
+    "survival/Lang-19/Lang-19f/llm/r1/ToT/classification/testDecimalEntityWithoutSemicolon_ShouldThrowIndexOutOfBounds/jacoco.xml"
+  ],
+  "exit_status": 0
+}

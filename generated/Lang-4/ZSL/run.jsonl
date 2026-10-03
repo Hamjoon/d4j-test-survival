@@ -1,0 +1,11 @@
+{"method":"testFallbackWhenLongestExceedsInputLength","status":"fail","message":"expected:<[Xc]> but was:<[Y]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testKeyWithNonStringCharSequenceNotMatched","status":"pass"}
+{"method":"testShortestAndLongestValuesViaReflection","status":"pass"}
+{"method":"testMultipleTranslationsInSingleString","status":"pass"}
+{"method":"testSimpleTranslation","status":"pass"}
+{"method":"testTranslateReturnsZeroWhenNoMatch","status":"pass"}
+{"method":"testGreedyLongestMatch","status":"pass"}
+{"method":"testTranslateDoesNotModifyWriterOnZeroMatch","status":"pass"}
+{"method":"testConstructorWithEmptyLookupDoesNothing","status":"pass"}
+{"method":"testConstructorWithNullLookupDoesNothing","status":"pass"}
+{"summary":{"run":10,"failures":1,"ignored":0,"ms":19}}

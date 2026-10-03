@@ -1,0 +1,15 @@
+{"method": "testClone_DeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 22, "launch": 1}
+{"method": "testDeserialize_ByteArray_ValidData", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testClassLoaderAwareObjectInputStream_FallbackToThreadContext", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testDeserialize_InputStream_ValidData", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_ToOutputStream_NullObjectWritesNullReference", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_InputStream_CorruptedDataThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 4, "launch": 1}
+{"method": "testClone_NonSerializableFails", "status": "pass", "message": null, "exception": null, "milliseconds": 7, "launch": 1}
+{"method": "testConstructorIsPublic", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_ToOutputStream_NullStreamThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testSerialize_ClosesStreamEvenOnFailure", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testSerialize_ReturnsByteArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_ByteArray_CorruptedDataThrows", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_ToOutputStream_WritesBytes", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_ReturnsByteArrayForNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_ToOutputStream_IOExceptionIsWrapped", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

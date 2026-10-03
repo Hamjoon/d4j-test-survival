@@ -1,0 +1,87 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+  "classpath": "/work/survival/Lang-4/Lang-4f/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-4f",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testKeyMustBeStringForLookup"
+  ],
+  "all_listed_methods": [
+    "testNonStringValue",
+    "testOverlappingKeys",
+    "testGreedyTranslation",
+    "testKeyMustBeStringForLookup",
+    "testInputShorterThanLongestKey",
+    "testMultipleTranslationsSequentially",
+    "testConstructionShortestAndLongest",
+    "testEmptyLookupArray",
+    "testNoMatch",
+    "testNullLookupTable"
+  ],
+  "selected_methods": [
+    "testKeyMustBeStringForLookup"
+  ],
+  "excluded_methods": [
+    "testNonStringValue",
+    "testOverlappingKeys",
+    "testGreedyTranslation",
+    "testInputShorterThanLongestKey",
+    "testMultipleTranslationsSequentially",
+    "testConstructionShortestAndLongest",
+    "testEmptyLookupArray",
+    "testNoMatch",
+    "testNullLookupTable"
+  ],
+  "missing_methods": [],
+  "listing": {
+    "command": [
+      "java",
+      "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r3/ZSL/classification/testKeyMustBeStringForLookup/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+      "-cp",
+      "/work/survival/Lang-4/Lang-4f/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testNonStringValue\"}\n{\"method\":\"testOverlappingKeys\"}\n{\"method\":\"testGreedyTranslation\"}\n{\"method\":\"testKeyMustBeStringForLookup\"}\n{\"method\":\"testInputShorterThanLongestKey\"}\n{\"method\":\"testMultipleTranslationsSequentially\"}\n{\"method\":\"testConstructionShortestAndLongest\"}\n{\"method\":\"testEmptyLookupArray\"}\n{\"method\":\"testNoMatch\"}\n{\"method\":\"testNullLookupTable\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.158
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-javaagent:/work/tools/jacocoagent.jar=destfile=/work/survival/Lang-4/Lang-4f/llm/r3/ZSL/classification/testKeyMustBeStringForLookup/jacoco.exec,append=true,includes=org.apache.commons.lang3.text.translate.*",
+        "-cp",
+        "/work/survival/Lang-4/Lang-4f/llm/r3/ZSL/classes:/work/tools/runner:/work/d4j/Lang-4f/target/classes:/work/d4j/Lang-4f/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.LookupTranslatorTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testNonStringValue,testOverlappingKeys,testGreedyTranslation,testInputShorterThanLongestKey,testMultipleTranslationsSequentially,testConstructionShortestAndLongest,testEmptyLookupArray,testNoMatch,testNullLookupTable"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testKeyMustBeStringForLookup\",\"status\":\"fail\",\"message\":\"expected:<0> but was:<6>\",\"exception\":\"java.lang.AssertionError\",\"milliseconds\":23}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.194,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testKeyMustBeStringForLookup",
+      "status": "fail",
+      "message": "expected:<0> but was:<6>",
+      "exception": "java.lang.AssertionError",
+      "milliseconds": 23,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "fail": 1
+  },
+  "wall_seconds": 0.353
+}

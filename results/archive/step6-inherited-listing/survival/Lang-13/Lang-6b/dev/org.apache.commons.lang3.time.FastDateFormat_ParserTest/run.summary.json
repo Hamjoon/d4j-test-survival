@@ -1,0 +1,257 @@
+{
+  "fqcn": "org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+  "classpath": "/work/survival/Lang-13/Lang-6b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_ParserTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testAmPm",
+    "testDayOf",
+    "testEquals",
+    "testLang303",
+    "testLang538",
+    "testLocaleMatches",
+    "testLocales",
+    "testLowYearPadding",
+    "testMilleniumBug",
+    "testParseLongShort",
+    "testParseNumerics",
+    "testParseZone",
+    "testPatternMatches",
+    "testQuotes",
+    "testShortDateStyleWithLocales",
+    "testTimeZoneMatches",
+    "testToStringContainsName",
+    "test_Equality_Hash"
+  ],
+  "all_listed_methods": [
+    "testSpecialCharacters",
+    "testShortDateStyleWithLocales",
+    "testMilleniumBug",
+    "testLocaleMatches",
+    "testDayOf",
+    "testParseZone",
+    "testAmPm",
+    "testLowYearPadding",
+    "testLocales_Long_AD",
+    "testLocales_Long_BC",
+    "testParseNumerics",
+    "testLang303",
+    "testLang538",
+    "testToStringContainsName",
+    "testLANG_831",
+    "testLANG_832",
+    "test_Equality_Hash",
+    "testLocales_ShortNoEra_AD",
+    "testLocales_ShortNoEra_BC",
+    "testParseLongShort",
+    "testLocales_LongNoEra_AD",
+    "testLocales_LongNoEra_BC",
+    "testLocales_Short_AD",
+    "testLocales_Short_BC",
+    "testEquals",
+    "testParses",
+    "testQuotes",
+    "testTimeZoneMatches",
+    "testPatternMatches"
+  ],
+  "selected_methods": [
+    "testAmPm",
+    "testDayOf",
+    "testEquals",
+    "testLang303",
+    "testLang538",
+    "testLocaleMatches",
+    "testLocales",
+    "testLowYearPadding",
+    "testMilleniumBug",
+    "testParseLongShort",
+    "testParseNumerics",
+    "testParseZone",
+    "testPatternMatches",
+    "testQuotes",
+    "testShortDateStyleWithLocales",
+    "testTimeZoneMatches",
+    "testToStringContainsName",
+    "test_Equality_Hash"
+  ],
+  "excluded_methods": [
+    "testSpecialCharacters",
+    "testLocales_Long_AD",
+    "testLocales_Long_BC",
+    "testLANG_831",
+    "testLANG_832",
+    "testLocales_ShortNoEra_AD",
+    "testLocales_ShortNoEra_BC",
+    "testLocales_LongNoEra_AD",
+    "testLocales_LongNoEra_BC",
+    "testLocales_Short_AD",
+    "testLocales_Short_BC",
+    "testParses"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-6b/dev/classes/org.apache.commons.lang3.time.FastDateFormat_ParserTest:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.time.FastDateFormat_ParserTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSpecialCharacters\"}\n{\"method\":\"testShortDateStyleWithLocales\"}\n{\"method\":\"testMilleniumBug\"}\n{\"method\":\"testLocaleMatches\"}\n{\"method\":\"testDayOf\"}\n{\"method\":\"testParseZone\"}\n{\"method\":\"testAmPm\"}\n{\"method\":\"testLowYearPadding\"}\n{\"method\":\"testLocales_Long_AD\"}\n{\"method\":\"testLocales_Long_BC\"}\n{\"method\":\"testParseNumerics\"}\n{\"method\":\"testLang303\"}\n{\"method\":\"testLang538\"}\n{\"method\":\"testToStringContainsName\"}\n{\"method\":\"testLANG_831\"}\n{\"method\":\"testLANG_832\"}\n{\"method\":\"test_Equality_Hash\"}\n{\"method\":\"testLocales_ShortNoEra_AD\"}\n{\"method\":\"testLocales_ShortNoEra_BC\"}\n{\"method\":\"testParseLongShort\"}\n{\"method\":\"testLocales_LongNoEra_AD\"}\n{\"method\":\"testLocales_LongNoEra_BC\"}\n{\"method\":\"testLocales_Short_AD\"}\n{\"method\":\"testLocales_Short_BC\"}\n{\"method\":\"testEquals\"}\n{\"method\":\"testParses\"}\n{\"method\":\"testQuotes\"}\n{\"method\":\"testTimeZoneMatches\"}\n{\"method\":\"testPatternMatches\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.086
+  },
+  "list_error": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+  "launches": [],
+  "methods": [
+    {
+      "method": "testAmPm",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testDayOf",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testEquals",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testLang303",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testLang538",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testLocaleMatches",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testLocales",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testLowYearPadding",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testMilleniumBug",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testParseLongShort",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testParseNumerics",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testParseZone",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testPatternMatches",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testQuotes",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testShortDateStyleWithLocales",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testTimeZoneMatches",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "testToStringContainsName",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    },
+    {
+      "method": "test_Equality_Hash",
+      "status": "not-run",
+      "exception": "JUnitListingFailure",
+      "message": "Listing failed: exit=0; methods=29; missing=['testLocales']; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "milliseconds": null,
+      "launch": 0
+    }
+  ],
+  "counts": {
+    "not-run": 18
+  },
+  "wall_seconds": 0.087
+}

@@ -1,0 +1,13 @@
+{"method": "testReturnedCountMatchesConsumed", "status": "pass", "message": null, "exception": null, "milliseconds": 19, "launch": 1}
+{"method": "testHexSurrogatePairEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDecimalEntityWithSemicolon", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityLowerCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSurrogatePairEntity", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testInvalidNumberFormatReturnsZero", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEntityFollowedByExtraChars", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testEmptyNumericPart", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityUpperCase", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTranslationWithOffset", "status": "pass", "message": null, "exception": null, "milliseconds": 3, "launch": 1}
+{"method": "testNonEntityInput", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testHexEntityWithoutSemicolonThrows", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 1, "launch": 1}
+{"method": "testDecimalEntityWithoutSemicolonThrows", "status": "fail", "message": "Expected exception: java.lang.StringIndexOutOfBoundsException", "exception": "java.lang.AssertionError", "milliseconds": 0, "launch": 1}

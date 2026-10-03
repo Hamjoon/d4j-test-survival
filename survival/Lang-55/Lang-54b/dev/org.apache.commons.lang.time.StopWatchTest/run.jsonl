@@ -1,0 +1,5 @@
+{"method": "testBadStates", "status": "pass", "message": null, "exception": null, "milliseconds": 21, "launch": 1}
+{"method": "testStopWatchSimpleGet", "status": "pass", "message": null, "exception": null, "milliseconds": 509, "launch": 1}
+{"method": "testStopWatchSimple", "status": "pass", "message": null, "exception": null, "milliseconds": 557, "launch": 1}
+{"method": "testStopWatchSplit", "status": "pass", "message": null, "exception": null, "milliseconds": 1661, "launch": 1}
+{"method": "testStopWatchSuspend", "status": "pass", "message": null, "exception": null, "milliseconds": 1662, "launch": 1}

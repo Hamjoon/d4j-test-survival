@@ -1,0 +1,56 @@
+{
+  "input": {
+    "bug_id": 28,
+    "population": "llm",
+    "own_class": false,
+    "round": "1",
+    "technique": "GToT",
+    "class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest",
+    "method": "testSurrogatePairEntity",
+    "status_at_f": "fail",
+    "exception": "org.junit.ComparisonFailure",
+    "source_sha256": "4575e8dc4f0242d49bc368ba3a5edf2747462412a76f04243a65cffe142c60c2",
+    "patch_rule": "actual fixed-version lines"
+  },
+  "classification": "patch-related",
+  "executed_lines": [
+    29,
+    37,
+    38,
+    39,
+    41,
+    42,
+    47,
+    48,
+    49,
+    54,
+    57,
+    61,
+    63,
+    64,
+    65,
+    66,
+    67,
+    70
+  ],
+  "executed_line_count": 18,
+  "patched_lines": [
+    63,
+    64,
+    65,
+    66,
+    67,
+    69
+  ],
+  "intersecting_lines": [
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "coverage_status": "fail",
+  "coverage_exception": "org.junit.ComparisonFailure",
+  "xml_file": "survival/Lang-28/Lang-28f/llm/r1/GToT/classification/testSurrogatePairEntity/jacoco.xml",
+  "exec_file": "survival/Lang-28/Lang-28f/llm/r1/GToT/classification/testSurrogatePairEntity/jacoco.exec"
+}

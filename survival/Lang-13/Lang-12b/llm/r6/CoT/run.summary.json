@@ -1,0 +1,182 @@
+{
+  "fqcn": "org.apache.commons.lang3.SerializationUtilsTest",
+  "classpath": "/work/survival/Lang-13/Lang-12b/llm/r6/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-12b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "testSerialize_ToByteArrayOutputStream",
+    "testClone_DeepCopy",
+    "testSerializeToByteArray_RoundTrip",
+    "testSerializeToByteArray_NullObject",
+    "testDeserialize_InputStreamThrowsIOException",
+    "testDeserializeByteArray_CorruptedData",
+    "testSerialize_WithNullOutputStream",
+    "testSerialize_OutputStreamThrowsIOException",
+    "testDeserializeByteArray_RoundTrip",
+    "testPublicConstructor",
+    "testDeserialize_ValidStream"
+  ],
+  "all_listed_methods": [
+    "testSerialize_ToByteArrayOutputStream",
+    "testClone_DeepCopy",
+    "testSerializeToByteArray_RoundTrip",
+    "testSerializeToByteArray_NullObject",
+    "testDeserializeByteArray_NullArgument",
+    "testDeserialize_InputStreamThrowsIOException",
+    "testDeserializeByteArray_CorruptedData",
+    "testSerialize_WithNullOutputStream",
+    "testSerialize_OutputStreamThrowsIOException",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserialize_NullInputStream",
+    "testClone_NullReturnsNull",
+    "testPublicConstructor",
+    "testDeserialize_ValidStream"
+  ],
+  "selected_methods": [
+    "testClone_DeepCopy",
+    "testDeserializeByteArray_CorruptedData",
+    "testDeserializeByteArray_RoundTrip",
+    "testDeserialize_InputStreamThrowsIOException",
+    "testDeserialize_ValidStream",
+    "testPublicConstructor",
+    "testSerializeToByteArray_NullObject",
+    "testSerializeToByteArray_RoundTrip",
+    "testSerialize_OutputStreamThrowsIOException",
+    "testSerialize_ToByteArrayOutputStream",
+    "testSerialize_WithNullOutputStream"
+  ],
+  "excluded_methods": [
+    "testDeserializeByteArray_NullArgument",
+    "testDeserialize_NullInputStream",
+    "testClone_NullReturnsNull"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/survival/Lang-13/Lang-12b/llm/r6/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.SerializationUtilsTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"testSerialize_ToByteArrayOutputStream\"}\n{\"method\":\"testClone_DeepCopy\"}\n{\"method\":\"testSerializeToByteArray_RoundTrip\"}\n{\"method\":\"testSerializeToByteArray_NullObject\"}\n{\"method\":\"testDeserializeByteArray_NullArgument\"}\n{\"method\":\"testDeserialize_InputStreamThrowsIOException\"}\n{\"method\":\"testDeserializeByteArray_CorruptedData\"}\n{\"method\":\"testSerialize_WithNullOutputStream\"}\n{\"method\":\"testSerialize_OutputStreamThrowsIOException\"}\n{\"method\":\"testDeserializeByteArray_RoundTrip\"}\n{\"method\":\"testDeserialize_NullInputStream\"}\n{\"method\":\"testClone_NullReturnsNull\"}\n{\"method\":\"testPublicConstructor\"}\n{\"method\":\"testDeserialize_ValidStream\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.084
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/survival/Lang-13/Lang-12b/llm/r6/CoT/classes:/work/tools/runner:/work/d4j/Lang-12b/target/classes:/work/d4j/Lang-12b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.SerializationUtilsTest",
+        "--timeout-ms",
+        "30000",
+        "--exclude",
+        "testDeserializeByteArray_NullArgument,testDeserialize_NullInputStream,testClone_NullReturnsNull"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"testSerialize_ToByteArrayOutputStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":22}\n{\"method\":\"testClone_DeepCopy\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":4}\n{\"method\":\"testSerializeToByteArray_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerializeToByteArray_NullObject\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_InputStreamThrowsIOException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeByteArray_CorruptedData\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_WithNullOutputStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testSerialize_OutputStreamThrowsIOException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserializeByteArray_RoundTrip\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testPublicConstructor\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"testDeserialize_ValidStream\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.135,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "testSerialize_ToByteArrayOutputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 22,
+      "launch": 1
+    },
+    {
+      "method": "testClone_DeepCopy",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 4,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerializeToByteArray_NullObject",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_InputStreamThrowsIOException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_CorruptedData",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_WithNullOutputStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testSerialize_OutputStreamThrowsIOException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserializeByteArray_RoundTrip",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testPublicConstructor",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "testDeserialize_ValidStream",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 11
+  },
+  "wall_seconds": 0.22
+}

@@ -1,0 +1,13 @@
+{"method":"testWith_multipleTranslators","status":"pass"}
+{"method":"testTranslateToWriter_nullWriter","status":"pass"}
+{"method":"testWith_mergesTranslatorsInOrder","status":"pass"}
+{"method":"testTranslateConvenience_nullInput","status":"pass"}
+{"method":"testTranslateToWriter_passthroughWhenNotConsumed","status":"pass"}
+{"method":"testHex_surrogateCodePoint","status":"pass"}
+{"method":"testHex_negativeValue","status":"fail","message":"expected:<[-1]> but was:<[FFFFFFFF]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testHex_basicValues","status":"pass"}
+{"method":"testTranslateConvenience_basicReplacement","status":"fail","message":"expected:<bb[]> but was:<bb[b]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateToWriter_consumesAndAdvancesCorrectly","status":"fail","message":"expected:<X[SMILE][b]> but was:<X[SMILE][?]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateConvenience_surrogatePairHandling","status":"fail","message":"expected:<x[SMILE][y]> but was:<x[SMILE][?]>","exception":"org.junit.ComparisonFailure"}
+{"method":"testTranslateToWriter_nullInput","status":"pass"}
+{"summary":{"run":12,"failures":4,"ignored":0,"ms":27}}

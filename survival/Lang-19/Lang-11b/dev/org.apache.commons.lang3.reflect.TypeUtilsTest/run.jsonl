@@ -1,0 +1,10 @@
+{"method": "testGetTypeArguments", "status": "pass", "message": null, "exception": null, "milliseconds": 24, "launch": 1}
+{"method": "testIsInstance", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testIsAssignable", "status": "fail", "message": "WRONG!", "exception": "java.lang.AssertionError", "milliseconds": 14, "launch": 1}
+{"method": "testGetPrimitiveArrayComponentType", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testTypesSatisfyVariables", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testIsArrayTypeClasses", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDetermineTypeVariableAssignments", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testGetRawType", "status": "pass", "message": null, "exception": null, "milliseconds": 2, "launch": 1}
+{"method": "testGetArrayComponentType", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testIsArrayGenericTypes", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

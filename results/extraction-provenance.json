@@ -1,0 +1,6 @@
+{
+  "script": "bundle/authors-extraction/extract_tests.py",
+  "sha256": "6bb69d42ba9ada8860b9fc73d02e79c506b69d3e074e0970521d8afffa118c32",
+  "responses": 70,
+  "normalization": "none; materialized bytes equal unchanged combine text"
+}

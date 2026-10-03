@@ -1,0 +1,157 @@
+{
+  "fqcn": "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+  "classpath": "/work/generated/p2/Lang-6/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+  "cwd": "/work/d4j/Lang-6b",
+  "timeout_ms": 30000,
+  "listed_methods": [
+    "expert2_translateWriter_multipleTranslatorsViaWith",
+    "expert2_translateWriter_surrogatePairConsumedCorrectly",
+    "expert3_with_emptyArray_returnsSameInstance",
+    "expert1_translateString_simpleReplacement",
+    "expert1_translateString_nullInput_returnsNull",
+    "expert1_hex_upperCaseAndLocaleIndependence",
+    "expert1_hex_surrogateCodePoint",
+    "expert2_translateWriter_nullWriter_throwsException",
+    "expert1_hex_basicValues",
+    "expert2_translateWriter_consumedZero_writesOriginalChar",
+    "expert3_with_mergesTranslatorsInCorrectOrder",
+    "expert2_translateWriter_nullInput_isNoOp"
+  ],
+  "listing": {
+    "command": [
+      "java",
+      "-cp",
+      "/work/generated/p2/Lang-6/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+      "JsonRunner",
+      "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+      "--list"
+    ],
+    "exit_status": 0,
+    "stdout": "{\"method\":\"expert2_translateWriter_multipleTranslatorsViaWith\"}\n{\"method\":\"expert2_translateWriter_surrogatePairConsumedCorrectly\"}\n{\"method\":\"expert3_with_emptyArray_returnsSameInstance\"}\n{\"method\":\"expert1_translateString_simpleReplacement\"}\n{\"method\":\"expert1_translateString_nullInput_returnsNull\"}\n{\"method\":\"expert1_hex_upperCaseAndLocaleIndependence\"}\n{\"method\":\"expert1_hex_surrogateCodePoint\"}\n{\"method\":\"expert2_translateWriter_nullWriter_throwsException\"}\n{\"method\":\"expert1_hex_basicValues\"}\n{\"method\":\"expert2_translateWriter_consumedZero_writesOriginalChar\"}\n{\"method\":\"expert3_with_mergesTranslatorsInCorrectOrder\"}\n{\"method\":\"expert2_translateWriter_nullInput_isNoOp\"}\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+    "wall_seconds": 0.089
+  },
+  "list_error": "",
+  "launches": [
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/work/generated/p2/Lang-6/r3/ToT/classes:/work/tools/runner:/work/d4j/Lang-6b/target/classes:/work/d4j/Lang-6b/target/tests:/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/defects4j/framework/projects/Lang/lib/easymock.jar:/defects4j/framework/projects/Lang/lib/commons-io.jar:/defects4j/framework/projects/Lang/lib/cglib.jar:/defects4j/framework/projects/Lang/lib/asm.jar:/work/tools/junit-4.13.2.jar:/work/tools/hamcrest-core-1.3.jar",
+        "JsonRunner",
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest",
+        "--timeout-ms",
+        "30000"
+      ],
+      "exit_status": 0,
+      "stdout": "{\"method\":\"expert2_translateWriter_multipleTranslatorsViaWith\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":23}\n{\"method\":\"expert2_translateWriter_surrogatePairConsumedCorrectly\",\"status\":\"error\",\"message\":\"index 2,length 2\",\"exception\":\"java.lang.StringIndexOutOfBoundsException\",\"milliseconds\":2}\n{\"method\":\"expert3_with_emptyArray_returnsSameInstance\",\"status\":\"error\",\"message\":\"class org.apache.commons.lang3.text.translate.AggregateTranslator cannot be cast to class org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator (org.apache.commons.lang3.text.translate.AggregateTranslator and org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator are in unnamed module of loader 'app')\",\"exception\":\"java.lang.ClassCastException\",\"milliseconds\":1}\n{\"method\":\"expert1_translateString_simpleReplacement\",\"status\":\"fail\",\"message\":\"expected:<bcbr[cbcbcdbrbc]bc> but was:<bcbr[bccbcdbcbr]bc>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":1}\n{\"method\":\"expert1_translateString_nullInput_returnsNull\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert1_hex_upperCaseAndLocaleIndependence\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert1_hex_surrogateCodePoint\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert2_translateWriter_nullWriter_throwsException\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert1_hex_basicValues\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert2_translateWriter_consumedZero_writesOriginalChar\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n{\"method\":\"expert3_with_mergesTranslatorsInCorrectOrder\",\"status\":\"fail\",\"message\":\"expected:<[Y]> but was:<[X]>\",\"exception\":\"org.junit.ComparisonFailure\",\"milliseconds\":0}\n{\"method\":\"expert2_translateWriter_nullInput_isNoOp\",\"status\":\"pass\",\"message\":null,\"exception\":null,\"milliseconds\":0}\n",
+      "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\n",
+      "wall_seconds": 0.141,
+      "launch": 1
+    }
+  ],
+  "methods": [
+    {
+      "method": "expert2_translateWriter_multipleTranslatorsViaWith",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 23,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_surrogatePairConsumedCorrectly",
+      "status": "error",
+      "message": "index 2,length 2",
+      "exception": "java.lang.StringIndexOutOfBoundsException",
+      "milliseconds": 2,
+      "launch": 1
+    },
+    {
+      "method": "expert3_with_emptyArray_returnsSameInstance",
+      "status": "error",
+      "message": "class org.apache.commons.lang3.text.translate.AggregateTranslator cannot be cast to class org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator (org.apache.commons.lang3.text.translate.AggregateTranslator and org.apache.commons.lang3.text.translate.CharSequenceTranslatorTest$AggregateTranslator are in unnamed module of loader 'app')",
+      "exception": "java.lang.ClassCastException",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "expert1_translateString_simpleReplacement",
+      "status": "fail",
+      "message": "expected:<bcbr[cbcbcdbrbc]bc> but was:<bcbr[bccbcdbcbr]bc>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 1,
+      "launch": 1
+    },
+    {
+      "method": "expert1_translateString_nullInput_returnsNull",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_upperCaseAndLocaleIndependence",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_surrogateCodePoint",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_nullWriter_throwsException",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert1_hex_basicValues",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_consumedZero_writesOriginalChar",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert3_with_mergesTranslatorsInCorrectOrder",
+      "status": "fail",
+      "message": "expected:<[Y]> but was:<[X]>",
+      "exception": "org.junit.ComparisonFailure",
+      "milliseconds": 0,
+      "launch": 1
+    },
+    {
+      "method": "expert2_translateWriter_nullInput_isNoOp",
+      "status": "pass",
+      "message": null,
+      "exception": null,
+      "milliseconds": 0,
+      "launch": 1
+    }
+  ],
+  "counts": {
+    "pass": 8,
+    "error": 2,
+    "fail": 2
+  },
+  "wall_seconds": 0.232
+}

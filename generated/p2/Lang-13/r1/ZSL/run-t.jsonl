@@ -1,0 +1,13 @@
+{"method": "testClone_PerformsDeepCopy", "status": "pass", "message": null, "exception": null, "milliseconds": 24, "launch": 1}
+{"method": "testDeserializeByteArray_NullArray_Throws", "status": "pass", "message": null, "exception": null, "milliseconds": 1, "launch": 1}
+{"method": "testClone_NullInputReturnsNull", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeToByteArray_NullObjectProducesValidArray", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerializeAndDeserialize_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testClone_UsesCustomClassLoaderFallback", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_WithNullOutputStream_Throws", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testSerialize_NonSerializableObject_ThrowsSerializationException", "status": "error", "message": "class org.apache.commons.lang3.SerializationUtilsTest$3 cannot be cast to class java.io.Serializable (org.apache.commons.lang3.SerializationUtilsTest$3 is in unnamed module of loader 'app'; java.io.Serializable is in module java.base of loader 'bootstrap')", "exception": "java.lang.ClassCastException", "milliseconds": 2, "launch": 1}
+{"method": "testSerialize_WritesObjectAndClosesStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserializeByteArray_RoundTrip", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_ClosesInputStream", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_InvalidData_ThrowsSerializationException", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}
+{"method": "testDeserialize_WithNullInputStream_Throws", "status": "pass", "message": null, "exception": null, "milliseconds": 0, "launch": 1}

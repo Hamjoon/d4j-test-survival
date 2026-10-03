@@ -1,0 +1,1 @@
+{"method": "testTranslateConsumesCorrectNumberOfCharsForSurrogatePair", "status": "fail", "message": "expected:<ALAUGH[]B> but was:<ALAUGH[?]B>", "exception": "org.junit.ComparisonFailure", "milliseconds": 28, "launch": 1}
